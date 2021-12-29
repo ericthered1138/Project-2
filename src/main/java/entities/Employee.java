@@ -7,21 +7,22 @@ public class Employee {
     private int employeeId;
     private int handlerId;
     private boolean handler;
-    private String firstName;
-    private String lastName;
     private String username;
     private String passcode;
+    private String firstName;
+    private String lastName;
+
 
     public Employee(){}
 
-    public Employee(int employeeId, int handlerId, boolean handler, String firstName, String lastName, String username, String passcode){
+    public Employee(int employeeId, int handlerId, boolean handler, String username, String passcode, String firstName, String lastName){
         this.setEmployeeId(employeeId);
         this.setHandlerId(handlerId);
         this.setHandler(handler);
-        this.setFirstName(firstName);
-        this.setLastName(lastName);
         this.setUsername(username);
         this.setPasscode(passcode);
+        this.setFirstName(firstName);
+        this.setLastName(lastName);
     }
 
     @Override
@@ -30,10 +31,10 @@ public class Employee {
                 "employeeId=" + getEmployeeId() +
                 ", handlerId=" + getHandlerId() +
                 ", handler=" + isHandler() +
-                ", firstName='" + getFirstName() + '\'' +
-                ", lastName='" + getLastName() + '\'' +
                 ", username='" + getUsername() + '\'' +
                 ", passcode='" + getPasscode() + '\'' +
+                ", firstName='" + getFirstName() + '\'' +
+                ", lastName='" + getLastName() + '\'' +
                 '}';
     }
 
@@ -42,12 +43,12 @@ public class Employee {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Employee employee = (Employee) o;
-        return getEmployeeId() == employee.getEmployeeId() && getHandlerId() == employee.getHandlerId() && isHandler() == employee.isHandler() && Objects.equals(getFirstName(), employee.getFirstName()) && Objects.equals(getLastName(), employee.getLastName()) & Objects.equals(getUsername(), employee.getUsername()) && Objects.equals(getPasscode(), employee.getPasscode());
+        return getEmployeeId() == employee.getEmployeeId() && getHandlerId() == employee.getHandlerId() && isHandler() == employee.isHandler() && Objects.equals(getUsername(), employee.getUsername()) && Objects.equals(getPasscode(), employee.getPasscode()) && Objects.equals(getFirstName(), employee.getFirstName()) && Objects.equals(getLastName(), employee.getLastName()) ;
     }
 
     @Override
     public int hashCode(){
-        return Objects.hash(getEmployeeId(), getHandlerId(), isHandler(), getFirstName(), getLastName(), getUsername(), getPasscode());
+        return Objects.hash(getEmployeeId(), getHandlerId(), isHandler(), getUsername(), getPasscode(), getFirstName(), getLastName());
     }
 
 
@@ -75,21 +76,6 @@ public class Employee {
         this.handler = handler;
     }
 
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
 
     public String getUsername() {
         return username;
@@ -106,4 +92,20 @@ public class Employee {
     public void setPasscode(String passcode) {
         this.passcode = passcode;
     }
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
 }
