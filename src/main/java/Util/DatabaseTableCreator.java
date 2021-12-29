@@ -58,5 +58,6 @@ public class DatabaseTableCreator {
         //table_creator(); // Creates the tables
         //table_populator();//populates the tables
         //table_depopulator();//depopulates the tables
+        System.out.println();
     }
 }
