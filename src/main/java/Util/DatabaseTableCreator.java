@@ -19,8 +19,7 @@ public class DatabaseTableCreator {
                     "primary key (claim_id), foreign key (employee_id) references employee_table(employee_id)); " +
                     "create table debriefing_table(debriefing_id int, employee_id int, debriefing_text varchar(480), " +
                     "date_of_occurrence DATE, location_of_occurrence varchar(100), datetime_of_creation TIMESTAMP, " +
-                    "handler_message varchar(280), primary key (debriefing_id), foreign key (employee_id) references " +
-                    "employee_table(employee_id));";
+                    "primary key (debriefing_id), foreign key (employee_id) references employee_table(employee_id));";
             Statement statement = connection.createStatement();
             statement.executeQuery(sql);
         }catch (SQLException e){
@@ -34,7 +33,7 @@ public class DatabaseTableCreator {
                     "insert into employee_table values('1000001', Null, TRUE, 'test_handler', 'handler_password','handler_first', 'handler_last'); " +
                     "insert into employee_table values('1000002', '1000001', False, 'test_agent', 'test_agent_password','agent_first_name', 'agent_last_name'); " +
                     "insert into claim_table values('1000001', '1000001', '1000002', '50.34', 'test_description', '2021-12-10', 'new york', '2021-12-10', 'pending', 'test_handler_comment'); " +
-                    "insert into debriefing_table values('1000001', '1000002', 'test_debriefing_text', '2021-12-10', 'new york', '2021-12-10', 'test_handler_message');";
+                    "insert into debriefing_table values('1000001', '1000002', 'test_debriefing_text', '2021-12-10', 'new york', '2021-12-10');";
             Statement statement = connection.createStatement();
             statement.executeQuery(sql);
         }catch (SQLException e){
