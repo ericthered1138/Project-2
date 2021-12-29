@@ -5,6 +5,9 @@ import entities.User;
 import daos.user.UserDAOImp;
 import daos.user.UserDAO;
 import org.testng.Assert;
+import Util.DatabaseTableCreator;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import java.util.List;
@@ -13,11 +16,22 @@ public class UserDAOTests {
 
     UserDAO userDAO = new UserDAOImp();
 
+    @BeforeClass
+    void setup(){
+        DatabaseTableCreator.table_depopulator();
+        DatabaseTableCreator.table_populator();
+    }
+
+    @AfterClass
+    void tearDown(){
+        DatabaseTableCreator.table_depopulator();
+    }
+
     @Test
     void selectUserById(){
-        User user = userDAO.getUserById(1000001);
+        User user = userDAO.getUserById(1000003);
         System.out.println(user);
-        Assert.assertEquals(user.getUserId(), 1000001);
+        Assert.assertEquals(user.getUserId(), 1000003);
     }
 
     @Test(expectedExceptions = UserNotFound.class, expectedExceptionsMessageRegExp = "User not found")
@@ -31,7 +45,7 @@ public class UserDAOTests {
         for (User u: users){
             System.out.println(u);
         }
-        Assert.assertTrue(users.size() >= 1);
+        Assert.assertTrue(users.size() >= 2);
     }
 
 }
