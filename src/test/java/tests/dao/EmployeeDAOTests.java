@@ -4,6 +4,7 @@ import daos.EmployeeDAO;
 import daos.EmployeeDAOImp;
 import entities.Employee;
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -18,6 +19,11 @@ public class EmployeeDAOTests {
     void setup(){
         table_depopulator();
         table_populator();
+    };
+
+    @AfterClass
+    void teardown(){
+        table_depopulator();
     };
 
     @Test
