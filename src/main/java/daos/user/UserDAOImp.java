@@ -4,6 +4,7 @@ import customexceptions.UserNotFound;
 import entities.User;
 import Util.DatabaseConnection;
 
+import javax.xml.crypto.Data;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -36,6 +37,26 @@ public class UserDAOImp implements UserDAO {
     }
 
     @Override
+    public User createUser(User user) {
+        try(Connection connection = DatabaseConnection.createConnection()){
+           String sql = "insert into user_table values(?, ?, ?, ?, ?)";
+           PreparedStatement preparedStatement = connection.prepareStatement(sql);
+           preparedStatement.setInt(1, user.getUserId());
+           preparedStatement.setString(2, user.getFirstName());
+           preparedStatement.setString(3, user.getLastName());
+           preparedStatement.setString(4, user.getUsername());
+           preparedStatement.setString(5, user.getPasscode());
+           preparedStatement.executeUpdate();
+           return user;
+
+        }
+        catch (SQLException e){
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+    @Override
     public List<User> getAllUsers(){
         try(Connection connection = DatabaseConnection.createConnection()){
             String sql = "select * from user_table";
@@ -55,6 +76,22 @@ public class UserDAOImp implements UserDAO {
         } catch (SQLException e){
             e.printStackTrace();
             return null;
+        }
+    }
+
+    @Override
+    public boolean deleteUser(int userId) {
+        try(Connection connection = DatabaseConnection.createConnection()){
+            String sql = "delete from user_table where user_id = ?";
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setInt(1, userId);
+            preparedStatement.execute();
+            return true;
+
+        }
+        catch (SQLException e){
+            e.printStackTrace();
+            return false;
         }
     }
 

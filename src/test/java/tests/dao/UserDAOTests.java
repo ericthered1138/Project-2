@@ -16,6 +16,8 @@ public class UserDAOTests {
 
     UserDAO userDAO = new UserDAOImp();
 
+    User newUser = new User(50, "test_first_name", "test_last_name", "test_username", "test_passcode");
+
     @BeforeClass
     void setup(){
         DatabaseTableCreator.table_depopulator();
@@ -46,6 +48,19 @@ public class UserDAOTests {
             System.out.println(u);
         }
         Assert.assertTrue(users.size() >= 2);
+    }
+
+    @Test
+    void createUser(){
+        User returnedUser = userDAO.createUser(newUser);
+        Assert.assertTrue(returnedUser.getUserId() != 0);
+    }
+
+    @Test(expectedExceptions = UserNotFound.class, expectedExceptionsMessageRegExp = "User not found")
+    void deleteUser(){
+        userDAO.deleteUser(50);
+        User deletedUser = userDAO.getUserById(50);
+
     }
 
 }
