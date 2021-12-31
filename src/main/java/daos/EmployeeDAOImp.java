@@ -91,7 +91,6 @@ public class EmployeeDAOImp implements EmployeeDAO {
             // each iteration of this while loop tries to move the cursor to the next row of data
             // when there are no more rows of data the method returns false and we leave the loop
             while(resultSet.next()){
-                LocalDate date_of_occurrence = new LocalDate(resultSet.getDate("date_of_occurrence"));
 
 
                 Claim claim= new Claim(
@@ -100,7 +99,7 @@ public class EmployeeDAOImp implements EmployeeDAO {
                         resultSet.getInt("employee_id"),
                         resultSet.getInt("amount"),
                         resultSet.getString("description"),
-                        resultSet.getTimestamp("date_of_occurrence").toLocalDateTime().toLocalDate(),
+                        resultSet.getDate("date_of_occurrence").toLocalDate(),
                         resultSet.getString("location_of_occurrence"),
                         resultSet.getTimestamp("datetime_of_creation").toLocalDateTime(),
                         resultSet.getString("approval"),
