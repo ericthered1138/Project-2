@@ -6,9 +6,10 @@ import entities.Claim;
 import entities.Debrief;
 import entities.Employee;
 
-import java.sql.*;
-import java.time.LocalDate;
-import java.time.chrono.ChronoLocalDate;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -86,10 +87,8 @@ public class EmployeeDAOImp implements EmployeeDAO {
             String sql = "select * from claim_table where user_id = ?";
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setInt(1, user_id);
-            ResultSet resultSet = preparedStatement.executeQuery(sql);
+            ResultSet resultSet = preparedStatement.executeQuery();
             List<Claim> claims = new ArrayList<>();
-            // each iteration of this while loop tries to move the cursor to the next row of data
-            // when there are no more rows of data the method returns false and we leave the loop
             while(resultSet.next()){
 
 
@@ -119,7 +118,36 @@ public class EmployeeDAOImp implements EmployeeDAO {
     @Override
     public List<Claim> getUserClaimsByAgent(int agent_employee_id) {
         //grab the list of claims by employee_id
-        return null;
+        try (Connection connection = DatabaseConnection.createConnection()){
+            String sql = "select * from claim_table where employee_id = ?";
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setInt(1, agent_employee_id);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            List<Claim> claims = new ArrayList<>();
+            while(resultSet.next()){
+
+
+                Claim claim= new Claim(
+                        resultSet.getInt("claim_id"),
+                        resultSet.getInt("user_id"),
+                        resultSet.getInt("employee_id"),
+                        resultSet.getInt("amount"),
+                        resultSet.getString("description"),
+                        resultSet.getDate("date_of_occurrence").toLocalDate(),
+                        resultSet.getString("location_of_occurrence"),
+                        resultSet.getTimestamp("datetime_of_creation").toLocalDateTime(),
+                        resultSet.getString("approval"),
+                        resultSet.getString("handler_comment")
+                );
+                claims.add(claim);
+            }
+
+            return claims;
+
+        } catch (SQLException e){
+            e.printStackTrace();
+            return null;
+        }
     }
 
     @Override
