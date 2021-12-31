@@ -1,6 +1,10 @@
 package daos;
 
+import entities.Claim;
+import entities.Debrief;
 import entities.Employee;
+
+import java.util.List;
 
 public interface EmployeeDAO {
 
@@ -8,15 +12,15 @@ public interface EmployeeDAO {
 
     Employee loginEmployee(String username, String password);
 
-    Employee getAllClaims(int handler_employee_id);
+    List<Claim> getAllClaims(int handler_employee_id);
 
-    Employee getUserClaimsByUser(int user_id);
+    List<Claim> getUserClaimsByUser(int user_id);
 
-    Employee getUserClaimsByAgent(int agent_employee_id);
+    List<Claim> getUserClaimsByAgent(int agent_employee_id);
 
-    Employee getAllAgentDebriefings(int handler_employee_id);
+    List<Debrief> getAllAgentDebriefings(int handler_employee_id);
 
-    Employee getAgentDebriefings(int agent_employee_id);
+    List<Debrief> getAgentDebriefings(int agent_employee_id);
 
-    Employee getLeaderboard();
+    List<String> getLeaderboard();
 }
