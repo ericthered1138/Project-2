@@ -102,7 +102,7 @@ public class EmployeeDAOImp implements EmployeeDAO {
 
     @Override
     public List<Debrief> getAgentDebriefings(int agent_employee_id) {
-        // grab a list of debriefings by agent's employee id
+        // grab a list of debriefings by agent's employee_id
         return null;
     }
 

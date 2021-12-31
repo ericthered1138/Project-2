@@ -3,6 +3,7 @@ package tests.dao;
 import daos.EmployeeDAO;
 import daos.EmployeeDAOImp;
 import entities.Claim;
+import entities.Debrief;
 import entities.Employee;
 import org.eclipse.jetty.util.ajax.JSON;
 import org.testng.Assert;
@@ -57,21 +58,37 @@ public class EmployeeDAOTests {
 
     @Test
     void getUserClaimsByUser() {
+        List<Claim> claimsList = employeeDAO.getUserClaimsByUser(1_000_001);
+        Assert.assertTrue(claimsList.size() == 1);
     }
 
     @Test
     void getUserClaimsByAgent() {
+        Employee employee = employeeDAO.getEmployeeById(1_000_002);
+        Integer employeeId = employee.getEmployeeId();
+        List<Claim> claimsList = employeeDAO.getUserClaimsByAgent(employeeId);
+        Assert.assertTrue(claimsList.size() == 1);
     }
 
     @Test
     void getAllAgentDebriefings() {
+        Employee employee = employeeDAO.getEmployeeById(1_000_001);
+        Integer employeeId = employee.getEmployeeId();
+        List<Debrief> claimsList = employeeDAO.getAllAgentDebriefings(employeeId);
+        Assert.assertTrue(claimsList.size() == 1);
     }
 
     @Test
     void getAgentDebriefings() {
+        Employee employee = employeeDAO.getEmployeeById(1_000_002);
+        Integer employeeId = employee.getEmployeeId();
+        List<Debrief> claimsList = employeeDAO.getAllAgentDebriefings(employeeId);
+        Assert.assertTrue(claimsList.size() == 1);
     }
 
     @Test
     void getLeaderboard() {
+        List<String> returnedList= employeeDAO.getLeaderboard();
+        Assert.assertNotNull(returnedList);
     }
 }
