@@ -59,6 +59,7 @@ public class EmployeeDAOTests {
     @Test
     void getUserClaimsByUser() {
         List<Claim> claimsList = employeeDAO.getUserClaimsByUser(1_000_001);
+        System.out.println(claimsList);
         Assert.assertTrue(claimsList.size() == 1);
     }
 
