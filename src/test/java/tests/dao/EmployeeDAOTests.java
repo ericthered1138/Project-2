@@ -83,7 +83,8 @@ public class EmployeeDAOTests {
     void getAgentDebriefings() {
         Employee employee = employeeDAO.getEmployeeById(1_000_002);
         Integer employeeId = employee.getEmployeeId();
-        List<Debrief> claimsList = employeeDAO.getAllAgentDebriefings(employeeId);
+        List<Debrief> claimsList = employeeDAO.getAgentDebriefings(employeeId);
+        System.out.println(claimsList);
         Assert.assertTrue(claimsList.size() == 1);
     }
 
