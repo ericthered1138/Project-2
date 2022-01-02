@@ -37,6 +37,7 @@ public class DebriefDAOTests {
     @Test
     void createDebrief() {
         Debrief test_debrief = debriefDAOImp.getDebrief(1_000_001);
+        System.out.println(test_debrief);
         Debrief debrief = debriefDAOImp.createDebrief(test_debrief);
         System.out.println(debrief);
         Assert.assertEquals(debrief.getEmployeeId(),1_000_002);

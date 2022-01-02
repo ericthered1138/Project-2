@@ -73,7 +73,7 @@ public class DebriefDAOImp implements DebriefDAO{
             preparedStatement.setDate(4, Date.valueOf(debrief.getDateOfOccurrence()));
             preparedStatement.setString(5, debrief.getLocationOfOccurrence());
             preparedStatement.setTimestamp(6, Timestamp.valueOf(debrief.getDateTimeOfCreation()));
-            preparedStatement.execute(sql);
+            preparedStatement.execute();
             return debrief;
         }catch (SQLException e){
             e.printStackTrace();
