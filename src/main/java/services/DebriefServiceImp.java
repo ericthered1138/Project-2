@@ -10,7 +10,6 @@ public class DebriefServiceImp implements DebriefService{
 
     @Override
     public Debrief getDebriefService(int debriefing_id) {
-
         return this.debriefDAO.getDebrief(debriefing_id);
     }
 
