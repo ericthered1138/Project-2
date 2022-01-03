@@ -9,7 +9,7 @@ import daos.user.UserDAO;
 import java.util.ArrayList;
 import java.util.List;
 
-public class UserServicesImp implements UserServices{
+public class UserServicesImp implements UserServices {
 
     UserDAO userDAO;
 
@@ -59,14 +59,4 @@ public class UserServicesImp implements UserServices{
             throw new InvalidUsername("Invalid username");
         }
     }
-
-
-//    @Override
-//    public boolean deleteUserService(int userId) {
-//        try{
-//            return this.userDAO.deleteUser(userId);
-//        } catch (UserNotFound e){
-//            throw new UserNotFound("User not found");
-//        }
-//    }
 }

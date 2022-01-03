@@ -23,6 +23,8 @@ public class ClaimDAOTests {
     @AfterClass
     void tearDown(){ DatabaseTableCreator.table_depopulator(); }
 
+
+
     @Test
     void selectClaimById(){
         Claim claim = claimDAO.getClaimById(1000001);

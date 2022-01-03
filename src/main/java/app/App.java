@@ -28,6 +28,9 @@ public class App {
 
         app.get("/login", userController.checkUserLogin);
 
+        app.post("/newUser", userController.createUser);
+
+
         app.start();
     }
 }

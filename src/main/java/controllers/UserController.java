@@ -56,4 +56,13 @@ public class UserController {
             ctx.status(404);
         }
     };
+
+    public Handler createUser = ctx -> {
+        Gson gson = new Gson();
+        User newUser = gson.fromJson(ctx.body(), User.class);
+        User createdUser = this.userServices.createUser(newUser);
+        String createdUserJson = gson.toJson(createdUser);
+        ctx.result(createdUserJson);
+        ctx.status(201);
+    };
 }

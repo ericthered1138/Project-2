@@ -12,6 +12,26 @@ import java.util.List;
 public class UserDAOImp implements UserDAO {
 
     @Override
+    public int maxCreator() {
+        try (Connection connection = DatabaseConnection.createConnection()) {
+            String sql = "select max(user_id) as highest_user_id from user_table";
+            Statement statement = connection.createStatement();
+            ResultSet resultSet = statement.executeQuery(sql);
+            int returned_index = 1001;
+            if (resultSet.next()){
+                returned_index = resultSet.getInt("highest_user_id");
+            }
+            System.out.println(returned_index);
+            return returned_index + 1;
+        }catch (SQLException e){
+            e.printStackTrace();
+            return -1;
+        }
+    }
+
+    int user_id_counter = this.maxCreator();
+
+    @Override
     public User getUserById(int userId) {
         try (Connection connection = DatabaseConnection.createConnection()) {
             String sql = "select * from user_table where user_id = ?";
@@ -38,14 +58,17 @@ public class UserDAOImp implements UserDAO {
 
     @Override
     public User createUser(User user) {
+        user.setUserId(this.user_id_counter);
+        this.user_id_counter++;
+
         try(Connection connection = DatabaseConnection.createConnection()){
            String sql = "insert into user_table values(?, ?, ?, ?, ?)";
            PreparedStatement preparedStatement = connection.prepareStatement(sql);
            preparedStatement.setInt(1, user.getUserId());
-           preparedStatement.setString(2, user.getFirstName());
-           preparedStatement.setString(3, user.getLastName());
-           preparedStatement.setString(4, user.getUsername());
-           preparedStatement.setString(5, user.getPasscode());
+           preparedStatement.setString(2, user.getUsername());
+           preparedStatement.setString(3, user.getPasscode());
+           preparedStatement.setString(4, user.getFirstName());
+           preparedStatement.setString(5, user.getLastName());
            preparedStatement.executeUpdate();
            return user;
 
@@ -76,22 +99,6 @@ public class UserDAOImp implements UserDAO {
         } catch (SQLException e){
             e.printStackTrace();
             return null;
-        }
-    }
-
-    @Override
-    public boolean deleteUser(int userId) {
-        try(Connection connection = DatabaseConnection.createConnection()){
-            String sql = "delete from user_table where user_id = ?";
-            PreparedStatement preparedStatement = connection.prepareStatement(sql);
-            preparedStatement.setInt(1, userId);
-            preparedStatement.execute();
-            return true;
-
-        }
-        catch (SQLException e){
-            e.printStackTrace();
-            return false;
         }
     }
 

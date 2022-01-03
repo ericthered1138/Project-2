@@ -11,7 +11,5 @@ public interface UserServices
 
     List<User> getAllUserService();
 
-//    boolean deleteUserService(int userId);
-
     User checkUserLoginService(String username, String passcode);
 }

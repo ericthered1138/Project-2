@@ -16,7 +16,7 @@ public class UserDAOTests {
 
     UserDAO userDAO = new UserDAOImp();
 
-    User newUser = new User(50, "test_first_name", "test_last_name", "test_username", "test_passcode");
+    User newUser = new User(50, "test_username", "test_passcode", "test_first_name", "test_last_name");
 
     @BeforeClass
     void setup(){
@@ -53,13 +53,15 @@ public class UserDAOTests {
     @Test
     void createUser(){
         User returnedUser = userDAO.createUser(newUser);
+        System.out.println(userDAO.maxCreator());
+        System.out.println(returnedUser);
         Assert.assertTrue(returnedUser.getUserId() != 0);
     }
 
     @Test(expectedExceptions = UserNotFound.class, expectedExceptionsMessageRegExp = "User not found")
     void deleteUser(){
-        userDAO.deleteUser(50);
-        User deletedUser = userDAO.getUserById(50);
+        userDAO.deleteUser(userDAO.maxCreator());
+        User deletedUser = userDAO.getUserById(userDAO.maxCreator());
 
     }
 

@@ -11,7 +11,7 @@ public class User {
 
     public User(){}
 
-    public User(int userId, String firstName, String lastName, String username, String passcode){
+    public User(int userId, String username, String passcode, String firstName, String lastName){
         this.setUserId(userId);
         this.setUsername(username);
         this.setPasscode(passcode);
