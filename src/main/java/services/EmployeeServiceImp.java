@@ -24,7 +24,7 @@ public class EmployeeServiceImp implements EmployeeService{
 
     @Override
     public List<Claim> getAllClaimsService(int handler_employee_id) {
-        return employeeDAO.getUserClaimsByAgent(handler_employee_id);
+        return employeeDAO.getAllClaims(handler_employee_id);
     }
 
     @Override

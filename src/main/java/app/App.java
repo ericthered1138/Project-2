@@ -24,6 +24,7 @@ public class App {
 
         app.get("/employee/{id}", employeeController.getEmployee);
         app.post("/employee/login", employeeController.loginEmployee);
+        app.get("/employee/claims/all/{id}", employeeController.getAllClaims);
 
         app.start();
     }

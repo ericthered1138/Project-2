@@ -53,6 +53,7 @@ public class EmployeeDAOTests {
         Employee employee = employeeDAO.getEmployeeById(1_000_001);
         Integer employeeId = employee.getEmployeeId();
         List<Claim> claimsList = employeeDAO.getAllClaims(employeeId);
+        System.out.println(claimsList);
         Assert.assertTrue(claimsList.size() == 1);
     }
 
