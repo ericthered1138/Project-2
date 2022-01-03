@@ -5,6 +5,7 @@ import customexceptions.DebriefNotFound;
 import entities.Debrief;
 
 import java.sql.*;
+import java.time.LocalDateTime;
 
 public class DebriefDAOImp implements DebriefDAO{
 
@@ -60,6 +61,7 @@ public class DebriefDAOImp implements DebriefDAO{
     public Debrief createDebrief(Debrief debrief) {
         debrief.setDebriefingId(this.debrief_id_counter);
         this.debrief_id_counter += 1;
+        debrief.setDateTimeOfCreation(Timestamp.valueOf(LocalDateTime.now()).toString());
 
         try (Connection connection = DatabaseConnection.createConnection()) {
 

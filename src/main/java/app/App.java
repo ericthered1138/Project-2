@@ -1,10 +1,15 @@
 package app;
 
 import controllers.AppController;
+import controllers.DebriefController;
 import controllers.EmployeeController;
+import daos.DebriefDAO;
+import daos.DebriefDAOImp;
 import daos.EmployeeDAO;
 import daos.EmployeeDAOImp;
 import io.javalin.Javalin;
+import services.DebriefService;
+import services.DebriefServiceImp;
 import services.EmployeeService;
 import services.EmployeeServiceImp;
 
@@ -22,6 +27,10 @@ public class App {
         EmployeeService employeeService = new EmployeeServiceImp(employeeDAO);
         EmployeeController employeeController = new EmployeeController(employeeService);
 
+        DebriefDAO debriefDAO = new DebriefDAOImp();
+        DebriefService debriefService = new DebriefServiceImp(debriefDAO);
+        DebriefController debriefController = new DebriefController(debriefService);
+
         app.get("/employee/{id}", employeeController.getEmployee);
         app.post("/employee/login", employeeController.loginEmployee);
         app.get("/employee/claims/all/{id}", employeeController.getAllClaims);
@@ -29,6 +38,9 @@ public class App {
         app.get("/employee/debriefs/{id}", employeeController.getAgentDebriefs);
         app.get("/user/claims/{id}", employeeController.getUserClaims);
         app.get("/employee/claims/{id}", employeeController.getAgentClaims);
+
+        app.get("/debrief/{id}", debriefController.getDebrief);
+        app.post("/debrief", debriefController.createDebrief);
 
 
 
