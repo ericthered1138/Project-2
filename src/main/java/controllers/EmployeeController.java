@@ -30,8 +30,9 @@ public class EmployeeController {
 
     public Handler loginEmployee = ctx ->{
         Gson gson = new Gson();
-        String username = ctx.formParam("username");
-        String passcode = ctx.formParam("passcode");
+        Employee loginEmployee = gson.fromJson(ctx.body(), Employee.class);
+        String username = loginEmployee.getUsername();
+        String passcode = loginEmployee.getPasscode();
         Employee employee = this.employeeService.loginEmployeeService(username, passcode);
         String EmployeeJson = gson.toJson(employee);
         ctx.result(EmployeeJson);
