@@ -9,13 +9,13 @@ public class Debrief {
     private int debriefingId;
     private int employeeId;
     private String debriefingText;
-    private LocalDate dateOfOccurrence;
+    private String dateOfOccurrence;
     private String locationOfOccurrence;
-    private LocalDateTime dateTimeOfCreation;
+    private String dateTimeOfCreation;
 
     public Debrief(){}
 
-    public Debrief(int debriefingId, int employeeId, String debriefingText, LocalDate dateOfOccurrence, String locationOfOccurrence, LocalDateTime dateTimeOfCreation){
+    public Debrief(int debriefingId, int employeeId, String debriefingText, String dateOfOccurrence, String locationOfOccurrence, String dateTimeOfCreation){
         this.setDebriefingId(debriefingId);
         this.setEmployeeId(employeeId);
         this.setDebriefingText(debriefingText);
@@ -73,11 +73,11 @@ public class Debrief {
         this.debriefingText = debriefingText;
     }
 
-    public LocalDate getDateOfOccurrence() {
+    public String getDateOfOccurrence() {
         return dateOfOccurrence;
     }
 
-    public void setDateOfOccurrence(LocalDate dateOfOccurrence) {
+    public void setDateOfOccurrence(String dateOfOccurrence) {
         this.dateOfOccurrence = dateOfOccurrence;
     }
 
@@ -89,11 +89,11 @@ public class Debrief {
         this.locationOfOccurrence = locationOfOccurrence;
     }
 
-    public LocalDateTime getDateTimeOfCreation() {
+    public String getDateTimeOfCreation() {
         return dateTimeOfCreation;
     }
 
-    public void setDateTimeOfCreation(LocalDateTime dateTimeOfCreation) {
+    public void setDateTimeOfCreation(String dateTimeOfCreation) {
         this.dateTimeOfCreation = dateTimeOfCreation;
     }
 }
