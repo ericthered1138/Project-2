@@ -11,40 +11,40 @@ public class Claim {
     private int employeeId;
     private float amount;
     private String description;
-    private LocalDate dateOfOccurrence;
+    private String dateOfOccurrence;
     private String locationOfOccurrence;
-    private LocalDateTime dateTimeOfCreation;
+    private String dateTimeOfCreation;
     private String approval;
     private String handlerComment;
 
     public Claim(){}
 
-    public Claim(int claimId, int userId, int employeeId, float amount, String description, LocalDate dateOfOccurrence, String locationOfOccurrence, LocalDateTime dateTimeOfCreation, String approval, String handlerComment){
-        this.setClaimId(claimId);
-        this.setUserId(userId);
-        this.setEmployeeId(employeeId);
-        this.setAmount(amount);
-        this.setDescription(description);
-        this.setDateOfOccurrence(dateOfOccurrence);
-        this.setLocationOfOccurrence(locationOfOccurrence);
-        this.setDateTimeOfCreation(dateTimeOfCreation);
-        this.setApproval(approval);
-        this.setHandlerComment(handlerComment);
+    public Claim(int claimId, int userId, int employeeId, float amount, String description, String dateOfOccurrence, String locationOfOccurrence, String dateTimeOfCreation, String approval, String handlerComment){
+        this.claimId = claimId;
+        this.userId = userId;
+        this.employeeId = employeeId;
+        this.amount = amount;
+        this.description = description;
+        this.dateOfOccurrence = dateOfOccurrence;
+        this.locationOfOccurrence = locationOfOccurrence;
+        this.dateTimeOfCreation = dateTimeOfCreation;
+        this.approval = approval;
+        this.handlerComment = handlerComment;
     }
 
     @Override
     public String toString(){
         return "Claim{" +
-                "claimId=" + getClaimId() +
-                ", userId=" + getUserId() +
-                ", employeeId=" + getEmployeeId() +
-                ", amount=" + getAmount() +
-                ", description='" + getDescription() + '\'' +
-                ", dateOfOccurrence='" + getDateOfOccurrence() + '\'' +
-                ", locationOfOccurrence='" + getLocationOfOccurrence() + '\'' +
-                ", dateTimeOfCreation='" + getDateTimeOfCreation() + '\'' +
-                ", approval='" + getApproval() + '\'' +
-                ", handlerComment='" + getHandlerComment() + '\'' +
+                "claimId=" + claimId +
+                ", userId=" + userId +
+                ", employeeId=" + employeeId +
+                ", amount=" + amount +
+                ", description='" + description + '\'' +
+                ", dateOfOccurrence='" + dateOfOccurrence + '\'' +
+                ", locationOfOccurrence='" + locationOfOccurrence + '\'' +
+                ", dateTimeOfCreation='" + dateTimeOfCreation + '\'' +
+                ", approval='" + approval + '\'' +
+                ", handlerComment='" + handlerComment + '\'' +
                 '}';
     }
 
@@ -53,12 +53,12 @@ public class Claim {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Claim  claim = (Claim) o;
-        return getClaimId() == claim.getClaimId() && getUserId() == claim.getUserId() && getEmployeeId() == claim.getEmployeeId() && getAmount() == claim.getAmount() && Objects.equals(getDescription(), claim.getDescription()) && Objects.equals(getDateOfOccurrence(), claim.getDateOfOccurrence()) && Objects.equals(getLocationOfOccurrence(), claim.getLocationOfOccurrence()) && Objects.equals(getDateTimeOfCreation(), claim.getDateTimeOfCreation()) && Objects.equals(getApproval(), claim.getApproval()) && Objects.equals(getHandlerComment(), claim.getHandlerComment());
+        return claimId == claim.claimId && userId == claim.userId && employeeId == claim.employeeId && amount == claim.amount && Objects.equals(description, claim.description) && Objects.equals(dateOfOccurrence, claim.dateOfOccurrence) && Objects.equals(locationOfOccurrence, claim.locationOfOccurrence) && Objects.equals(dateTimeOfCreation, claim.dateTimeOfCreation) && Objects.equals(approval, claim.approval) && Objects.equals(handlerComment, claim.handlerComment);
     }
 
     @Override
     public int hashCode(){
-        return Objects.hash(getClaimId(), getUserId(), getEmployeeId(), getAmount(), getDescription(), getDateOfOccurrence(), getLocationOfOccurrence(), getDateTimeOfCreation(), getApproval(), getHandlerComment());
+        return Objects.hash(claimId, userId, employeeId, amount, description, dateOfOccurrence, locationOfOccurrence, dateTimeOfCreation, approval, handlerComment);
     }
 
     public int getClaimId() {
@@ -101,11 +101,11 @@ public class Claim {
         this.description = description;
     }
 
-    public LocalDate getDateOfOccurrence() {
+    public String getDateOfOccurrence() {
         return dateOfOccurrence;
     }
 
-    public void setDateOfOccurrence(LocalDate dateOfOccurrence) {
+    public void setDateOfOccurrence(String dateOfOccurrence) {
         this.dateOfOccurrence = dateOfOccurrence;
     }
 
@@ -117,11 +117,11 @@ public class Claim {
         this.locationOfOccurrence = locationOfOccurrence;
     }
 
-    public LocalDateTime getDateTimeOfCreation() {
+    public String getDateTimeOfCreation() {
         return dateTimeOfCreation;
     }
 
-    public void setDateTimeOfCreation(LocalDateTime dateTimeOfCreation) {
+    public void setDateTimeOfCreation(String dateTimeOfCreation) {
         this.dateTimeOfCreation = dateTimeOfCreation;
     }
 

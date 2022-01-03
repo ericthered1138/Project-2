@@ -56,7 +56,7 @@ public class DatabaseTableCreator {
 
     public static void main(String[] args) {
         //table_creator(); // Creates the tables
-        //table_populator();//populates the tables
+        table_populator();//populates the tables
         //table_depopulator();//depopulates the tables
         System.out.println();
     }
