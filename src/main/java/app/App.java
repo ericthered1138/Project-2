@@ -28,7 +28,7 @@ public class App {
         EmployeeController employeeController = new EmployeeController(employeeService);
 
         DebriefDAO debriefDAO = new DebriefDAOImp();
-        DebriefService debriefService = new DebriefServiceImp(debriefDAO);
+        DebriefService debriefService = new DebriefServiceImp(debriefDAO, employeeDAO);
         DebriefController debriefController = new DebriefController(debriefService);
 
         app.get("/employee/{id}", employeeController.getEmployee);
