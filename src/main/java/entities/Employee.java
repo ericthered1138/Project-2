@@ -16,25 +16,25 @@ public class Employee {
     public Employee(){}
 
     public Employee(int employeeId, int handlerId, boolean handler, String username, String passcode, String firstName, String lastName){
-        this.setEmployeeId(employeeId);
-        this.setHandlerId(handlerId);
-        this.setHandler(handler);
-        this.setUsername(username);
-        this.setPasscode(passcode);
-        this.setFirstName(firstName);
-        this.setLastName(lastName);
+        this.employeeId = employeeId;
+        this.handlerId = handlerId;
+        this.handler = handler;
+        this.username = username;
+        this.passcode = passcode;
+        this.firstName = firstName;
+        this.lastName = lastName;
     }
 
     @Override
     public String toString(){
         return "Employee{" +
-                "employeeId=" + getEmployeeId() +
-                ", handlerId=" + getHandlerId() +
-                ", handler=" + isHandler() +
-                ", username='" + getUsername() + '\'' +
-                ", passcode='" + getPasscode() + '\'' +
-                ", firstName='" + getFirstName() + '\'' +
-                ", lastName='" + getLastName() + '\'' +
+                "employeeId=" + employeeId +
+                ", handlerId=" + handlerId +
+                ", handler=" + handler +
+                ", username='" + username + '\'' +
+                ", passcode='" + passcode + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
                 '}';
     }
 
@@ -43,12 +43,12 @@ public class Employee {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Employee employee = (Employee) o;
-        return getEmployeeId() == employee.getEmployeeId() && getHandlerId() == employee.getHandlerId() && isHandler() == employee.isHandler() && Objects.equals(getUsername(), employee.getUsername()) && Objects.equals(getPasscode(), employee.getPasscode()) && Objects.equals(getFirstName(), employee.getFirstName()) && Objects.equals(getLastName(), employee.getLastName()) ;
+        return employeeId == employee.employeeId && handlerId == employee.handlerId && handler == employee.handler && Objects.equals(username, employee.username) && Objects.equals(passcode, employee.passcode) && Objects.equals(firstName, employee.firstName) && Objects.equals(lastName, employee.lastName) ;
     }
 
     @Override
     public int hashCode(){
-        return Objects.hash(getEmployeeId(), getHandlerId(), isHandler(), getUsername(), getPasscode(), getFirstName(), getLastName());
+        return Objects.hash(employeeId, handlerId, handler, username, passcode, firstName, lastName);
     }
 
 
