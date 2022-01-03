@@ -95,4 +95,31 @@ public class UserDAOImp implements UserDAO {
         }
     }
 
+    @Override
+    public User checkUserLogin(String username, String passcode) {
+        try(Connection connection = DatabaseConnection.createConnection()){
+            String sql = "select * from user_table where username = ? and passcode = ?";
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setString(1, username);
+            preparedStatement.setString(2, passcode);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            if (resultSet.next()) {
+                User user = new User(
+                        resultSet.getInt("user_id"),
+                        resultSet.getString("username"),
+                        resultSet.getString("passcode"),
+                        resultSet.getString("first_name"),
+                        resultSet.getString("last_name")
+                );
+                return user;
+            } else{
+                throw new UserNotFound(("User not found"));
+            }
+
+        } catch (SQLException e){
+            e.printStackTrace();
+            return null;
+        }
+    }
+
 }

@@ -63,4 +63,11 @@ public class UserDAOTests {
 
     }
 
+    @Test
+    void checkUsernameAndPassword(){
+        User user = userDAO.getUserById(1000002);
+        User login = userDAO.checkUserLogin(user.getUsername(), user.getPasscode());
+        Assert.assertEquals(login.getUserId(), 1000002);
+    }
+
 }
