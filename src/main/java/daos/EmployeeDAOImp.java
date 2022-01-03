@@ -115,9 +115,9 @@ public class EmployeeDAOImp implements EmployeeDAO {
                             resultSet.getInt("employee_id"),
                             resultSet.getInt("amount"),
                             resultSet.getString("description"),
-                            resultSet.getDate("date_of_occurrence").toLocalDate(),
+                            resultSet.getDate("date_of_occurrence").toString(),
                             resultSet.getString("location_of_occurrence"),
-                            resultSet.getTimestamp("datetime_of_creation").toLocalDateTime(),
+                            resultSet.getTimestamp("datetime_of_creation").toString(),
                             resultSet.getString("approval"),
                             resultSet.getString("handler_comment")
                     );
@@ -150,9 +150,9 @@ public class EmployeeDAOImp implements EmployeeDAO {
                         resultSet.getInt("employee_id"),
                         resultSet.getInt("amount"),
                         resultSet.getString("description"),
-                        resultSet.getDate("date_of_occurrence").toLocalDate(),
+                        resultSet.getDate("date_of_occurrence").toString(),
                         resultSet.getString("location_of_occurrence"),
-                        resultSet.getTimestamp("datetime_of_creation").toLocalDateTime(),
+                        resultSet.getTimestamp("datetime_of_creation").toString(),
                         resultSet.getString("approval"),
                         resultSet.getString("handler_comment")
                 );
@@ -183,9 +183,9 @@ public class EmployeeDAOImp implements EmployeeDAO {
                         resultSet.getInt("employee_id"),
                         resultSet.getInt("amount"),
                         resultSet.getString("description"),
-                        resultSet.getDate("date_of_occurrence").toLocalDate(),
+                        resultSet.getDate("date_of_occurrence").toString(),
                         resultSet.getString("location_of_occurrence"),
-                        resultSet.getTimestamp("datetime_of_creation").toLocalDateTime(),
+                        resultSet.getTimestamp("datetime_of_creation").toString(),
                         resultSet.getString("approval"),
                         resultSet.getString("handler_comment")
                 );
@@ -242,9 +242,9 @@ public class EmployeeDAOImp implements EmployeeDAO {
                         resultSet.getInt("debriefing_id"),
                         resultSet.getInt("employee_id"),
                         resultSet.getString("debriefing_text"),
-                        resultSet.getDate("date_of_occurrence").toLocalDate(),
+                        resultSet.getDate("date_of_occurrence").toString(),
                         resultSet.getString("location_of_occurrence"),
-                        resultSet.getTimestamp("datetime_of_creation").toLocalDateTime()
+                        resultSet.getTimestamp("datetime_of_creation").toString()
                     );
                     debriefs.add(debrief);
                 }
@@ -273,9 +273,9 @@ public class EmployeeDAOImp implements EmployeeDAO {
                         resultSet.getInt("debriefing_id"),
                         resultSet.getInt("employee_id"),
                         resultSet.getString("debriefing_text"),
-                        resultSet.getDate("date_of_occurrence").toLocalDate(),
+                        resultSet.getDate("date_of_occurrence").toString(),
                         resultSet.getString("location_of_occurrence"),
-                        resultSet.getTimestamp("datetime_of_creation").toLocalDateTime()
+                        resultSet.getTimestamp("datetime_of_creation").toString()
                 );
                 debriefs.add(debrief);
             }

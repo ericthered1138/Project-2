@@ -3,6 +3,7 @@ package controllers;
 import com.google.gson.*;
 import customexceptions.EmployeeNotFound;
 import entities.Claim;
+import entities.Debrief;
 import entities.Employee;
 import io.javalin.http.Handler;
 import services.EmployeeService;
@@ -44,15 +45,47 @@ public class EmployeeController {
 
     public Handler getAllClaims = ctx ->{
         int id = Integer.parseInt(ctx.pathParam("id"));
-        //copied from https://stackoverflow.com/questions/22310143/java-8-localdatetime-deserialized-using-gson
-        Gson gson = new GsonBuilder().registerTypeAdapter(LocalDateTime.class, (JsonDeserializer<LocalDateTime>)
-                (json, type, jsonDeserializationContext) ->
-                        LocalDateTime.parse(json.getAsJsonPrimitive().getAsString())).create();
+        Gson gson = new Gson();
         List<Claim> claims = this.employeeService.getAllClaimsService(id);
+        String claimsJSONs = gson.toJson(claims);
+        ctx.result(claimsJSONs);
+        ctx.status(200);
+    };
+
+    public Handler getUserClaims = ctx ->{
+        int id = Integer.parseInt(ctx.pathParam("id"));// user id
+        Gson gson = new Gson();
+        List<Claim> claims = this.employeeService.getUserClaimsByUserService(id);
         System.out.println(claims);
         String claimsJSONs = gson.toJson(claims);
-        System.out.println(claimsJSONs);
         ctx.result(claimsJSONs);
+        ctx.status(200);
+    };
+
+    public Handler getAgentClaims = ctx ->{
+        int id = Integer.parseInt(ctx.pathParam("id"));//agent id
+        Gson gson = new Gson();
+        List<Claim> claims = this.employeeService.getUserClaimsByAgentService(id);
+        String claimsJSONs = gson.toJson(claims);
+        ctx.result(claimsJSONs);
+        ctx.status(200);
+    };
+
+    public Handler getAllAgentDebriefs = ctx ->{
+        int id = Integer.parseInt(ctx.pathParam("id"));//handler id
+        Gson gson = new Gson();
+        List<Debrief> debriefs = this.employeeService.getAllAgentDebriefingsService(id);
+        String debriefsJSONs = gson.toJson(debriefs);
+        ctx.result(debriefsJSONs);
+        ctx.status(200);
+    };
+
+    public Handler getAgentDebriefs = ctx ->{
+        int id = Integer.parseInt(ctx.pathParam("id"));//agent id
+        Gson gson = new Gson();
+        List<Debrief> debriefs = this.employeeService.getAgentDebriefingsService(id);
+        String debriefsJSONs = gson.toJson(debriefs);
+        ctx.result(debriefsJSONs);
         ctx.status(200);
     };
 }

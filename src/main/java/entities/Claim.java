@@ -11,15 +11,15 @@ public class Claim {
     private int employeeId;
     private float amount;
     private String description;
-    private LocalDate dateOfOccurrence;
+    private String dateOfOccurrence;
     private String locationOfOccurrence;
-    private LocalDateTime dateTimeOfCreation;
+    private String dateTimeOfCreation;
     private String approval;
     private String handlerComment;
 
     public Claim(){}
 
-    public Claim(int claimId, int userId, int employeeId, float amount, String description, LocalDate dateOfOccurrence, String locationOfOccurrence, LocalDateTime dateTimeOfCreation, String approval, String handlerComment){
+    public Claim(int claimId, int userId, int employeeId, float amount, String description, String dateOfOccurrence, String locationOfOccurrence, String dateTimeOfCreation, String approval, String handlerComment){
         this.claimId = claimId;
         this.userId = userId;
         this.employeeId = employeeId;
@@ -101,11 +101,11 @@ public class Claim {
         this.description = description;
     }
 
-    public LocalDate getDateOfOccurrence() {
+    public String getDateOfOccurrence() {
         return dateOfOccurrence;
     }
 
-    public void setDateOfOccurrence(LocalDate dateOfOccurrence) {
+    public void setDateOfOccurrence(String dateOfOccurrence) {
         this.dateOfOccurrence = dateOfOccurrence;
     }
 
@@ -117,11 +117,11 @@ public class Claim {
         this.locationOfOccurrence = locationOfOccurrence;
     }
 
-    public LocalDateTime getDateTimeOfCreation() {
+    public String getDateTimeOfCreation() {
         return dateTimeOfCreation;
     }
 
-    public void setDateTimeOfCreation(LocalDateTime dateTimeOfCreation) {
+    public void setDateTimeOfCreation(String dateTimeOfCreation) {
         this.dateTimeOfCreation = dateTimeOfCreation;
     }
 

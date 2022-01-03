@@ -43,9 +43,9 @@ public class DebriefDAOImp implements DebriefDAO{
                         resultSet.getInt("debriefing_id"),
                         resultSet.getInt("employee_id"),
                         resultSet.getString("debriefing_text"),
-                        resultSet.getDate("date_of_occurrence").toLocalDate(),
+                        resultSet.getDate("date_of_occurrence").toString(),
                         resultSet.getString("location_of_occurrence"),
-                        resultSet.getTimestamp("datetime_of_creation").toLocalDateTime()
+                        resultSet.getTimestamp("datetime_of_creation").toString()
                 );
             }else{
                 throw new DebriefNotFound("The debrief was not found.");
