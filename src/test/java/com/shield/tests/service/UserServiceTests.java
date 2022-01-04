@@ -32,10 +32,4 @@ public class UserServiceTests {
     void badPasswordForCheckingLogin(){
         User user = userServices.checkUserLoginService(badLoginPassword.getUsername(), badLoginPassword.getPasscode());
     }
-
-//
-//    @Test(expectedExceptions = UserNotFound.class, expectedExceptionsMessageRegExp = "User not found")
-//    void badUserIdForDeletingUser(){
-//        boolean user = userServices.deleteUserService(500);
-//    }
 }
