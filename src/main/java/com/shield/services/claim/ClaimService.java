@@ -9,8 +9,8 @@ public interface ClaimService {
 
     Claim createClaimService(Claim claim);
 
-    Claim approveClaimService(int claimId);
+    Claim approveClaimService(int claimId, String handlerComment);
 
-    Claim denyClaimService(int claimId);
+    Claim denyClaimService(int claimId, String handlerComment);
 
 }

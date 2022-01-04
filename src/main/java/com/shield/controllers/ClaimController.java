@@ -41,8 +41,10 @@ public class ClaimController {
     public Handler approveClaim = ctx -> {
         int claimId = Integer.parseInt(ctx.pathParam("claimId"));
         try{
-            Claim claim = this.claimService.approveClaimService(claimId);
             Gson gson = new Gson();
+            Claim newHandlerComment = gson.fromJson(ctx.body(), Claim.class);
+            String handlerComment = newHandlerComment.getHandlerComment();
+            Claim claim = this.claimService.approveClaimService(claimId, handlerComment);
             String claimJson = gson.toJson(claim);
             ctx.result(claimJson);
             ctx.status(200);
@@ -56,8 +58,10 @@ public class ClaimController {
     public Handler denyClaim = ctx -> {
         int claimId = Integer.parseInt(ctx.pathParam("claimId"));
         try{
-            Claim claim = this.claimService.denyClaimService(claimId);
             Gson gson = new Gson();
+            Claim newHandlerComment = gson.fromJson(ctx.body(), Claim.class);
+            String handlerComment = newHandlerComment.getHandlerComment();
+            Claim claim = this.claimService.denyClaimService(claimId, handlerComment);
             String claimJson = gson.toJson(claim);
             ctx.result(claimJson);
             ctx.status(200);

@@ -90,11 +90,12 @@ public class ClaimDAOImp implements ClaimDAO {
     }
 
     @Override
-    public Claim approveClaim(int claimId) {
+    public Claim approveClaim(int claimId, String handlerComment) {
         try(Connection connection = DatabaseConnection.createConnection()){
-            String sql = "update claim_table set approval = 'approved' where claim_id = ?";
+            String sql = "update claim_table set approval = 'approved', handler_comment = ? where claim_id = ?";
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
-            preparedStatement.setInt(1, claimId);
+            preparedStatement.setString(1, handlerComment);
+            preparedStatement.setInt(2, claimId);
             preparedStatement.execute();
             return getClaimById(claimId);
         }
@@ -105,11 +106,12 @@ public class ClaimDAOImp implements ClaimDAO {
     }
 
     @Override
-    public Claim denyClaim(int claimId) {
+    public Claim denyClaim(int claimId, String handlerComment) {
         try(Connection connection = DatabaseConnection.createConnection()){
-            String sql = "update claim_table set approval = 'denied' where claim_id = ?";
+            String sql = "update claim_table set approval = 'denied', handler_comment = ? where claim_id = ?";
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
-            preparedStatement.setInt(1, claimId);
+            preparedStatement.setString(1, handlerComment);
+            preparedStatement.setInt(2, claimId);
             preparedStatement.execute();
             return getClaimById(claimId);
         }

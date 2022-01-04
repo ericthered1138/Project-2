@@ -1,8 +1,6 @@
 package com.shield.services.claim;
 
-import com.shield.customexceptions.EmployeeNotFound;
-import com.shield.customexceptions.NegativeClaimAmount;
-import com.shield.customexceptions.UserNotFound;
+import com.shield.customexceptions.*;
 import com.shield.daos.claim.ClaimDAO;
 import com.shield.daos.employee.EmployeeDAO;
 import com.shield.daos.user.UserDAO;
@@ -56,12 +54,32 @@ public class ClaimServiceImp implements ClaimService {
     }
 
     @Override
-    public Claim approveClaimService(int claimId) {
-        return this.claimDAO.approveClaim(claimId);
+    public Claim approveClaimService(int claimId, String handlerComment) {
+        try{
+            if(handlerComment.length() <= 280){
+                return this.claimDAO.approveClaim(claimId, handlerComment);
+            }
+            else{
+                throw new CommentIsTooManyCharacters("Comment is too long");
+            }
+        }
+        catch (ClaimNotFound e){
+            throw new ClaimNotFound("Claim not found");
+        }
     }
 
     @Override
-    public Claim denyClaimService(int claimId) {
-        return this.claimDAO.denyClaim(claimId);
+    public Claim denyClaimService(int claimId, String handlerComment) {
+        try{
+            if(handlerComment.length() <= 280) {
+                return this.claimDAO.denyClaim(claimId, handlerComment);
+            }
+            else{
+                throw new CommentIsTooManyCharacters("Comment is too long");
+            }
+        }
+        catch (ClaimNotFound e){
+            throw new ClaimNotFound("Claim not found");
+        }
     }
 }
