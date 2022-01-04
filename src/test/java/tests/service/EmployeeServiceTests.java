@@ -1,12 +1,12 @@
 package tests.service;
 
-import com.shield.customexceptions.EmployeeNotFound;
-import com.shield.customexceptions.UserNotFound;
-import com.shield.daos.employee.EmployeeDAO;
-import com.shield.daos.employee.EmployeeDAOImp;
+import customexceptions.EmployeeNotFound;
+import customexceptions.UserNotFound;
+import daos.EmployeeDAO;
+import daos.EmployeeDAOImp;
 import org.testng.annotations.Test;
-import com.shield.services.employee.EmployeeService;
-import com.shield.services.employee.EmployeeServiceImp;
+import services.EmployeeService;
+import services.EmployeeServiceImp;
 
 
 public class EmployeeServiceTests {
