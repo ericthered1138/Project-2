@@ -1,15 +1,16 @@
 package com.shield.app;
 
-import com.shield.controllers.AppController;
-import com.shield.controllers.DebriefController;
-import com.shield.controllers.EmployeeController;
-import com.shield.controllers.UserController;
+import com.shield.controllers.*;
+import com.shield.daos.claim.ClaimDAO;
+import com.shield.daos.claim.ClaimDAOImp;
 import com.shield.daos.debrief.DebriefDAO;
 import com.shield.daos.debrief.DebriefDAOImp;
 import com.shield.daos.employee.EmployeeDAO;
 import com.shield.daos.employee.EmployeeDAOImp;
 import com.shield.daos.user.UserDAO;
 import com.shield.daos.user.UserDAOImp;
+import com.shield.services.claim.ClaimService;
+import com.shield.services.claim.ClaimServiceImp;
 import com.shield.services.user.UserServices;
 import com.shield.services.user.UserServicesImp;
 import io.javalin.Javalin;
@@ -51,14 +52,21 @@ public class App {
         UserServices userServices = new UserServicesImp(userDAO);
         UserController userController = new UserController(userServices);
 
+        ClaimDAO claimDAO = new ClaimDAOImp();
+        ClaimService claimService = new ClaimServiceImp(claimDAO, employeeDAO, userDAO);
+        ClaimController claimController = new ClaimController(claimService);
+
 
         app.get("/user/{userId}", userController.getUser);
-
         app.get("/users", userController.getAllUsers);
-
         app.post("/login", userController.checkUserLogin);
-
         app.post("/newUser", userController.createUser);
+
+        app.get("/claim/{claimId}", claimController.getClaim);
+        app.post("/claim", claimController.createClaim);
+        app.patch("/claim/approve/{claimId}", claimController.approveClaim);
+        app.patch("/claim/deny/{claimId}", claimController.denyClaim);
+
 
 
 

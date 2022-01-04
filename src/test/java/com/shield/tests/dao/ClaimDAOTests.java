@@ -45,7 +45,8 @@ public class ClaimDAOTests {
     void ApproveClaimById(){
         Claim testClaim = claimDAO.getClaimById(1000001);
         System.out.println(testClaim);
-        Claim approvedClaim = claimDAO.approveClaim(testClaim.getClaimId());
+        testClaim.setHandlerComment("Yes");
+        Claim approvedClaim = claimDAO.approveClaim(testClaim.getClaimId(), testClaim.getHandlerComment());
         System.out.println(approvedClaim);
         Assert.assertEquals(approvedClaim.getApproval(), "approved");
     }
@@ -54,7 +55,8 @@ public class ClaimDAOTests {
     void DenyClaimById(){
         Claim testClaim = claimDAO.getClaimById(1000001);
         System.out.println(testClaim);
-        Claim deniedClaim = claimDAO.denyClaim(testClaim.getClaimId());
+        testClaim.setHandlerComment("Nope");
+        Claim deniedClaim = claimDAO.denyClaim(testClaim.getClaimId(), testClaim.getHandlerComment());
         System.out.println(deniedClaim);
         Assert.assertEquals(deniedClaim.getApproval(), "denied");
     }

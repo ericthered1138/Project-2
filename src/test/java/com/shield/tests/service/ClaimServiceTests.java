@@ -51,13 +51,29 @@ public class ClaimServiceTests {
     @Test(expectedExceptions = ClaimNotFound.class, expectedExceptionsMessageRegExp = "Claim not found")
     void badClaimIdForApproveClaimService(){
         int badClaimId = -1;
-        claimService.approveClaimService(badClaimId);
+        String handlerComment = "Nice";
+        claimService.approveClaimService(badClaimId, handlerComment);
+    }
+
+    @Test(expectedExceptions = CommentIsTooManyCharacters.class, expectedExceptionsMessageRegExp = "Comment is too long")
+    void commentTooLongForApproveClaimService(){
+        int claimId = 1;
+        String badHandlerComment = "123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890";
+        claimService.approveClaimService(claimId, badHandlerComment);
+    }
+
+    @Test(expectedExceptions = CommentIsTooManyCharacters.class, expectedExceptionsMessageRegExp = "Comment is too long")
+    void commentTooLongForDenyClaimService(){
+        int claimId = 1;
+        String badHandlerComment = "123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890";
+        claimService.approveClaimService(claimId, badHandlerComment);
     }
 
     @Test(expectedExceptions = ClaimNotFound.class, expectedExceptionsMessageRegExp = "Claim not found")
     void badClaimIdForDenyClaimService(){
         int badClaimId = -1;
-        claimService.denyClaimService(badClaimId);
+        String handlerComment = "Nope";
+        claimService.denyClaimService(badClaimId, handlerComment);
     }
 
 
