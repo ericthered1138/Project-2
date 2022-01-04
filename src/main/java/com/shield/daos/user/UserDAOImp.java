@@ -20,7 +20,7 @@ public class UserDAOImp implements UserDAO {
             if (resultSet.next()){
                 returned_index = resultSet.getInt("highest_user_id");
             }
-            System.out.println(returned_index);
+            //System.out.println(returned_index);
             return returned_index + 1;
         }catch (SQLException e){
             e.printStackTrace();
