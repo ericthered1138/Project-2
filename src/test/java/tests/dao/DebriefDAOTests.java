@@ -1,15 +1,15 @@
 package tests.dao;
 
-import daos.DebriefDAO;
-import daos.DebriefDAOImp;
-import entities.Debrief;
+import com.shield.daos.debrief.DebriefDAO;
+import com.shield.daos.debrief.DebriefDAOImp;
+import com.shield.entities.Debrief;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import static Util.DatabaseTableCreator.table_depopulator;
-import static Util.DatabaseTableCreator.table_populator;
+import static com.shield.Util.DatabaseTableCreator.table_depopulator;
+import static com.shield.Util.DatabaseTableCreator.table_populator;
 
 public class DebriefDAOTests {
 

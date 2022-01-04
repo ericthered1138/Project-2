@@ -1,11 +1,10 @@
 package tests.dao;
 
-import daos.EmployeeDAO;
-import daos.EmployeeDAOImp;
-import entities.Claim;
-import entities.Debrief;
-import entities.Employee;
-import org.eclipse.jetty.util.ajax.JSON;
+import com.shield.daos.employee.EmployeeDAO;
+import com.shield.daos.employee.EmployeeDAOImp;
+import com.shield.entities.Claim;
+import com.shield.entities.Debrief;
+import com.shield.entities.Employee;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -13,8 +12,8 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
-import static Util.DatabaseTableCreator.table_depopulator;
-import static Util.DatabaseTableCreator.table_populator;
+import static com.shield.Util.DatabaseTableCreator.table_depopulator;
+import static com.shield.Util.DatabaseTableCreator.table_populator;
 
 public class EmployeeDAOTests {
 
