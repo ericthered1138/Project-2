@@ -3,6 +3,7 @@ package com.shield.daos.claim;
 import com.shield.customexceptions.ClaimNotFound;
 import com.shield.entities.Claim;
 import com.shield.Util.DatabaseConnection;
+
 //import org.openqa.selenium.devtools.v85.database.Database;
 
 import java.sql.*;
@@ -51,7 +52,7 @@ public class ClaimDAOImp implements ClaimDAO {
                         resultSet.getString("handler_comment")
                         );
             } else{
-                throw new ClaimNotFound("The claim was not found.");
+                throw new ClaimNotFound("Claim not found");
             }
         }
         catch (SQLException e){
@@ -76,7 +77,7 @@ public class ClaimDAOImp implements ClaimDAO {
             preparedStatement.setDate(6, Date.valueOf(claim.getDateOfOccurrence()));
             preparedStatement.setString(7, claim.getLocationOfOccurrence());
             preparedStatement.setTimestamp(8, Timestamp.valueOf(claim.getDateTimeOfCreation()));
-            preparedStatement.setString(9, claim.getApproval());
+            preparedStatement.setString(9, "pending");
             preparedStatement.setString(10, claim.getHandlerComment());
             preparedStatement.execute();
             return claim;
