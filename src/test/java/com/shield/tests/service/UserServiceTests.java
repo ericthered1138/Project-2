@@ -1,4 +1,4 @@
-package tests.service;
+package com.shield.tests.service;
 
 import com.shield.customexceptions.InvalidPassword;
 import com.shield.customexceptions.InvalidUsername;

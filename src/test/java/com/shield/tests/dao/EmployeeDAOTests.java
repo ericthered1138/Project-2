@@ -1,4 +1,4 @@
-package tests.dao;
+package com.shield.tests.dao;
 
 import com.shield.daos.employee.EmployeeDAO;
 import com.shield.daos.employee.EmployeeDAOImp;

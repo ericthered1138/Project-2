@@ -1,4 +1,4 @@
-package tests.service;
+package com.shield.tests.service;
 
 import com.shield.customexceptions.EmployeeNotFound;
 import com.shield.customexceptions.UserNotFound;

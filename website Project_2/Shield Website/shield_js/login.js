@@ -15,6 +15,7 @@ async function Login(){
     console.log(response);
 
     if(Object.keys(response).length === 5){
+        window.sessionStorage.setItem("userID", response["userID"]);
         window.location.href = "shield_html/user.html";
     }
     else{
@@ -40,9 +41,11 @@ async function LoginShieldAgent(){
     console.log(response);
 
     if(Object.keys(response).length === 7 && response["handler"] == true){
+        window.sessionStorage.setItem("employeeID", response["employeeID"]);
         window.location.href = "shield_html/shield_handler.html";
 
     }else if(Object.keys(response).length === 7){
+        window.sessionStorage.setItem("employeeID", response["employeeID"]);
         window.location.href = "shield_html/shield_agent.html";
     }
     else{

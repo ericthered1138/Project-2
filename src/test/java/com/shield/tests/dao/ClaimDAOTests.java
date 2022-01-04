@@ -1,4 +1,4 @@
-package tests.dao;
+package com.shield.tests.dao;
 
 import com.shield.entities.Claim;
 import com.shield.daos.claim.ClaimDAOImp;
