@@ -1,14 +1,14 @@
 package tests.service;
 
-import customexceptions.EmployeeNotFound;
-import daos.DebriefDAO;
-import daos.DebriefDAOImp;
-import daos.EmployeeDAO;
-import daos.EmployeeDAOImp;
-import entities.Debrief;
+import com.shield.customexceptions.EmployeeNotFound;
+import com.shield.daos.debrief.DebriefDAO;
+import com.shield.daos.debrief.DebriefDAOImp;
+import com.shield.daos.employee.EmployeeDAO;
+import com.shield.daos.employee.EmployeeDAOImp;
+import com.shield.entities.Debrief;
 import org.testng.annotations.Test;
-import services.DebriefService;
-import services.DebriefServiceImp;
+import com.shield.services.debrief.DebriefService;
+import com.shield.services.debrief.DebriefServiceImp;
 
 public class DebriefServiceTests {
     EmployeeDAO employeeDAO = new EmployeeDAOImp();
