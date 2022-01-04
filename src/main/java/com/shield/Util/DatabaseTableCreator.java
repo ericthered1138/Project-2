@@ -30,6 +30,8 @@ public class DatabaseTableCreator {
     public static void table_populator(){
         try (Connection connection = DatabaseConnection.createConnection()) {
             String sql = "insert into user_table values('1000001', 'test_username', 'test_password', 'test_first_name', 'test_last_name'); " +
+                    "insert into user_table values('1000002', 'test_username2', 'test_password2', 'test_first_name2', 'test_last_name2'); " +
+                    "insert into user_table values('1000003', 'test_username3', 'test_password3', 'test_first_name3', 'test_last_name3'); " +
                     "insert into employee_table values('1000001', Null, TRUE, 'test_handler', 'handler_password','handler_first', 'handler_last'); " +
                     "insert into employee_table values('1000002', '1000001', False, 'test_agent', 'test_agent_password','agent_first_name', 'agent_last_name'); " +
                     "insert into claim_table values('1000001', '1000001', '1000002', '50.34', 'test_description', '2021-12-10', 'new york', '2021-12-10', 'pending', 'test_handler_comment'); " +
