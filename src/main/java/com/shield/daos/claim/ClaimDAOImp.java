@@ -90,6 +90,16 @@ public class ClaimDAOImp implements ClaimDAO {
     }
 
     @Override
+    public Claim approveClaim(int claimId, String handlerComment) {
+        return null;
+    }
+
+    @Override
+    public Claim denyClaim(int claimId, String handlerComment) {
+        return null;
+    }
+
+    @Override
     public Claim approveClaim(int claimId) {
         try(Connection connection = DatabaseConnection.createConnection()){
             String sql = "update claim_table set approval = 'approved' where claim_id = ?";
