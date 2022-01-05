@@ -11,7 +11,7 @@ public interface ClaimDAO
 
     Claim createClaim(Claim claim);
 
-    Claim approveClaim(int claimId);
+    Claim approveClaim(int claimId, String handlerComment);
 
-    Claim denyClaim(int claimId);
+    Claim denyClaim(int claimId, String handlerComment);
 }

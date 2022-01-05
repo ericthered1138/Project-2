@@ -3,6 +3,7 @@ package com.shield.daos.claim;
 import com.shield.customexceptions.ClaimNotFound;
 import com.shield.entities.Claim;
 import com.shield.Util.DatabaseConnection;
+
 //import org.openqa.selenium.devtools.v85.database.Database;
 
 import java.sql.*;
@@ -51,7 +52,7 @@ public class ClaimDAOImp implements ClaimDAO {
                         resultSet.getString("handler_comment")
                         );
             } else{
-                throw new ClaimNotFound("The claim was not found.");
+                throw new ClaimNotFound("Claim not found");
             }
         }
         catch (SQLException e){
@@ -76,7 +77,7 @@ public class ClaimDAOImp implements ClaimDAO {
             preparedStatement.setDate(6, Date.valueOf(claim.getDateOfOccurrence()));
             preparedStatement.setString(7, claim.getLocationOfOccurrence());
             preparedStatement.setTimestamp(8, Timestamp.valueOf(claim.getDateTimeOfCreation()));
-            preparedStatement.setString(9, claim.getApproval());
+            preparedStatement.setString(9, "pending");
             preparedStatement.setString(10, claim.getHandlerComment());
             preparedStatement.execute();
             return claim;
@@ -89,11 +90,12 @@ public class ClaimDAOImp implements ClaimDAO {
     }
 
     @Override
-    public Claim approveClaim(int claimId) {
+    public Claim approveClaim(int claimId, String handlerComment) {
         try(Connection connection = DatabaseConnection.createConnection()){
-            String sql = "update claim_table set approval = 'approved' where claim_id = ?";
+            String sql = "update claim_table set approval = 'approved', handler_comment = ? where claim_id = ?";
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
-            preparedStatement.setInt(1, claimId);
+            preparedStatement.setString(1, handlerComment);
+            preparedStatement.setInt(2, claimId);
             preparedStatement.execute();
             return getClaimById(claimId);
         }
@@ -104,11 +106,12 @@ public class ClaimDAOImp implements ClaimDAO {
     }
 
     @Override
-    public Claim denyClaim(int claimId) {
+    public Claim denyClaim(int claimId, String handlerComment) {
         try(Connection connection = DatabaseConnection.createConnection()){
-            String sql = "update claim_table set approval = 'denied' where claim_id = ?";
+            String sql = "update claim_table set approval = 'denied', handler_comment = ? where claim_id = ?";
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
-            preparedStatement.setInt(1, claimId);
+            preparedStatement.setString(1, handlerComment);
+            preparedStatement.setInt(2, claimId);
             preparedStatement.execute();
             return getClaimById(claimId);
         }
