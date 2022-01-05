@@ -20,6 +20,10 @@
      height: 95vh;
  }
 
+ #searchGlass{
+     padding-right: 5px;
+ }
+
 /* 
  #rightbar {
      display: flex;
@@ -35,6 +39,16 @@
 
  #thumbNail {
      background-image: url(../images/ironman.gif);
+     background-color: black;
+     width: 7vw;
+     height: 10vh;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     border-radius: 10px;
+ }
+ #thumbNails{
+     background-image: url(../images/Scarlett.jpg);
      background-color: black;
      width: 7vw;
      height: 10vh;
@@ -105,4 +119,54 @@
      font-family: Arial, Helvetica, sans-serif;
      padding: 1rem 1rem 1rem 1rem;
     justify-content: space-evenly;
+ }
+
+
+ #articleContainer{
+     display: flex;
+     justify-content: space-around;
+ }
+
+ /* #rightSection, #middleSection, #leftSection{
+     width: 40vw;
+     height: 74vh; 
+ } */
+
+ #leftSection{
+     width: 14vw; 
+     height: 40vh;
+ }
+ #rightSection{
+     width: 70vw;
+     height: 80vh;
+ }
+
+ #middleSection{
+     width: 20vw;
+     height: 40vh;
+     pdding: 1rem;
+     border-radius: 10px;
+     color: black;
+ }
+
+ 
+
+ /* section */
+ #leftSection{
+     padding: 1rem;
+     border-radius: 10px;
+     color: black;
+ }
+
+ #formTitle,
+ #pastTitle {
+     font-size: 1.5rem;
+     border-bottom: solid 1px;
+ }
+
+ /* right section */
+ #rightsection {
+     background-color: white;
+     padding: 1rem;
+     border-radius: 10px;
  }

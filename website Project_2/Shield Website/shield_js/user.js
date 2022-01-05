@@ -8,7 +8,7 @@ const username = sessionStorage.getItem("username");
 
 function logout(){
     sessionStorage.clear();
-    window.location.href = "../index/html"
+    window.location.href = "shield_js/user.js"
 }
 //Give each a unique id name for E2E testing, just for consideration... 
 
