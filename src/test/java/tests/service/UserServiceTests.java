@@ -1,18 +1,18 @@
 package tests.service;
 
-import customexceptions.InvalidPassword;
-import customexceptions.InvalidUsername;
-import customexceptions.UserNotFound;
-import entities.User;
-import daos.user.UserDAOImp;
-import daos.user.UserDAO;
+import com.shield.customexceptions.InvalidPassword;
+import com.shield.customexceptions.InvalidUsername;
+import com.shield.customexceptions.UserNotFound;
+import com.shield.entities.User;
+import com.shield.daos.user.UserDAOImp;
+import com.shield.daos.user.UserDAO;
 import org.testng.Assert;
-import Util.DatabaseTableCreator;
+import com.shield.Util.DatabaseTableCreator;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import services.user.UserServices;
-import services.user.UserServicesImp;
+import com.shield.services.user.UserServices;
+import com.shield.services.user.UserServicesImp;
 
 public class UserServiceTests {
 

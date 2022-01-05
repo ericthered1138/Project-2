@@ -1,11 +1,15 @@
 package tests.dao;
 
-import customexceptions.UserNotFound;
-import entities.User;
-import daos.user.UserDAOImp;
-import daos.user.UserDAO;
+import com.shield.Util.DatabaseTableCreator;
+import com.shield.daos.user.UserDAO;
+import com.shield.daos.user.UserDAOImp;
+import com.shield.entities.User;
+import com.shield.customexceptions.UserNotFound;
+import com.shield.entities.User;
+import com.shield.daos.user.UserDAOImp;
+import com.shield.daos.user.UserDAO;
 import org.testng.Assert;
-import Util.DatabaseTableCreator;
+import com.shield.Util.DatabaseTableCreator;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -54,13 +58,6 @@ public class UserDAOTests {
     void createUser(){
         User returnedUser = userDAO.createUser(newUser);
         Assert.assertTrue(returnedUser.getUserId() != 0);
-    }
-
-    @Test(expectedExceptions = UserNotFound.class, expectedExceptionsMessageRegExp = "User not found")
-    void deleteUser(){
-        userDAO.deleteUser(50);
-        User deletedUser = userDAO.getUserById(50);
-
     }
 
     @Test

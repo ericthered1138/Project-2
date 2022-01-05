@@ -1,23 +1,22 @@
 async function Login(){
-    let url = "localhost:8080/login";
+    let url = "http://localhost:8080/login";
     const username = document.getElementById("username");
     const password = document.getElementById("password");
 
-
-    sessionStorage.setItem("username", username.value);
-    sessionStorage.setItem("password", password.value);
-    console.log(username.value);
-    console.log(password.value);
-    userJSON = JSON.stringify({"username": username.value.toLowerCase(), "password": password.value});
+    userJSON = JSON.stringify({"username": username.value.toLowerCase(), "passcode": password.value});
     console.log(userJSON);
 
     let response = await fetch(url, {
         method: "POST",
+        cache: "no-cache",
         headers:{"Content-Type": 'application/json'},
         body:userJSON}).then(response => {return response.json()});
+    
+    console.log(response);
 
-    if(response.username == username.value.toLowerCase() && response.password == password.value){
-        window.location.href = "../html/user.html";
+    if(Object.keys(response).length === 5){
+        window.sessionStorage.setItem("userID", response["userID"]);
+        window.location.href = "shield_html/user.html";
     }
     else{
         LoginShieldAgent()
@@ -26,55 +25,60 @@ async function Login(){
 }
 
 async function LoginShieldAgent(){
-    let url = "";
+    let url = "http://localhost:8080/employee/login";
     const username = document.getElementById("username");
     const password = document.getElementById("password");
 
-    sessionStorage.setItem("username", username.value);
-    sessionStorage.setItem("password", password.value);
-    console.log(username.value);
-    console.log(password.value);
-    shieldAgentJSON = JSON.stringify({"username": username.value.toLowerCase(), "password": password.value});
+    shieldAgentJSON = JSON.stringify({"username": username.value.toLowerCase(), "passcode": password.value});
     console.log(shieldAgentJSON);
 
     let response = await fetch(url, {
+        cache: "no-cache",
         method: "POST",
         headers:{"Content-Type": 'applicaton/json'},
         body:shieldAgentJSON}).then(response => {return response.json()});
+    
+    console.log(response);
 
-    if(response.username == username.value.toLowerCase() && response.password == password.value){
-        window.location.href = "../shield_agent.html";
-    }
-    else{
-        LoginShieldHandler()
-    }
-}
+    if(Object.keys(response).length === 7 && response["handler"] == true){
+        window.sessionStorage.setItem("employeeID", response["employeeID"]);
+        window.location.href = "shield_html/shield_handler.html";
 
-async function LoginShieldHandler(){
-    let url = "";
-    const username = document.getElementById("username");
-    const password = document.getElementById("password");
-
-    sessionStorage.setItem("username", username.value);
-    sessionStorage.setItem("password", password.value);
-    console.log(username.value);
-    console.log(password.value);
-    shieldHandlerJSON = JSON.stringify({"username": username.value.toLowerCase(), "password": password.value});
-    console.log(shieldHandlerJSON);
-
-    let respose = await fetch(url, {
-        method: "POST", 
-        headers:{"Content-Type": 'application/json'},
-        body: shieldHandlerJSON}).then(response => {return response.json()});
-
-    if(response.username == username.value.toLowerCase() && response.password == password.value){
-        window.location.href = "../shield_handler.html";
+    }else if(Object.keys(response).length === 7){
+        window.sessionStorage.setItem("employeeID", response["employeeID"]);
+        window.location.href = "shield_html/shield_agent.html";
     }
     else{
         alert("Invalid username or password")
         console.log(response.username, response.password);
     }
 }
+
+// async function LoginShieldHandler(){
+//     let url = "";
+//     const username = document.getElementById("username");
+//     const password = document.getElementById("password");
+
+//     sessionStorage.setItem("username", username.value);
+//     sessionStorage.setItem("password", password.value);
+//     console.log(username.value);
+//     console.log(password.value);
+//     shieldHandlerJSON = JSON.stringify({"username": username.value.toLowerCase(), "password": password.value});
+//     console.log(shieldHandlerJSON);
+
+//     let respose = await fetch(url, {
+//         method: "POST", 
+//         headers:{"Content-Type": 'application/json'},
+//         body: shieldHandlerJSON}).then(response => {return response.json()});
+
+//     if(response.username == username.value.toLowerCase() && response.passcode == password.value && response.handler == true){
+//         window.location.href = "/shield_handler.html";
+//     }
+//     else{
+//         alert("Invalid username or password")
+//         console.log(response.username, response.password);
+//     }
+// }
 
 
 // // Testing for Create Account window in Login Screen
