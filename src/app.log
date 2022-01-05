@@ -822,3 +822,18 @@ Response: [200], execution took 982.35 ms
     Body is 89 bytes (starts on next line):
     {"userId":2,"username":"eric","passcode":"jennings","firstName":"eric","lastName":"eric"}
 ----------------------------------------------------------------------------------
+2022-01-05 15:55:14,380 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+2022-01-05 15:55:14,390 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @2667ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-01-05 15:55:14,391 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2022-01-05 15:55:14,404 [main] INFO  io.javalin.Javalin - You are running Javalin 4.1.1 (released October 10, 2021. Your Javalin version is 87 days old. Consider upgrading!).
+2022-01-05 15:55:14,404 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+2022-01-05 15:55:14,548 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+2022-01-05 15:55:14,548 [main] INFO  io.javalin.Javalin - Javalin started in 158ms \o/
