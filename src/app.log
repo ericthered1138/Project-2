@@ -1,0 +1,336 @@
+2022-01-05 14:34:26,076 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+2022-01-05 14:34:26,085 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @2722ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-01-05 14:34:26,086 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2022-01-05 14:34:26,099 [main] INFO  io.javalin.Javalin - You are running Javalin 4.1.1 (released October 10, 2021. Your Javalin version is 87 days old. Consider upgrading!).
+2022-01-05 14:34:26,101 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+2022-01-05 14:34:26,254 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+2022-01-05 14:34:26,254 [main] INFO  io.javalin.Javalin - Javalin started in 168ms \o/
+2022-01-05 14:35:52,391 [qtp836969741-44] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/employee/2]
+    Matching endpoint-handlers: [BEFORE=*, GET=/employee/{id}]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.28.4, Connection=keep-alive, Postman-Token=a9831ba6-48c4-4668-9492-1bc37ea24191, Host=localhost:8080, Accept-Encoding=gzip, deflate, br}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 581.83 ms
+    Headers: {Date=Wed, 05 Jan 2022 20:35:51 GMT, Content-Type=text/plain}
+    Body is 135 bytes (starts on next line):
+    {"employeeId":2,"handlerId":1,"handler":false,"username":"scarlett","passcode":"johansson","firstName":"Natasha","lastName":"Romanoff"}
+----------------------------------------------------------------------------------
+2022-01-05 14:35:56,001 [qtp836969741-28] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/employee/claims/all/1]
+    Matching endpoint-handlers: [BEFORE=*, GET=/employee/claims/all/{id}]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.28.4, Connection=keep-alive, Postman-Token=6aae1eba-a3be-499a-b1ef-bc2c5ea0f293, Host=localhost:8080, Accept-Encoding=gzip, deflate, br}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 1540.63 ms
+    Headers: {Date=Wed, 05 Jan 2022 20:35:54 GMT, Content-Type=text/plain}
+    Body is 325 bytes (starts on next line):
+    [{"claimId":1,"userId":2,"employeeId":2,"amount":16.0,"description":"I dropped my burrito when Black Widow kicked me in the face, then she pointed and laughed.","dateOfOccurrence":"2021-12-10","locationOfOccurrence":"texas","dateTimeOfCreation":"2021-12-10 00:00:00.0","approval":"denied","handlerComment":"Not good enough"}]
+----------------------------------------------------------------------------------
+2022-01-05 14:35:59,645 [qtp836969741-41] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/employee/debriefs/all/1]
+    Matching endpoint-handlers: [BEFORE=*, GET=/employee/debriefs/all/{id}]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.28.4, Connection=keep-alive, Postman-Token=55138df6-6c49-449a-b45c-53735b209211, Host=localhost:8080, Accept-Encoding=gzip, deflate, br}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 1506.44 ms
+    Headers: {Date=Wed, 05 Jan 2022 20:35:58 GMT, Content-Type=text/plain}
+    Body is 1260 bytes (starts on next line):
+    [{"debriefingId":1,"employeeId":2,"debriefingText":"I kicked some guy in the face, and he dropped his burrito.","dateOfOccurrence":"2021-12-10","locationOfOccurrence":"Texas","dateTimeOfCreation":"2021-12-10 00:00:00.0"},{"debriefingId":3,"employeeId":2,"debriefingText":"I stole a car to complete the mission.","dateOfOccurrence":"2021-12-15","locationOfOccurrence":"2021-12-15","dateTimeOfCreation":"2000-01-01 00:00:00.0"},{"debriefingId":4,"employeeId":2,"debriefingText":"I stole a car to complete the mission.","dateOfOccurrence":"2021-12-15","locationOfOccurrence":"2021-12-15","dateTimeOfCreation":"2022-01-03 14:23:43.050539"},{"debriefingId":5,"employeeId":2,"debriefingText":"I stole a car to complete the mission.","dateOfOccurrence":"2021-12-15","locationOfOccurrence":"New York","dateTimeOfCreation":"2022-01-03 14:42:37.050756"},{"debriefingId":6,"employeeId":2,"debriefingText":"I stole a car to complete the mission.","dateOfOccurrence":"2021-12-15","locationOfOccurrence":"New York","dateTimeOfCreation":"2022-01-03 16:03:11.804522"},{"debriefingId":7,"employeeId":2,"debriefingText":"Jumped the cliff to obtain soul stone.","dateOfOccurrence":"2021-12-15","locationOfOccurrence":"New York","dateTimeOfCreation":"2022-01-04 16:51:20.408955"}]
+----------------------------------------------------------------------------------
+2022-01-05 14:36:02,785 [qtp836969741-40] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/employee/debriefs/2]
+    Matching endpoint-handlers: [BEFORE=*, GET=/employee/debriefs/{id}]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.28.4, Connection=keep-alive, Postman-Token=31433953-501b-42ca-8a27-0b0d010dc252, Host=localhost:8080, Accept-Encoding=gzip, deflate, br}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 1017.42 ms
+    Headers: {Date=Wed, 05 Jan 2022 20:36:01 GMT, Content-Type=text/plain}
+    Body is 1260 bytes (starts on next line):
+    [{"debriefingId":1,"employeeId":2,"debriefingText":"I kicked some guy in the face, and he dropped his burrito.","dateOfOccurrence":"2021-12-10","locationOfOccurrence":"Texas","dateTimeOfCreation":"2021-12-10 00:00:00.0"},{"debriefingId":3,"employeeId":2,"debriefingText":"I stole a car to complete the mission.","dateOfOccurrence":"2021-12-15","locationOfOccurrence":"2021-12-15","dateTimeOfCreation":"2000-01-01 00:00:00.0"},{"debriefingId":4,"employeeId":2,"debriefingText":"I stole a car to complete the mission.","dateOfOccurrence":"2021-12-15","locationOfOccurrence":"2021-12-15","dateTimeOfCreation":"2022-01-03 14:23:43.050539"},{"debriefingId":5,"employeeId":2,"debriefingText":"I stole a car to complete the mission.","dateOfOccurrence":"2021-12-15","locationOfOccurrence":"New York","dateTimeOfCreation":"2022-01-03 14:42:37.050756"},{"debriefingId":6,"employeeId":2,"debriefingText":"I stole a car to complete the mission.","dateOfOccurrence":"2021-12-15","locationOfOccurrence":"New York","dateTimeOfCreation":"2022-01-03 16:03:11.804522"},{"debriefingId":7,"employeeId":2,"debriefingText":"Jumped the cliff to obtain soul stone.","dateOfOccurrence":"2021-12-15","locationOfOccurrence":"New York","dateTimeOfCreation":"2022-01-04 16:51:20.408955"}]
+----------------------------------------------------------------------------------
+2022-01-05 14:36:05,820 [qtp836969741-41] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/user/claims/2]
+    Matching endpoint-handlers: [BEFORE=*, GET=/user/claims/{id}]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.28.4, Connection=keep-alive, Postman-Token=0899da20-30a0-4ef7-9e83-3b43e856e5b0, Host=localhost:8080, Accept-Encoding=gzip, deflate, br}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 514.40 ms
+    Headers: {Date=Wed, 05 Jan 2022 20:36:05 GMT, Content-Type=text/plain}
+    Body is 325 bytes (starts on next line):
+    [{"claimId":1,"userId":2,"employeeId":2,"amount":16.0,"description":"I dropped my burrito when Black Widow kicked me in the face, then she pointed and laughed.","dateOfOccurrence":"2021-12-10","locationOfOccurrence":"texas","dateTimeOfCreation":"2021-12-10 00:00:00.0","approval":"denied","handlerComment":"Not good enough"}]
+----------------------------------------------------------------------------------
+2022-01-05 14:36:08,801 [qtp836969741-40] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/employee/claims/2]
+    Matching endpoint-handlers: [BEFORE=*, GET=/employee/claims/{id}]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.28.4, Connection=keep-alive, Postman-Token=9fceaa55-115d-498f-b884-e2d42496728f, Host=localhost:8080, Accept-Encoding=gzip, deflate, br}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 961.52 ms
+    Headers: {Date=Wed, 05 Jan 2022 20:36:07 GMT, Content-Type=text/plain}
+    Body is 325 bytes (starts on next line):
+    [{"claimId":1,"userId":2,"employeeId":2,"amount":16.0,"description":"I dropped my burrito when Black Widow kicked me in the face, then she pointed and laughed.","dateOfOccurrence":"2021-12-10","locationOfOccurrence":"texas","dateTimeOfCreation":"2021-12-10 00:00:00.0","approval":"denied","handlerComment":"Not good enough"}]
+----------------------------------------------------------------------------------
+2022-01-05 14:36:11,435 [qtp836969741-41] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/employee/login]
+    Matching endpoint-handlers: [BEFORE=*, POST=/employee/login]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.28.4, Connection=keep-alive, Postman-Token=810a045a-65eb-4986-918c-9d17ddce2eb6, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=61, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "username":"jackson",
+    "passcode": "hasselhoff"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [201], execution took 484.41 ms
+    Headers: {Date=Wed, 05 Jan 2022 20:36:10 GMT, Content-Type=text/plain}
+    Body is 127 bytes (starts on next line):
+    {"employeeId":1,"handlerId":0,"handler":true,"username":"jackson","passcode":"hasselhoff","firstName":"Nick","lastName":"Fury"}
+----------------------------------------------------------------------------------
+2022-01-05 14:36:14,654 [qtp836969741-40] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/login]
+    Matching endpoint-handlers: [BEFORE=*, POST=/login]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.28.4, Connection=keep-alive, Postman-Token=54cdf8f1-6a53-4987-9dbc-36a0ac5c93d5, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=52, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "username":"eric",
+    "passcode": "eric"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 985.36 ms
+    Headers: {Date=Wed, 05 Jan 2022 20:36:13 GMT, Content-Type=text/plain}
+    Body is 89 bytes (starts on next line):
+    {"userId":2,"username":"eric","passcode":"jennings","firstName":"eric","lastName":"eric"}
+----------------------------------------------------------------------------------
+2022-01-05 14:36:17,604 [qtp836969741-41] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/debrief/1]
+    Matching endpoint-handlers: [BEFORE=*, GET=/debrief/{id}]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.28.4, Connection=keep-alive, Postman-Token=082a4268-ae02-4a67-a454-62a250f00e7c, Host=localhost:8080, Accept-Encoding=gzip, deflate, br}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 490.20 ms
+    Headers: {Date=Wed, 05 Jan 2022 20:36:17 GMT, Content-Type=text/plain}
+    Body is 219 bytes (starts on next line):
+    {"debriefingId":1,"employeeId":2,"debriefingText":"I kicked some guy in the face, and he dropped his burrito.","dateOfOccurrence":"2021-12-10","locationOfOccurrence":"Texas","dateTimeOfCreation":"2021-12-10 00:00:00.0"}
+----------------------------------------------------------------------------------
+2022-01-05 14:36:21,290 [qtp836969741-40] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/debrief]
+    Matching endpoint-handlers: [BEFORE=*, POST=/debrief]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.28.4, Connection=keep-alive, Postman-Token=594523ee-2831-400a-953a-eebc2a506584, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=237, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+    "debriefingId": 0,
+    "employeeId":2,
+    "debriefingText":"I stole a car to complete the mission.",
+    "dateOfOccurrence":"2021-12-15",
+    "locationOfOccurrence":"New York",
+    "dateTimeOfCreation":"2000-1-1 00:00:00"
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [201], execution took 1003.55 ms
+    Headers: {Date=Wed, 05 Jan 2022 20:36:20 GMT, Content-Type=text/plain}
+    Body is 208 bytes (starts on next line):
+    {"debriefingId":8,"employeeId":2,"debriefingText":"I stole a car to complete the mission.","dateOfOccurrence":"2021-12-15","locationOfOccurrence":"New York","dateTimeOfCreation":"2022-01-05 14:36:20.7818368"}
+----------------------------------------------------------------------------------
+2022-01-05 14:36:55,242 [qtp836969741-29] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: OPTIONS [/login]
+    Matching endpoint-handlers: [BEFORE=*]
+    Headers: {Origin=null, Accept=*/*, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:95.0) Gecko/20100101 Firefox/95.0, Connection=keep-alive, Sec-Fetch-Dest=empty, Sec-Fetch-Site=cross-site, Host=localhost:8080, Accept-Encoding=gzip, deflate, Sec-Fetch-Mode=cors, Access-Control-Request-Method=POST, Cache-Control=max-age=0, Access-Control-Request-Headers=content-type, Accept-Language=en-US,en;q=0.5}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 0.39 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Access-Control-Allow-Methods=POST, Vary=Origin, Date=Wed, 05 Jan 2022 20:36:55 GMT, Access-Control-Allow-Headers=content-type, Content-Type=text/plain}
+    No body was set
+----------------------------------------------------------------------------------
+2022-01-05 14:36:55,824 [qtp836969741-30] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/login]
+    Matching endpoint-handlers: [BEFORE=*, POST=/login]
+    Headers: {Origin=null, Accept=*/*, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:95.0) Gecko/20100101 Firefox/95.0, Connection=keep-alive, Sec-Fetch-Dest=empty, Sec-Fetch-Site=cross-site, Host=localhost:8080, Accept-Language=en-US,en;q=0.5, Accept-Encoding=gzip, deflate, Content-Length=29, Content-Type=application/json, Sec-Fetch-Mode=cors}
+    Cookies: {}
+    Body: {"username":"","passcode":""}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 576.06 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Vary=Origin, Date=Wed, 05 Jan 2022 20:36:55 GMT, Content-Type=text/plain}
+    Body is 1 bytes (starts on next line):
+    6
+----------------------------------------------------------------------------------
+2022-01-05 14:36:55,832 [qtp836969741-41] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: OPTIONS [/employee/login]
+    Matching endpoint-handlers: [BEFORE=*]
+    Headers: {Origin=null, Accept=*/*, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:95.0) Gecko/20100101 Firefox/95.0, Connection=keep-alive, Sec-Fetch-Dest=empty, Sec-Fetch-Site=cross-site, Host=localhost:8080, Accept-Encoding=gzip, deflate, Sec-Fetch-Mode=cors, Access-Control-Request-Method=POST, Cache-Control=max-age=0, Access-Control-Request-Headers=content-type, Accept-Language=en-US,en;q=0.5}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 0.18 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Access-Control-Allow-Methods=POST, Vary=Origin, Date=Wed, 05 Jan 2022 20:36:55 GMT, Access-Control-Allow-Headers=content-type, Content-Type=text/plain}
+    No body was set
+----------------------------------------------------------------------------------
+2022-01-05 14:36:56,333 [qtp836969741-28] WARN  io.javalin.Javalin - Uncaught exception
+com.shield.customexceptions.EmployeeNotFound: The employee was not found.
+	at com.shield.daos.employee.EmployeeDAOImp.loginEmployee(EmployeeDAOImp.java:66) ~[classes/:?]
+	at com.shield.services.employee.EmployeeServiceImp.loginEmployeeService(EmployeeServiceImp.java:24) ~[classes/:?]
+	at com.shield.controllers.EmployeeController.lambda$new$1(EmployeeController.java:36) ~[classes/:?]
+	at io.javalin.core.security.SecurityUtil.noopAccessManager(SecurityUtil.kt:20) ~[javalin-4.1.1.jar:4.1.1]
+	at io.javalin.http.JavalinServlet.addHandler$lambda-5(JavalinServlet.kt:113) ~[javalin-4.1.1.jar:4.1.1]
+	at io.javalin.http.JavalinServlet$service$tryBeforeAndEndpointHandlers$1.invoke(JavalinServlet.kt:44) ~[javalin-4.1.1.jar:4.1.1]
+	at io.javalin.http.JavalinServlet$service$tryBeforeAndEndpointHandlers$1.invoke(JavalinServlet.kt:39) ~[javalin-4.1.1.jar:4.1.1]
+	at io.javalin.http.JavalinServlet.service$tryWithExceptionMapper(JavalinServlet.kt:129) ~[javalin-4.1.1.jar:4.1.1]
+	at io.javalin.http.JavalinServlet.service$tryBeforeAndEndpointHandlers(JavalinServlet.kt:39) ~[javalin-4.1.1.jar:4.1.1]
+	at io.javalin.http.JavalinServlet.service(JavalinServlet.kt:87) ~[javalin-4.1.1.jar:4.1.1]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) ~[javax.servlet-api-3.1.0.jar:3.1.0]
+	at io.javalin.jetty.JavalinJettyServlet.service(JavalinJettyServlet.kt:58) ~[javalin-4.1.1.jar:4.1.1]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) ~[javax.servlet-api-3.1.0.jar:3.1.0]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:799) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:550) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at io.javalin.jetty.JettyServer$start$wsAndHttpHandler$1.doHandle(JettyServer.kt:52) ~[javalin-4.1.1.jar:4.1.1]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:179) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645) [jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392) [jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) [jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) [jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) [jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) [jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) [jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) [jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) [jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131) [jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409) [jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) [jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) [jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-01-05 14:36:56,339 [qtp836969741-28] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/employee/login]
+    Matching endpoint-handlers: [BEFORE=*, POST=/employee/login]
+    Headers: {Origin=null, Accept=*/*, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:95.0) Gecko/20100101 Firefox/95.0, Connection=keep-alive, Sec-Fetch-Dest=empty, Sec-Fetch-Site=cross-site, Host=localhost:8080, Accept-Language=en-US,en;q=0.5, Accept-Encoding=gzip, deflate, Content-Length=29, Content-Type=applicaton/json, Sec-Fetch-Mode=cors}
+    Cookies: {}
+    Body: {"username":"","passcode":""}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [500], execution took 503.96 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Vary=Origin, Date=Wed, 05 Jan 2022 20:36:55 GMT, Content-Type=text/plain}
+    Body is 21 bytes (starts on next line):
+    Internal server error
+----------------------------------------------------------------------------------
+2022-01-05 14:37:01,376 [qtp836969741-41] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: OPTIONS [/login]
+    Matching endpoint-handlers: [BEFORE=*]
+    Headers: {Origin=null, Accept=*/*, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:95.0) Gecko/20100101 Firefox/95.0, Connection=keep-alive, Sec-Fetch-Dest=empty, Sec-Fetch-Site=cross-site, Host=localhost:8080, Accept-Encoding=gzip, deflate, Sec-Fetch-Mode=cors, Access-Control-Request-Method=POST, Cache-Control=max-age=0, Access-Control-Request-Headers=content-type, Accept-Language=en-US,en;q=0.5}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 0.11 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Access-Control-Allow-Methods=POST, Vary=Origin, Date=Wed, 05 Jan 2022 20:37:01 GMT, Access-Control-Allow-Headers=content-type, Content-Type=text/plain}
+    No body was set
+----------------------------------------------------------------------------------
+2022-01-05 14:37:02,378 [qtp836969741-28] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/login]
+    Matching endpoint-handlers: [BEFORE=*, POST=/login]
+    Headers: {Origin=null, Accept=*/*, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:95.0) Gecko/20100101 Firefox/95.0, Connection=keep-alive, Sec-Fetch-Dest=empty, Sec-Fetch-Site=cross-site, Host=localhost:8080, Accept-Language=en-US,en;q=0.5, Accept-Encoding=gzip, deflate, Content-Length=37, Content-Type=application/json, Sec-Fetch-Mode=cors}
+    Cookies: {}
+    Body: {"username":"eric","passcode":"eric"}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 999.15 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Vary=Origin, Date=Wed, 05 Jan 2022 20:37:01 GMT, Content-Type=text/plain}
+    Body is 89 bytes (starts on next line):
+    {"userId":2,"username":"eric","passcode":"jennings","firstName":"eric","lastName":"eric"}
+----------------------------------------------------------------------------------
+2022-01-05 14:37:21,262 [qtp836969741-41] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: OPTIONS [/login]
+    Matching endpoint-handlers: [BEFORE=*]
+    Headers: {Origin=null, Accept=*/*, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:95.0) Gecko/20100101 Firefox/95.0, Connection=keep-alive, Sec-Fetch-Dest=empty, Sec-Fetch-Site=cross-site, Host=localhost:8080, Accept-Encoding=gzip, deflate, Sec-Fetch-Mode=cors, Access-Control-Request-Method=POST, Cache-Control=max-age=0, Access-Control-Request-Headers=content-type, Accept-Language=en-US,en;q=0.5}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 0.10 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Access-Control-Allow-Methods=POST, Vary=Origin, Date=Wed, 05 Jan 2022 20:37:21 GMT, Access-Control-Allow-Headers=content-type, Content-Type=text/plain}
+    No body was set
+----------------------------------------------------------------------------------
+2022-01-05 14:37:22,248 [qtp836969741-28] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/login]
+    Matching endpoint-handlers: [BEFORE=*, POST=/login]
+    Headers: {Origin=null, Accept=*/*, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:95.0) Gecko/20100101 Firefox/95.0, Connection=keep-alive, Sec-Fetch-Dest=empty, Sec-Fetch-Site=cross-site, Host=localhost:8080, Accept-Language=en-US,en;q=0.5, Accept-Encoding=gzip, deflate, Content-Length=37, Content-Type=application/json, Sec-Fetch-Mode=cors}
+    Cookies: {}
+    Body: {"username":"eric","passcode":"eric"}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 974.99 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Vary=Origin, Date=Wed, 05 Jan 2022 20:37:21 GMT, Content-Type=text/plain}
+    Body is 89 bytes (starts on next line):
+    {"userId":2,"username":"eric","passcode":"jennings","firstName":"eric","lastName":"eric"}
+----------------------------------------------------------------------------------
+2022-01-05 14:41:55,857 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+2022-01-05 14:41:55,866 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @2720ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-01-05 14:41:55,867 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2022-01-05 14:41:55,879 [main] INFO  io.javalin.Javalin - You are running Javalin 4.1.1 (released October 10, 2021. Your Javalin version is 87 days old. Consider upgrading!).
+2022-01-05 14:41:55,879 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+2022-01-05 14:41:56,020 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+2022-01-05 14:41:56,020 [main] INFO  io.javalin.Javalin - Javalin started in 154ms \o/
