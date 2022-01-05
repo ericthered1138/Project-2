@@ -38,12 +38,6 @@ public class EmployeeServiceImp implements EmployeeService{
 
     }
 
-    @Override
-    public List<Claim> getUserClaimsByUserService(int user_id) {
-        //Check if the user exists by id.
-
-        return employeeDAO.getUserClaimsByUser(user_id);
-    }
 
     @Override
     public List<Claim> getUserClaimsByAgentService(int agent_employee_id) {

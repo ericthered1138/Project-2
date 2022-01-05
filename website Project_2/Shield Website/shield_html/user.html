@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Page</title>
+	<link rel="stylesheet" href="../shield_css/shield.css">
+    <style>
+        footer{
+            background-color: black;
+            color:turquoise;
+        }
+    </style>
+</head>
+<body>
+    <main>
+    <header>
+        <!-- This is to add column/bar into the webpage to make it more robust and unique -->
+         <!-- <aside id="rightBar">
+            <img src="../images/Shield_logo.png" alt="logo" id="logo" />
+             <i id="inactiveLink" class="fas fa-compass"></i> 
+        </aside> -->
+        <h2>User Home Page</h2>
+        <!-- If you want to include more features, such as search bar, etc... -->
+        <div id="rightSideHeader">
+            <p id="userName"></p>
+            <span id="thumbNail"></span>
+        </div>
+    </header>
+    
+    <table id="userTable">
+        <thead id="userHead">
+            <tr>
+                <th>
+                    User ID
+                </th>
+                <th>
+                    Username
+                </th>
+                <th>
+                    First Name
+                </th>
+                <th>
+                    Last Name
+                </th>
+            </tr>
+        </thead>
+        <tbody id="userBody">
+        </tbody>
+    </table>
+    
+
+
+    <h3> Review your claims </h3>
+    <table id = "claimTable">
+        <thead id="claimHead">
+            <tr>
+                <th>
+                    Claim ID
+                </th>
+                <th>
+                    Employee ID
+                </th>
+                <th>
+                    Amount
+                </th>
+                <th>
+                    Description
+                </th>
+                <th>
+                    Date
+                </th>
+                <th>
+                    Location
+                </th>
+                <th>
+                    Date Created
+                </th>
+                <th>
+                    Approval
+                </th>
+                <th>
+                    Handler Comment
+                </th>
+            </tr>
+        </thead>
+        <tbody id="claimBody">
+
+        </tbody>
+    </table>
+
+    <h3> Submit brand new claim </h3>
+
+
+
+    <div style="float: right">
+    <form align="right" name="form1" method="post" action="../index.html">
+        <label class="logoutLblPos">
+            <button id="logoutButton" onclick="logout()">Logout</button>
+        <!-- <input name="submit2" type="submit" id="submit2" onclick="logout()" value="log out"> -->
+        </label>
+      </form>
+    </div>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <i>Copyright&copy; 1965-2022 S.H.I.E.L.D<a href="mailto:shield@marvel.net"> shield@marvel.net</i></a>
+    </footer>
+</main>
+</body>
+<script src="../shield_js/user.js"></script>
+</html>
