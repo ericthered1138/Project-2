@@ -5,19 +5,14 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class EmployeeLogin {
+public class AgentLogout {
     private WebDriver driver;
 
-    public EmployeeLogin(WebDriver driver){
+    public AgentLogout(WebDriver driver){
         this.driver = driver;
         PageFactory.initElements(driver,this);
     }
 
-    @FindBy(id = "username")
+    @FindBy(id = "logoutButton")
     public WebElement link1;
-    @FindBy(id = "password")
-    public WebElement link2;
-    @FindBy(id = "button")
-    public WebElement link3;
-
 }

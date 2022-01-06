@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shield Handler</title>
     <style>
-            .rect{
+            .rect1{
                 height: 100px;
                 width: 800px;
                 background: rgb(206, 110, 110);
@@ -17,7 +17,7 @@
                 margin-left: 120px;
 
             }
-            .rectt{
+            .rect2{
                 height: 100px;
                 width: 400px;
                 background: rgb(90, 56, 56);
@@ -29,8 +29,8 @@
 
 
             }
-            .recttt{
-                height: 100px;
+            .rect3{
+                height: 80px;
                 width: 400px;
                 background: rgb(43, 23, 23);
                 border: 4px solid gold;
@@ -41,8 +41,8 @@
 
 
             }
-            .rectttt{
-                height: 100px;
+            .rect4{
+                height: 80px;
                 width: 400px;
                 background: rgb(43, 23, 23);
                 border: 4px solid gold;
@@ -53,8 +53,20 @@
 
 
             }
-            .recttttt{
-                height: 100px;
+            .rect5{
+                height: 80px;
+                width: 400px;
+                background: rgb(43, 23, 23);
+                border: 4px solid gold;
+                color: rgb(216, 216, 231);
+                text-align: center;
+                margin-top: -108px;
+                margin-left: 920px;
+
+
+            }
+            .rect6{
+                height: 80px;
                 width: 400px;
                 background: rgb(43, 23, 23);
                 border: 4px solid gold;
@@ -93,6 +105,21 @@
                 margin-bottom: -80px;
 
             }
+            #logout-button {
+                background-color: rgb(204, 175, 44);
+                color: rgb(97, 48, 48);
+                border: none;
+                padding: 5px 10px;
+                align-content: center;
+                margin-left: 1100px;
+                margin-top: 30px;
+                margin-bottom: -50px;
+            }
+
+            #logout-button[disabled] {
+                background-color: rgb(100, 23, 23);
+                color: rgb(140, 151, 36);
+                }
 
 .button1 {background-color: rgb(221, 101, 101);} /* Green */
 .button2 {background-color: #008CBA;} /* Blue */
@@ -103,20 +130,29 @@
 <body style="background-color:#3c5b6e;">
 
 <div align="center"
-<div class="rect">
+<div class="rect1">
     <h1>Compensation Agent Home Page</h1>
 </div>
 </div>
 
 <div align="center"
-<div class="rectt">
+<div class="rect2">
     <h2>Username With Logo</h2>
 </div>
 </div>
+
+<div>
+    <form name="form1" method="post" action="../index.html">
+        <label class="logoutLblPos"></label>
+            <button id="logout-button" onclick="Logout()">Logout</button>
+        </label>
+    </form>
+</div>
+
 <br>
 
 <div align="center"
-<div class="recttt">
+<div class="rect3">
     <h2>Pending Claims</h2>
     <button class="button button1">Approve</button>
     <button class="buttonn button2">Dennied</button>
@@ -124,20 +160,25 @@
 </div>
 
 <div align="center"
-<div class="recttttt">
-    <h2>Previous Pending Claims</h2>
+<div class="rect5">
+    <h2>Glorious Leaderboard of Damage</h2>
 </div>
 </div>
 
 <div align="center"
-<div class="rectttt">
-    <h2>Email To The User</h2>
+<div class="rect4">
+    <h2>Previous Pending Claims By User_Id</h2>
+</div>
+</div>
+
+<div align="center"
+<div class="rect6">
+    <h2>Search For Briefs</h2>
 </div>
 </div>
 
 
 
 
-<p>Null<p>
 </body>
 </html>
