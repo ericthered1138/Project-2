@@ -81,10 +81,4 @@ public class EmployeeDAOTests {
         System.out.println(claimsList);
         Assert.assertTrue(claimsList.size() == 1);
     }
-
-    @Test
-    void getLeaderboard() {
-        List<String> returnedList= employeeDAO.getLeaderboard();
-        Assert.assertNotNull(returnedList);
-    }
 }

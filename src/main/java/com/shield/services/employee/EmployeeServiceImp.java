@@ -80,6 +80,11 @@ public class EmployeeServiceImp implements EmployeeService{
 
     @Override
     public List<String> getLeaderboardService() {
+        //grab the list of all the claims
+        //create a list to hold maps for each employee
+        //total
+        //monthly total
+        
         return null;
     }
 }
