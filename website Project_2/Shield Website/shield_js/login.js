@@ -41,11 +41,11 @@ async function LoginShieldAgent(){
     console.log(response);
 
     if(Object.keys(response).length === 7 && response["handler"] == true){
-        window.sessionStorage.setItem("employeeID", response["employeeID"]);
+        window.sessionStorage.setItem("employeeId", response["employeeId"]);
         window.location.href = "shield_html/shield_handler.html";
 
     }else if(Object.keys(response).length === 7){
-        window.sessionStorage.setItem("employeeID", response["employeeID"]);
+        window.sessionStorage.setItem("employeeId", response["employeeId"]);
         window.location.href = "shield_html/shield_agent.html";
     }
     else{
