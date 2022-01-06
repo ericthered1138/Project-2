@@ -6,8 +6,9 @@
 
 .logoutLblPos{
     position:fixed;
-    right:30.2vw;
-    top:21vh;
+    right:26vw;
+    top:18vh;
+    
  }
 
  #userMain{
@@ -23,15 +24,6 @@
  #searchGlass{
      padding-right: 5px;
  }
-
-/* 
- #rightbar {
-     display: flex;
-     width: 1vw;
-     position: relative;
-     flex-direction: column;
-     align-items: center;
- } */
 
  #logo {
      width: 10vw;
@@ -50,7 +42,7 @@
  #thumbNails{
      background-image: url(../images/Scarlett.jpg);
      background-color: black;
-     width: 7vw;
+     width: 6vw;
      height: 10vh;
      background-position: center;
      background-repeat: no-repeat;
@@ -60,8 +52,8 @@
 
  #rightSideHeader{
      display: flex;
-     /* width: 30vw; */
-     align-items: center;
+     width: 20vw;
+     /* align-items: center; */
      justify-content: space-evenly;
  }
 
@@ -137,14 +129,14 @@
      height: 40vh;
  }
  #rightSection{
-     width: 70vw;
-     height: 80vh;
+     width: 14vw;
+     height: 40vh;
  }
 
  #middleSection{
      width: 20vw;
      height: 40vh;
-     pdding: 1rem;
+     padding: 1rem;
      border-radius: 10px;
      color: black;
  }
