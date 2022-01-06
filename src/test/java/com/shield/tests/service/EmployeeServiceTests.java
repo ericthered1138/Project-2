@@ -18,11 +18,6 @@ public class EmployeeServiceTests {
         employeeService.getAllClaimsService(-5);
     }
 
-    @Test(expectedExceptions = UserNotFound.class, expectedExceptionsMessageRegExp = "The user was not found.")
-    void badIdForGetUserClaimsByUserService(){
-        employeeService.getUserClaimsByUserService(-5);
-    }
-
     @Test(expectedExceptions = EmployeeNotFound.class, expectedExceptionsMessageRegExp = "The employee was not found.")
     void badIdForGetUserClaimsByAgentService(){
         employeeService.getUserClaimsByAgentService(-5);

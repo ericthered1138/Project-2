@@ -25,11 +25,16 @@ public class UserServiceTests {
 
     @Test(expectedExceptions = InvalidUsername.class, expectedExceptionsMessageRegExp = "Invalid username")
     void badUsernameForCheckingLogin(){
-        User user = userServices.checkUserLoginService(badLoginUsername.getUsername(), badLoginUsername.getPasscode());
+        userServices.checkUserLoginService(badLoginUsername.getUsername(), badLoginUsername.getPasscode());
     }
 
     @Test(expectedExceptions = InvalidPassword.class, expectedExceptionsMessageRegExp = "Invalid password")
     void badPasswordForCheckingLogin(){
-        User user = userServices.checkUserLoginService(badLoginPassword.getUsername(), badLoginPassword.getPasscode());
+        userServices.checkUserLoginService(badLoginPassword.getUsername(), badLoginPassword.getPasscode());
+    }
+
+    @Test(expectedExceptions = UserNotFound.class, expectedExceptionsMessageRegExp = "User not found")
+    void badIdForGetUserClaimsByUserService(){
+        userServices.getUserClaimsByUserService(-5);
     }
 }

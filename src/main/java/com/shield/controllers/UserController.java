@@ -4,6 +4,7 @@ import com.google.gson.Gson;
 import com.shield.customexceptions.InvalidPassword;
 import com.shield.customexceptions.InvalidUsername;
 import com.shield.customexceptions.UserNotFound;
+import com.shield.entities.Claim;
 import com.shield.entities.User;
 import io.javalin.http.Handler;
 import com.shield.services.user.UserServices;
@@ -66,5 +67,20 @@ public class UserController {
         String createdUserJson = gson.toJson(createdUser);
         ctx.result(createdUserJson);
         ctx.status(201);
+    };
+
+    public Handler getUserClaims = ctx ->{
+        try {
+            int userId = Integer.parseInt(ctx.pathParam("userId"));
+            Gson gson = new Gson();
+            List<Claim> claims = this.userServices.getUserClaimsByUserService(userId);
+            System.out.println(claims);
+            String claimsJSONs = gson.toJson(claims);
+            ctx.result(claimsJSONs);
+            ctx.status(200);
+        } catch (UserNotFound e){
+            ctx.result(e.getMessage());
+            ctx.status(404);
+        }
     };
 }

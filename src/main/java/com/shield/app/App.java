@@ -42,7 +42,6 @@ public class App {
         app.get("/employee/claims/all/{id}", employeeController.getAllClaims);
         app.get("/employee/debriefs/all/{id}", employeeController.getAllAgentDebriefs);
         app.get("/employee/debriefs/{id}", employeeController.getAgentDebriefs);
-        app.get("/user/claims/{id}", employeeController.getUserClaims);
         app.get("/employee/claims/{id}", employeeController.getAgentClaims);
 
         app.get("/debrief/{id}", debriefController.getDebrief);
@@ -61,6 +60,7 @@ public class App {
         app.get("/users", userController.getAllUsers);
         app.post("/login", userController.checkUserLogin);
         app.post("/newUser", userController.createUser);
+        app.get("/user/claims/{userId}", userController.getUserClaims);
 
         app.get("/claim/{claimId}", claimController.getClaim);
         app.post("/claim", claimController.createClaim);
