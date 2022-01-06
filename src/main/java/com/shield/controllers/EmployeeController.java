@@ -15,6 +15,14 @@ public class EmployeeController {
     EmployeeService employeeService;
     public EmployeeController(EmployeeService employeeService){this.employeeService = employeeService;}
 
+    public Handler getAllEmployees = ctx -> {
+        List<Employee> employees = this.employeeService.getAllEmployeesService();
+        Gson gson = new Gson();
+        String employeeJson = gson.toJson(employees);
+        ctx.result(employeeJson);
+        ctx.status(200);
+    };
+
     public Handler getEmployee = ctx -> {
         int id = Integer.parseInt(ctx.pathParam("id"));
         try{
@@ -45,7 +53,7 @@ public class EmployeeController {
         }
     };
 
-    public Handler getAllClaims = ctx ->{
+    public Handler getAllHandlerClaims = ctx ->{
         try {
             int id = Integer.parseInt(ctx.pathParam("id"));//handler Id
             Gson gson = new Gson();

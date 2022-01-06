@@ -4,15 +4,18 @@ import com.shield.entities.Claim;
 import com.shield.entities.Debrief;
 import com.shield.entities.Employee;
 
+import java.util.HashMap;
 import java.util.List;
 
 public interface EmployeeDAO {
+
+    List<Employee> getAllEmployees();
 
     Employee getEmployeeById(int employee_id);
 
     Employee loginEmployee(String username, String password);
 
-    List<Claim> getAllClaims(int handler_employee_id);
+    List<Claim> getAllHandlerClaims(int handler_employee_id);
 
     List<Claim> getUserClaimsByAgent(int agent_employee_id);
 
@@ -20,5 +23,7 @@ public interface EmployeeDAO {
 
     List<Debrief> getAgentDebriefings(int agent_employee_id);
 
-    List<String> getLeaderboard();
+    HashMap<Integer, Double> getAllClaims();
+
+
 }

@@ -1703,3 +1703,62 @@ Response: [404], execution took 1.73 ms
     Body is 9 bytes (starts on next line):
     Not found
 ----------------------------------------------------------------------------------
+2022-01-06 13:19:16,253 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+2022-01-06 13:19:16,262 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @2598ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-01-06 13:19:16,263 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2022-01-06 13:19:16,275 [main] INFO  io.javalin.Javalin - You are running Javalin 4.1.1 (released October 10, 2021. Your Javalin version is 88 days old. Consider upgrading!).
+2022-01-06 13:19:16,275 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+2022-01-06 13:19:16,419 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+2022-01-06 13:19:16,565 [main] INFO  io.javalin.Javalin - Javalin started in 303ms \o/
+2022-01-06 14:34:22,683 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+2022-01-06 14:34:22,693 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @2828ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-01-06 14:34:22,694 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2022-01-06 14:34:22,707 [main] INFO  io.javalin.Javalin - You are running Javalin 4.1.1 (released October 10, 2021. Your Javalin version is 88 days old. Consider upgrading!).
+2022-01-06 14:34:22,708 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+2022-01-06 14:34:22,877 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+2022-01-06 14:34:22,877 [main] INFO  io.javalin.Javalin - Javalin started in 183ms \o/
+2022-01-06 15:55:51,438 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+2022-01-06 15:55:51,447 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @2802ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-01-06 15:55:51,448 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2022-01-06 15:55:51,461 [main] INFO  io.javalin.Javalin - You are running Javalin 4.1.1 (released October 10, 2021. Your Javalin version is 88 days old. Consider upgrading!).
+2022-01-06 15:55:51,462 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+2022-01-06 15:55:51,606 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+2022-01-06 15:55:51,606 [main] INFO  io.javalin.Javalin - Javalin started in 159ms \o/
+2022-01-06 15:56:35,331 [qtp2109219177-44] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/employee/list]
+    Matching endpoint-handlers: [BEFORE=*, GET=/employee/list, GET=/employee/{id}]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.28.4, Connection=keep-alive, Postman-Token=7aba4b07-fddb-4686-911e-d3497768852e, Host=localhost:8080, Accept-Encoding=gzip, deflate, br}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 651.72 ms
+    Headers: {Date=Thu, 06 Jan 2022 21:56:34 GMT, Content-Type=text/plain}
+    Body is 392 bytes (starts on next line):
+    [{"employeeId":3,"handlerId":0,"handler":true,"username":"username","passcode":"password","firstName":"Other","lastName":"Guy"},{"employeeId":2,"handlerId":1,"handler":false,"username":"scarlett","passcode":"johansson","firstName":"Natasha","lastName":"Romanoff"},{"employeeId":1,"handlerId":0,"handler":true,"username":"jackson","passcode":"hasselhoff","firstName":"Nick","lastName":"Fury"}]
+----------------------------------------------------------------------------------
