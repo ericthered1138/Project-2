@@ -1,6 +1,7 @@
 package com.shield.daos.user;
 
 import com.shield.customexceptions.UserNotFound;
+import com.shield.entities.Claim;
 import com.shield.entities.User;
 import com.shield.Util.DatabaseConnection;
 
@@ -121,6 +122,38 @@ public class UserDAOImp implements UserDAO {
             } else{
                 throw new UserNotFound(("User not found"));
             }
+
+        } catch (SQLException e){
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+    @Override
+    public List<Claim> getUserClaimsByUser(int user_id) {
+        //grab the list of claims by user_id
+        try (Connection connection = DatabaseConnection.createConnection()){
+            String sql = "select * from claim_table where user_id = ?";
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setInt(1, user_id);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            List<Claim> claims = new ArrayList<>();
+            while(resultSet.next()) {
+                Claim claim = new Claim(
+                        resultSet.getInt("claim_id"),
+                        resultSet.getInt("user_id"),
+                        resultSet.getInt("employee_id"),
+                        resultSet.getInt("amount"),
+                        resultSet.getString("description"),
+                        resultSet.getDate("date_of_occurrence").toString(),
+                        resultSet.getString("location_of_occurrence"),
+                        resultSet.getTimestamp("datetime_of_creation").toString(),
+                        resultSet.getString("approval"),
+                        resultSet.getString("handler_comment")
+                );
+                claims.add(claim);
+            }
+            return claims;
 
         } catch (SQLException e){
             e.printStackTrace();

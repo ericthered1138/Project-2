@@ -14,8 +14,6 @@ public interface EmployeeDAO {
 
     List<Claim> getAllClaims(int handler_employee_id);
 
-    List<Claim> getUserClaimsByUser(int user_id);
-
     List<Claim> getUserClaimsByAgent(int agent_employee_id);
 
     List<Debrief> getAllAgentDebriefings(int handler_employee_id);
