@@ -14,7 +14,7 @@ import java.io.File;
 import java.util.concurrent.TimeUnit;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "classpath:features", glue ="resources/steps")
+@CucumberOptions(features = "src/test/java/resources/features", glue ="resources/steps")
 // Absolute Path and Content Root worked
 public class TestRunner {
     public static WebDriver driver;
@@ -23,7 +23,7 @@ public class TestRunner {
 
     @BeforeClass
     public static void setup(){
-        File file = new File("src/main/resources/chromedriver.exe");
+        File file = new File("src/test/java/resources/features/chromedriver.exe");
         System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
         driver = new ChromeDriver();
         employeeLogin = new EmployeeLogin(driver);
