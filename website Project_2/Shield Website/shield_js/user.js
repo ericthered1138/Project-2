@@ -3,7 +3,9 @@ const userTable = document.getElementById("userTable");
 const userTableBody = document.getElementById("userBody");
 const claimTable = document.getElementById("claimTable");
 const claimTableBody = document.getElementById("claimBody");
+const headerUsername = document.getElementById("headerUsername");
 const userId = sessionStorage.getItem("userId");
+const claimModal = document.getElementById("myModal");
 
 
 function logout(){
@@ -21,8 +23,7 @@ async function getAllUserData(){
     if (response.status === 200){
         let body = await response.json();
         console.log(body);
-        populateUserData(body);
-        getAllClaimInfo();
+        populateUsername(body);
     }
 }
 
@@ -40,27 +41,71 @@ async function getAllClaimInfo(){
     }
 }
 
-//function to grab the user information data...
-function populateUserData(user){
-    let tableRow = document.createElement("tr");
-    tableRow.innerHTML = `<td>${user.userId}</td><td>${user.username}</td><td>${user.firstName}</td><td>${user.lastName}</td>`;
-    userTableBody.append(tableRow);
+//function to grab the username data...
+function populateUsername(user){
+    headerUsername.innerText = `${user.username}`;
 }
 
 //function to grab the claim information for the user...
 function populateClaimData(responseBody){
-    for(let claim of responseBody){
-        let tableRow = document.createElement("tr");
-        tableRow.innerHTML = `<td>${claim.claimId}</td>
-                               <td>${claim.employeeId}</td>
-                               <td>${claim.amount}</td>
-                               <td>${claim.description}</td>
-                               <td>${claim.dateOfOccurrence}</td>
-                               <td>${claim.locationOfOccurrence}</td>
-                               <td>${claim.dateTimeOfCreation}</td>
-                               <td>${claim.approval}</td>
-                               <td>${claim.handlerComment}</td>`
-        claimTableBody.append(tableRow);
+        claimTableBody.innerHTML = '';
+        claimModal.style.display = "none";
+        for(let claim of responseBody){
+            let tableRow = document.createElement("tr");
+            tableRow.innerHTML = `<td>${claim.claimId}</td>
+                                <td>${claim.employeeId}</td>
+                                <td>${claim.amount.toFixed(2)}</td>
+                                <td>${claim.description}</td>
+                                <td>${claim.dateOfOccurrence}</td>
+                                <td>${claim.locationOfOccurrence}</td>
+                                <td>${claim.dateTimeOfCreation}</td>
+                                <td>${claim.approval}</td>
+                                <td>${claim.handlerComment}</td>`
+            claimTableBody.append(tableRow);
+    }
+    
+
+}
+
+function toggleClaimData()
+{
+    if (claimTable.style.display === "none"){
+        claimTable.style.display="block";
+        getAllClaimInfo();
+    }
+    else{
+        claimTable.style.display="none";
+    }
+}
+
+
+async function createNewClaim(){
+    let url = "http://localhost:8080/claim"
+    let employeeId = document.getElementById("claimEmployee").value;
+    let amount = document.getElementById("claimAmount");
+    let description = document.getElementById("claimDescription");
+    let date = document.getElementById("claimDate");
+    let location = document.getElementById("claimLocation");
+    let approval = "pending";
+    let handlerComment = "";
+    console.log(employeeId);
+
+    let createClaimJSON = JSON.stringify({"claimId": 0, "userId": parseInt(userId), "employeeId": parseInt(employeeId), "amount": parseInt(amount.value), "description": description.value, "dateOfOccurrence": date.value, "locationOfOccurrence": location.value, "approval": approval, "handlerComment": handlerComment});
+    console.log(createClaimJSON);
+    document.getElementById("newClaimForm").reset()
+
+    let response = await fetch(url, {
+        method: "POST",
+        headers:{"Content-Type": 'application/json'},
+        body:createClaimJSON})
+        
+        if (response.status === 201){
+            let body = await response.json();
+            console.log(body);
+        }
+        else{
+            alert("There was an issue");
+
     }
 }
 getAllUserData();

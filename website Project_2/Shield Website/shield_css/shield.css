@@ -5,9 +5,9 @@
 }
 
 .logoutLblPos{
-    position:fixed;
-    right:30.2vw;
-    top:21vh;
+    position: absolute;
+    right: 5.2vw;
+    top: 7vh;
  }
 
  #userMain{
@@ -34,7 +34,7 @@
  }
 
  #thumbNail {
-     background-image: url(../images/ironman.gif);
+     background-image: url(../images/shield\ logo\ animated.gif);
      background-color: black;
      width: 7vw;
      height: 10vh;
@@ -47,6 +47,7 @@
  #rightSideHeader{
      display: flex;
      /* width: 30vw; */
+     margin-left: 350px;
      align-items: center;
      justify-content: space-evenly;
  }
@@ -98,6 +99,10 @@
    text-align: center;
 
  }
+
+ #headerUsername{
+     padding-left: 30px;
+ }
  
  h3{
      text-align: left;
@@ -106,3 +111,17 @@
      padding: 1rem 1rem 1rem 1rem;
     justify-content: space-evenly;
  }
+
+ #articleContainer{
+    display: flex;
+    justify-content: space-around;
+}
+
+#leftSection{
+    width: 14vw; 
+    height: 40vh;
+}
+#rightSection{
+    width: 14vw;
+    height: 40vh;
+}
