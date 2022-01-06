@@ -12,7 +12,7 @@ public class EmployeeLoginSteps {
     @Given("The employee is on login page")
     public void the_employee_is_on_login_page() {
         // Write code here that turns the phrase above into concrete actions
-        TestRunner.driver.get("C:\\Users\\itsvi\\Desktop\\Project_2\\website Project_2\\Shield Website\\index.html");
+        TestRunner.driver.get("website Project_2/Shield Website/index.html");
     }
 
     @When("The employee enters their username in the username input box")
