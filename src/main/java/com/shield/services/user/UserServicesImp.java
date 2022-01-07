@@ -3,6 +3,7 @@ package com.shield.services.user;
 import com.shield.customexceptions.InvalidPassword;
 import com.shield.customexceptions.InvalidUsername;
 import com.shield.customexceptions.UserNotFound;
+import com.shield.entities.Claim;
 import com.shield.entities.User;
 import com.shield.daos.user.UserDAO;
 
@@ -56,6 +57,18 @@ public class UserServicesImp implements UserServices {
             throw new InvalidPassword("Invalid password");
         } catch (InvalidUsername e) {
             throw new InvalidUsername("Invalid username");
+        }
+    }
+
+    @Override
+    public List<Claim> getUserClaimsByUserService(int user_id){
+        //Check if the user exists by id.
+        userDAO.getUserById(user_id);
+        try {
+            return userDAO.getUserClaimsByUser(user_id);
+        }
+        catch (UserNotFound e){
+            throw new UserNotFound("User not found");
         }
     }
 }

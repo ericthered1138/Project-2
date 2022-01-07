@@ -48,16 +48,6 @@ public class EmployeeController {
         ctx.status(200);
     };
 
-    public Handler getUserClaims = ctx ->{
-        int id = Integer.parseInt(ctx.pathParam("id"));// user id
-        Gson gson = new Gson();
-        List<Claim> claims = this.employeeService.getUserClaimsByUserService(id);
-        System.out.println(claims);
-        String claimsJSONs = gson.toJson(claims);
-        ctx.result(claimsJSONs);
-        ctx.status(200);
-    };
-
     public Handler getAgentClaims = ctx ->{
         int id = Integer.parseInt(ctx.pathParam("id"));//agent id
         Gson gson = new Gson();

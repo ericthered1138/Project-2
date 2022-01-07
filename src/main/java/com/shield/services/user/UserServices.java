@@ -1,5 +1,6 @@
 package com.shield.services.user;
 
+import com.shield.entities.Claim;
 import com.shield.entities.User;
 import java.util.List;
 
@@ -12,4 +13,6 @@ public interface UserServices
     List<User> getAllUserService();
 
     User checkUserLoginService(String username, String passcode);
+
+    List<Claim> getUserClaimsByUserService(int user_id);
 }

@@ -1,6 +1,7 @@
 package com.shield.tests.dao;
 
 import com.shield.customexceptions.UserNotFound;
+import com.shield.entities.Claim;
 import com.shield.entities.User;
 import com.shield.daos.user.UserDAOImp;
 import com.shield.daos.user.UserDAO;
@@ -58,13 +59,6 @@ public class UserDAOTests {
         Assert.assertTrue(returnedUser.getUserId() != 0);
     }
 
-//    @Test(expectedExceptions = UserNotFound.class, expectedExceptionsMessageRegExp = "User not found")
-//    void deleteUser(){
-//        userDAO.deleteUser(userDAO.maxCreator());
-//        User deletedUser = userDAO.getUserById(userDAO.maxCreator());
-//
-//    }
-
     @Test
     void checkUsernameAndPassword(){
         User user = userDAO.getUserById(1_000_001);
@@ -72,6 +66,13 @@ public class UserDAOTests {
         User login = userDAO.checkUserLogin(user.getUsername(), user.getPasscode());
         System.out.println(login);
         Assert.assertEquals(login.getUserId(), 1000001);
+    }
+
+    @Test
+    void getUserClaimsByUser() {
+        List<Claim> claimsList = userDAO.getUserClaimsByUser(1);
+        System.out.println(claimsList);
+        Assert.assertTrue(claimsList.size() > 1);
     }
 
 }
