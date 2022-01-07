@@ -15,11 +15,6 @@
 <body>
     <main>
     <header>
-        <!-- This is to add column/bar into the webpage to make it more robust and unique -->
-         <!-- <aside id="rightBar">
-            <img src="../images/Shield_logo.png" alt="logo" id="logo" />
-             <i id="inactiveLink" class="fas fa-compass"></i> 
-        </aside> -->
         <h2>Shield Agent Home Page</h2>
         <!-- If you want to include more features, such as search bar, etc... -->
         <div id="rightSideHeader">
@@ -30,12 +25,38 @@
     
     <section id="articleContainer">
         <article id="leftSection">
-            <p id="formTitle">View Pending Claims</p>
+            <p id="formTitle">View Debriefs</p>
+            <table>
+                <tbody id="debriefBody">
+                    <tr>
+
+                    </tr>
+                </tbody>
+            </table>
         </article>
 
 
         <article id="middleSection">
-            <p id="formTitle"> View the statistics by agent </p>
+            <p id="formTitle"> Debrief Log to Explain their Reasoning </p>
+            <!-- <label for="employeeIdInput"><b>Employee Id: </b></label>
+            <input type="text" placeholder="Enter your Id" id="employeeId" required> -->
+            <br>
+            <label for="debriefingTextInput"><b>Debrief Text: </b></label>
+            <textarea placeholder="Give a explanation" id="debriefingText" required></textarea>
+            <br>
+            <label for="dateOfOccurrence"><b> Date: </b></label>
+            <input id="dateOfOccurrence" class="form-control" type="date"/>
+            <br>
+            <label for="locationOfOccurenceInput"><b>Location:</b></label>
+            <input type="text" placeholder="Enter a location" id="locationOfOccurrence">
+            <br>
+            <button id="submitButton" onclick="employeeCreateDebriefsLogData()"> Submit Debrief </button>
+            <button id="cancelButton">Cancel</button>
+
+        </article>
+
+        <article id="rightSection">
+            <p id="formTitle"> Glorious Leaderboard of Damage </p>
         </article>
     </section>
 
