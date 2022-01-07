@@ -154,10 +154,54 @@
 <div align="center"
 <div class="rect3">
     <h2>Pending Claims</h2>
+
+
     <button class="button button1">Approve</button>
     <button class="buttonn button2">Dennied</button>
 </div>
 </div>
+
+
+<button type="button" onclick="toggleClaimData()">Claims</button>
+<table class="table table-hover" id = "claimTable" style="display: none;">
+    <thead  id="claimHead">
+        <tr>
+            <th>
+                Claim ID
+            </th>
+            <th>
+                Employee ID
+            </th>
+            <th>
+                Amount
+            </th>
+            <th>
+                Description
+            </th>
+            <th>
+                Date
+            </th>
+            <th>
+                Location
+            </th>
+            <th>
+                Date Created
+            </th>
+            <th>
+                Approval
+            </th>
+            <th>
+                Handler Comment
+            </th>
+        </tr>
+    </thead>
+    <tbody id="claimBody">
+
+    </tbody>
+</table>
+
+
+
 
 <div align="center"
 <div class="rect5">
@@ -181,4 +225,6 @@
 
 
 </body>
+
+<script src="../shield_js/shield_handler.js"></script>
 </html>
