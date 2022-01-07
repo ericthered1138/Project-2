@@ -7,7 +7,6 @@ import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-//import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import resources.poms.AgentLogin;
 import resources.poms.AgentLogout;
@@ -16,8 +15,6 @@ import resources.poms.UserLogout;
 
 import java.io.File;
 import java.time.Duration;
-import java.util.concurrent.TimeUnit;
-//import java.util.concurrent.TimeUnit;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/java/resources/features", glue ="resources/steps")
@@ -41,6 +38,7 @@ public class TestRunner {
         agentLogout = new AgentLogout(driver);
         System.out.println("setup complete!");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        //noinspection deprecation
         explicitWait = new WebDriverWait(driver, 5);
 
     }
