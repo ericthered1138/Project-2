@@ -45,6 +45,7 @@ public class App {
         app.get("/employee/debriefs/all/{id}", employeeController.getAllAgentDebriefs);
         app.get("/employee/debriefs/{id}", employeeController.getAgentDebriefs);
         app.get("/employee/claims/{id}", employeeController.getAgentClaims);
+        app.get("/leaderboard", employeeController.getLeaderboard);
 
         app.get("/debrief/{id}", debriefController.getDebrief);
         app.post("/debrief", debriefController.createDebrief);

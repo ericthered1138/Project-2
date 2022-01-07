@@ -8,7 +8,7 @@ import com.shield.entities.Employee;
 
 import java.sql.*;
 import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.List;
 
 public class EmployeeDAOImp implements EmployeeDAO {
@@ -281,24 +281,25 @@ public class EmployeeDAOImp implements EmployeeDAO {
         }
     }
 
-//    @Override
-//    public HashMap<Integer, Double> getAllClaims() {
-//
-////        // for each agent take the sum total of their claims in sql
-////        for (Employee anEmployee : employees) {
-////            try (Connection connection = DatabaseConnection.createConnection()) {
-////                String sql = "select employee_id, sum(amount) from claim_table group by employee_id order by sum(amount) desc;"
-////                PreparedStatement preparedStatement = connection.prepareStatement(sql);
-////                preparedStatement.setInt(1, anEmployee.getEmployeeId());
-////                ResultSet resultSet = preparedStatement.executeQuery();
-////                    sumTotalsById.put(anEmployee.getEmployeeId(), resultSet.getDouble("sum"));
-////                } catch (SQLException e) {
-////                e.printStackTrace();
-////                return null;
-////            }
-////
-////        }
-////        // for every employee add a total to the statistics list then reorder the list by the total
-////        return sumTotalsById;
-//    }
+    @Override
+    public List<String> getLeaderboard() {
+
+        List<String> leaderboardList = new ArrayList<>();
+        try (Connection connection = DatabaseConnection.createConnection()) {
+            String sql = "select employee_id, first_name, last_name, sum(amount) from claim_table natural join " +
+                    "employee_table group by employee_id, first_name, last_name order by sum(amount) desc;";
+            Statement statement = connection.createStatement();
+            ResultSet resultSet = statement.executeQuery(sql);
+            while(resultSet.next()){
+                String name = resultSet.getString("first_name") + " " + resultSet.getString("last_name");
+                leaderboardList.add(name);
+                Float total = resultSet.getFloat("sum");
+                leaderboardList.add(total.toString());
+            }
+            } catch (SQLException e) {
+            e.printStackTrace();
+            return null;
+        }
+        return leaderboardList;
+    }
 }

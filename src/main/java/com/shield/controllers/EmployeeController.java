@@ -9,6 +9,8 @@ import com.shield.entities.Employee;
 import io.javalin.http.Handler;
 import com.shield.services.employee.EmployeeService;
 
+import java.io.InputStream;
+import java.util.HashMap;
 import java.util.List;
 
 public class EmployeeController {
@@ -102,6 +104,19 @@ public class EmployeeController {
             List<Debrief> debriefs = this.employeeService.getAgentDebriefingsService(id);
             String debriefsJSONs = gson.toJson(debriefs);
             ctx.result(debriefsJSONs);
+            ctx.status(200);
+        } catch (EmployeeNotFound e){
+            ctx.result(e.getMessage());
+            ctx.status(404);
+        }
+    };
+
+    public Handler getLeaderboard = ctx ->{
+        try {
+            Gson gson = new Gson();
+            List<String> leaderboard = this.employeeService.getLeaderboardService();
+            String leaderboards = gson.toJson(leaderboard.toArray());
+            ctx.result(leaderboards);
             ctx.status(200);
         } catch (EmployeeNotFound e){
             ctx.result(e.getMessage());

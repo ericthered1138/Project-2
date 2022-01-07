@@ -10,6 +10,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import java.util.HashMap;
 import java.util.List;
 
 import static com.shield.Util.DatabaseTableCreator.table_depopulator;
@@ -80,5 +81,12 @@ public class EmployeeDAOTests {
         List<Debrief> claimsList = employeeDAO.getAgentDebriefings(employeeId);
         System.out.println(claimsList);
         Assert.assertTrue(claimsList.size() == 1);
+    }
+
+    @Test
+    void getLeaderboard(){
+        List<String> leaderboard = employeeDAO.getLeaderboard();
+        System.out.println(leaderboard);
+        Assert.assertNotNull(leaderboard);
     }
 }

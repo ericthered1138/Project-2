@@ -85,11 +85,6 @@ public class EmployeeServiceImp implements EmployeeService{
 
     @Override
     public List<String> getLeaderboardService() {
-        // grab the list of all the claims
-        // create a list to hold maps for each employee
-        // grand total
-        // return the list
-        
-        return null;
+        return employeeDAO.getLeaderboard();
     }
 }
