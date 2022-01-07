@@ -6,6 +6,7 @@ const claimTableBody = document.getElementById("claimBody");
 const headerUsername = document.getElementById("headerUsername");
 const userId = sessionStorage.getItem("userId");
 const claimModal = document.getElementById("myModal");
+const claimEmployeeDropDown = document.getElementById("claimEmployee");
 
 
 function logout(){
@@ -49,7 +50,6 @@ function populateUsername(user){
 //function to grab the claim information for the user...
 function populateClaimData(responseBody){
         claimTableBody.innerHTML = '';
-        claimModal.style.display = "none";
         for(let claim of responseBody){
             let tableRow = document.createElement("tr");
             tableRow.innerHTML = `<td>${claim.claimId}</td>
@@ -108,4 +108,35 @@ async function createNewClaim(){
 
     }
 }
+
+async function GrabAllEmployeeInfo(){
+    let url = "http://localhost:8080/employee/list"
+
+    let response = await fetch(url)
+    if(response.status === 200){
+        let body = await response.json();
+        console.log(body);
+        populateEmployeeDropDown(body);
+    }
+    else{
+        alert("There was a problem trying to receive the employee information for the new claims");
+    }
+}
+
+function populateEmployeeDropDown(employeeList){
+    claimEmployeeDropDown.innerHTML = '';
+    for (let employee of employeeList){
+        if (employee.handler == false){
+            let dropdownOptions = document.createElement("option");
+            dropdownOptions.innerText = `${employee.firstName} ${employee.lastName}`;
+            dropdownOptions.value = `${employee.employeeId}`;
+            claimEmployeeDropDown.append(dropdownOptions);
+        }
+    }
+
+
+}
+
+
 getAllUserData();
+GrabAllEmployeeInfo();

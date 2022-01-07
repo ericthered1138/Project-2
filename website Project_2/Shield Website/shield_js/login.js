@@ -54,6 +54,38 @@ async function LoginShieldAgent(){
     }
 }
 
+async function CreateUserAccount(){
+    let url ="http://localhost:8080/newUser";
+    const newUserFirstName = document.getElementById("signUpFirstName");
+    const newUserLastName = document.getElementById("signUpLastName");
+    const newUserUsername = document.getElementById("signUpUsername");
+    const newUserPassword = document.getElementById("signUpPassword");
+    const confirmNewUserPassword = document.getElementById("confirmSignUpPassword");
+    console.log(newUserPassword.value);
+    console.log(confirmNewUserPassword.value);
+
+    if(newUserPassword.value == confirmNewUserPassword.value){
+        newUserJSON = JSON.stringify({"userid": 0, "username": newUserUsername.value, "passcode": newUserPassword.value, "firstName": newUserFirstName.value, "lastName": newUserLastName.value});
+
+        let response = await fetch(url, {
+            cache: "no-cache",
+            method: "POST",
+            headers:{"Content-Type": 'application/json'},
+            body: newUserJSON})
+
+            if(response.status === 201){
+                console.log(response.json());
+                alert("Successfully created account")
+            }
+            else{
+                alert("There was an issue");
+            }
+    }
+    else{
+        alert("Password does not match")
+    }
+}
+
 // async function LoginShieldHandler(){
 //     let url = "";
 //     const username = document.getElementById("username");
@@ -100,21 +132,22 @@ async function LoginShieldAgent(){
 //     inputElement.parentElement.querySelector(".form__input-error-message").textContent = "";
 // }
 
-// document.addEventListener("DOMContentLoaded", () => {
-//     const loginForm = document.querySelector("#login");
-//     const createAccountForm = document.querySelector("#createAccount");
+document.addEventListener("DOMContentLoaded", () => {
+    const loginForm = document.querySelector("#loginForm");
+    const createAccountForm = document.querySelector("#createAccountForm");
 
-//     document.querySelector("#linkCreateAccount").addEventListener("click", e => {
-//         e.preventDefault();
-//         loginForm.classList.add("form--hidden");
-//         createAccountForm.classList.remove("form--hidden");
-//     });
+    document.querySelector("#linkCreateAccount").addEventListener("click", e => {
+        e.preventDefault();
+        loginForm.classList.add("form--hidden");
+        createAccountForm.classList.remove("form--hidden");
+    });
 
-//     document.querySelector("#linkLogin").addEventListener("click", e => {
-//         e.preventDefault();
-//         loginForm.classList.remove("form--hidden");
-//         createAccountForm.classList.add("form--hidden");
-//     });
+    document.querySelector("#linkLogin").addEventListener("click", e => {
+        e.preventDefault();
+        loginForm.classList.remove("form--hidden");
+        createAccountForm.classList.add("form--hidden");
+    });
+});
 
 //     loginForm.addEventListener("submit", e => {
 //         e.preventDefault();
