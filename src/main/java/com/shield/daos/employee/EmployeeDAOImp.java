@@ -18,7 +18,7 @@ public class EmployeeDAOImp implements EmployeeDAO {
         List<Employee> employees;
         try (Connection connection = DatabaseConnection.createConnection()) {
 
-            String sql = "select * from employee_table";
+            String sql = "select * from employee_table where handler = false";
             Statement statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery(sql);
             employees = new ArrayList<>();

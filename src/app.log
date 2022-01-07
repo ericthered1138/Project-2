@@ -7859,3 +7859,75 @@ Response: [200], execution took 513.60 ms
     Body is 91 bytes (starts on next line):
     {"userId":1,"username":"david","passcode":"david","firstName":"david","lastName":"zazulak"}
 ----------------------------------------------------------------------------------
+2022-01-07 09:05:01,392 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+2022-01-07 09:05:01,475 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @3341ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-01-07 09:05:01,476 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2022-01-07 09:05:01,493 [main] INFO  io.javalin.Javalin - You are running Javalin 4.1.1 (released October 10, 2021. Your Javalin version is 89 days old. Consider upgrading!).
+2022-01-07 09:05:01,494 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+2022-01-07 09:05:01,650 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+2022-01-07 09:05:01,650 [main] INFO  io.javalin.Javalin - Javalin started in 175ms \o/
+2022-01-07 09:05:20,062 [qtp612937843-44] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/leaderboard]
+    Matching endpoint-handlers: [BEFORE=*, GET=/leaderboard]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.28.4, Connection=keep-alive, Postman-Token=1770266f-298c-4e7a-965c-ccf0f751d3de, Host=localhost:8080, Accept-Encoding=gzip, deflate, br}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 552.00 ms
+    Headers: {Date=Fri, 07 Jan 2022 15:05:19 GMT, Content-Type=text/plain}
+    Body is 49 bytes (starts on next line):
+    ["Nick Fury","163.57","Natasha Romanoff","19.12"]
+----------------------------------------------------------------------------------
+2022-01-07 09:12:49,599 [qtp612937843-34] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/employee/2]
+    Matching endpoint-handlers: [BEFORE=*, GET=/employee/{id}]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.28.4, Connection=keep-alive, Postman-Token=bee3e4e4-56d0-4cfc-9533-a670e7b07c98, Host=localhost:8080, Accept-Encoding=gzip, deflate, br}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 580.13 ms
+    Headers: {Date=Fri, 07 Jan 2022 15:12:49 GMT, Content-Type=text/plain}
+    Body is 135 bytes (starts on next line):
+    {"employeeId":2,"handlerId":1,"handler":false,"username":"scarlett","passcode":"johansson","firstName":"Natasha","lastName":"Romanoff"}
+----------------------------------------------------------------------------------
+2022-01-07 10:09:48,242 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+2022-01-07 10:09:48,252 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @2739ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-01-07 10:09:48,253 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2022-01-07 10:09:48,266 [main] INFO  io.javalin.Javalin - You are running Javalin 4.1.1 (released October 10, 2021. Your Javalin version is 89 days old. Consider upgrading!).
+2022-01-07 10:09:48,266 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+2022-01-07 10:09:48,410 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+2022-01-07 10:09:48,411 [main] INFO  io.javalin.Javalin - Javalin started in 158ms \o/
+2022-01-07 10:09:49,057 [qtp567852222-42] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/employee/list]
+    Matching endpoint-handlers: [BEFORE=*, GET=/employee/list, GET=/employee/{id}]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.28.4, Connection=keep-alive, Postman-Token=bb444b2e-c948-41f5-85b2-112146d8f49a, Host=localhost:8080, Accept-Encoding=gzip, deflate, br}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 577.16 ms
+    Headers: {Date=Fri, 07 Jan 2022 16:09:48 GMT, Content-Type=text/plain}
+    Body is 266 bytes (starts on next line):
+    [{"employeeId":2,"handlerId":3,"handler":false,"username":"scarlett","passcode":"johansson","firstName":"Natasha","lastName":"Romanoff"},{"employeeId":1,"handlerId":3,"handler":false,"username":"jackson","passcode":"hasselhoff","firstName":"Nick","lastName":"Fury"}]
+----------------------------------------------------------------------------------
