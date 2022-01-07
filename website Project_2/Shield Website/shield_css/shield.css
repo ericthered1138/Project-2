@@ -5,9 +5,9 @@
 }
 
 .logoutLblPos{
-    position:fixed;
-    right:26vw;
-    top:18vh;
+    position: absolute;
+    right:5.2vw;
+    top:8vh;
     
  }
 
@@ -53,8 +53,8 @@
  #rightSideHeader{
      display: flex;
      width: 20vw;
-     /* align-items: center; */
-     justify-content: space-evenly;
+     align-items: center;
+     justify-content: right;
  }
 
  #shieldAgentName{
