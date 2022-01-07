@@ -23,7 +23,7 @@ public interface EmployeeDAO {
 
     List<Debrief> getAgentDebriefings(int agent_employee_id);
 
-    HashMap<Integer, Double> getAllClaims();
+//    HashMap<Integer, Double> getAllClaims();
 
 
 }

@@ -16,6 +16,7 @@ async function Login(){
 
     if(Object.keys(response).length === 5){
         window.sessionStorage.setItem("userId", response["userId"]);
+        console.log(response["userId"])
         window.location.href = "shield_html/user.html";
     }
     else{

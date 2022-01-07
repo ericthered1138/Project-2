@@ -281,24 +281,24 @@ public class EmployeeDAOImp implements EmployeeDAO {
         }
     }
 
-    @Override
-    public HashMap<Integer, Double> getAllClaims() {
-
-//        // for each agent take the sum total of their claims in sql
-//        for (Employee anEmployee : employees) {
-//            try (Connection connection = DatabaseConnection.createConnection()) {
-//                String sql = "select employee_id, sum(amount) from claim_table group by employee_id order by sum(amount) desc;"
-//                PreparedStatement preparedStatement = connection.prepareStatement(sql);
-//                preparedStatement.setInt(1, anEmployee.getEmployeeId());
-//                ResultSet resultSet = preparedStatement.executeQuery();
-//                    sumTotalsById.put(anEmployee.getEmployeeId(), resultSet.getDouble("sum"));
-//                } catch (SQLException e) {
-//                e.printStackTrace();
-//                return null;
-//            }
+//    @Override
+//    public HashMap<Integer, Double> getAllClaims() {
 //
-//        }
-//        // for every employee add a total to the statistics list then reorder the list by the total
-//        return sumTotalsById;
-    }
+////        // for each agent take the sum total of their claims in sql
+////        for (Employee anEmployee : employees) {
+////            try (Connection connection = DatabaseConnection.createConnection()) {
+////                String sql = "select employee_id, sum(amount) from claim_table group by employee_id order by sum(amount) desc;"
+////                PreparedStatement preparedStatement = connection.prepareStatement(sql);
+////                preparedStatement.setInt(1, anEmployee.getEmployeeId());
+////                ResultSet resultSet = preparedStatement.executeQuery();
+////                    sumTotalsById.put(anEmployee.getEmployeeId(), resultSet.getDouble("sum"));
+////                } catch (SQLException e) {
+////                e.printStackTrace();
+////                return null;
+////            }
+////
+////        }
+////        // for every employee add a total to the statistics list then reorder the list by the total
+////        return sumTotalsById;
+//    }
 }
