@@ -37,12 +37,15 @@ public class App {
         DebriefService debriefService = new DebriefServiceImp(debriefDAO, employeeDAO);
         DebriefController debriefController = new DebriefController(debriefService);
 
+
+        app.get("/employee/list", employeeController.getAllEmployees);
         app.get("/employee/{id}", employeeController.getEmployee);
         app.post("/employee/login", employeeController.loginEmployee);
-        app.get("/employee/claims/all/{id}", employeeController.getAllClaims);
+        app.get("/employee/claims/all/{id}", employeeController.getAllHandlerClaims);
         app.get("/employee/debriefs/all/{id}", employeeController.getAllAgentDebriefs);
         app.get("/employee/debriefs/{id}", employeeController.getAgentDebriefs);
         app.get("/employee/claims/{id}", employeeController.getAgentClaims);
+        app.get("/leaderboard", employeeController.getLeaderboard);
 
         app.get("/debrief/{id}", debriefController.getDebrief);
         app.post("/debrief", debriefController.createDebrief);

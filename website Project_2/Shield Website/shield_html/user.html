@@ -12,6 +12,7 @@
             color:turquoise;
         }
     </style>
+    <script src="../js/bootstrap.bundle.js"></script>
 </head>
 <body>
     <main>
@@ -24,78 +25,105 @@
         <h2>User Home Page</h2>
         <!-- If you want to include more features, such as search bar, etc... -->
         <div id="rightSideHeader">
-            <p id="userName"></p>
             <span id="thumbNail"></span>
+            <p id="headerUsername"></p>
+            
         </div>
     </header>
-    
-    <table id="userTable">
-        <thead id="userHead">
-            <tr>
-                <th>
-                    User ID
-                </th>
-                <th>
-                    Username
-                </th>
-                <th>
-                    First Name
-                </th>
-                <th>
-                    Last Name
-                </th>
-            </tr>
-        </thead>
-        <tbody id="userBody">
-        </tbody>
-    </table>
-    
+        
 
+    <section id="articleContainer">
+        <article id="leftSection">
+            <button type="button" onclick="toggleClaimData()">Review your claims</button>
+            <table class="table table-hover" id = "claimTable" style="display: none;">
+                <thead  id="claimHead">
+                    <tr>
+                        <th>
+                            Claim ID
+                        </th>
+                        <th>
+                            Employee ID
+                        </th>
+                        <th>
+                            Amount
+                        </th>
+                        <th>
+                            Description
+                        </th>
+                        <th>
+                            Date
+                        </th>
+                        <th>
+                            Location
+                        </th>
+                        <th>
+                            Date Created
+                        </th>
+                        <th>
+                            Approval
+                        </th>
+                        <th>
+                            Handler Comment
+                        </th>
+                    </tr>
+                </thead>
+                <tbody id="claimBody">
+        
+                </tbody>
+            </table>
+        </article>
 
-    <h3> Review your claims </h3>
-    <table id = "claimTable">
-        <thead id="claimHead">
-            <tr>
-                <th>
-                    Claim ID
-                </th>
-                <th>
-                    Employee ID
-                </th>
-                <th>
-                    Amount
-                </th>
-                <th>
-                    Description
-                </th>
-                <th>
-                    Date
-                </th>
-                <th>
-                    Location
-                </th>
-                <th>
-                    Date Created
-                </th>
-                <th>
-                    Approval
-                </th>
-                <th>
-                    Handler Comment
-                </th>
-            </tr>
-        </thead>
-        <tbody id="claimBody">
-
-        </tbody>
-    </table>
-
-    <h3> Submit brand new claim </h3>
+        <article id="rightSection">
+    <div class="container mt-5">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Submit New claim</button>
+        <div class="modal" id="myModal" style="display:none">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Claim Form</h5>
+                    </div>
+                    <div class="modal-body">
+                        <form id="newClaimForm">
+                            <div class="mb-3">
+                                <label for="employeeOnClaim"class="form-label required">Employee</label>
+                                <select id="claimEmployee" name="employeeOnClaim" id="employeeOnClaim">
+                                <option value="1">Nick Fury</option>
+                                <option value="2">Natosha Romanov</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="form-label required">Amount</label>
+                                <input type="number" id="claimAmount" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label required">Description</label>
+                                <textarea id="claimDescription"class="form-control"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="form-label-required">Location</label>
+                                <input id="claimLocation" type="text" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="claimDate">Date</label>
+                                <input id="claimDate" class="form-control" type="date"/>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary" onclick="createNewClaim()">Submit</button>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </article>
+    </section>
 
 
 
     <div style="float: right">
-    <form align="right" name="form1" method="post" action="../index.html">
+    <form name="form1" method="post" action="../index.html">
         <label class="logoutLblPos">
             <button id="logoutButton" onclick="logout()">Logout</button>
         <!-- <input name="submit2" type="submit" id="submit2" onclick="logout()" value="log out"> -->
@@ -129,5 +157,6 @@
     </footer>
 </main>
 </body>
+
 <script src="../shield_js/user.js"></script>
 </html>

@@ -8,12 +8,15 @@ import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 //import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import resources.poms.AgentLogin;
 import resources.poms.AgentLogout;
 import resources.poms.UserLogin;
 import resources.poms.UserLogout;
 
 import java.io.File;
+import java.time.Duration;
+import java.util.concurrent.TimeUnit;
 //import java.util.concurrent.TimeUnit;
 
 @RunWith(Cucumber.class)
@@ -25,7 +28,7 @@ public class TestRunner {
     public static UserLogout userLogout;
     public static AgentLogin agentLogin;
     public static AgentLogout agentLogout;
-    //public static WebDriverWait explicitWait;
+    public static WebDriverWait explicitWait;
 
     @BeforeClass
     public static void setup(){
@@ -37,8 +40,8 @@ public class TestRunner {
         agentLogin = new AgentLogin(driver);
         agentLogout = new AgentLogout(driver);
         System.out.println("setup complete!");
-        //driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        //explicitWait = new WebDriverWait(driver, 5);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        explicitWait = new WebDriverWait(driver, 5);
 
     }
     @AfterClass
