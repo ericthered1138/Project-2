@@ -12,18 +12,10 @@ async function Login(){
         headers:{"Content-Type": 'application/json'},
         body:userJSON});
     
-<<<<<<< HEAD
-    console.log(response);
-
-    if(Object.keys(response).length === 5){
-        window.sessionStorage.setItem("userId", response["userId"]);
-        console.log(response["userId"])
-=======
         
     if (response.status == 200){
         let body = await response.json();
         window.sessionStorage.setItem("userId", body["userId"]);
->>>>>>> main
         window.location.href = "shield_html/user.html";
     }
     else{
@@ -48,15 +40,6 @@ async function LoginShieldAgent(){
     
     console.log(response);
 
-<<<<<<< HEAD
-    if(Object.keys(response).length === 7 && response["handler"] == true){
-        window.sessionStorage.setItem("employeeId", response["employeeId"]);
-        window.location.href = "shield_html/shield_handler.html";
-
-    }else if(Object.keys(response).length === 7){
-        window.sessionStorage.setItem("employeeId", response["employeeId"]);
-        window.location.href = "shield_html/shield_agent.html";
-=======
     if (response.status == 201){
         let body = await response.json();
         if (body["handler" == true]){
@@ -67,7 +50,6 @@ async function LoginShieldAgent(){
             window.sessionStorage.setItem("employeeId", body["employeeId"]);
             window.location.href = "shield_html/shield_agent.html";
         }
->>>>>>> main
     }
     else{
         alert("Invalid username or password")
@@ -75,31 +57,6 @@ async function LoginShieldAgent(){
     }
 }
 
-<<<<<<< HEAD
-async function LoginShieldHandler(){
-    let url = "";
-    const username = document.getElementById("username");
-    const password = document.getElementById("password");
-
-    sessionStorage.setItem("username", username.value);
-    sessionStorage.setItem("password", password.value);
-    console.log(username.value);
-    console.log(password.value);
-    shieldHandlerJSON = JSON.stringify({"username": username.value.toLowerCase(), "password": password.value});
-    console.log(shieldHandlerJSON);
-
-    let respose = await fetch(url, {
-        method: "POST", 
-        headers:{"Content-Type": 'application/json'},
-        body: shieldHandlerJSON}).then(response => {return response.json()});
-
-    if(response.username == username.value.toLowerCase() && response.passcode == password.value && response.handler == true){
-        window.location.href = "/shield_handler.html";
-    }
-    else{
-        alert("Invalid username or password")
-        console.log(response.username, response.password);
-=======
 async function CreateUserAccount(){
     let url ="http://localhost:8080/newUser";
     const newUserFirstName = document.getElementById("signUpFirstName");
@@ -129,7 +86,6 @@ async function CreateUserAccount(){
     }
     else{
         alert("Password does not match")
->>>>>>> main
     }
 }
 

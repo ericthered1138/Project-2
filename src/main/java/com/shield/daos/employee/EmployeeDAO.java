@@ -25,11 +25,7 @@ public interface EmployeeDAO {
 
     List<String> getLeaderboard();
 
-<<<<<<< HEAD
-
-=======
     Boolean insertEmployeeImage(int employee_id, File file);
 
     byte[] getEmployeeImage(int employee_id);
->>>>>>> main
 }

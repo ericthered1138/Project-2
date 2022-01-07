@@ -7,11 +7,7 @@
 .logoutLblPos{
     position: absolute;
     right:5.2vw;
-<<<<<<< HEAD
-    top:8vh;
-=======
     top:7vh;
->>>>>>> main
     
  }
 
@@ -25,13 +21,6 @@
      height: 95vh;
  }
 
-<<<<<<< HEAD
- #searchGlass{
-     padding-right: 5px;
- }
-
-=======
->>>>>>> main
  #logo {
      width: 10vw;
  }
@@ -59,14 +48,10 @@
 
  #rightSideHeader{
      display: flex;
-<<<<<<< HEAD
-     width: 20vw;
-=======
      /* width: 20vw; */
      margin-left: 350px;
->>>>>>> main
      align-items: center;
-     justify-content: right;
+     justify-content: space-evenly;
  }
 
  #shieldAgentName{
@@ -144,10 +129,7 @@
      height: 40vh;
  }
  #rightSection{
-<<<<<<< HEAD
-=======
      padding: 1rem;
->>>>>>> main
      width: 14vw;
      height: 40vh;
  }

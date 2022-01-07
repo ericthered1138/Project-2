@@ -6,10 +6,7 @@ const claimTableBody = document.getElementById("claimBody");
 const headerUsername = document.getElementById("headerUsername");
 const userId = sessionStorage.getItem("userId");
 const claimModal = document.getElementById("myModal");
-<<<<<<< HEAD
-=======
 const claimEmployeeDropDown = document.getElementById("claimEmployee");
->>>>>>> main
 
 
 function logout(){
@@ -53,10 +50,6 @@ function populateUsername(user){
 //function to grab the claim information for the user...
 function populateClaimData(responseBody){
         claimTableBody.innerHTML = '';
-<<<<<<< HEAD
-        claimModal.style.display = "none";
-=======
->>>>>>> main
         for(let claim of responseBody){
             let tableRow = document.createElement("tr");
             tableRow.innerHTML = `<td>${claim.claimId}</td>
@@ -82,40 +75,6 @@ function toggleClaimData()
     }
     else{
         claimTable.style.display="none";
-<<<<<<< HEAD
-    }
-}
-
-
-async function createNewClaim(){
-    let url = "http://localhost:8080/claim"
-    let employeeId = document.getElementById("claimEmployee").value;
-    let amount = document.getElementById("claimAmount");
-    let description = document.getElementById("claimDescription");
-    let date = document.getElementById("claimDate");
-    let location = document.getElementById("claimLocation");
-    let approval = "pending";
-    let handlerComment = "";
-    console.log(employeeId);
-
-    let createClaimJSON = JSON.stringify({"claimId": 0, "userId": parseInt(userId), "employeeId": parseInt(employeeId), "amount": parseInt(amount.value), "description": description.value, "dateOfOccurrence": date.value, "locationOfOccurrence": location.value, "approval": approval, "handlerComment": handlerComment});
-    console.log(createClaimJSON);
-    document.getElementById("newClaimForm").reset()
-
-    let response = await fetch(url, {
-        method: "POST",
-        headers:{"Content-Type": 'application/json'},
-        body:createClaimJSON})
-        
-        if (response.status === 201){
-            let body = await response.json();
-            console.log(body);
-        }
-        else{
-            alert("There was an issue");
-
-=======
->>>>>>> main
     }
 }
 

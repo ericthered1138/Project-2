@@ -10,11 +10,8 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-<<<<<<< HEAD
-=======
 import java.io.File;
 import java.io.InputStream;
->>>>>>> main
 import java.util.HashMap;
 import java.util.List;
 
@@ -94,8 +91,6 @@ public class EmployeeDAOTests {
         System.out.println(leaderboard);
         Assert.assertNotNull(leaderboard);
     }
-<<<<<<< HEAD
-=======
 
     @Test
     void insertEmployeeImage(){
@@ -112,5 +107,4 @@ public class EmployeeDAOTests {
         byte[] returned_image = employeeDAO.getEmployeeImage(employee_id);
         Assert.assertNotNull(returned_image);
     }
->>>>>>> main
 }

@@ -6,13 +6,9 @@ import com.shield.entities.Claim;
 import com.shield.entities.Debrief;
 import com.shield.entities.Employee;
 
-<<<<<<< HEAD
-=======
 import java.io.*;
->>>>>>> main
 import java.sql.*;
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 
 public class EmployeeDAOImp implements EmployeeDAO {
@@ -22,11 +18,7 @@ public class EmployeeDAOImp implements EmployeeDAO {
         List<Employee> employees;
         try (Connection connection = DatabaseConnection.createConnection()) {
 
-<<<<<<< HEAD
-            String sql = "select * from employee_table";
-=======
             String sql = "select * from employee_table where handler = false";
->>>>>>> main
             Statement statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery(sql);
             employees = new ArrayList<>();
@@ -298,27 +290,17 @@ public class EmployeeDAOImp implements EmployeeDAO {
                     "employee_table group by employee_id, first_name, last_name order by sum(amount) desc;";
             Statement statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery(sql);
-<<<<<<< HEAD
-            while(resultSet.next()){
-=======
             while (resultSet.next()) {
->>>>>>> main
                 String name = resultSet.getString("first_name") + " " + resultSet.getString("last_name");
                 leaderboardList.add(name);
                 Float total = resultSet.getFloat("sum");
                 leaderboardList.add(total.toString());
             }
-<<<<<<< HEAD
-            } catch (SQLException e) {
-=======
         } catch (SQLException e) {
->>>>>>> main
             e.printStackTrace();
             return null;
         }
         return leaderboardList;
-<<<<<<< HEAD
-=======
     }
 
     @Override
@@ -355,6 +337,5 @@ public class EmployeeDAOImp implements EmployeeDAO {
             return null;
         }
         return null;
->>>>>>> main
     }
 }
