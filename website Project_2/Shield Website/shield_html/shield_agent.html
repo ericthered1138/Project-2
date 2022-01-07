@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shield Agent</title>
     <link rel="stylesheet" href="../shield_css/shield.css">
+    <link rel="stylesheet" href="../shield_css/styling.css">
     <!-- <style>
         footer{
             background-color: black;
@@ -28,7 +29,7 @@
     
     <section id="articleContainer">
         <article id="leftSection">
-            <button type="button" onclick ="toggleDebriefData()"> View Debriefs</button>
+            <button type="button" onclick ="toggleDebriefData()" class="rect3"> View Debriefs</button>
             <table class="table table-hover" id="debriefTable" style="display: none;">
                 <thead id="debriefHead"></thead>
                 <tr>
@@ -47,7 +48,7 @@
 
     <article id="middleSection">
         <div class="container mt-5">
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Submit New Debrief Form</button>
+            <button type="button" class="rect4" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Submit New Debrief Form</button>
             <div class="modal" id="myModal" style="display:none">
                 <div class="modal-dialog">
                     <div class="modal-content">
@@ -57,7 +58,7 @@
                         <div class="modal-body">
                             <form id="newDebriefForm">
                                 <div class="mb-3">
-                                    <p id="formTitle"> Debrief Log to Explain their Reasoning </p>
+                                    <br>
                                     <label for="debriefingTextInput"><b>Debrief Text: </b></label>
                                     <textarea placeholder="Give a explanation" id="debriefingText" required></textarea>
                                 </div>
@@ -86,7 +87,7 @@
 
 
     <article id="rightSection">
-        <button type="button">Glorious Leaderboard of Damage</button>
+        <button type="button" class="rect5">Glorious Leaderboard of Damage</button>
             <!-- <p id="formTitle"> Glorious Leaderboard of Damage </p> -->
             <table class="table table-hover" id="debriefTable" style="display: none;">
             </table>

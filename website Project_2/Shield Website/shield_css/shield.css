@@ -94,7 +94,7 @@
 
  main {
     background-color:  rgba(0, 206, 209, 0.911);
-    margin: 50px;
+    margin: 10px;
  }
 
  footer{
@@ -129,6 +129,7 @@
      height: 40vh;
  }
  #rightSection{
+     padding: 1rem;
      width: 14vw;
      height: 40vh;
  }
@@ -159,6 +160,11 @@
  /* right section */
  #rightsection {
      background-color: white;
-     padding: 1rem;
+     /* padding: 1rem; */
      border-radius: 10px;
+ }
+
+ textarea {
+     width: 150px;
+     height: 80px;
  }
