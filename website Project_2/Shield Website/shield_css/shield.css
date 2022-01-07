@@ -6,9 +6,8 @@
 
 .logoutLblPos{
     position: absolute;
-    right:5.2vw;
-    top:7vh;
-    
+    right: 5.2vw;
+    top: 7vh;
  }
 
  #userMain{
@@ -21,24 +20,23 @@
      height: 95vh;
  }
 
+/* 
+ #rightbar {
+     display: flex;
+     width: 1vw;
+     position: relative;
+     flex-direction: column;
+     align-items: center;
+ } */
+
  #logo {
      width: 10vw;
  }
 
  #thumbNail {
-     background-image: url(../images/ironman.gif);
+     background-image: url(../images/shield\ logo\ animated.gif);
      background-color: black;
      width: 7vw;
-     height: 10vh;
-     background-position: center;
-     background-repeat: no-repeat;
-     background-size: cover;
-     border-radius: 10px;
- }
- #thumbNails{
-     background-image: url(../images/Scarlett.jpg);
-     background-color: black;
-     width: 6vw;
      height: 10vh;
      background-position: center;
      background-repeat: no-repeat;
@@ -48,7 +46,7 @@
 
  #rightSideHeader{
      display: flex;
-     /* width: 20vw; */
+     /* width: 30vw; */
      margin-left: 350px;
      align-items: center;
      justify-content: space-evenly;
@@ -94,12 +92,16 @@
 
  main {
     background-color:  rgba(0, 206, 209, 0.911);
-    margin: 10px;
+    margin: 50px;
  }
 
  footer{
    text-align: center;
 
+ }
+
+ #headerUsername{
+     padding-left: 30px;
  }
  
  h3{
@@ -110,61 +112,16 @@
     justify-content: space-evenly;
  }
 
-
  #articleContainer{
-     display: flex;
-     justify-content: space-around;
- }
- #headerUsername{
-     padding-left: 30px;
- }
+    display: flex;
+    justify-content: space-around;
+}
 
- /* #rightSection, #middleSection, #leftSection{
-     width: 40vw;
-     height: 74vh; 
- } */
-
- #leftSection{
-     width: 14vw; 
-     height: 40vh;
- }
- #rightSection{
-     padding: 1rem;
-     width: 14vw;
-     height: 40vh;
- }
-
- #middleSection{
-     width: 20vw;
-     height: 40vh;
-     padding: 1rem;
-     border-radius: 10px;
-     color: black;
- }
-
- 
-
- /* section */
- #leftSection{
-     padding: 1rem;
-     border-radius: 10px;
-     color: black;
- }
-
- #formTitle,
- #pastTitle {
-     font-size: 1.5rem;
-     border-bottom: solid 1px;
- }
-
- /* right section */
- #rightsection {
-     background-color: white;
-     /* padding: 1rem; */
-     border-radius: 10px;
- }
-
- textarea {
-     width: 150px;
-     height: 80px;
- }
+#leftSection{
+    width: 14vw; 
+    height: 40vh;
+}
+#rightSection{
+    width: 14vw;
+    height: 40vh;
+}
