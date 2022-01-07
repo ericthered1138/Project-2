@@ -51,7 +51,7 @@ public class EmployeeDAOTests {
     void getAllClaims() {
         Employee employee = employeeDAO.getEmployeeById(1_000_001);
         Integer employeeId = employee.getEmployeeId();
-        List<Claim> claimsList = employeeDAO.getAllClaims(employeeId);
+        List<Claim> claimsList = employeeDAO.getAllHandlerClaims(employeeId);
         System.out.println(claimsList);
         Assert.assertTrue(claimsList.size() == 1);
     }
@@ -80,11 +80,5 @@ public class EmployeeDAOTests {
         List<Debrief> claimsList = employeeDAO.getAgentDebriefings(employeeId);
         System.out.println(claimsList);
         Assert.assertTrue(claimsList.size() == 1);
-    }
-
-    @Test
-    void getLeaderboard() {
-        List<String> returnedList= employeeDAO.getLeaderboard();
-        Assert.assertNotNull(returnedList);
     }
 }

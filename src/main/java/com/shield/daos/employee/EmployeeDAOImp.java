@@ -6,14 +6,42 @@ import com.shield.entities.Claim;
 import com.shield.entities.Debrief;
 import com.shield.entities.Employee;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 public class EmployeeDAOImp implements EmployeeDAO {
+    @Override
+    public List<Employee> getAllEmployees() {
+        // grab a list of all the agents
+        List<Employee> employees;
+        try (Connection connection = DatabaseConnection.createConnection()) {
+
+            String sql = "select * from employee_table";
+            Statement statement = connection.createStatement();
+            ResultSet resultSet = statement.executeQuery(sql);
+            employees = new ArrayList<>();
+            while (resultSet.next()) {
+                Employee employee = new Employee(
+                        resultSet.getInt("employee_id"),
+                        resultSet.getInt("handler_id"),
+                        resultSet.getBoolean("handler"),
+                        resultSet.getString("username"),
+                        resultSet.getString("passcode"),
+                        resultSet.getString("first_name"),
+                        resultSet.getString("last_name")
+                );
+                employees.add(employee);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return null;
+        }
+        return employees;
+    }
+
+
     @Override
     public Employee getEmployeeById(int employee_id) {
         try (Connection connection = DatabaseConnection.createConnection()) {
@@ -72,7 +100,7 @@ public class EmployeeDAOImp implements EmployeeDAO {
     }
 
     @Override
-    public List<Claim> getAllClaims(int handler_employee_id) {
+    public List<Claim> getAllHandlerClaims(int handler_employee_id) {
 
         // grab a list of the handler's agents
         List<Employee> employees;
@@ -123,8 +151,6 @@ public class EmployeeDAOImp implements EmployeeDAO {
                     );
                     claims.add(claim);
                 }
-
-                return claims;
 
             } catch (SQLException e) {
                 e.printStackTrace();
@@ -255,10 +281,24 @@ public class EmployeeDAOImp implements EmployeeDAO {
         }
     }
 
-    @Override
-    public List<String> getLeaderboard() {
-        //grab a list of all the claims
-        //tally up each agent's total
-        return null;
-    }
+//    @Override
+//    public HashMap<Integer, Double> getAllClaims() {
+//
+////        // for each agent take the sum total of their claims in sql
+////        for (Employee anEmployee : employees) {
+////            try (Connection connection = DatabaseConnection.createConnection()) {
+////                String sql = "select employee_id, sum(amount) from claim_table group by employee_id order by sum(amount) desc;"
+////                PreparedStatement preparedStatement = connection.prepareStatement(sql);
+////                preparedStatement.setInt(1, anEmployee.getEmployeeId());
+////                ResultSet resultSet = preparedStatement.executeQuery();
+////                    sumTotalsById.put(anEmployee.getEmployeeId(), resultSet.getDouble("sum"));
+////                } catch (SQLException e) {
+////                e.printStackTrace();
+////                return null;
+////            }
+////
+////        }
+////        // for every employee add a total to the statistics list then reorder the list by the total
+////        return sumTotalsById;
+//    }
 }
