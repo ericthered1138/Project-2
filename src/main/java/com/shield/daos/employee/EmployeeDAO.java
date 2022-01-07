@@ -4,6 +4,7 @@ import com.shield.entities.Claim;
 import com.shield.entities.Debrief;
 import com.shield.entities.Employee;
 
+import java.io.File;
 import java.util.List;
 
 public interface EmployeeDAO {
@@ -24,5 +25,11 @@ public interface EmployeeDAO {
 
     List<String> getLeaderboard();
 
+<<<<<<< HEAD
 
+=======
+    Boolean insertEmployeeImage(int employee_id, File file);
+
+    byte[] getEmployeeImage(int employee_id);
+>>>>>>> main
 }

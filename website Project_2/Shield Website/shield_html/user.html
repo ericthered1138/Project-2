@@ -31,6 +31,7 @@
         </div>
     </header>
         
+<<<<<<< HEAD
 
     <section id="articleContainer">
         <article id="leftSection">
@@ -89,6 +90,65 @@
                                 <select id="claimEmployee" name="employeeOnClaim" id="employeeOnClaim">
                                 <option value="1">Nick Fury</option>
                                 <option value="2">Natosha Romanov</option>
+=======
+
+    <section id="articleContainer">
+        <article id="leftSection">
+            <button type="button" onclick="toggleClaimData()">Review your claims</button>
+            <table class="table table-hover" id = "claimTable" style="display: none;">
+                <thead  id="claimHead">
+                    <tr>
+                        <th>
+                            Claim ID
+                        </th>
+                        <th>
+                            Employee ID
+                        </th>
+                        <th>
+                            Amount
+                        </th>
+                        <th>
+                            Description
+                        </th>
+                        <th>
+                            Date
+                        </th>
+                        <th>
+                            Location
+                        </th>
+                        <th>
+                            Date Created
+                        </th>
+                        <th>
+                            Approval
+                        </th>
+                        <th>
+                            Handler Comment
+                        </th>
+                    </tr>
+                </thead>
+                <tbody id="claimBody">
+        
+                </tbody>
+            </table>
+        </article>
+
+        <article id="rightSection">
+    <div class="container mt-5">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Submit New claim</button>
+        <div class="modal" id="myModal" style="display:none">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Claim Form</h5>
+                    </div>
+                    <div class="modal-body">
+                        <form id="newClaimForm">
+                            <div class="mb-3">
+                                <label for="employeeOnClaim"class="form-label required">Employee</label>
+                                <select id="claimEmployee" name="employeeOnClaim" id="employeeOnClaim">
+
+>>>>>>> main
                                 </select>
                             </div>
                             <div class="mb-3">
@@ -105,11 +165,19 @@
                             </div>
                             <div class="mb-3">
                                 <label for="claimDate">Date</label>
+<<<<<<< HEAD
+=======
+                                <br>
+>>>>>>> main
                                 <input id="claimDate" class="form-control" type="date"/>
                             </div>
                         </form>
                     </div>
                     <div class="modal-footer">
+<<<<<<< HEAD
+=======
+                        <br>
+>>>>>>> main
                         <button type="submit" class="btn btn-primary" onclick="createNewClaim()">Submit</button>
                         <button type="button" class="btn-close" data-bs-dismiss="modal">Cancel</button>
                     </div>

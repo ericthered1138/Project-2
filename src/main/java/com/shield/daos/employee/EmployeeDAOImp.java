@@ -6,6 +6,10 @@ import com.shield.entities.Claim;
 import com.shield.entities.Debrief;
 import com.shield.entities.Employee;
 
+<<<<<<< HEAD
+=======
+import java.io.*;
+>>>>>>> main
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -18,7 +22,11 @@ public class EmployeeDAOImp implements EmployeeDAO {
         List<Employee> employees;
         try (Connection connection = DatabaseConnection.createConnection()) {
 
+<<<<<<< HEAD
             String sql = "select * from employee_table";
+=======
+            String sql = "select * from employee_table where handler = false";
+>>>>>>> main
             Statement statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery(sql);
             employees = new ArrayList<>();
@@ -50,7 +58,7 @@ public class EmployeeDAOImp implements EmployeeDAO {
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setInt(1, employee_id);
             ResultSet resultSet = preparedStatement.executeQuery();
-            if(resultSet.next()) {
+            if (resultSet.next()) {
                 Employee employee = new Employee(
                         resultSet.getInt("employee_id"),
                         resultSet.getInt("handler_id"),
@@ -61,10 +69,10 @@ public class EmployeeDAOImp implements EmployeeDAO {
                         resultSet.getString("last_name")
                 );
                 return employee;
-            }else{
+            } else {
                 throw new EmployeeNotFound("The employee was not found.");
             }
-        } catch (SQLException e){
+        } catch (SQLException e) {
             e.printStackTrace();
             return null;
         }
@@ -79,7 +87,7 @@ public class EmployeeDAOImp implements EmployeeDAO {
             preparedStatement.setString(1, username);
             preparedStatement.setString(2, password);
             ResultSet resultSet = preparedStatement.executeQuery();
-            if(resultSet.next()) {
+            if (resultSet.next()) {
                 Employee employee = new Employee(
                         resultSet.getInt("employee_id"),
                         resultSet.getInt("handler_id"),
@@ -90,10 +98,10 @@ public class EmployeeDAOImp implements EmployeeDAO {
                         resultSet.getString("last_name")
                 );
                 return employee;
-            }else{
+            } else {
                 throw new EmployeeNotFound("The employee was not found.");
             }
-        } catch (SQLException e){
+        } catch (SQLException e) {
             e.printStackTrace();
             return null;
         }
@@ -163,14 +171,14 @@ public class EmployeeDAOImp implements EmployeeDAO {
     @Override
     public List<Claim> getUserClaimsByAgent(int agent_employee_id) {
         //grab the list of claims by employee_id
-        try (Connection connection = DatabaseConnection.createConnection()){
+        try (Connection connection = DatabaseConnection.createConnection()) {
             String sql = "select * from claim_table where employee_id = ?";
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setInt(1, agent_employee_id);
             ResultSet resultSet = preparedStatement.executeQuery();
             List<Claim> claims = new ArrayList<>();
-            while(resultSet.next()){
-                Claim claim= new Claim(
+            while (resultSet.next()) {
+                Claim claim = new Claim(
                         resultSet.getInt("claim_id"),
                         resultSet.getInt("user_id"),
                         resultSet.getInt("employee_id"),
@@ -187,7 +195,7 @@ public class EmployeeDAOImp implements EmployeeDAO {
 
             return claims;
 
-        } catch (SQLException e){
+        } catch (SQLException e) {
             e.printStackTrace();
             return null;
         }
@@ -231,13 +239,13 @@ public class EmployeeDAOImp implements EmployeeDAO {
                 preparedStatement.setInt(1, anEmployee.getEmployeeId());
                 ResultSet resultSet = preparedStatement.executeQuery();
                 while (resultSet.next()) {
-                    Debrief debrief= new Debrief(
-                        resultSet.getInt("debriefing_id"),
-                        resultSet.getInt("employee_id"),
-                        resultSet.getString("debriefing_text"),
-                        resultSet.getDate("date_of_occurrence").toString(),
-                        resultSet.getString("location_of_occurrence"),
-                        resultSet.getTimestamp("datetime_of_creation").toString()
+                    Debrief debrief = new Debrief(
+                            resultSet.getInt("debriefing_id"),
+                            resultSet.getInt("employee_id"),
+                            resultSet.getString("debriefing_text"),
+                            resultSet.getDate("date_of_occurrence").toString(),
+                            resultSet.getString("location_of_occurrence"),
+                            resultSet.getTimestamp("datetime_of_creation").toString()
                     );
                     debriefs.add(debrief);
                 }
@@ -255,14 +263,14 @@ public class EmployeeDAOImp implements EmployeeDAO {
     @Override
     public List<Debrief> getAgentDebriefings(int agent_employee_id) {
         // grab a list of debriefings by agent's employee_id
-        try (Connection connection = DatabaseConnection.createConnection()){
+        try (Connection connection = DatabaseConnection.createConnection()) {
             String sql = "select * from debriefing_table where employee_id = ?";
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setInt(1, agent_employee_id);
             ResultSet resultSet = preparedStatement.executeQuery();
             List<Debrief> debriefs = new ArrayList<>();
-            while(resultSet.next()){
-                Debrief debrief= new Debrief(
+            while (resultSet.next()) {
+                Debrief debrief = new Debrief(
                         resultSet.getInt("debriefing_id"),
                         resultSet.getInt("employee_id"),
                         resultSet.getString("debriefing_text"),
@@ -275,7 +283,7 @@ public class EmployeeDAOImp implements EmployeeDAO {
 
             return debriefs;
 
-        } catch (SQLException e){
+        } catch (SQLException e) {
             e.printStackTrace();
             return null;
         }
@@ -290,16 +298,63 @@ public class EmployeeDAOImp implements EmployeeDAO {
                     "employee_table group by employee_id, first_name, last_name order by sum(amount) desc;";
             Statement statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery(sql);
+<<<<<<< HEAD
             while(resultSet.next()){
+=======
+            while (resultSet.next()) {
+>>>>>>> main
                 String name = resultSet.getString("first_name") + " " + resultSet.getString("last_name");
                 leaderboardList.add(name);
                 Float total = resultSet.getFloat("sum");
                 leaderboardList.add(total.toString());
             }
+<<<<<<< HEAD
             } catch (SQLException e) {
+=======
+        } catch (SQLException e) {
+>>>>>>> main
             e.printStackTrace();
             return null;
         }
         return leaderboardList;
+<<<<<<< HEAD
+=======
+    }
+
+    @Override
+    public Boolean insertEmployeeImage(int employee_id, File file) {
+        try (Connection connection = DatabaseConnection.createConnection()) {
+            FileInputStream fileInputStream = new FileInputStream(file);
+            String sql = "INSERT INTO employee_picture_table VALUES (default, ?, ?)";
+            PreparedStatement preparedStatment = connection.prepareStatement(sql);
+            preparedStatment.setInt(1, employee_id);
+            preparedStatment.setBinaryStream(2, fileInputStream, file.length());
+            preparedStatment.executeUpdate();
+        } catch (SQLException | FileNotFoundException e) {
+            e.printStackTrace();
+            return false;
+        }
+        return true;
+    }
+
+    @Override
+    public byte[] getEmployeeImage(int employee_id) {
+        try (Connection connection = DatabaseConnection.createConnection()) {
+            String sql = "SELECT picture FROM employee_picture_table WHERE employee_id = ?";
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setInt(1, employee_id);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            InputStream image;
+            if (resultSet != null) {
+                while(resultSet.next()){
+                    byte[] imgByte = resultSet.getBytes(1);
+                    return imgByte;
+            }}
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return null;
+        }
+        return null;
+>>>>>>> main
     }
 }

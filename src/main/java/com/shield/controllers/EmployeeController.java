@@ -51,7 +51,7 @@ public class EmployeeController {
             ctx.status(201);
         } catch (EmployeeNotFound e){
             ctx.result(e.getMessage());
-            ctx.status(100);
+            ctx.status(404);
         }
     };
 

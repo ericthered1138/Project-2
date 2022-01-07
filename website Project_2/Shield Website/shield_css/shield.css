@@ -7,7 +7,11 @@
 .logoutLblPos{
     position: absolute;
     right:5.2vw;
+<<<<<<< HEAD
     top:8vh;
+=======
+    top:7vh;
+>>>>>>> main
     
  }
 
@@ -21,10 +25,13 @@
      height: 95vh;
  }
 
+<<<<<<< HEAD
  #searchGlass{
      padding-right: 5px;
  }
 
+=======
+>>>>>>> main
  #logo {
      width: 10vw;
  }
@@ -52,7 +59,12 @@
 
  #rightSideHeader{
      display: flex;
+<<<<<<< HEAD
      width: 20vw;
+=======
+     /* width: 20vw; */
+     margin-left: 350px;
+>>>>>>> main
      align-items: center;
      justify-content: right;
  }
@@ -97,7 +109,7 @@
 
  main {
     background-color:  rgba(0, 206, 209, 0.911);
-    margin: 50px;
+    margin: 10px;
  }
 
  footer{
@@ -118,6 +130,9 @@
      display: flex;
      justify-content: space-around;
  }
+ #headerUsername{
+     padding-left: 30px;
+ }
 
  /* #rightSection, #middleSection, #leftSection{
      width: 40vw;
@@ -129,6 +144,10 @@
      height: 40vh;
  }
  #rightSection{
+<<<<<<< HEAD
+=======
+     padding: 1rem;
+>>>>>>> main
      width: 14vw;
      height: 40vh;
  }
@@ -159,6 +178,11 @@
  /* right section */
  #rightsection {
      background-color: white;
-     padding: 1rem;
+     /* padding: 1rem; */
      border-radius: 10px;
+ }
+
+ textarea {
+     width: 150px;
+     height: 80px;
  }
