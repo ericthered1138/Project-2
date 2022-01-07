@@ -10,6 +10,8 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import java.io.File;
+import java.io.InputStream;
 import java.util.HashMap;
 import java.util.List;
 
@@ -88,5 +90,21 @@ public class EmployeeDAOTests {
         List<String> leaderboard = employeeDAO.getLeaderboard();
         System.out.println(leaderboard);
         Assert.assertNotNull(leaderboard);
+    }
+
+    @Test
+    void insertEmployeeImage(){
+        File file = new File("Pictures/vinicius-boscheinen-nick-fury.gif");
+        int employee_id = 1_000_001;
+        boolean returned_boolean = employeeDAO.insertEmployeeImage(employee_id, file);
+        Assert.assertTrue(returned_boolean);
+    }
+
+    @Test
+    void getEmployeeImage(){
+        this.insertEmployeeImage();//insert the picture for the test
+        int employee_id = 1_000_001;
+        byte[] returned_image = employeeDAO.getEmployeeImage(employee_id);
+        Assert.assertNotNull(returned_image);
     }
 }
