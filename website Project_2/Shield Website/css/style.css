@@ -1735,6 +1735,11 @@ textarea.form-control {
 .form-check-label {
   margin-bottom: 0; }
 
+/* Hides create Account */
+.form--hidden {
+  display: none;
+}
+
 .form-check-inline {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -8346,3 +8351,5 @@ textarea.form-control {
         border: 1px solid transparent;
         background: #fbceb5;
         color: #fff; }
+
+

@@ -7,7 +7,6 @@ import com.shield.entities.Employee;
 import java.util.List;
 
 public interface EmployeeService {
-    List<Employee> getAllEmployeesService();
 
     Employee getEmployeeByIdService(int employee_id);
 

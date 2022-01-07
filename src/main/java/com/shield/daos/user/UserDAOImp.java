@@ -21,7 +21,7 @@ public class UserDAOImp implements UserDAO {
             if (resultSet.next()){
                 returned_index = resultSet.getInt("highest_user_id");
             }
-            //System.out.println(returned_index);
+            System.out.println(returned_index);
             return returned_index + 1;
         }catch (SQLException e){
             e.printStackTrace();
@@ -143,7 +143,7 @@ public class UserDAOImp implements UserDAO {
                         resultSet.getInt("claim_id"),
                         resultSet.getInt("user_id"),
                         resultSet.getInt("employee_id"),
-                        resultSet.getInt("amount"),
+                        resultSet.getFloat("amount"),
                         resultSet.getString("description"),
                         resultSet.getDate("date_of_occurrence").toString(),
                         resultSet.getString("location_of_occurrence"),

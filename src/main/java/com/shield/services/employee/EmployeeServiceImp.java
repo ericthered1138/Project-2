@@ -15,11 +15,6 @@ public class EmployeeServiceImp implements EmployeeService{
     public EmployeeServiceImp(EmployeeDAO employeeDAO) {this.employeeDAO = employeeDAO;}
 
     @Override
-    public List<Employee> getAllEmployeesService() {
-        return employeeDAO.getAllEmployees();
-    }
-
-    @Override
     public Employee getEmployeeByIdService(int employee_id) {
         return employeeDAO.getEmployeeById(employee_id);
     }
@@ -36,7 +31,7 @@ public class EmployeeServiceImp implements EmployeeService{
 
         //Check if the employee is a handler.
         if (employee.isHandler()){
-            return employeeDAO.getAllHandlerClaims(handler_employee_id);
+            return employeeDAO.getAllClaims(handler_employee_id);
         }else{
             throw new EmployeeIsNotHandler("That employee is not a handler.");
         }
@@ -85,11 +80,6 @@ public class EmployeeServiceImp implements EmployeeService{
 
     @Override
     public List<String> getLeaderboardService() {
-        // grab the list of all the claims
-        // create a list to hold maps for each employee
-        // grand total
-        // return the list
-        
         return null;
     }
 }
