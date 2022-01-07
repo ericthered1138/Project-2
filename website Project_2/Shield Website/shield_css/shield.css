@@ -7,7 +7,7 @@
 .logoutLblPos{
     position: absolute;
     right:5.2vw;
-    top:8vh;
+    top:7vh;
     
  }
 
@@ -19,10 +19,6 @@
      flex-direction: column;
      width: 90vw;
      height: 95vh;
- }
-
- #searchGlass{
-     padding-right: 5px;
  }
 
  #logo {
@@ -52,9 +48,10 @@
 
  #rightSideHeader{
      display: flex;
-     width: 20vw;
+     /* width: 20vw; */
+     margin-left: 350px;
      align-items: center;
-     justify-content: right;
+     justify-content: space-evenly;
  }
 
  #shieldAgentName{
@@ -117,6 +114,9 @@
  #articleContainer{
      display: flex;
      justify-content: space-around;
+ }
+ #headerUsername{
+     padding-left: 30px;
  }
 
  /* #rightSection, #middleSection, #leftSection{
