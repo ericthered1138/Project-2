@@ -1,0 +1,67 @@
+.rect1{
+    height: 100px;
+    width: 800px;
+    background: rgb(206, 110, 110);
+    border: 4px solid gold;
+    color: rgb(17, 17, 77);
+    text-align: center;
+    margin-left: 120px;
+}
+
+.rect2{
+    height: 100px;
+    width: 400px;
+    background: rgb(90, 56, 56);
+    border: 4px solid gold;
+    color: rgb(217, 217, 248);
+    text-align: center;
+    margin-top: -108px;
+    margin-left: 920px;
+}
+
+.rect3{
+    height: 80px;
+    width: 400px;
+    font-size: 22px;
+    background: rgb(43, 23, 23);
+    border: 4px solid gold;
+    color: rgb(216, 216, 231);
+    text-align: center;
+    /* margin-top: 40px;
+    margin-left: 120px; */
+}
+
+.rect4{
+    height: 80px;
+    width: 400px;
+    font-size: 22px;
+    background: rgb(43, 23, 23);
+    border: 4px solid gold;
+    color: rgb(216, 216, 231);
+    text-align: center;
+    /* margin-top: 200px;
+    margin-left: 120px; */
+}
+
+.rect5{
+    height: 80px;
+    width: 380px;
+    font-size: 20px;
+    background: rgb(43, 23, 23);
+    border: 4px solid gold;
+    color: rgb(216, 216, 231);
+    text-align: center;
+    /* margin-top: -108px;
+    margin-left: 920px; */
+}
+
+.rect6{
+    height: 80px;
+    width: 400px;
+    background: rgb(43, 23, 23);
+    border: 4px solid gold;
+    color: rgb(216, 216, 231);
+    text-align: center;
+    margin-top: -108px;
+    margin-left: 920px;
+}
