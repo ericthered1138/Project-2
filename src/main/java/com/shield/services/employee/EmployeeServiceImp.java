@@ -7,6 +7,7 @@ import com.shield.entities.Claim;
 import com.shield.entities.Debrief;
 import com.shield.entities.Employee;
 
+import java.io.File;
 import java.util.List;
 
 public class EmployeeServiceImp implements EmployeeService{
@@ -86,5 +87,15 @@ public class EmployeeServiceImp implements EmployeeService{
     @Override
     public List<String> getLeaderboardService() {
         return employeeDAO.getLeaderboard();
+    }
+
+    @Override
+    public Boolean insertEmployeeImageService(int employee_id, File file) {
+        return employeeDAO.insertEmployeeImage(employee_id, file);
+    }
+
+    @Override
+    public byte[] getEmployeeImageService(int employee_id) {
+        return employeeDAO.getEmployeeImage(employee_id);
     }
 }

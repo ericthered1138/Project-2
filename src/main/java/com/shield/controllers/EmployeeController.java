@@ -123,4 +123,18 @@ public class EmployeeController {
             ctx.status(404);
         }
     };
+
+    public Handler getImage = ctx ->{
+        try {
+            int id = Integer.parseInt(ctx.pathParam("id"));//employee id
+            //Gson gson = new Gson();
+            byte[] image = this.employeeService.getEmployeeImageService(id);
+            //String leaderboards = gson.toJson(leaderboard.toArray());
+            ctx.result(image);
+            ctx.status(200);
+        } catch (EmployeeNotFound e){
+            ctx.result(e.getMessage());
+            ctx.status(404);
+        }
+    };
 }

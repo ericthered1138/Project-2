@@ -326,12 +326,13 @@ public class EmployeeDAOImp implements EmployeeDAO {
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setInt(1, employee_id);
             ResultSet resultSet = preparedStatement.executeQuery();
-            InputStream image;
+            byte[] fullByte = new byte[0];
             if (resultSet != null) {
                 while(resultSet.next()){
                     byte[] imgByte = resultSet.getBytes(1);
-                    return imgByte;
-            }}
+                    fullByte = new byte[fullByte.length + imgByte.length];
+            }
+            return fullByte;}
         } catch (SQLException e) {
             e.printStackTrace();
             return null;
