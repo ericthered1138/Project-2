@@ -6,8 +6,7 @@ const claimTableBody = document.getElementById("claimBody");
 const headerUsername = document.getElementById("headerUsername");
 const userId = sessionStorage.getItem("userId");
 const claimModal = document.getElementById("myModal");
-const claimEmployeeDropDown = document.getElementById("claimEmployee");
-
+const claimEmployeeDropDown = document.getElementById("claimEmployeeDropdown");
 
 function logout(){
     sessionStorage.clear();
@@ -81,7 +80,7 @@ function toggleClaimData()
 
 async function createNewClaim(){
     let url = "http://localhost:8080/claim"
-    let employeeId = document.getElementById("claimEmployee").value;
+    let employeeId = document.getElementById("claimEmployeeDropdown").value;
     let amount = document.getElementById("claimAmount");
     let description = document.getElementById("claimDescription");
     let date = document.getElementById("claimDate");
@@ -90,7 +89,7 @@ async function createNewClaim(){
     let handlerComment = "";
     console.log(employeeId);
 
-    let createClaimJSON = JSON.stringify({"claimId": 0, "userId": parseInt(userId), "employeeId": parseInt(employeeId), "amount": parseInt(amount.value), "description": description.value, "dateOfOccurrence": date.value, "locationOfOccurrence": location.value, "approval": approval, "handlerComment": handlerComment});
+    let createClaimJSON = JSON.stringify({"claimId": 0, "userId": parseInt(userId), "employeeId": parseInt(employeeId), "amount": parseFloat(amount.value), "description": description.value, "dateOfOccurrence": date.value, "locationOfOccurrence": location.value, "approval": approval, "handlerComment": handlerComment});
     console.log(createClaimJSON);
     document.getElementById("newClaimForm").reset()
 
@@ -101,12 +100,17 @@ async function createNewClaim(){
         
         if (response.status === 201){
             let body = await response.json();
+            alert("Your claim has been submitted");
             console.log(body);
         }
         else{
             alert("There was an issue");
 
     }
+}
+
+function resetFormData(){
+    document.getElementById("newClaimForm").reset()
 }
 
 async function GrabAllEmployeeInfo(){
@@ -130,6 +134,7 @@ function populateEmployeeDropDown(employeeList){
             let dropdownOptions = document.createElement("option");
             dropdownOptions.innerText = `${employee.firstName} ${employee.lastName}`;
             dropdownOptions.value = `${employee.employeeId}`;
+            dropdownOptions.id = `employee${employee.employeeId}`;
             claimEmployeeDropDown.append(dropdownOptions);
         }
     }
