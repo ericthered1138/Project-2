@@ -13,10 +13,7 @@ public class EmployeeServiceTests {
     EmployeeDAO employeeDAO = new EmployeeDAOImp();
     EmployeeService employeeService = new EmployeeServiceImp(employeeDAO);
 
-<<<<<<< HEAD
     //Sad Tests
-=======
->>>>>>> AlexBranch
     @Test(expectedExceptions = EmployeeNotFound.class, expectedExceptionsMessageRegExp = "The employee was not found.")
     void badIdForGetAllClaims(){
         employeeService.getAllClaimsService(-5);
@@ -36,8 +33,5 @@ public class EmployeeServiceTests {
     void badIdForGetAgentDebriefingsService(){
         employeeService.getAgentDebriefingsService(-5);
     }
-<<<<<<< HEAD
 
-=======
->>>>>>> AlexBranch
 }

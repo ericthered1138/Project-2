@@ -7,10 +7,7 @@ import com.shield.entities.Claim;
 import com.shield.entities.Debrief;
 import com.shield.entities.Employee;
 
-<<<<<<< HEAD
 import java.io.File;
-=======
->>>>>>> AlexBranch
 import java.util.List;
 
 public class EmployeeServiceImp implements EmployeeService{
@@ -19,14 +16,11 @@ public class EmployeeServiceImp implements EmployeeService{
     public EmployeeServiceImp(EmployeeDAO employeeDAO) {this.employeeDAO = employeeDAO;}
 
     @Override
-<<<<<<< HEAD
     public List<Employee> getAllEmployeesService() {
         return employeeDAO.getAllEmployees();
     }
 
     @Override
-=======
->>>>>>> AlexBranch
     public Employee getEmployeeByIdService(int employee_id) {
         return employeeDAO.getEmployeeById(employee_id);
     }
@@ -43,11 +37,7 @@ public class EmployeeServiceImp implements EmployeeService{
 
         //Check if the employee is a handler.
         if (employee.isHandler()){
-<<<<<<< HEAD
             return employeeDAO.getAllHandlerClaims(handler_employee_id);
-=======
-            return employeeDAO.getAllClaims(handler_employee_id);
->>>>>>> AlexBranch
         }else{
             throw new EmployeeIsNotHandler("That employee is not a handler.");
         }
@@ -96,7 +86,6 @@ public class EmployeeServiceImp implements EmployeeService{
 
     @Override
     public List<String> getLeaderboardService() {
-<<<<<<< HEAD
         return employeeDAO.getLeaderboard();
     }
 
@@ -108,8 +97,5 @@ public class EmployeeServiceImp implements EmployeeService{
     @Override
     public String getEmployeeImageService(int employee_id) {
         return employeeDAO.getEmployeeImage(employee_id);
-=======
-        return null;
->>>>>>> AlexBranch
     }
 }

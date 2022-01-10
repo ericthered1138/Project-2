@@ -26,7 +26,6 @@ public class DebriefController {
     };
 
     public Handler createDebrief = ctx ->{
-<<<<<<< HEAD
         try{
             Gson gson = new Gson();
             Debrief newDebrief = gson.fromJson(ctx.body(), Debrief.class);
@@ -39,15 +38,6 @@ public class DebriefController {
             ctx.result(e.getMessage());
             ctx.status(404);
         }
-=======
-        Gson gson = new Gson();
-        Debrief newDebrief = gson.fromJson(ctx.body(), Debrief.class);
-        System.out.println(newDebrief);
-        Debrief createdDebrief = this.debriefService.createDebriefService(newDebrief);
-        String createdDebriefJson = gson.toJson(createdDebrief);
-        ctx.result(createdDebriefJson);
-        ctx.status(201);
->>>>>>> AlexBranch
     };
 
 }
