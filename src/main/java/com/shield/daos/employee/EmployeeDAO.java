@@ -27,5 +27,5 @@ public interface EmployeeDAO {
 
     boolean insertEmployeeImage(int employee_id, File file);
 
-    boolean getEmployeeImage(int employee_id);
+    String getEmployeeImage(int employee_id);
 }

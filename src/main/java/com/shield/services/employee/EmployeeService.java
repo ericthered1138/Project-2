@@ -26,5 +26,5 @@ public interface EmployeeService {
 
     Boolean insertEmployeeImageService(int employee_id, File file);
 
-    boolean getEmployeeImageService(int employee_id);
+    String getEmployeeImageService(int employee_id);
 }

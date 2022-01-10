@@ -95,7 +95,7 @@ public class EmployeeServiceImp implements EmployeeService{
     }
 
     @Override
-    public boolean getEmployeeImageService(int employee_id) {
+    public String getEmployeeImageService(int employee_id) {
         return employeeDAO.getEmployeeImage(employee_id);
     }
 }

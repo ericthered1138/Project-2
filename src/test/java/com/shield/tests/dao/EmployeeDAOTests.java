@@ -106,7 +106,7 @@ public class EmployeeDAOTests {
         int employee_id = 1_000_001;
         File file = new File("Pictures/Agent 1.gif");
         employeeDAO.insertEmployeeImage(employee_id, file);
-        boolean returned_boolean = employeeDAO.getEmployeeImage(employee_id);
-        Assert.assertTrue(returned_boolean);
+        String returned_boolean = employeeDAO.getEmployeeImage(employee_id);
+        Assert.assertNotEquals(returned_boolean, "false");
     }
 }

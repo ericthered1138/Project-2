@@ -8,8 +8,13 @@ import com.shield.entities.Debrief;
 import com.shield.entities.Employee;
 import io.javalin.http.Handler;
 import com.shield.services.employee.EmployeeService;
+import io.netty.handler.codec.base64.Base64Encoder;
 
+import java.awt.*;
+import java.io.ByteArrayOutputStream;
+import java.io.File;
 import java.io.InputStream;
+import java.util.Base64;
 import java.util.HashMap;
 import java.util.List;
 
@@ -127,10 +132,8 @@ public class EmployeeController {
     public Handler getImage = ctx ->{
         try {
             int id = Integer.parseInt(ctx.pathParam("id"));//employee id
-            //Gson gson = new Gson();
-            boolean image = this.employeeService.getEmployeeImageService(id);
-            //String leaderboards = gson.toJson(leaderboard.toArray());
-            //ctx.result(image);
+            String image_returned = this.employeeService.getEmployeeImageService(id);
+            ctx.result(image_returned);
             ctx.status(200);
         } catch (EmployeeNotFound e){
             ctx.result(e.getMessage());
