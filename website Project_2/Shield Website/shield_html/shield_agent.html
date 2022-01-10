@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shield Agent</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../shield_css/shield.css">
     <link rel="stylesheet" href="../shield_css/styling.css">
     <!-- <style>
@@ -29,7 +30,7 @@
     
     <section id="articleContainer">
         <article id="leftSection">
-            <button type="button" onclick ="toggleDebriefData()" class="rect3"> View Debriefs</button>
+            <button id="viewDebriefs" type="button" class="rect3" onclick ="toggleDebriefData()"> View Debriefs</button>
             <table class="table table-hover" id="debriefTable" style="display: none;">
                 <thead id="debriefHead"></thead>
                 <tr>
@@ -59,8 +60,8 @@
                             <form id="newDebriefForm">
                                 <div class="mb-3">
                                     <br>
-                                    <label id="debriefText" for="debriefingTextInput"><b>Debrief Text: </b></label>
-                                    <textarea placeholder="Give a explanation" id="debriefingText" required></textarea>
+                                    <label for="debriefingTextInput"><b>Debrief Text: </b></label>
+                                    <textarea id="debriefText" placeholder="Give a explanation" id="debriefingText" required></textarea>
                                 </div>
                                 <div class="mb-3">
                                     <br>
@@ -77,7 +78,7 @@
                         </div>
                         <div class="modal-footer">
                             <button type="submit" class="btn btn-primary" id="submitButton" onclick="employeeCreateDebriefsLogData()"> Submit Debrief </button>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" id="cancelButton">Cancel</button>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" id="cancelButton"></button>
                         </div>
                     </div> 
                 </div>
