@@ -330,11 +330,7 @@ public class EmployeeDAOImp implements EmployeeDAO {
             ResultSet resultSet = preparedStatement.executeQuery();
             resultSet.next();
             byte[] imgByte = resultSet.getBytes(1);
-            int length = imgByte.length;
             String image = Base64.getEncoder().encodeToString(imgByte);
-//            File picture = new File("Pictures/employee_picture.gif");
-//            FileOutputStream fileOutputStream = new FileOutputStream(picture);
-//            fileOutputStream.write(imgByte, 0, length);
             return image;
         } catch (SQLException e) {
             e.printStackTrace();
