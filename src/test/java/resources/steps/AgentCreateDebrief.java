@@ -43,33 +43,18 @@ public class AgentCreateDebrief {
     @When("the agent enters a location into the location box")
     public void the_agent_enters_a_location_into_the_location_box() {
         // Write code here that turns the phrase above into concrete actions
-        try {
-            TimeUnit.SECONDS.sleep(2);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
         TestRunner.explicitWait.until(ExpectedConditions.visibilityOf(TestRunner.agentCreateDebrief.locationText));
         TestRunner.agentCreateDebrief.locationText.sendKeys("NYC");
     }
     @When("the agent clicks on the submit button")
     public void the_agent_clicks_on_the_submit_button() {
         // Write code here that turns the phrase above into concrete actions
-        try {
-            TimeUnit.SECONDS.sleep(2);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
         TestRunner.explicitWait.until(ExpectedConditions.elementToBeClickable(TestRunner.agentCreateDebrief.submitButton));
         TestRunner.agentCreateDebrief.submitButton.click();
     }
     @Then("the agent will submit a new debrief case into the table")
     public void the_agent_will_submit_a_new_debrief_case_into_the_table() {
         // Write code here that turns the phrase above into concrete actions
-        try {
-            TimeUnit.SECONDS.sleep(2);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
         TestRunner.explicitWait.until(ExpectedConditions.titleIs("Shield Agent"));
         String title = TestRunner.driver.getTitle();
         Assert.assertEquals(title, "Shield Agent");
