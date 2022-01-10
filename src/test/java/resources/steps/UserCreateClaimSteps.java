@@ -2,6 +2,7 @@ package resources.steps;
 
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -9,12 +10,15 @@ import resources.runner.TestRunner;
 
 import java.util.concurrent.TimeUnit;
 
+import static resources.runner.TestRunner.driver;
+
 public class UserCreateClaimSteps {
 
     @When("the user clicks on the submit new claim button")
     public void the_user_clicks_on_the_submit_new_claim_button() {
         TestRunner.userCreateClaim.newClaimButton.click();
     }
+
     @When("the user selects the employee dropdown menu")
     public void the_user_selects_the_employee_dropdown_menu() {
         TestRunner.userCreateClaim.claimEmployeeDropdown.click();
@@ -41,16 +45,20 @@ public class UserCreateClaimSteps {
     }
     @When("the user clicks on the submit button")
     public void the_user_clicks_on_the_submit_button() throws InterruptedException {
-        TimeUnit.SECONDS.sleep(2);
         TestRunner.userCreateClaim.userHome.click();
         TimeUnit.SECONDS.sleep(2);
         TestRunner.userCreateClaim.submitNewClaimButton.click();
     }
-    @Then("the claim is added to a table of claims")
-    public void the_claim_is_added_to_a_table_of_claims() throws InterruptedException {
-        TimeUnit.SECONDS.sleep(2);
-        String title = TestRunner.driver.getTitle();
-        Assert.assertEquals(title, "User Page");
+    @Then("the user is given an alert that his claim was created")
+    public void the_user_is_given_an_alert_that_his_claim_was_created() {
+        TestRunner.explicitWait.until(ExpectedConditions.alertIsPresent());
+        Alert alert = driver.switchTo().alert();
+        String alertMessage = driver.switchTo().alert().getText();
+        String message = "Your claim has been submitted";
+        if(alertMessage.equals(message)) {
+            alert.accept();
+        }
+
     }
 
 

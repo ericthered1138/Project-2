@@ -15,15 +15,15 @@ public class UserCreateAccount {
 
     @FindBy(id = "linkCreateAccount")
     public WebElement createAccountLink;
-    @FindBy(id = "createAccountFirstName")
+    @FindBy(id = "signUpFirstName")
     public WebElement createAccountFirstName;
-    @FindBy(id = "createAccountLastName")
+    @FindBy(id = "signUpLastName")
     public WebElement createAccountLastName;
-    @FindBy(id = "createAccountUsername")
+    @FindBy(id = "signUpUsername")
     public WebElement createAccountUsername;
-    @FindBy(id = "createAccountPassword")
+    @FindBy(id = "signUpPassword")
     public WebElement createAccountPassword;
-    @FindBy(id = "createAccountConfirmPassword")
+    @FindBy(id = "confirmSignUpPassword")
     public WebElement createAccountConfirmPassword;
     @FindBy(id = "createAccountButton")
     public WebElement createAccountButton;

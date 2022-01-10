@@ -10,5 +10,5 @@ Feature: User Create Claim
     When the user inputs a location into the location input
     When the user inputs a date from the date input
     When the user clicks on the submit button
-    Then the claim is added to a table of claims
+    Then the user is given an alert that his claim was created
 

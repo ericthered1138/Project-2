@@ -26,6 +26,7 @@ public class TestRunner {
     public static AgentLogin agentLogin;
     public static AgentLogout agentLogout;
     public static UserCreateClaim userCreateClaim;
+    public static UserCreateAccount userCreateAccount;
     public static WebDriverWait explicitWait;
 
 
@@ -39,6 +40,7 @@ public class TestRunner {
         agentLogin = new AgentLogin(driver);
         agentLogout = new AgentLogout(driver);
         userCreateClaim = new UserCreateClaim(driver);
+        userCreateAccount = new UserCreateAccount(driver);
         System.out.println("setup complete!");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         explicitWait = new WebDriverWait(driver, 5);
