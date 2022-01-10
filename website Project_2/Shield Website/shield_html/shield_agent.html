@@ -48,7 +48,7 @@
 
     <article id="middleSection">
         <div class="container mt-5">
-            <button type="button" class="rect4" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Submit New Debrief Form</button>
+            <button id="subButton" type="button" class="rect4" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Submit New Debrief Form</button>
             <div class="modal" id="myModal" style="display:none">
                 <div class="modal-dialog">
                     <div class="modal-content">
@@ -59,7 +59,7 @@
                             <form id="newDebriefForm">
                                 <div class="mb-3">
                                     <br>
-                                    <label for="debriefingTextInput"><b>Debrief Text: </b></label>
+                                    <label id="debriefText" for="debriefingTextInput"><b>Debrief Text: </b></label>
                                     <textarea placeholder="Give a explanation" id="debriefingText" required></textarea>
                                 </div>
                                 <div class="mb-3">
@@ -70,7 +70,7 @@
                                 <div class="mb-3">
                                     <br>
                                     <label for="locationOfOccurenceInput"><b>Location:</b></label>
-                                    <input type="text" placeholder="Enter a location" id="locationOfOccurrence">
+                                    <input id="locationText" type="text" placeholder="Enter a location" id="locationOfOccurrence">
                                     <br>
                                 </div>
                             </form>
