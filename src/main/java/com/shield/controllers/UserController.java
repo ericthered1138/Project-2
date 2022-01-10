@@ -54,9 +54,8 @@ public class UserController {
 
         } catch (InvalidUsername | InvalidPassword e){
             Gson gson = new Gson();
-            ctx.result(gson.toJson(6));// some random thing to continue the login
-//            ctx.result(e.getMessage());
-//            ctx.status(404);
+            ctx.result(e.getMessage());
+            ctx.status(404);
         }
     };
 

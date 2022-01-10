@@ -42,7 +42,7 @@ async function LoginShieldAgent(){
 
     if (response.status == 201){
         let body = await response.json();
-        if (body["handler" == true]){
+        if (body["handler"]){
             window.sessionStorage.setItem("employeeId", body["employeeId"]);
             window.location.href = "shield_html/shield_handler.html";
         }

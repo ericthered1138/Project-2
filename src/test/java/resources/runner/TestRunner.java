@@ -11,6 +11,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import resources.poms.AgentLogin;
 import resources.poms.AgentLogout;
+import resources.poms.AgentCreateDebrief;
 import resources.poms.UserLogin;
 import resources.poms.UserLogout;
 
@@ -28,6 +29,7 @@ public class TestRunner {
     public static UserLogout userLogout;
     public static AgentLogin agentLogin;
     public static AgentLogout agentLogout;
+    public static AgentCreateDebrief agentcreatedebrief;
     public static WebDriverWait explicitWait;
 
     @BeforeClass
@@ -39,6 +41,7 @@ public class TestRunner {
         userLogout = new UserLogout(driver);
         agentLogin = new AgentLogin(driver);
         agentLogout = new AgentLogout(driver);
+        agentcreatedebrief = new AgentCreateDebrief(driver);
         System.out.println("setup complete!");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         explicitWait = new WebDriverWait(driver, 5);
