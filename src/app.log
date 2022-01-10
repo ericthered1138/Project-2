@@ -12474,3 +12474,31 @@ Response: [200], execution took 771.60 ms
     Headers: {Content-Encoding=gzip, Date=Mon, 10 Jan 2022 03:00:42 GMT, Content-Type=text/plain}
     Body is gzipped (141060 bytes, not logged)
 ----------------------------------------------------------------------------------
+2022-01-10 09:07:44,108 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+2022-01-10 09:07:44,137 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @3117ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-01-10 09:07:44,138 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2022-01-10 09:07:44,154 [main] INFO  io.javalin.Javalin - You are running Javalin 4.1.1 (released October 10, 2021. Your Javalin version is 92 days old. Consider upgrading!).
+2022-01-10 09:07:44,154 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+2022-01-10 09:07:44,305 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+2022-01-10 09:07:44,306 [main] INFO  io.javalin.Javalin - Javalin started in 169ms \o/
+2022-01-10 09:07:51,359 [qtp2109219177-42] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/employee/image/1]
+    Matching endpoint-handlers: [BEFORE=*, GET=/employee/image/{id}]
+    Headers: {Origin=null, Accept=*/*, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:95.0) Gecko/20100101 Firefox/95.0, Connection=keep-alive, Sec-Fetch-Dest=empty, Sec-Fetch-Site=cross-site, Host=localhost:8080, Accept-Language=en-US,en;q=0.5, Accept-Encoding=gzip, deflate, Sec-Fetch-Mode=cors}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 675.49 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Content-Encoding=gzip, Vary=Origin, Date=Mon, 10 Jan 2022 15:07:50 GMT, Content-Type=text/plain}
+    Body is gzipped (141060 bytes, not logged)
+----------------------------------------------------------------------------------
