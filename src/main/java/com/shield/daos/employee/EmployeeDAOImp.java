@@ -304,8 +304,9 @@ public class EmployeeDAOImp implements EmployeeDAO {
     }
 
     @Override
-    public Boolean insertEmployeeImage(int employee_id, File file) {
+    public boolean insertEmployeeImage(int employee_id, File file) {
         try (Connection connection = DatabaseConnection.createConnection()) {
+
             FileInputStream fileInputStream = new FileInputStream(file);
             String sql = "INSERT INTO employee_picture_table VALUES (default, ?, ?)";
             PreparedStatement preparedStatment = connection.prepareStatement(sql);
@@ -320,23 +321,25 @@ public class EmployeeDAOImp implements EmployeeDAO {
     }
 
     @Override
-    public byte[] getEmployeeImage(int employee_id) {
+    public boolean getEmployeeImage(int employee_id) {
         try (Connection connection = DatabaseConnection.createConnection()) {
             String sql = "SELECT picture FROM employee_picture_table WHERE employee_id = ?";
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setInt(1, employee_id);
             ResultSet resultSet = preparedStatement.executeQuery();
-            byte[] fullByte = new byte[0];
-            if (resultSet != null) {
-                while(resultSet.next()){
-                    byte[] imgByte = resultSet.getBytes(1);
-                    fullByte = new byte[fullByte.length + imgByte.length];
-            }
-            return fullByte;}
-        } catch (SQLException e) {
+            resultSet.next();
+            byte[] imgByte = resultSet.getBytes(1);
+            int length = imgByte.length;
+            File picture = new File("Pictures/employee_picture.gif");
+            FileOutputStream fileOutputStream = new FileOutputStream(picture);
+            fileOutputStream.write(imgByte, 0, length);
+            return true;
+        } catch (SQLException | FileNotFoundException e) {
             e.printStackTrace();
-            return null;
+            return false;
+        } catch (IOException e) {
+            e.printStackTrace();
         }
-        return null;
+        return false;
     }
 }

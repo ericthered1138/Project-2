@@ -26,5 +26,5 @@ public interface EmployeeService {
 
     Boolean insertEmployeeImageService(int employee_id, File file);
 
-    byte[] getEmployeeImageService(int employee_id);
+    boolean getEmployeeImageService(int employee_id);
 }

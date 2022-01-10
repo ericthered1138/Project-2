@@ -94,7 +94,7 @@ public class EmployeeDAOTests {
 
     @Test
     void insertEmployeeImage(){
-        File file = new File("Pictures/vinicius-boscheinen-nick-fury.gif");
+        File file = new File("Pictures/Agent 1.gif");
         int employee_id = 1_000_001;
         boolean returned_boolean = employeeDAO.insertEmployeeImage(employee_id, file);
         Assert.assertTrue(returned_boolean);
@@ -104,7 +104,9 @@ public class EmployeeDAOTests {
     void getEmployeeImage(){
         this.insertEmployeeImage();//insert the picture for the test
         int employee_id = 1_000_001;
-        byte[] returned_image = employeeDAO.getEmployeeImage(employee_id);
-        Assert.assertNotNull(returned_image);
+        File file = new File("Pictures/Agent 1.gif");
+        employeeDAO.insertEmployeeImage(employee_id, file);
+        boolean returned_boolean = employeeDAO.getEmployeeImage(employee_id);
+        Assert.assertTrue(returned_boolean);
     }
 }
