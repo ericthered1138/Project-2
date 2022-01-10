@@ -13,6 +13,8 @@ import resources.poms.*;
 
 import java.io.File;
 import java.time.Duration;
+import java.util.concurrent.TimeUnit;
+//import java.util.concurrent.TimeUnit;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/java/resources/features", glue ="resources/steps")
@@ -23,7 +25,8 @@ public class TestRunner {
     public static UserLogout userLogout;
     public static AgentLogin agentLogin;
     public static AgentLogout agentLogout;
-    public static AgentCreateDebrief agentCreateDebrief;
+    public static AgentCreateDebrief agentcreatedebrief;
+    public static AgentViewDebriefs agentviewdebriefs;
     public static WebDriverWait explicitWait;
 
     @BeforeClass
@@ -37,10 +40,10 @@ public class TestRunner {
         userLogout = new UserLogout(driver);
         agentLogin = new AgentLogin(driver);
         agentLogout = new AgentLogout(driver);
-        agentCreateDebrief = new AgentCreateDebrief(driver);
+        agentcreatedebrief = new AgentCreateDebrief(driver);
+        agentviewdebriefs = new AgentViewDebriefs(driver);
         System.out.println("setup complete!");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-        //noinspection deprecation
         explicitWait = new WebDriverWait(driver, 5);
 
     }

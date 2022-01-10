@@ -6310,6 +6310,7 @@ Response: [200], execution took 780.77 ms
     Body is 91 bytes (starts on next line):
     {"userId":1,"username":"david","passcode":"david","firstName":"david","lastName":"zazulak"}
 ----------------------------------------------------------------------------------
+<<<<<<< HEAD
 2022-01-06 19:44:35,554 [main] INFO  io.javalin.Javalin - 
        __                      __ _            __ __
       / /____ _ _   __ ____ _ / /(_)____      / // /
@@ -21054,3 +21055,5 @@ Response: [200], execution took 536.08 ms
     Body is 135 bytes (starts on next line):
     {"employeeId":2,"handlerId":3,"handler":false,"username":"scarlett","passcode":"johansson","firstName":"Natasha","lastName":"Romanoff"}
 ----------------------------------------------------------------------------------
+=======
+>>>>>>> AlexBranch

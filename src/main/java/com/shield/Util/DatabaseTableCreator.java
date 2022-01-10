@@ -19,9 +19,13 @@ public class DatabaseTableCreator {
                     "primary key (claim_id), foreign key (employee_id) references employee_table(employee_id)); " +
                     "create table debriefing_table(debriefing_id int, employee_id int, debriefing_text varchar(480), " +
                     "date_of_occurrence DATE, location_of_occurrence varchar(100), datetime_of_creation TIMESTAMP, " +
+<<<<<<< HEAD
                     "primary key (debriefing_id), foreign key (employee_id) references employee_table(employee_id));" +
                     "create table employee_picture_table(picture_id serial primary KEY , employee_id int, " +
                     "picture bytea, foreign key (employee_id) references employee_table(employee_id));";
+=======
+                    "primary key (debriefing_id), foreign key (employee_id) references employee_table(employee_id));";
+>>>>>>> AlexBranch
             Statement statement = connection.createStatement();
             statement.executeQuery(sql);
         }catch (SQLException e){
@@ -49,7 +53,10 @@ public class DatabaseTableCreator {
         try (Connection connection = DatabaseConnection.createConnection()) {
             String sql = "delete from claim_table where employee_id > 999999; " +
                     "delete from debriefing_table where employee_id > 999999; " +
+<<<<<<< HEAD
                     "delete from employee_picture_table where employee_id > 999999;"+
+=======
+>>>>>>> AlexBranch
                     "delete from employee_table where employee_id > 999999; " +
                     "delete from user_table where user_id > 999999;";
             Statement statement = connection.createStatement();
@@ -61,7 +68,11 @@ public class DatabaseTableCreator {
 
     public static void main(String[] args) {
         //table_creator(); // Creates the tables
+<<<<<<< HEAD
         //table_populator();//populates the tables
+=======
+        table_populator();//populates the tables
+>>>>>>> AlexBranch
         //table_depopulator();//depopulates the tables
         System.out.println();
     }

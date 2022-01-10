@@ -10,9 +10,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+<<<<<<< HEAD
 import java.io.File;
 import java.io.InputStream;
 import java.util.HashMap;
+=======
+>>>>>>> AlexBranch
 import java.util.List;
 
 import static com.shield.Util.DatabaseTableCreator.table_depopulator;
@@ -54,7 +57,11 @@ public class EmployeeDAOTests {
     void getAllClaims() {
         Employee employee = employeeDAO.getEmployeeById(1_000_001);
         Integer employeeId = employee.getEmployeeId();
+<<<<<<< HEAD
         List<Claim> claimsList = employeeDAO.getAllHandlerClaims(employeeId);
+=======
+        List<Claim> claimsList = employeeDAO.getAllClaims(employeeId);
+>>>>>>> AlexBranch
         System.out.println(claimsList);
         Assert.assertTrue(claimsList.size() == 1);
     }
@@ -86,6 +93,7 @@ public class EmployeeDAOTests {
     }
 
     @Test
+<<<<<<< HEAD
     void getLeaderboard(){
         List<String> leaderboard = employeeDAO.getLeaderboard();
         System.out.println(leaderboard);
@@ -108,5 +116,10 @@ public class EmployeeDAOTests {
         employeeDAO.insertEmployeeImage(employee_id, file);
         String returned_boolean = employeeDAO.getEmployeeImage(employee_id);
         Assert.assertNotEquals(returned_boolean, "false");
+=======
+    void getLeaderboard() {
+        List<String> returnedList= employeeDAO.getLeaderboard();
+        Assert.assertNotNull(returnedList);
+>>>>>>> AlexBranch
     }
 }

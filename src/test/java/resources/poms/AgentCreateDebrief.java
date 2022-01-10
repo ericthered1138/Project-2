@@ -19,7 +19,7 @@ public class AgentCreateDebrief {
         public WebElement debrieftext;
         @FindBy(id = "dateOfOccurrence")
         public WebElement dateOfOccurrence;
-        @FindBy(id= "locationOfOccurrence")
+        @FindBy(id= "locationText")
         public WebElement locationText;
         @FindBy (id = "submitButton")
         public WebElement submitButton;

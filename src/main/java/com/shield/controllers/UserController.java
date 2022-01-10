@@ -55,7 +55,11 @@ public class UserController {
         } catch (InvalidUsername | InvalidPassword e){
             Gson gson = new Gson();
             ctx.result(e.getMessage());
+<<<<<<< HEAD
             ctx.status(204);
+=======
+            ctx.status(404);
+>>>>>>> AlexBranch
         }
     };
 

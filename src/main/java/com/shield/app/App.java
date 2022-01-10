@@ -37,6 +37,7 @@ public class App {
         DebriefService debriefService = new DebriefServiceImp(debriefDAO, employeeDAO);
         DebriefController debriefController = new DebriefController(debriefService);
 
+<<<<<<< HEAD
 
         app.get("/employee/list", employeeController.getAllEmployees);
         app.get("/employee/{id}", employeeController.getEmployee);
@@ -47,6 +48,14 @@ public class App {
         app.get("/employee/claims/{id}", employeeController.getAgentClaims);
         app.get("/leaderboard", employeeController.getLeaderboard);
         app.get("/employee/image/{id}", employeeController.getImage);
+=======
+        app.get("/employee/{id}", employeeController.getEmployee);
+        app.post("/employee/login", employeeController.loginEmployee);
+        app.get("/employee/claims/all/{id}", employeeController.getAllClaims);
+        app.get("/employee/debriefs/all/{id}", employeeController.getAllAgentDebriefs);
+        app.get("/employee/debriefs/{id}", employeeController.getAgentDebriefs);
+        app.get("/employee/claims/{id}", employeeController.getAgentClaims);
+>>>>>>> AlexBranch
 
         app.get("/debrief/{id}", debriefController.getDebrief);
         app.post("/debrief", debriefController.createDebrief);
