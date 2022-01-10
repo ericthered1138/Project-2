@@ -12461,3 +12461,16 @@ Response: [200], execution took 719.72 ms
     Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Content-Encoding=gzip, Vary=Origin, Date=Mon, 10 Jan 2022 02:58:14 GMT, Content-Type=text/plain}
     Body is gzipped (141060 bytes, not logged)
 ----------------------------------------------------------------------------------
+2022-01-09 21:00:43,245 [qtp1541433310-105] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/employee/image/1]
+    Matching endpoint-handlers: [BEFORE=*, GET=/employee/image/{id}]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.28.4, Connection=keep-alive, Postman-Token=0622824f-bb39-4f62-bc7d-32fb882b91e9, Host=localhost:8080, Accept-Encoding=gzip, deflate, br}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 771.60 ms
+    Headers: {Content-Encoding=gzip, Date=Mon, 10 Jan 2022 03:00:42 GMT, Content-Type=text/plain}
+    Body is gzipped (141060 bytes, not logged)
+----------------------------------------------------------------------------------
