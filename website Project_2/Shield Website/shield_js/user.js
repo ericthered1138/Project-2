@@ -62,8 +62,8 @@ function populateClaimData(responseBody){
                                 <td>${claim.handlerComment}</td>`
             claimTableBody.append(tableRow);
     }
-
     
+
 }
 
 function toggleClaimData()
