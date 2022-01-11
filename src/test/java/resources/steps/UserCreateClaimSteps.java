@@ -3,6 +3,7 @@ package resources.steps;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -41,13 +42,16 @@ public class UserCreateClaimSteps {
     }
     @When("the user inputs a date from the date input")
     public void the_user_inputs_a_date_from_the_date_input() {
-        TestRunner.userCreateClaim.claimDateInput.sendKeys("01072022");
+        TestRunner.userCreateClaim.claimDateInput.sendKeys("1212", Keys.RIGHT, "2021");
     }
     @When("the user clicks on the submit button")
-    public void the_user_clicks_on_the_submit_button() throws InterruptedException {
-        TimeUnit.SECONDS.sleep(2);
-        TestRunner.userCreateClaim.submitNewClaimButton.click();
-    }
+    public void the_user_clicks_on_the_submit_button(){
+        try {
+            TimeUnit.SECONDS.sleep(2);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        TestRunner.userCreateClaim.submitNewClaimButton.click();}
     @Then("the user is given an alert that his claim was created")
     public void the_user_is_given_an_alert_that_his_claim_was_created() {
         TestRunner.explicitWait.until(ExpectedConditions.alertIsPresent());
