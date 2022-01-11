@@ -7,12 +7,18 @@ import com.shield.entities.Claim;
 import com.shield.entities.Debrief;
 import com.shield.entities.Employee;
 
+import java.io.File;
 import java.util.List;
 
 public class EmployeeServiceImp implements EmployeeService{
 
     EmployeeDAO employeeDAO;
     public EmployeeServiceImp(EmployeeDAO employeeDAO) {this.employeeDAO = employeeDAO;}
+
+    @Override
+    public List<Employee> getAllEmployeesService() {
+        return employeeDAO.getAllEmployees();
+    }
 
     @Override
     public Employee getEmployeeByIdService(int employee_id) {
@@ -31,7 +37,7 @@ public class EmployeeServiceImp implements EmployeeService{
 
         //Check if the employee is a handler.
         if (employee.isHandler()){
-            return employeeDAO.getAllClaims(handler_employee_id);
+            return employeeDAO.getAllHandlerClaims(handler_employee_id);
         }else{
             throw new EmployeeIsNotHandler("That employee is not a handler.");
         }
@@ -80,6 +86,16 @@ public class EmployeeServiceImp implements EmployeeService{
 
     @Override
     public List<String> getLeaderboardService() {
-        return null;
+        return employeeDAO.getLeaderboard();
+    }
+
+    @Override
+    public Boolean insertEmployeeImageService(int employee_id, File file) {
+        return employeeDAO.insertEmployeeImage(employee_id, file);
+    }
+
+    @Override
+    public String getEmployeeImageService(int employee_id) {
+        return employeeDAO.getEmployeeImage(employee_id);
     }
 }
