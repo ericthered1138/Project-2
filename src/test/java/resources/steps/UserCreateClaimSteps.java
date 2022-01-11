@@ -42,7 +42,7 @@ public class UserCreateClaimSteps {
     }
     @When("the user inputs a date from the date input")
     public void the_user_inputs_a_date_from_the_date_input() {
-        TestRunner.userCreateClaim.claimDateInput.sendKeys("0107", Keys.RIGHT, "2022");
+        TestRunner.userCreateClaim.claimDateInput.sendKeys("1212", Keys.RIGHT, "2021");
     }
     @When("the user clicks on the submit button")
     public void the_user_clicks_on_the_submit_button(){
