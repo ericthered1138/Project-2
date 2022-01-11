@@ -45,7 +45,6 @@ public class UserCreateClaimSteps {
     }
     @When("the user clicks on the submit button")
     public void the_user_clicks_on_the_submit_button() throws InterruptedException {
-        TestRunner.userCreateClaim.userHome.click();
         TimeUnit.SECONDS.sleep(2);
         TestRunner.userCreateClaim.submitNewClaimButton.click();
     }

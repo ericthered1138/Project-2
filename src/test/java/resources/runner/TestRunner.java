@@ -8,6 +8,7 @@ import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 //import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import resources.poms.*;
 
@@ -21,26 +22,31 @@ import java.util.concurrent.TimeUnit;
 // Absolute Path and Content Root worked
 public class TestRunner {
     public static WebDriver driver;
-    public static UserLogin employeeLogin;
+    public static UserLogin userLogin;
     public static UserLogout userLogout;
     public static AgentLogin agentLogin;
     public static AgentLogout agentLogout;
     public static UserCreateClaim userCreateClaim;
     public static UserCreateAccount userCreateAccount;
+    public static UserViewClaims userViewClaims;
     public static WebDriverWait explicitWait;
+
 
 
     @BeforeClass
     public static void setup(){
         File file = new File("src/test/java/resources/features/chromedriver.exe");
         System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
-        driver = new ChromeDriver();
-        employeeLogin = new UserLogin(driver);
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--start-maximized");
+        driver = new ChromeDriver(options);
+        userLogin = new UserLogin(driver);
         userLogout = new UserLogout(driver);
         agentLogin = new AgentLogin(driver);
         agentLogout = new AgentLogout(driver);
         userCreateClaim = new UserCreateClaim(driver);
         userCreateAccount = new UserCreateAccount(driver);
+        userViewClaims = new UserViewClaims(driver);
         System.out.println("setup complete!");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         explicitWait = new WebDriverWait(driver, 5);

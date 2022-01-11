@@ -29,7 +29,5 @@ public class UserCreateClaim {
     public WebElement claimDateInput;
     @FindBy(id = "submitNewClaimButton")
     public WebElement submitNewClaimButton;
-    @FindBy(id = "userHome")
-    public WebElement userHome;
 
 }

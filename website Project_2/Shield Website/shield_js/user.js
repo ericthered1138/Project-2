@@ -104,9 +104,8 @@ async function createNewClaim(){
             console.log(body);
         }
         else{
-            alert("There was an issue");
-
-    }
+            alert("Invalid claim. Please check your inputs.");
+        }
 }
 
 function resetFormData(){
