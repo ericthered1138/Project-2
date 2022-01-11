@@ -10,6 +10,9 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import java.io.File;
+import java.io.InputStream;
+import java.util.HashMap;
 import java.util.List;
 
 import static com.shield.Util.DatabaseTableCreator.table_depopulator;
@@ -51,7 +54,7 @@ public class EmployeeDAOTests {
     void getAllClaims() {
         Employee employee = employeeDAO.getEmployeeById(1_000_001);
         Integer employeeId = employee.getEmployeeId();
-        List<Claim> claimsList = employeeDAO.getAllClaims(employeeId);
+        List<Claim> claimsList = employeeDAO.getAllHandlerClaims(employeeId);
         System.out.println(claimsList);
         Assert.assertTrue(claimsList.size() == 1);
     }
@@ -83,8 +86,27 @@ public class EmployeeDAOTests {
     }
 
     @Test
-    void getLeaderboard() {
-        List<String> returnedList= employeeDAO.getLeaderboard();
-        Assert.assertNotNull(returnedList);
+    void getLeaderboard(){
+        List<String> leaderboard = employeeDAO.getLeaderboard();
+        System.out.println(leaderboard);
+        Assert.assertNotNull(leaderboard);
+    }
+
+    @Test
+    void insertEmployeeImage(){
+        File file = new File("Pictures/Agent 1.gif");
+        int employee_id = 1_000_001;
+        boolean returned_boolean = employeeDAO.insertEmployeeImage(employee_id, file);
+        Assert.assertTrue(returned_boolean);
+    }
+
+    @Test
+    void getEmployeeImage(){
+        this.insertEmployeeImage();//insert the picture for the test
+        int employee_id = 1_000_001;
+        File file = new File("Pictures/Agent 1.gif");
+        employeeDAO.insertEmployeeImage(employee_id, file);
+        String returned_boolean = employeeDAO.getEmployeeImage(employee_id);
+        Assert.assertNotEquals(returned_boolean, "false");
     }
 }

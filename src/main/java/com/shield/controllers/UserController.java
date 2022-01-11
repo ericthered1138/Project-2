@@ -55,7 +55,7 @@ public class UserController {
         } catch (InvalidUsername | InvalidPassword e){
             Gson gson = new Gson();
             ctx.result(e.getMessage());
-            ctx.status(404);
+            ctx.status(204);
         }
     };
 

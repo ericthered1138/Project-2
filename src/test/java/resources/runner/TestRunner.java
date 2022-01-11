@@ -22,13 +22,18 @@ import java.util.concurrent.TimeUnit;
 // Absolute Path and Content Root worked
 public class TestRunner {
     public static WebDriver driver;
-    public static UserLogin employeeLogin;
+    public static UserLogin userLogin;
     public static UserLogout userLogout;
     public static AgentLogin agentLogin;
     public static AgentLogout agentLogout;
-    public static AgentCreateDebrief agentcreatedebrief;
-    public static AgentViewDebriefs agentviewdebriefs;
+    public static UserCreateClaim userCreateClaim;
+    public static AgentCreateDebrief agentCreateDebrief;
+    public static AgentViewDebriefs agentViewDebriefs;
+    public static UserCreateAccount userCreateAccount;
+    public static UserViewClaims userViewClaims;
     public static WebDriverWait explicitWait;
+
+
 
     @BeforeClass
     public static void setup(){
@@ -37,12 +42,15 @@ public class TestRunner {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--start-maximized");
         driver = new ChromeDriver(options);
-        employeeLogin = new UserLogin(driver);
+        userLogin = new UserLogin(driver);
         userLogout = new UserLogout(driver);
         agentLogin = new AgentLogin(driver);
         agentLogout = new AgentLogout(driver);
-        agentcreatedebrief = new AgentCreateDebrief(driver);
-        agentviewdebriefs = new AgentViewDebriefs(driver);
+        userCreateClaim = new UserCreateClaim(driver);
+        agentCreateDebrief = new AgentCreateDebrief(driver);
+        agentViewDebriefs = new AgentViewDebriefs(driver);
+        userCreateAccount = new UserCreateAccount(driver);
+        userViewClaims = new UserViewClaims(driver);
         System.out.println("setup complete!");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         explicitWait = new WebDriverWait(driver, 5);

@@ -16,9 +16,9 @@ public class AgentLogoutSteps {
         // Write code here that turns the phrase above into concrete actions
         File f = new File("website Project_2/Shield Website/index.html");
         TestRunner.driver.get(f.getAbsolutePath());
-        TestRunner.employeeLogin.link1.sendKeys("scarlett");
-        TestRunner.employeeLogin.link2.sendKeys("johansson");
-        TestRunner.employeeLogin.link3.click();
+        TestRunner.agentLogin.link1.sendKeys("scarlett");
+        TestRunner.agentLogin.link2.sendKeys("johansson");
+        TestRunner.agentLogin.link3.click();
         TestRunner.explicitWait.until(ExpectedConditions.titleIs("Shield Agent"));
 
     }
