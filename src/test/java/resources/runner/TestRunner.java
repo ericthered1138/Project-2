@@ -27,6 +27,8 @@ public class TestRunner {
     public static AgentLogin agentLogin;
     public static AgentLogout agentLogout;
     public static UserCreateClaim userCreateClaim;
+    public static AgentCreateDebrief agentCreateDebrief;
+    public static AgentViewDebriefs agentViewDebriefs;
     public static UserCreateAccount userCreateAccount;
     public static UserViewClaims userViewClaims;
     public static WebDriverWait explicitWait;
@@ -45,6 +47,8 @@ public class TestRunner {
         agentLogin = new AgentLogin(driver);
         agentLogout = new AgentLogout(driver);
         userCreateClaim = new UserCreateClaim(driver);
+        agentCreateDebrief = new AgentCreateDebrief(driver);
+        agentViewDebriefs = new AgentViewDebriefs(driver);
         userCreateAccount = new UserCreateAccount(driver);
         userViewClaims = new UserViewClaims(driver);
         System.out.println("setup complete!");

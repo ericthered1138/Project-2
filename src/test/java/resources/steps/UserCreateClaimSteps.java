@@ -44,10 +44,13 @@ public class UserCreateClaimSteps {
         TestRunner.userCreateClaim.claimDateInput.sendKeys("01072022");
     }
     @When("the user clicks on the submit button")
-    public void the_user_clicks_on_the_submit_button() throws InterruptedException {
-        TimeUnit.SECONDS.sleep(2);
-        TestRunner.userCreateClaim.submitNewClaimButton.click();
-    }
+    public void the_user_clicks_on_the_submit_button(){
+        try {
+            TimeUnit.SECONDS.sleep(2);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        TestRunner.userCreateClaim.submitNewClaimButton.click();}
     @Then("the user is given an alert that his claim was created")
     public void the_user_is_given_an_alert_that_his_claim_was_created() {
         TestRunner.explicitWait.until(ExpectedConditions.alertIsPresent());
