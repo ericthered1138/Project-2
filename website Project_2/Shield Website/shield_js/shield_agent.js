@@ -1,6 +1,8 @@
 //These are the unique ID names for the elments for our data to be grabbed from our database...
 const debriefTable = document.getElementById("debriefTable");
 const debriefTableBody = document.getElementById("debriefBody");
+const leaderTable = document.getElementById("leaderBoardTable");
+const leaderTableBody = document.getElementById("leaderBoardBody");
 const employeeId = sessionStorage.getItem("employeeId");
 const debriefLog = document.getElementById("debriefLogging");
 const headerUsername = document.getElementById("headerUsername");
@@ -81,8 +83,38 @@ function populateDebriefData(responseBody){
                               <td>${debrief.dateTimeOfCreation}</td>`
         // console.log(tableRow);
         debriefTableBody.append(tableRow);
-        // console.log(debriefTableBody);                      
+        // console.log(debriefTableBody);            
     }
+}
+
+//function to grab all the claim information from the specific employee by their information in Leaderboard
+async function getAllLeaderBoardInfo(){
+    let url = "http://localhost:8080/leaderboard"
+    let response = await fetch(url);
+    if(response.status === 200){
+        let body = await response.json();
+        console.log(body);
+        populateLeaderBoardData(body);
+    }
+    else{
+        alert("There was a problem trying to receive the claim information: apologies!");
+    }
+}
+
+function populateLeaderBoardData(responseBody){
+    leaderTableBody.innerHTML = '';
+    for(let i = 0; i < responseBody.length; i += 2){
+        console.log(i);
+        let leader = responseBody[i];
+        console.log(leader);
+        let total = responseBody[i + 1];
+        let tableRow = document.createElement("tr");
+        tableRow.innerHTML = `<td>${leader}</td>
+                              <td>${total}</td>`;
+        console.log(tableRow);
+        leaderTableBody.append(tableRow);
+        
+    }   
 }
 
 function toggleDebriefData(){
@@ -92,6 +124,15 @@ function toggleDebriefData(){
     }
     else{
         debriefTable.style.display = "none";
+    }
+}
+function toggleLeaderBoardData(){
+    if(leaderTable.style.display === "none"){
+        leaderTable.style.display = "block";
+        getAllLeaderBoardInfo();
+    }
+    else{
+        leaderTable.style.display = "none";
     }
 }
 

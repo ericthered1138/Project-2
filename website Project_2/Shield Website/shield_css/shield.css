@@ -6,7 +6,7 @@
 
 .logoutLblPos{
     position: absolute;
-    right:5.2vw;
+    right:13.8vw;
     top:7vh;
     
  }
@@ -116,7 +116,7 @@
      justify-content: space-around;
  }
  #headerUsername{
-     padding-left: 30px;
+     padding-left: 10px;
  }
 
  /* #rightSection, #middleSection, #leftSection{
@@ -130,7 +130,7 @@
  }
  #rightSection{
      padding: 1rem;
-     width: 14vw;
+     width: 16vw;
      height: 40vh;
  }
 
