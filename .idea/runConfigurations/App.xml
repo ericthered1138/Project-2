@@ -1,7 +1,6 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="App" type="Application" factoryName="Application" nameIsGenerated="true">
-    <option name="ALTERNATIVE_JRE_PATH" value="17" />
-    <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+    <option name="ALTERNATIVE_JRE_PATH" value="$PROJECT_DIR$/../../../../Program Files/Java/jdk-11.0.13" />
     <envs>
       <env name="HOST" value="database-1.c3bzypvk3zkj.us-east-2.rds.amazonaws.com" />
       <env name="DBNAME" value="postgres" />
@@ -10,7 +9,7 @@
       <env name="PORT" value="5432" />
     </envs>
     <option name="MAIN_CLASS_NAME" value="com.shield.app.App" />
-    <module name="Project-2" />
+    <module name="project2" />
     <extension name="coverage">
       <pattern>
         <option name="PATTERN" value="com.shield.app.*" />

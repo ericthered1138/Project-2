@@ -1,6 +1,6 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="TestRunner" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
-    <module name="Project-2" />
+    <module name="project2" />
     <extension name="coverage">
       <pattern>
         <option name="PATTERN" value="resources.runner.*" />
@@ -11,6 +11,13 @@
     <option name="MAIN_CLASS_NAME" value="resources.runner.TestRunner" />
     <option name="METHOD_NAME" value="" />
     <option name="TEST_OBJECT" value="class" />
+    <envs>
+      <env name="HOST" value="database-1.c3bzypvk3zkj.us-east-2.rds.amazonaws.com" />
+      <env name="DBNAME" value="postgres" />
+      <env name="USERNAME" value="teamShield" />
+      <env name="PASSWORD" value="k1H8c7Qd" />
+      <env name="PORT" value="5432" />
+    </envs>
     <method v="2">
       <option name="Make" enabled="true" />
     </method>
