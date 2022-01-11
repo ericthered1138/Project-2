@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Page</title>
 	<link rel="stylesheet" href="../shield_css/shield.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
     <style>
         footer{
             background-color: black;
             color:turquoise;
         }
     </style>
-    <script src="../js/bootstrap.bundle.js"></script>
 </head>
 <body>
     <main>
@@ -22,7 +22,8 @@
             <img src="../images/Shield_logo.png" alt="logo" id="logo" />
              <i id="inactiveLink" class="fas fa-compass"></i> 
         </aside> -->
-        <h2>User Home Page</h2>
+        <h2 id="userHome">User Home Page</h2>
+    
         <!-- If you want to include more features, such as search bar, etc... -->
         <div id="rightSideHeader">
             <span id="thumbNail"></span>
@@ -34,8 +35,8 @@
 
     <section id="articleContainer">
         <article id="leftSection">
-            <button type="button" onclick="toggleClaimData()">Review your claims</button>
-            <table class="table table-hover" id = "claimTable" style="display: none;">
+            <button type="button" id="reviewClaimButton" onclick="toggleClaimData()">Review your claims</button>
+            <table class="table table-bordered" id = "claimTable" style="display: none;">
                 <thead  id="claimHead">
                     <tr>
                         <th>
@@ -75,7 +76,7 @@
 
         <article id="rightSection">
     <div class="container mt-5">
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Submit New claim</button>
+        <button id= "newClaimButton" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Submit New Claim</button>
         <div class="modal" id="myModal" style="display:none">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -85,8 +86,8 @@
                     <div class="modal-body">
                         <form id="newClaimForm">
                             <div class="mb-3">
-                                <label for="employeeOnClaim"class="form-label required">Employee</label>
-                                <select id="claimEmployee" name="employeeOnClaim" id="employeeOnClaim">
+                                <label for="employeeOnClaim" class="form-label required">Employee</label>
+                                <select id="claimEmployeeDropdown" name="employeeOnClaim" id="employeeOnClaim">
 
                                 </select>
                             </div>
@@ -111,8 +112,8 @@
                     </div>
                     <div class="modal-footer">
                         <br>
-                        <button type="submit" class="btn btn-primary" onclick="createNewClaim()">Submit</button>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal">Cancel</button>
+                        <button id = "submitNewClaimButton" type="button" class="btn btn-primary" onclick="createNewClaim()">Submit</button>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" onclick="resetFormData()"></button>
                     </div>
                 </div>
             </div>
@@ -160,4 +161,5 @@
 </body>
 
 <script src="../shield_js/user.js"></script>
+<script src="../js/bootstrap.bundle.js"></script>
 </html>

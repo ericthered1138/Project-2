@@ -9,6 +9,7 @@ import com.shield.entities.Employee;
 import java.io.*;
 import java.sql.*;
 import java.util.ArrayList;
+import java.util.Base64;
 import java.util.List;
 
 public class EmployeeDAOImp implements EmployeeDAO {
@@ -304,8 +305,9 @@ public class EmployeeDAOImp implements EmployeeDAO {
     }
 
     @Override
-    public Boolean insertEmployeeImage(int employee_id, File file) {
+    public boolean insertEmployeeImage(int employee_id, File file) {
         try (Connection connection = DatabaseConnection.createConnection()) {
+
             FileInputStream fileInputStream = new FileInputStream(file);
             String sql = "INSERT INTO employee_picture_table VALUES (default, ?, ?)";
             PreparedStatement preparedStatment = connection.prepareStatement(sql);
@@ -320,22 +322,19 @@ public class EmployeeDAOImp implements EmployeeDAO {
     }
 
     @Override
-    public byte[] getEmployeeImage(int employee_id) {
+    public String getEmployeeImage(int employee_id) {
         try (Connection connection = DatabaseConnection.createConnection()) {
             String sql = "SELECT picture FROM employee_picture_table WHERE employee_id = ?";
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setInt(1, employee_id);
             ResultSet resultSet = preparedStatement.executeQuery();
-            InputStream image;
-            if (resultSet != null) {
-                while(resultSet.next()){
-                    byte[] imgByte = resultSet.getBytes(1);
-                    return imgByte;
-            }}
+            resultSet.next();
+            byte[] imgByte = resultSet.getBytes(1);
+            String image = Base64.getEncoder().encodeToString(imgByte);
+            return image;
         } catch (SQLException e) {
             e.printStackTrace();
-            return null;
+            return "false";
         }
-        return null;
     }
 }
