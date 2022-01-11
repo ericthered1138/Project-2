@@ -22410,3 +22410,16 @@ Response: [200], execution took 499.66 ms
     Body is 266 bytes (starts on next line):
     [{"employeeId":2,"handlerId":3,"handler":false,"username":"scarlett","passcode":"johansson","firstName":"Natasha","lastName":"Romanoff"},{"employeeId":1,"handlerId":3,"handler":false,"username":"jackson","passcode":"hasselhoff","firstName":"Nick","lastName":"Fury"}]
 ----------------------------------------------------------------------------------
+2022-01-10 18:09:44,119 [qtp1541433310-42] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/employee/image/1]
+    Matching endpoint-handlers: [BEFORE=*, GET=/employee/image/{id}]
+    Headers: {Accept=*/*, Cache-Control=no-cache, User-Agent=PostmanRuntime/7.28.4, Connection=keep-alive, Postman-Token=8a51c4ad-9bfd-44cc-a79f-5f1bf60105e1, Host=localhost:8080, Accept-Encoding=gzip, deflate, br}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 2939.80 ms
+    Headers: {Content-Encoding=gzip, Date=Tue, 11 Jan 2022 00:09:41 GMT, Content-Type=text/plain}
+    Body is gzipped (141060 bytes, not logged)
+----------------------------------------------------------------------------------
