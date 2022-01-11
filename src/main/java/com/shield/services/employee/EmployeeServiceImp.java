@@ -90,8 +90,8 @@ public class EmployeeServiceImp implements EmployeeService{
     }
 
     @Override
-    public Boolean insertEmployeeImageService(int employee_id, File file) {
-        return employeeDAO.insertEmployeeImage(employee_id, file);
+    public Boolean insertEmployeeImageService(int employee_id, String image) {
+        return employeeDAO.insertEmployeeImage(employee_id, image);
     }
 
     @Override

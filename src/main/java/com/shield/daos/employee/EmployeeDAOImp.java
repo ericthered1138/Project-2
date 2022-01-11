@@ -5,7 +5,10 @@ import com.shield.customexceptions.EmployeeNotFound;
 import com.shield.entities.Claim;
 import com.shield.entities.Debrief;
 import com.shield.entities.Employee;
+import org.postgresql.jdbc.PgBlob;
+import org.postgresql.largeobject.BlobInputStream;
 
+import javax.sql.rowset.serial.SerialBlob;
 import java.io.*;
 import java.sql.*;
 import java.util.ArrayList;
@@ -305,16 +308,27 @@ public class EmployeeDAOImp implements EmployeeDAO {
     }
 
     @Override
-    public boolean insertEmployeeImage(int employee_id, File file) {
+    public boolean insertEmployeeImage(int employee_id, String image) {
+        //take out any old images
+        try (Connection connection = DatabaseConnection.createConnection()) {
+            String sql = "delete from employee_picture_table where employee_id = ?;";
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setInt(1, employee_id);
+            preparedStatement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        //put in the image
         try (Connection connection = DatabaseConnection.createConnection()) {
 
-            FileInputStream fileInputStream = new FileInputStream(file);
+            byte[] imgByte = Base64.getDecoder().decode(image);
             String sql = "INSERT INTO employee_picture_table VALUES (default, ?, ?)";
             PreparedStatement preparedStatment = connection.prepareStatement(sql);
             preparedStatment.setInt(1, employee_id);
-            preparedStatment.setBinaryStream(2, fileInputStream, file.length());
+            preparedStatment.setBytes(2, imgByte);
             preparedStatment.executeUpdate();
-        } catch (SQLException | FileNotFoundException e) {
+        } catch (SQLException e) {
             e.printStackTrace();
             return false;
         }
