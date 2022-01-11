@@ -26423,3 +26423,876 @@ Response: [200], execution took 1198.65 ms
     Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Content-Encoding=gzip, Vary=Origin, Date=Tue, 11 Jan 2022 02:51:07 GMT, Content-Type=text/plain}
     Body is gzipped (4972 bytes, not logged)
 ----------------------------------------------------------------------------------
+2022-01-10 20:56:09,445 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+2022-01-10 20:56:09,454 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @2852ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-01-10 20:56:09,455 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2022-01-10 20:56:09,468 [main] INFO  io.javalin.Javalin - You are running Javalin 4.1.1 (released October 10, 2021. Your Javalin version is 92 days old. Consider upgrading!).
+2022-01-10 20:56:09,468 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+2022-01-10 20:56:09,612 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+2022-01-10 20:56:09,612 [main] INFO  io.javalin.Javalin - Javalin started in 157ms \o/
+2022-01-10 20:56:17,196 [qtp1433956626-42] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: OPTIONS [/login]
+    Matching endpoint-handlers: [BEFORE=*]
+    Headers: {Origin=null, Accept=*/*, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=cors, Cache-Control=max-age=0, Access-Control-Request-Method=POST, Access-Control-Request-Headers=content-type, Accept-Language=en-US,en;q=0.9}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 5.17 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Access-Control-Allow-Methods=POST, Vary=Origin, Date=Tue, 11 Jan 2022 02:56:17 GMT, Access-Control-Allow-Headers=content-type, Content-Type=text/plain}
+    No body was set
+----------------------------------------------------------------------------------
+2022-01-10 20:56:17,731 [qtp1433956626-42] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/login]
+    Matching endpoint-handlers: [BEFORE=*, POST=/login]
+    Headers: {Origin=null, Accept=*/*, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=cors, sec-ch-ua=" Not;A Brand";v="99", "Google Chrome";v="97", "Chromium";v="97", sec-ch-ua-mobile=?0, Cache-Control=max-age=0, sec-ch-ua-platform="Windows", Accept-Language=en-US,en;q=0.9, Content-Length=46, Content-Type=application/json}
+    Cookies: {}
+    Body: {"username":"scarlett","passcode":"johansson"}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [204], execution took 526.27 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Vary=Origin, Date=Tue, 11 Jan 2022 02:56:17 GMT, Content-Type=text/plain}
+    Body is 16 bytes (starts on next line):
+    Invalid username
+----------------------------------------------------------------------------------
+2022-01-10 20:56:17,736 [qtp1433956626-27] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: OPTIONS [/employee/login]
+    Matching endpoint-handlers: [BEFORE=*]
+    Headers: {Origin=null, Accept=*/*, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=cors, Cache-Control=max-age=0, Access-Control-Request-Method=POST, Access-Control-Request-Headers=content-type, Accept-Language=en-US,en;q=0.9}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 0.13 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Access-Control-Allow-Methods=POST, Vary=Origin, Date=Tue, 11 Jan 2022 02:56:17 GMT, Access-Control-Allow-Headers=content-type, Content-Type=text/plain}
+    No body was set
+----------------------------------------------------------------------------------
+2022-01-10 20:56:18,240 [qtp1433956626-40] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/employee/login]
+    Matching endpoint-handlers: [BEFORE=*, POST=/employee/login]
+    Headers: {Origin=null, Accept=*/*, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=cors, sec-ch-ua=" Not;A Brand";v="99", "Google Chrome";v="97", "Chromium";v="97", sec-ch-ua-mobile=?0, Cache-Control=max-age=0, sec-ch-ua-platform="Windows", Accept-Language=en-US,en;q=0.9, Content-Length=46, Content-Type=applicaton/json}
+    Cookies: {}
+    Body: {"username":"scarlett","passcode":"johansson"}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [201], execution took 501.10 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Vary=Origin, Date=Tue, 11 Jan 2022 02:56:17 GMT, Content-Type=text/plain}
+    Body is 135 bytes (starts on next line):
+    {"employeeId":2,"handlerId":3,"handler":false,"username":"scarlett","passcode":"johansson","firstName":"Natasha","lastName":"Romanoff"}
+----------------------------------------------------------------------------------
+2022-01-10 20:56:18,836 [qtp1433956626-42] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/employee/2]
+    Matching endpoint-handlers: [BEFORE=*, GET=/employee/{id}]
+    Headers: {Origin=null, Accept=*/*, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=cors, sec-ch-ua=" Not;A Brand";v="99", "Google Chrome";v="97", "Chromium";v="97", sec-ch-ua-mobile=?0, sec-ch-ua-platform="Windows", Accept-Language=en-US,en;q=0.9}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 520.73 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Vary=Origin, Date=Tue, 11 Jan 2022 02:56:18 GMT, Content-Type=text/plain}
+    Body is 135 bytes (starts on next line):
+    {"employeeId":2,"handlerId":3,"handler":false,"username":"scarlett","passcode":"johansson","firstName":"Natasha","lastName":"Romanoff"}
+----------------------------------------------------------------------------------
+2022-01-10 20:56:19,376 [qtp1433956626-30] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/employee/debriefs/2]
+    Matching endpoint-handlers: [BEFORE=*, GET=/employee/debriefs/{id}]
+    Headers: {Origin=null, Accept=*/*, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=cors, sec-ch-ua=" Not;A Brand";v="99", "Google Chrome";v="97", "Chromium";v="97", sec-ch-ua-mobile=?0, sec-ch-ua-platform="Windows", Accept-Language=en-US,en;q=0.9}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 1058.16 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Content-Encoding=gzip, Vary=Origin, Date=Tue, 11 Jan 2022 02:56:18 GMT, Content-Type=text/plain}
+    Body is gzipped (3647 bytes, not logged)
+----------------------------------------------------------------------------------
+2022-01-10 20:56:19,459 [qtp1433956626-40] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: OPTIONS [/login]
+    Matching endpoint-handlers: [BEFORE=*]
+    Headers: {Origin=null, Accept=*/*, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=cors, Cache-Control=max-age=0, Access-Control-Request-Method=POST, Access-Control-Request-Headers=content-type, Accept-Language=en-US,en;q=0.9}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 0.19 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Access-Control-Allow-Methods=POST, Vary=Origin, Date=Tue, 11 Jan 2022 02:56:19 GMT, Access-Control-Allow-Headers=content-type, Content-Type=text/plain}
+    No body was set
+----------------------------------------------------------------------------------
+2022-01-10 20:56:19,968 [qtp1433956626-42] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/login]
+    Matching endpoint-handlers: [BEFORE=*, POST=/login]
+    Headers: {Origin=null, Accept=*/*, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=cors, sec-ch-ua=" Not;A Brand";v="99", "Google Chrome";v="97", "Chromium";v="97", sec-ch-ua-mobile=?0, Cache-Control=max-age=0, sec-ch-ua-platform="Windows", Accept-Language=en-US,en;q=0.9, Content-Length=46, Content-Type=application/json}
+    Cookies: {}
+    Body: {"username":"scarlett","passcode":"johansson"}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [204], execution took 506.38 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Vary=Origin, Date=Tue, 11 Jan 2022 02:56:19 GMT, Content-Type=text/plain}
+    Body is 16 bytes (starts on next line):
+    Invalid username
+----------------------------------------------------------------------------------
+2022-01-10 20:56:19,972 [qtp1433956626-40] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: OPTIONS [/employee/login]
+    Matching endpoint-handlers: [BEFORE=*]
+    Headers: {Origin=null, Accept=*/*, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=cors, Cache-Control=max-age=0, Access-Control-Request-Method=POST, Access-Control-Request-Headers=content-type, Accept-Language=en-US,en;q=0.9}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 0.15 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Access-Control-Allow-Methods=POST, Vary=Origin, Date=Tue, 11 Jan 2022 02:56:19 GMT, Access-Control-Allow-Headers=content-type, Content-Type=text/plain}
+    No body was set
+----------------------------------------------------------------------------------
+2022-01-10 20:56:20,454 [qtp1433956626-42] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/employee/login]
+    Matching endpoint-handlers: [BEFORE=*, POST=/employee/login]
+    Headers: {Origin=null, Accept=*/*, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=cors, sec-ch-ua=" Not;A Brand";v="99", "Google Chrome";v="97", "Chromium";v="97", sec-ch-ua-mobile=?0, Cache-Control=max-age=0, sec-ch-ua-platform="Windows", Accept-Language=en-US,en;q=0.9, Content-Length=46, Content-Type=applicaton/json}
+    Cookies: {}
+    Body: {"username":"scarlett","passcode":"johansson"}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [201], execution took 479.00 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Vary=Origin, Date=Tue, 11 Jan 2022 02:56:19 GMT, Content-Type=text/plain}
+    Body is 135 bytes (starts on next line):
+    {"employeeId":2,"handlerId":3,"handler":false,"username":"scarlett","passcode":"johansson","firstName":"Natasha","lastName":"Romanoff"}
+----------------------------------------------------------------------------------
+2022-01-10 20:56:20,769 [qtp1433956626-31] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: OPTIONS [/login]
+    Matching endpoint-handlers: [BEFORE=*]
+    Headers: {Origin=null, Accept=*/*, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=cors, Cache-Control=max-age=0, Access-Control-Request-Method=POST, Access-Control-Request-Headers=content-type, Accept-Language=en-US,en;q=0.9}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 0.36 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Access-Control-Allow-Methods=POST, Vary=Origin, Date=Tue, 11 Jan 2022 02:56:20 GMT, Access-Control-Allow-Headers=content-type, Content-Type=text/plain}
+    No body was set
+----------------------------------------------------------------------------------
+2022-01-10 20:56:20,988 [qtp1433956626-29] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/employee/2]
+    Matching endpoint-handlers: [BEFORE=*, GET=/employee/{id}]
+    Headers: {Origin=null, Accept=*/*, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=cors, sec-ch-ua=" Not;A Brand";v="99", "Google Chrome";v="97", "Chromium";v="97", sec-ch-ua-mobile=?0, sec-ch-ua-platform="Windows", Accept-Language=en-US,en;q=0.9}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 499.42 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Vary=Origin, Date=Tue, 11 Jan 2022 02:56:20 GMT, Content-Type=text/plain}
+    Body is 135 bytes (starts on next line):
+    {"employeeId":2,"handlerId":3,"handler":false,"username":"scarlett","passcode":"johansson","firstName":"Natasha","lastName":"Romanoff"}
+----------------------------------------------------------------------------------
+2022-01-10 20:56:21,257 [qtp1433956626-44] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/login]
+    Matching endpoint-handlers: [BEFORE=*, POST=/login]
+    Headers: {Origin=null, Accept=*/*, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=cors, sec-ch-ua=" Not;A Brand";v="99", "Google Chrome";v="97", "Chromium";v="97", sec-ch-ua-mobile=?0, Cache-Control=max-age=0, sec-ch-ua-platform="Windows", Accept-Language=en-US,en;q=0.9, Content-Length=46, Content-Type=application/json}
+    Cookies: {}
+    Body: {"username":"scarlett","passcode":"johansson"}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [204], execution took 485.54 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Vary=Origin, Date=Tue, 11 Jan 2022 02:56:20 GMT, Content-Type=text/plain}
+    Body is 16 bytes (starts on next line):
+    Invalid username
+----------------------------------------------------------------------------------
+2022-01-10 20:56:21,260 [qtp1433956626-30] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: OPTIONS [/employee/login]
+    Matching endpoint-handlers: [BEFORE=*]
+    Headers: {Origin=null, Accept=*/*, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=cors, Cache-Control=max-age=0, Access-Control-Request-Method=POST, Access-Control-Request-Headers=content-type, Accept-Language=en-US,en;q=0.9}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 0.08 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Access-Control-Allow-Methods=POST, Vary=Origin, Date=Tue, 11 Jan 2022 02:56:21 GMT, Access-Control-Allow-Headers=content-type, Content-Type=text/plain}
+    No body was set
+----------------------------------------------------------------------------------
+2022-01-10 20:56:21,476 [qtp1433956626-40] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/employee/debriefs/2]
+    Matching endpoint-handlers: [BEFORE=*, GET=/employee/debriefs/{id}]
+    Headers: {Origin=null, Accept=*/*, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=cors, sec-ch-ua=" Not;A Brand";v="99", "Google Chrome";v="97", "Chromium";v="97", sec-ch-ua-mobile=?0, sec-ch-ua-platform="Windows", Accept-Language=en-US,en;q=0.9}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 987.07 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Content-Encoding=gzip, Vary=Origin, Date=Tue, 11 Jan 2022 02:56:20 GMT, Content-Type=text/plain}
+    Body is gzipped (3647 bytes, not logged)
+----------------------------------------------------------------------------------
+2022-01-10 20:56:22,003 [qtp1433956626-44] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/employee/login]
+    Matching endpoint-handlers: [BEFORE=*, POST=/employee/login]
+    Headers: {Origin=null, Accept=*/*, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=cors, sec-ch-ua=" Not;A Brand";v="99", "Google Chrome";v="97", "Chromium";v="97", sec-ch-ua-mobile=?0, Cache-Control=max-age=0, sec-ch-ua-platform="Windows", Accept-Language=en-US,en;q=0.9, Content-Length=46, Content-Type=applicaton/json}
+    Cookies: {}
+    Body: {"username":"scarlett","passcode":"johansson"}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [201], execution took 741.56 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Vary=Origin, Date=Tue, 11 Jan 2022 02:56:21 GMT, Content-Type=text/plain}
+    Body is 135 bytes (starts on next line):
+    {"employeeId":2,"handlerId":3,"handler":false,"username":"scarlett","passcode":"johansson","firstName":"Natasha","lastName":"Romanoff"}
+----------------------------------------------------------------------------------
+2022-01-10 20:56:22,529 [qtp1433956626-30] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/employee/2]
+    Matching endpoint-handlers: [BEFORE=*, GET=/employee/{id}]
+    Headers: {Origin=null, Accept=*/*, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=cors, sec-ch-ua=" Not;A Brand";v="99", "Google Chrome";v="97", "Chromium";v="97", sec-ch-ua-mobile=?0, sec-ch-ua-platform="Windows", Accept-Language=en-US,en;q=0.9}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 482.27 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Vary=Origin, Date=Tue, 11 Jan 2022 02:56:22 GMT, Content-Type=text/plain}
+    Body is 135 bytes (starts on next line):
+    {"employeeId":2,"handlerId":3,"handler":false,"username":"scarlett","passcode":"johansson","firstName":"Natasha","lastName":"Romanoff"}
+----------------------------------------------------------------------------------
+2022-01-10 20:56:22,690 [qtp1433956626-33] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: OPTIONS [/login]
+    Matching endpoint-handlers: [BEFORE=*]
+    Headers: {Origin=null, Accept=*/*, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=cors, Cache-Control=max-age=0, Access-Control-Request-Method=POST, Access-Control-Request-Headers=content-type, Accept-Language=en-US,en;q=0.9}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 0.14 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Access-Control-Allow-Methods=POST, Vary=Origin, Date=Tue, 11 Jan 2022 02:56:22 GMT, Access-Control-Allow-Headers=content-type, Content-Type=text/plain}
+    No body was set
+----------------------------------------------------------------------------------
+2022-01-10 20:56:23,014 [qtp1433956626-32] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/employee/debriefs/2]
+    Matching endpoint-handlers: [BEFORE=*, GET=/employee/debriefs/{id}]
+    Headers: {Origin=null, Accept=*/*, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=cors, sec-ch-ua=" Not;A Brand";v="99", "Google Chrome";v="97", "Chromium";v="97", sec-ch-ua-mobile=?0, sec-ch-ua-platform="Windows", Accept-Language=en-US,en;q=0.9}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 966.09 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Content-Encoding=gzip, Vary=Origin, Date=Tue, 11 Jan 2022 02:56:22 GMT, Content-Type=text/plain}
+    Body is gzipped (3647 bytes, not logged)
+----------------------------------------------------------------------------------
+2022-01-10 20:56:23,172 [qtp1433956626-30] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/login]
+    Matching endpoint-handlers: [BEFORE=*, POST=/login]
+    Headers: {Origin=null, Accept=*/*, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=cors, sec-ch-ua=" Not;A Brand";v="99", "Google Chrome";v="97", "Chromium";v="97", sec-ch-ua-mobile=?0, Cache-Control=max-age=0, sec-ch-ua-platform="Windows", Accept-Language=en-US,en;q=0.9, Content-Length=46, Content-Type=application/json}
+    Cookies: {}
+    Body: {"username":"scarlett","passcode":"johansson"}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [204], execution took 480.32 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Vary=Origin, Date=Tue, 11 Jan 2022 02:56:22 GMT, Content-Type=text/plain}
+    Body is 16 bytes (starts on next line):
+    Invalid username
+----------------------------------------------------------------------------------
+2022-01-10 20:56:23,445 [qtp1433956626-31] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: OPTIONS [/employee/login]
+    Matching endpoint-handlers: [BEFORE=*]
+    Headers: {Origin=null, Accept=*/*, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=cors, Cache-Control=max-age=0, Access-Control-Request-Method=POST, Access-Control-Request-Headers=content-type, Accept-Language=en-US,en;q=0.9}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 0.12 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Access-Control-Allow-Methods=POST, Vary=Origin, Date=Tue, 11 Jan 2022 02:56:23 GMT, Access-Control-Allow-Headers=content-type, Content-Type=text/plain}
+    No body was set
+----------------------------------------------------------------------------------
+2022-01-10 20:56:23,924 [qtp1433956626-30] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/employee/login]
+    Matching endpoint-handlers: [BEFORE=*, POST=/employee/login]
+    Headers: {Origin=null, Accept=*/*, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=cors, sec-ch-ua=" Not;A Brand";v="99", "Google Chrome";v="97", "Chromium";v="97", sec-ch-ua-mobile=?0, Cache-Control=max-age=0, sec-ch-ua-platform="Windows", Accept-Language=en-US,en;q=0.9, Content-Length=46, Content-Type=applicaton/json}
+    Cookies: {}
+    Body: {"username":"scarlett","passcode":"johansson"}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [201], execution took 476.82 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Vary=Origin, Date=Tue, 11 Jan 2022 02:56:23 GMT, Content-Type=text/plain}
+    Body is 135 bytes (starts on next line):
+    {"employeeId":2,"handlerId":3,"handler":false,"username":"scarlett","passcode":"johansson","firstName":"Natasha","lastName":"Romanoff"}
+----------------------------------------------------------------------------------
+2022-01-10 20:56:24,457 [qtp1433956626-31] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/employee/2]
+    Matching endpoint-handlers: [BEFORE=*, GET=/employee/{id}]
+    Headers: {Origin=null, Accept=*/*, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=cors, sec-ch-ua=" Not;A Brand";v="99", "Google Chrome";v="97", "Chromium";v="97", sec-ch-ua-mobile=?0, sec-ch-ua-platform="Windows", Accept-Language=en-US,en;q=0.9}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 491.55 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Vary=Origin, Date=Tue, 11 Jan 2022 02:56:23 GMT, Content-Type=text/plain}
+    Body is 135 bytes (starts on next line):
+    {"employeeId":2,"handlerId":3,"handler":false,"username":"scarlett","passcode":"johansson","firstName":"Natasha","lastName":"Romanoff"}
+----------------------------------------------------------------------------------
+2022-01-10 20:56:24,958 [qtp1433956626-34] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/employee/debriefs/2]
+    Matching endpoint-handlers: [BEFORE=*, GET=/employee/debriefs/{id}]
+    Headers: {Origin=null, Accept=*/*, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=cors, sec-ch-ua=" Not;A Brand";v="99", "Google Chrome";v="97", "Chromium";v="97", sec-ch-ua-mobile=?0, sec-ch-ua-platform="Windows", Accept-Language=en-US,en;q=0.9}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 991.47 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Content-Encoding=gzip, Vary=Origin, Date=Tue, 11 Jan 2022 02:56:23 GMT, Content-Type=text/plain}
+    Body is gzipped (3647 bytes, not logged)
+----------------------------------------------------------------------------------
+2022-01-10 20:56:25,926 [qtp1433956626-34] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/employee/debriefs/2]
+    Matching endpoint-handlers: [BEFORE=*, GET=/employee/debriefs/{id}]
+    Headers: {Origin=null, Accept=*/*, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=cors, sec-ch-ua=" Not;A Brand";v="99", "Google Chrome";v="97", "Chromium";v="97", sec-ch-ua-mobile=?0, sec-ch-ua-platform="Windows", Accept-Language=en-US,en;q=0.9}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 967.14 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Content-Encoding=gzip, Vary=Origin, Date=Tue, 11 Jan 2022 02:56:24 GMT, Content-Type=text/plain}
+    Body is gzipped (3647 bytes, not logged)
+----------------------------------------------------------------------------------
+2022-01-10 20:56:28,664 [qtp1433956626-29] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: OPTIONS [/login]
+    Matching endpoint-handlers: [BEFORE=*]
+    Headers: {Origin=null, Accept=*/*, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=cors, Cache-Control=max-age=0, Access-Control-Request-Method=POST, Access-Control-Request-Headers=content-type, Accept-Language=en-US,en;q=0.9}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 0.09 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Access-Control-Allow-Methods=POST, Vary=Origin, Date=Tue, 11 Jan 2022 02:56:28 GMT, Access-Control-Allow-Headers=content-type, Content-Type=text/plain}
+    No body was set
+----------------------------------------------------------------------------------
+2022-01-10 20:56:29,155 [qtp1433956626-31] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/login]
+    Matching endpoint-handlers: [BEFORE=*, POST=/login]
+    Headers: {Origin=null, Accept=*/*, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=cors, sec-ch-ua=" Not;A Brand";v="99", "Google Chrome";v="97", "Chromium";v="97", sec-ch-ua-mobile=?0, Cache-Control=max-age=0, sec-ch-ua-platform="Windows", Accept-Language=en-US,en;q=0.9, Content-Length=37, Content-Type=application/json}
+    Cookies: {}
+    Body: {"username":"abc","passcode":"david"}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [204], execution took 490.03 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Vary=Origin, Date=Tue, 11 Jan 2022 02:56:28 GMT, Content-Type=text/plain}
+    Body is 16 bytes (starts on next line):
+    Invalid username
+----------------------------------------------------------------------------------
+2022-01-10 20:56:29,158 [qtp1433956626-29] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: OPTIONS [/employee/login]
+    Matching endpoint-handlers: [BEFORE=*]
+    Headers: {Origin=null, Accept=*/*, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=cors, Cache-Control=max-age=0, Access-Control-Request-Method=POST, Access-Control-Request-Headers=content-type, Accept-Language=en-US,en;q=0.9}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 0.09 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Access-Control-Allow-Methods=POST, Vary=Origin, Date=Tue, 11 Jan 2022 02:56:29 GMT, Access-Control-Allow-Headers=content-type, Content-Type=text/plain}
+    No body was set
+----------------------------------------------------------------------------------
+2022-01-10 20:56:29,646 [qtp1433956626-31] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/employee/login]
+    Matching endpoint-handlers: [BEFORE=*, POST=/employee/login]
+    Headers: {Origin=null, Accept=*/*, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=cors, sec-ch-ua=" Not;A Brand";v="99", "Google Chrome";v="97", "Chromium";v="97", sec-ch-ua-mobile=?0, Cache-Control=max-age=0, sec-ch-ua-platform="Windows", Accept-Language=en-US,en;q=0.9, Content-Length=37, Content-Type=applicaton/json}
+    Cookies: {}
+    Body: {"username":"abc","passcode":"david"}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [404], execution took 485.89 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Vary=Origin, Date=Tue, 11 Jan 2022 02:56:29 GMT, Content-Type=text/plain}
+    Body is 27 bytes (starts on next line):
+    The employee was not found.
+----------------------------------------------------------------------------------
+2022-01-10 20:56:29,940 [qtp1433956626-29] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: OPTIONS [/login]
+    Matching endpoint-handlers: [BEFORE=*]
+    Headers: {Origin=null, Accept=*/*, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=cors, Cache-Control=max-age=0, Access-Control-Request-Method=POST, Access-Control-Request-Headers=content-type, Accept-Language=en-US,en;q=0.9}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 0.10 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Access-Control-Allow-Methods=POST, Vary=Origin, Date=Tue, 11 Jan 2022 02:56:29 GMT, Access-Control-Allow-Headers=content-type, Content-Type=text/plain}
+    No body was set
+----------------------------------------------------------------------------------
+2022-01-10 20:56:30,418 [qtp1433956626-31] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/login]
+    Matching endpoint-handlers: [BEFORE=*, POST=/login]
+    Headers: {Origin=null, Accept=*/*, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=cors, sec-ch-ua=" Not;A Brand";v="99", "Google Chrome";v="97", "Chromium";v="97", sec-ch-ua-mobile=?0, Cache-Control=max-age=0, sec-ch-ua-platform="Windows", Accept-Language=en-US,en;q=0.9, Content-Length=37, Content-Type=application/json}
+    Cookies: {}
+    Body: {"username":"david","passcode":"abc"}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [204], execution took 475.32 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Vary=Origin, Date=Tue, 11 Jan 2022 02:56:29 GMT, Content-Type=text/plain}
+    Body is 16 bytes (starts on next line):
+    Invalid password
+----------------------------------------------------------------------------------
+2022-01-10 20:56:30,420 [qtp1433956626-29] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: OPTIONS [/employee/login]
+    Matching endpoint-handlers: [BEFORE=*]
+    Headers: {Origin=null, Accept=*/*, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=cors, Cache-Control=max-age=0, Access-Control-Request-Method=POST, Access-Control-Request-Headers=content-type, Accept-Language=en-US,en;q=0.9}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 0.08 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Access-Control-Allow-Methods=POST, Vary=Origin, Date=Tue, 11 Jan 2022 02:56:30 GMT, Access-Control-Allow-Headers=content-type, Content-Type=text/plain}
+    No body was set
+----------------------------------------------------------------------------------
+2022-01-10 20:56:30,894 [qtp1433956626-31] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/employee/login]
+    Matching endpoint-handlers: [BEFORE=*, POST=/employee/login]
+    Headers: {Origin=null, Accept=*/*, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=cors, sec-ch-ua=" Not;A Brand";v="99", "Google Chrome";v="97", "Chromium";v="97", sec-ch-ua-mobile=?0, Cache-Control=max-age=0, sec-ch-ua-platform="Windows", Accept-Language=en-US,en;q=0.9, Content-Length=37, Content-Type=applicaton/json}
+    Cookies: {}
+    Body: {"username":"david","passcode":"abc"}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [404], execution took 472.69 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Vary=Origin, Date=Tue, 11 Jan 2022 02:56:30 GMT, Content-Type=text/plain}
+    Body is 27 bytes (starts on next line):
+    The employee was not found.
+----------------------------------------------------------------------------------
+2022-01-10 20:56:31,518 [qtp1433956626-29] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: OPTIONS [/newUser]
+    Matching endpoint-handlers: [BEFORE=*]
+    Headers: {Origin=null, Accept=*/*, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=cors, Cache-Control=max-age=0, Access-Control-Request-Method=POST, Access-Control-Request-Headers=content-type, Accept-Language=en-US,en;q=0.9}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 0.11 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Access-Control-Allow-Methods=POST, Vary=Origin, Date=Tue, 11 Jan 2022 02:56:31 GMT, Access-Control-Allow-Headers=content-type, Content-Type=text/plain}
+    No body was set
+----------------------------------------------------------------------------------
+2022-01-10 20:56:32,039 [qtp1433956626-31] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/newUser]
+    Matching endpoint-handlers: [BEFORE=*, POST=/newUser]
+    Headers: {Origin=null, Accept=*/*, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=cors, sec-ch-ua=" Not;A Brand";v="99", "Google Chrome";v="97", "Chromium";v="97", sec-ch-ua-mobile=?0, Cache-Control=max-age=0, sec-ch-ua-platform="Windows", Accept-Language=en-US,en;q=0.9, Content-Length=87, Content-Type=application/json}
+    Cookies: {}
+    Body: {"userid":0,"username":"Amazon","passcode":"aws","firstName":"Jeff","lastName":"Bezos"}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [201], execution took 517.96 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Vary=Origin, Date=Tue, 11 Jan 2022 02:56:31 GMT, Content-Type=text/plain}
+    Body is 88 bytes (starts on next line):
+    {"userId":36,"username":"Amazon","passcode":"aws","firstName":"Jeff","lastName":"Bezos"}
+----------------------------------------------------------------------------------
+2022-01-10 20:56:32,788 [qtp1433956626-29] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: OPTIONS [/login]
+    Matching endpoint-handlers: [BEFORE=*]
+    Headers: {Origin=null, Accept=*/*, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=cors, Cache-Control=max-age=0, Access-Control-Request-Method=POST, Access-Control-Request-Headers=content-type, Accept-Language=en-US,en;q=0.9}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 0.11 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Access-Control-Allow-Methods=POST, Vary=Origin, Date=Tue, 11 Jan 2022 02:56:32 GMT, Access-Control-Allow-Headers=content-type, Content-Type=text/plain}
+    No body was set
+----------------------------------------------------------------------------------
+2022-01-10 20:56:34,001 [qtp1433956626-31] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/login]
+    Matching endpoint-handlers: [BEFORE=*, POST=/login]
+    Headers: {Origin=null, Accept=*/*, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=cors, sec-ch-ua=" Not;A Brand";v="99", "Google Chrome";v="97", "Chromium";v="97", sec-ch-ua-mobile=?0, Cache-Control=max-age=0, sec-ch-ua-platform="Windows", Accept-Language=en-US,en;q=0.9, Content-Length=39, Content-Type=application/json}
+    Cookies: {}
+    Body: {"username":"david","passcode":"david"}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 1210.72 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Vary=Origin, Date=Tue, 11 Jan 2022 02:56:32 GMT, Content-Type=text/plain}
+    Body is 91 bytes (starts on next line):
+    {"userId":1,"username":"david","passcode":"zazulak","firstName":"david","lastName":"david"}
+----------------------------------------------------------------------------------
+2022-01-10 20:56:34,538 [qtp1433956626-30] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/employee/list]
+    Matching endpoint-handlers: [BEFORE=*, GET=/employee/list, GET=/employee/{id}]
+    Headers: {Origin=null, Accept=*/*, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=cors, sec-ch-ua=" Not;A Brand";v="99", "Google Chrome";v="97", "Chromium";v="97", sec-ch-ua-mobile=?0, sec-ch-ua-platform="Windows", Accept-Language=en-US,en;q=0.9}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 478.91 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Vary=Origin, Date=Tue, 11 Jan 2022 02:56:34 GMT, Content-Type=text/plain}
+    Body is 266 bytes (starts on next line):
+    [{"employeeId":2,"handlerId":3,"handler":false,"username":"scarlett","passcode":"johansson","firstName":"Natasha","lastName":"Romanoff"},{"employeeId":1,"handlerId":3,"handler":false,"username":"jackson","passcode":"hasselhoff","firstName":"Nick","lastName":"Fury"}]
+----------------------------------------------------------------------------------
+2022-01-10 20:56:34,543 [qtp1433956626-29] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/user/1]
+    Matching endpoint-handlers: [BEFORE=*, GET=/user/{userId}]
+    Headers: {Origin=null, Accept=*/*, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=cors, sec-ch-ua=" Not;A Brand";v="99", "Google Chrome";v="97", "Chromium";v="97", sec-ch-ua-mobile=?0, sec-ch-ua-platform="Windows", Accept-Language=en-US,en;q=0.9}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 483.53 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Vary=Origin, Date=Tue, 11 Jan 2022 02:56:34 GMT, Content-Type=text/plain}
+    Body is 91 bytes (starts on next line):
+    {"userId":1,"username":"david","passcode":"david","firstName":"david","lastName":"zazulak"}
+----------------------------------------------------------------------------------
+2022-01-10 20:56:36,986 [qtp1433956626-31] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: OPTIONS [/claim]
+    Matching endpoint-handlers: [BEFORE=*]
+    Headers: {Origin=null, Accept=*/*, Access-Control-Request-Method=POST, Access-Control-Request-Headers=content-type, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Accept-Language=en-US,en;q=0.9, Sec-Fetch-Mode=cors}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 0.09 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Access-Control-Allow-Methods=POST, Vary=Origin, Date=Tue, 11 Jan 2022 02:56:36 GMT, Access-Control-Allow-Headers=content-type, Content-Type=text/plain}
+    No body was set
+----------------------------------------------------------------------------------
+2022-01-10 20:56:38,468 [qtp1433956626-29] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/claim]
+    Matching endpoint-handlers: [BEFORE=*, POST=/claim]
+    Headers: {Origin=null, Accept=*/*, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=cors, sec-ch-ua=" Not;A Brand";v="99", "Google Chrome";v="97", "Chromium";v="97", sec-ch-ua-mobile=?0, sec-ch-ua-platform="Windows", Accept-Language=en-US,en;q=0.9, Content-Length=207, Content-Type=application/json}
+    Cookies: {}
+    Body: {"claimId":0,"userId":1,"employeeId":2,"amount":123.5,"description":"Selenium wants money","dateOfOccurrence":"2021-12-12","locationOfOccurrence":"Downtown New York","approval":"pending","handlerComment":""}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [201], execution took 1478.82 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Vary=Origin, Date=Tue, 11 Jan 2022 02:56:36 GMT, Content-Type=text/plain}
+    Body is 259 bytes (starts on next line):
+    {"claimId":34,"userId":1,"employeeId":2,"amount":123.5,"description":"Selenium wants money","dateOfOccurrence":"2021-12-12","locationOfOccurrence":"Downtown New York","dateTimeOfCreation":"2022-01-10 20:56:37.9659432","approval":"pending","handlerComment":""}
+----------------------------------------------------------------------------------
+2022-01-10 20:56:38,777 [qtp1433956626-31] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: OPTIONS [/login]
+    Matching endpoint-handlers: [BEFORE=*]
+    Headers: {Origin=null, Accept=*/*, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=cors, Cache-Control=max-age=0, Access-Control-Request-Method=POST, Access-Control-Request-Headers=content-type, Accept-Language=en-US,en;q=0.9}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 0.12 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Access-Control-Allow-Methods=POST, Vary=Origin, Date=Tue, 11 Jan 2022 02:56:38 GMT, Access-Control-Allow-Headers=content-type, Content-Type=text/plain}
+    No body was set
+----------------------------------------------------------------------------------
+2022-01-10 20:56:39,746 [qtp1433956626-29] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/login]
+    Matching endpoint-handlers: [BEFORE=*, POST=/login]
+    Headers: {Origin=null, Accept=*/*, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=cors, sec-ch-ua=" Not;A Brand";v="99", "Google Chrome";v="97", "Chromium";v="97", sec-ch-ua-mobile=?0, Cache-Control=max-age=0, sec-ch-ua-platform="Windows", Accept-Language=en-US,en;q=0.9, Content-Length=39, Content-Type=application/json}
+    Cookies: {}
+    Body: {"username":"david","passcode":"david"}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 967.63 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Vary=Origin, Date=Tue, 11 Jan 2022 02:56:38 GMT, Content-Type=text/plain}
+    Body is 91 bytes (starts on next line):
+    {"userId":1,"username":"david","passcode":"zazulak","firstName":"david","lastName":"david"}
+----------------------------------------------------------------------------------
+2022-01-10 20:56:40,255 [qtp1433956626-45] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/employee/list]
+    Matching endpoint-handlers: [BEFORE=*, GET=/employee/list, GET=/employee/{id}]
+    Headers: {Origin=null, Accept=*/*, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=cors, sec-ch-ua=" Not;A Brand";v="99", "Google Chrome";v="97", "Chromium";v="97", sec-ch-ua-mobile=?0, sec-ch-ua-platform="Windows", Accept-Language=en-US,en;q=0.9}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 478.03 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Vary=Origin, Date=Tue, 11 Jan 2022 02:56:39 GMT, Content-Type=text/plain}
+    Body is 266 bytes (starts on next line):
+    [{"employeeId":2,"handlerId":3,"handler":false,"username":"scarlett","passcode":"johansson","firstName":"Natasha","lastName":"Romanoff"},{"employeeId":1,"handlerId":3,"handler":false,"username":"jackson","passcode":"hasselhoff","firstName":"Nick","lastName":"Fury"}]
+----------------------------------------------------------------------------------
+2022-01-10 20:56:40,264 [qtp1433956626-31] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/user/1]
+    Matching endpoint-handlers: [BEFORE=*, GET=/user/{userId}]
+    Headers: {Origin=null, Accept=*/*, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=cors, sec-ch-ua=" Not;A Brand";v="99", "Google Chrome";v="97", "Chromium";v="97", sec-ch-ua-mobile=?0, sec-ch-ua-platform="Windows", Accept-Language=en-US,en;q=0.9}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 486.76 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Vary=Origin, Date=Tue, 11 Jan 2022 02:56:39 GMT, Content-Type=text/plain}
+    Body is 91 bytes (starts on next line):
+    {"userId":1,"username":"david","passcode":"david","firstName":"david","lastName":"zazulak"}
+----------------------------------------------------------------------------------
+2022-01-10 20:56:42,650 [qtp1433956626-30] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: OPTIONS [/claim]
+    Matching endpoint-handlers: [BEFORE=*]
+    Headers: {Origin=null, Accept=*/*, Access-Control-Request-Method=POST, Access-Control-Request-Headers=content-type, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Accept-Language=en-US,en;q=0.9, Sec-Fetch-Mode=cors}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 0.11 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Access-Control-Allow-Methods=POST, Vary=Origin, Date=Tue, 11 Jan 2022 02:56:42 GMT, Access-Control-Allow-Headers=content-type, Content-Type=text/plain}
+    No body was set
+----------------------------------------------------------------------------------
+2022-01-10 20:56:43,863 [qtp1433956626-31] WARN  io.javalin.Javalin - Uncaught exception
+com.shield.customexceptions.NegativeClaimAmount: Claim must be a positive number
+	at com.shield.services.claim.ClaimServiceImp.createClaimService(ClaimServiceImp.java:39) ~[classes/:?]
+	at com.shield.controllers.ClaimController.lambda$1(ClaimController.java:35) ~[classes/:?]
+	at io.javalin.core.security.SecurityUtil.noopAccessManager(SecurityUtil.kt:20) ~[javalin-4.1.1.jar:4.1.1]
+	at io.javalin.http.JavalinServlet.addHandler$lambda-5(JavalinServlet.kt:113) ~[javalin-4.1.1.jar:4.1.1]
+	at io.javalin.http.JavalinServlet$service$tryBeforeAndEndpointHandlers$1.invoke(JavalinServlet.kt:44) ~[javalin-4.1.1.jar:4.1.1]
+	at io.javalin.http.JavalinServlet$service$tryBeforeAndEndpointHandlers$1.invoke(JavalinServlet.kt:39) ~[javalin-4.1.1.jar:4.1.1]
+	at io.javalin.http.JavalinServlet.service$tryWithExceptionMapper(JavalinServlet.kt:129) ~[javalin-4.1.1.jar:4.1.1]
+	at io.javalin.http.JavalinServlet.service$tryBeforeAndEndpointHandlers(JavalinServlet.kt:39) ~[javalin-4.1.1.jar:4.1.1]
+	at io.javalin.http.JavalinServlet.service(JavalinServlet.kt:87) ~[javalin-4.1.1.jar:4.1.1]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) ~[javax.servlet-api-3.1.0.jar:3.1.0]
+	at io.javalin.jetty.JavalinJettyServlet.service(JavalinJettyServlet.kt:58) ~[javalin-4.1.1.jar:4.1.1]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) ~[javax.servlet-api-3.1.0.jar:3.1.0]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:799) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:550) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at io.javalin.jetty.JettyServer$start$wsAndHttpHandler$1.doHandle(JettyServer.kt:52) ~[javalin-4.1.1.jar:4.1.1]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:179) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645) [jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392) [jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) [jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) [jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) [jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) [jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) [jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) [jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) [jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131) [jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409) [jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) [jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) [jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-01-10 20:56:43,868 [qtp1433956626-31] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/claim]
+    Matching endpoint-handlers: [BEFORE=*, POST=/claim]
+    Headers: {Origin=null, Accept=*/*, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=cors, sec-ch-ua=" Not;A Brand";v="99", "Google Chrome";v="97", "Chromium";v="97", sec-ch-ua-mobile=?0, sec-ch-ua-platform="Windows", Accept-Language=en-US,en;q=0.9, Content-Length=205, Content-Type=application/json}
+    Cookies: {}
+    Body: {"claimId":0,"userId":1,"employeeId":2,"amount":-50,"description":"Selenium wants money","dateOfOccurrence":"2021-12-12","locationOfOccurrence":"Downtown New York","approval":"pending","handlerComment":""}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [500], execution took 1215.66 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Vary=Origin, Date=Tue, 11 Jan 2022 02:56:42 GMT, Content-Type=text/plain}
+    Body is 21 bytes (starts on next line):
+    Internal server error
+----------------------------------------------------------------------------------
+2022-01-10 20:56:44,444 [qtp1433956626-30] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: OPTIONS [/login]
+    Matching endpoint-handlers: [BEFORE=*]
+    Headers: {Origin=null, Accept=*/*, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=cors, Cache-Control=max-age=0, Access-Control-Request-Method=POST, Access-Control-Request-Headers=content-type, Accept-Language=en-US,en;q=0.9}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 0.10 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Access-Control-Allow-Methods=POST, Vary=Origin, Date=Tue, 11 Jan 2022 02:56:44 GMT, Access-Control-Allow-Headers=content-type, Content-Type=text/plain}
+    No body was set
+----------------------------------------------------------------------------------
+2022-01-10 20:56:45,534 [qtp1433956626-31] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/login]
+    Matching endpoint-handlers: [BEFORE=*, POST=/login]
+    Headers: {Origin=null, Accept=*/*, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=cors, sec-ch-ua=" Not;A Brand";v="99", "Google Chrome";v="97", "Chromium";v="97", sec-ch-ua-mobile=?0, Cache-Control=max-age=0, sec-ch-ua-platform="Windows", Accept-Language=en-US,en;q=0.9, Content-Length=39, Content-Type=application/json}
+    Cookies: {}
+    Body: {"username":"david","passcode":"david"}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 1087.63 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Vary=Origin, Date=Tue, 11 Jan 2022 02:56:44 GMT, Content-Type=text/plain}
+    Body is 91 bytes (starts on next line):
+    {"userId":1,"username":"david","passcode":"zazulak","firstName":"david","lastName":"david"}
+----------------------------------------------------------------------------------
+2022-01-10 20:56:46,047 [qtp1433956626-29] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/employee/list]
+    Matching endpoint-handlers: [BEFORE=*, GET=/employee/list, GET=/employee/{id}]
+    Headers: {Origin=null, Accept=*/*, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=cors, sec-ch-ua=" Not;A Brand";v="99", "Google Chrome";v="97", "Chromium";v="97", sec-ch-ua-mobile=?0, sec-ch-ua-platform="Windows", Accept-Language=en-US,en;q=0.9}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 483.55 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Vary=Origin, Date=Tue, 11 Jan 2022 02:56:45 GMT, Content-Type=text/plain}
+    Body is 266 bytes (starts on next line):
+    [{"employeeId":2,"handlerId":3,"handler":false,"username":"scarlett","passcode":"johansson","firstName":"Natasha","lastName":"Romanoff"},{"employeeId":1,"handlerId":3,"handler":false,"username":"jackson","passcode":"hasselhoff","firstName":"Nick","lastName":"Fury"}]
+----------------------------------------------------------------------------------
+2022-01-10 20:56:46,053 [qtp1433956626-30] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/user/1]
+    Matching endpoint-handlers: [BEFORE=*, GET=/user/{userId}]
+    Headers: {Origin=null, Accept=*/*, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=cors, sec-ch-ua=" Not;A Brand";v="99", "Google Chrome";v="97", "Chromium";v="97", sec-ch-ua-mobile=?0, sec-ch-ua-platform="Windows", Accept-Language=en-US,en;q=0.9}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 488.95 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Vary=Origin, Date=Tue, 11 Jan 2022 02:56:45 GMT, Content-Type=text/plain}
+    Body is 91 bytes (starts on next line):
+    {"userId":1,"username":"david","passcode":"david","firstName":"david","lastName":"zazulak"}
+----------------------------------------------------------------------------------
+2022-01-10 20:56:46,229 [qtp1433956626-28] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: OPTIONS [/login]
+    Matching endpoint-handlers: [BEFORE=*]
+    Headers: {Origin=null, Accept=*/*, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=cors, Cache-Control=max-age=0, Access-Control-Request-Method=POST, Access-Control-Request-Headers=content-type, Accept-Language=en-US,en;q=0.9}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 0.09 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Access-Control-Allow-Methods=POST, Vary=Origin, Date=Tue, 11 Jan 2022 02:56:46 GMT, Access-Control-Allow-Headers=content-type, Content-Type=text/plain}
+    No body was set
+----------------------------------------------------------------------------------
+2022-01-10 20:56:47,202 [qtp1433956626-30] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/login]
+    Matching endpoint-handlers: [BEFORE=*, POST=/login]
+    Headers: {Origin=null, Accept=*/*, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=cors, sec-ch-ua=" Not;A Brand";v="99", "Google Chrome";v="97", "Chromium";v="97", sec-ch-ua-mobile=?0, Cache-Control=max-age=0, sec-ch-ua-platform="Windows", Accept-Language=en-US,en;q=0.9, Content-Length=39, Content-Type=application/json}
+    Cookies: {}
+    Body: {"username":"david","passcode":"david"}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 971.88 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Vary=Origin, Date=Tue, 11 Jan 2022 02:56:46 GMT, Content-Type=text/plain}
+    Body is 91 bytes (starts on next line):
+    {"userId":1,"username":"david","passcode":"zazulak","firstName":"david","lastName":"david"}
+----------------------------------------------------------------------------------
+2022-01-10 20:56:47,594 [qtp1433956626-27] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: OPTIONS [/login]
+    Matching endpoint-handlers: [BEFORE=*]
+    Headers: {Origin=null, Accept=*/*, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=cors, Cache-Control=max-age=0, Access-Control-Request-Method=POST, Access-Control-Request-Headers=content-type, Accept-Language=en-US,en;q=0.9}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 0.12 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Access-Control-Allow-Methods=POST, Vary=Origin, Date=Tue, 11 Jan 2022 02:56:47 GMT, Access-Control-Allow-Headers=content-type, Content-Type=text/plain}
+    No body was set
+----------------------------------------------------------------------------------
+2022-01-10 20:56:47,696 [qtp1433956626-29] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/user/1]
+    Matching endpoint-handlers: [BEFORE=*, GET=/user/{userId}]
+    Headers: {Origin=null, Accept=*/*, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=cors, sec-ch-ua=" Not;A Brand";v="99", "Google Chrome";v="97", "Chromium";v="97", sec-ch-ua-mobile=?0, sec-ch-ua-platform="Windows", Accept-Language=en-US,en;q=0.9}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 465.69 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Vary=Origin, Date=Tue, 11 Jan 2022 02:56:47 GMT, Content-Type=text/plain}
+    Body is 91 bytes (starts on next line):
+    {"userId":1,"username":"david","passcode":"david","firstName":"david","lastName":"zazulak"}
+----------------------------------------------------------------------------------
+2022-01-10 20:56:47,702 [qtp1433956626-42] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/employee/list]
+    Matching endpoint-handlers: [BEFORE=*, GET=/employee/list, GET=/employee/{id}]
+    Headers: {Origin=null, Accept=*/*, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=cors, sec-ch-ua=" Not;A Brand";v="99", "Google Chrome";v="97", "Chromium";v="97", sec-ch-ua-mobile=?0, sec-ch-ua-platform="Windows", Accept-Language=en-US,en;q=0.9}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 470.15 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Vary=Origin, Date=Tue, 11 Jan 2022 02:56:47 GMT, Content-Type=text/plain}
+    Body is 266 bytes (starts on next line):
+    [{"employeeId":2,"handlerId":3,"handler":false,"username":"scarlett","passcode":"johansson","firstName":"Natasha","lastName":"Romanoff"},{"employeeId":1,"handlerId":3,"handler":false,"username":"jackson","passcode":"hasselhoff","firstName":"Nick","lastName":"Fury"}]
+----------------------------------------------------------------------------------
+2022-01-10 20:56:48,553 [qtp1433956626-33] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/login]
+    Matching endpoint-handlers: [BEFORE=*, POST=/login]
+    Headers: {Origin=null, Accept=*/*, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=cors, sec-ch-ua=" Not;A Brand";v="99", "Google Chrome";v="97", "Chromium";v="97", sec-ch-ua-mobile=?0, Cache-Control=max-age=0, sec-ch-ua-platform="Windows", Accept-Language=en-US,en;q=0.9, Content-Length=39, Content-Type=application/json}
+    Cookies: {}
+    Body: {"username":"david","passcode":"david"}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 957.24 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Vary=Origin, Date=Tue, 11 Jan 2022 02:56:47 GMT, Content-Type=text/plain}
+    Body is 91 bytes (starts on next line):
+    {"userId":1,"username":"david","passcode":"zazulak","firstName":"david","lastName":"david"}
+----------------------------------------------------------------------------------
+2022-01-10 20:56:49,069 [qtp1433956626-43] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/employee/list]
+    Matching endpoint-handlers: [BEFORE=*, GET=/employee/list, GET=/employee/{id}]
+    Headers: {Origin=null, Accept=*/*, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=cors, sec-ch-ua=" Not;A Brand";v="99", "Google Chrome";v="97", "Chromium";v="97", sec-ch-ua-mobile=?0, sec-ch-ua-platform="Windows", Accept-Language=en-US,en;q=0.9}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 487.87 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Vary=Origin, Date=Tue, 11 Jan 2022 02:56:48 GMT, Content-Type=text/plain}
+    Body is 266 bytes (starts on next line):
+    [{"employeeId":2,"handlerId":3,"handler":false,"username":"scarlett","passcode":"johansson","firstName":"Natasha","lastName":"Romanoff"},{"employeeId":1,"handlerId":3,"handler":false,"username":"jackson","passcode":"hasselhoff","firstName":"Nick","lastName":"Fury"}]
+----------------------------------------------------------------------------------
+2022-01-10 20:56:49,073 [qtp1433956626-27] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/user/1]
+    Matching endpoint-handlers: [BEFORE=*, GET=/user/{userId}]
+    Headers: {Origin=null, Accept=*/*, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=cors, sec-ch-ua=" Not;A Brand";v="99", "Google Chrome";v="97", "Chromium";v="97", sec-ch-ua-mobile=?0, sec-ch-ua-platform="Windows", Accept-Language=en-US,en;q=0.9}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 493.60 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Vary=Origin, Date=Tue, 11 Jan 2022 02:56:48 GMT, Content-Type=text/plain}
+    Body is 91 bytes (starts on next line):
+    {"userId":1,"username":"david","passcode":"david","firstName":"david","lastName":"zazulak"}
+----------------------------------------------------------------------------------
+2022-01-10 20:56:49,645 [qtp1433956626-44] INFO  io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/user/claims/1]
+    Matching endpoint-handlers: [BEFORE=*, GET=/user/claims/{userId}]
+    Headers: {Origin=null, Accept=*/*, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36, Sec-Fetch-Site=cross-site, Sec-Fetch-Dest=empty, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Sec-Fetch-Mode=cors, sec-ch-ua=" Not;A Brand";v="99", "Google Chrome";v="97", "Chromium";v="97", sec-ch-ua-mobile=?0, sec-ch-ua-platform="Windows", Accept-Language=en-US,en;q=0.9}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200], execution took 970.31 ms
+    Headers: {Access-Control-Allow-Origin=null, Access-Control-Allow-Credentials=true, Content-Encoding=gzip, Vary=Origin, Date=Tue, 11 Jan 2022 02:56:48 GMT, Content-Type=text/plain}
+    Body is gzipped (5231 bytes, not logged)
+----------------------------------------------------------------------------------
