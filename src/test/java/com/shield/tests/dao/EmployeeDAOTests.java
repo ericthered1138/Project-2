@@ -5,13 +5,17 @@ import com.shield.daos.employee.EmployeeDAOImp;
 import com.shield.entities.Claim;
 import com.shield.entities.Debrief;
 import com.shield.entities.Employee;
+import org.postgresql.largeobject.BlobInputStream;
+import org.postgresql.largeobject.BlobOutputStream;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.InputStream;
+import java.sql.Blob;
 import java.util.HashMap;
 import java.util.List;
 
@@ -94,9 +98,10 @@ public class EmployeeDAOTests {
 
     @Test
     void insertEmployeeImage(){
-        File file = new File("Pictures/Agent 1.gif");
+
+        String image = "thisisatest";
         int employee_id = 1_000_001;
-        boolean returned_boolean = employeeDAO.insertEmployeeImage(employee_id, file);
+        boolean returned_boolean = employeeDAO.insertEmployeeImage(employee_id, image);
         Assert.assertTrue(returned_boolean);
     }
 
@@ -104,8 +109,7 @@ public class EmployeeDAOTests {
     void getEmployeeImage(){
         this.insertEmployeeImage();//insert the picture for the test
         int employee_id = 1_000_001;
-        File file = new File("Pictures/Agent 1.gif");
-        employeeDAO.insertEmployeeImage(employee_id, file);
+        employeeDAO.insertEmployeeImage(employee_id, "thisisatest");
         String returned_boolean = employeeDAO.getEmployeeImage(employee_id);
         Assert.assertNotEquals(returned_boolean, "false");
     }

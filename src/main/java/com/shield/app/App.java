@@ -47,6 +47,7 @@ public class App {
         app.get("/employee/claims/{id}", employeeController.getAgentClaims);
         app.get("/leaderboard", employeeController.getLeaderboard);
         app.get("/employee/image/{id}", employeeController.getImage);
+        app.post("/employee/image/{id}", employeeController.putImage);
 
         app.get("/debrief/{id}", debriefController.getDebrief);
         app.post("/debrief", debriefController.createDebrief);

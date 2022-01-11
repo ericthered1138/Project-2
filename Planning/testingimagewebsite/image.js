@@ -32,5 +32,12 @@ function previewFile() {
   
     if (file) {
       reader.readAsDataURL(file);
+      reader.readAsDataURL(file);//made to read the contents of a blob
+      let response = await fetch(
+        "http://localhost:8080//employee/image/1", {
+            method: "POST",
+            headers: {"Content-Type": "text/plain"},
+            body: reader.readAsDataURL(file)})
+        }
     }
   }
