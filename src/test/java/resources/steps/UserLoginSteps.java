@@ -22,19 +22,19 @@ public class UserLoginSteps {
     @When("The user enters their username in the username input box")
     public void the_employee_enters_their_username_in_the_username_input_box() {
         // Write code here that turns the phrase above into concrete actions
-        TestRunner.employeeLogin.link1.sendKeys("david");
+        TestRunner.userLogin.link1.sendKeys("david");
     }
 
     @When("The user enters their password in the password input box")
     public void the_employee_enters_their_password_in_the_password_input_box() {
         // Write code here that turns the phrase above into concrete actions
-        TestRunner.employeeLogin.link2.sendKeys("david");
+        TestRunner.userLogin.link2.sendKeys("david");
     }
 
     @When("The user clicks on the Sign In button")
     public void the_employee_clicks_on_the_Sign_In_button() {
         // Write code here that turns the phrase above into concrete actions
-        TestRunner.employeeLogin.link3.click();
+        TestRunner.userLogin.link3.click();
     }
 
     @Then("The user should be logged in and redirected to the user home page")
