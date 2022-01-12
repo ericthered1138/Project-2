@@ -4,6 +4,7 @@ import com.shield.entities.Claim;
 import com.shield.entities.Debrief;
 import com.shield.entities.Employee;
 
+import java.io.File;
 import java.util.List;
 
 public interface EmployeeService {
@@ -22,4 +23,8 @@ public interface EmployeeService {
     List<Debrief> getAgentDebriefingsService(int agent_employee_id);
 
     List<String> getLeaderboardService();
+
+    Boolean insertEmployeeImageService(int employee_id, String image);
+
+    String getEmployeeImageService(int employee_id);
 }

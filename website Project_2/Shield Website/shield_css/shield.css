@@ -6,8 +6,13 @@
 
 .logoutLblPos{
     position: absolute;
+<<<<<<< HEAD
+    right:12vw;
+    top:6vh;
+=======
     right:5.2vw;
-    top:7vh;
+    top:10vh;
+>>>>>>> origin/Victor-Branch
     
  }
 
@@ -26,8 +31,6 @@
  }
 
  #thumbNail {
-     background-image: url(../images/ironman.gif);
-     background-color: black;
      width: 7vw;
      height: 10vh;
      background-position: center;
@@ -36,7 +39,7 @@
      border-radius: 10px;
  }
  #thumbNails{
-     background-image: url(../images/Scarlett.jpg);
+     background-image: url(../images/blackwindow.gif);
      background-color: black;
      width: 6vw;
      height: 10vh;
@@ -84,8 +87,13 @@
  }
  
  body{
+<<<<<<< HEAD
+    background-image: url(../images/Shield.gif);
+=======
+     background-image: url(../images/Shield.gif);
     background-color: gray;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
+>>>>>>> origin/Victor-Branch
     text-align: center;
     position: relative;
     padding: auto;
@@ -95,11 +103,17 @@
  main {
     background-color:  rgba(0, 206, 209, 0.911);
     margin: 10px;
+    resize: both;
+    overflow: auto;
  }
 
  footer{
    text-align: center;
 
+ }
+
+ #headerUsername{
+     padding-left: 30px;
  }
  
  h3{
@@ -135,7 +149,7 @@
  }
 
  #middleSection{
-     width: 20vw;
+     width: 29vw;
      height: 40vh;
      padding: 1rem;
      border-radius: 10px;
@@ -168,3 +182,33 @@
      width: 150px;
      height: 80px;
  }
+ #articleContainer{
+    display: flex;
+    justify-content: space-around;
+}
+
+#leftSection{
+<<<<<<< HEAD
+    width: 30vw; 
+    height: 40vh;
+}
+#rightSection{
+    width: 21vw;
+=======
+    width: 14vw; 
+    height: 40vh;
+}
+#rightSection{
+    width: 14vw;
+>>>>>>> origin/Victor-Branch
+    height: 40vh;
+}
+
+#reviewClaimButton{
+    margin-top: 56px;
+}
+
+#portrait_input{
+    color: transparent;
+    width: 105px;
+}

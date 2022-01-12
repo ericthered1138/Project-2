@@ -7,6 +7,7 @@ import com.shield.Util.DatabaseConnection;
 
 import java.sql.*;
 import java.util.ArrayList;
+import java.util.Base64;
 import java.util.List;
 
 public class UserDAOImp implements UserDAO {
@@ -161,4 +162,86 @@ public class UserDAOImp implements UserDAO {
         }
     }
 
+    @Override
+    public boolean insertUserImage(int userId, String image) {
+        try(Connection connection = DatabaseConnection.createConnection()){
+            String sql = "delete from user_picture_table where user_id = ?";
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setInt(1, userId);
+            preparedStatement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        try(Connection connection = DatabaseConnection.createConnection()){
+            byte[] imageByte = Base64.getDecoder().decode(image);
+            String sql = "insert into user_picture_table values (default, ?, ?)";
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setInt(1, userId);
+            preparedStatement.setBytes(2, imageByte);
+            preparedStatement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return false;
+        }
+        return true;
+    }
+
+    @Override
+    public String getUserImage(int userId){
+        try(Connection connection = DatabaseConnection.createConnection()){
+            String sql = "select picture from user_picture_table where user_id = ?";
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setInt(1, userId);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            resultSet.next();
+            byte[] imageByte = resultSet.getBytes(1);
+            String image = Base64.getEncoder().encodeToString(imageByte);
+            return image;
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return "false";
+        }
+    }
+
+    @Override
+    public boolean checkUserImage(int userId) {
+        try (Connection connection = DatabaseConnection.createConnection()) {
+            String sql = "SELECT picture FROM user_picture_table WHERE user_id = ?";
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setInt(1, userId);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            return resultSet.next();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return false;
+    }
+
+    @Override
+    public boolean checkUserByUsername(String username) {
+        try(Connection connection = DatabaseConnection.createConnection()){
+            String sql = "Select * from user_table where username = ?";
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setString(1, username);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            if(resultSet.next()){
+                return false;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        try(Connection connection = DatabaseConnection.createConnection()){
+            String sql = "Select * from employee_table where username = ?";
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setString(1, username);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            if(resultSet.next()){
+                return false;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return true;
+    }
 }

@@ -15,4 +15,9 @@ public interface UserServices
     User checkUserLoginService(String username, String passcode);
 
     List<Claim> getUserClaimsByUserService(int user_id);
+
+    Boolean insertUserImageService(int userId, String image);
+
+    String getUserImageService(int userId);
+
 }

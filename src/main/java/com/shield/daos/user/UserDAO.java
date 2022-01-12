@@ -17,4 +17,13 @@ public interface UserDAO {
     User checkUserLogin(String username, String passcode);
 
     List<Claim> getUserClaimsByUser(int user_id);
+
+    boolean insertUserImage(int userId, String image);
+
+    String getUserImage(int userId);
+
+    boolean checkUserImage(int userId);
+
+    boolean checkUserByUsername(String username);
+
 }

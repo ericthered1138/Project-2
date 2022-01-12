@@ -1,15 +1,23 @@
 package com.shield.controllers;
 
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.google.gson.JsonSyntaxException;
+import com.google.gson.stream.JsonReader;
 import com.shield.customexceptions.EmployeeNotFound;
 import com.shield.entities.Claim;
 import com.shield.entities.Debrief;
 import com.shield.entities.Employee;
 import io.javalin.http.Handler;
 import com.shield.services.employee.EmployeeService;
+import io.netty.handler.codec.base64.Base64Encoder;
 
+import java.awt.*;
+import java.io.ByteArrayOutputStream;
+import java.io.File;
 import java.io.InputStream;
+import java.io.Reader;
+import java.util.Base64;
 import java.util.HashMap;
 import java.util.List;
 
@@ -51,7 +59,7 @@ public class EmployeeController {
             ctx.status(201);
         } catch (EmployeeNotFound e){
             ctx.result(e.getMessage());
-            ctx.status(100);
+            ctx.status(404);
         }
     };
 
@@ -117,6 +125,30 @@ public class EmployeeController {
             List<String> leaderboard = this.employeeService.getLeaderboardService();
             String leaderboards = gson.toJson(leaderboard.toArray());
             ctx.result(leaderboards);
+            ctx.status(200);
+        } catch (EmployeeNotFound e){
+            ctx.result(e.getMessage());
+            ctx.status(404);
+        }
+    };
+
+    public Handler getImage = ctx ->{
+        try {
+            int id = Integer.parseInt(ctx.pathParam("id"));//employee id
+            String image_returned = this.employeeService.getEmployeeImageService(id);
+            ctx.result(image_returned);
+            ctx.status(200);
+        } catch (EmployeeNotFound e){
+            ctx.result(e.getMessage());
+            ctx.status(404);
+        }
+    };
+
+    public Handler putImage = ctx ->{
+        try {
+            int id = Integer.parseInt(ctx.pathParam("id"));//employee id
+            String image = ctx.body();
+            this.employeeService.insertEmployeeImageService(id , image);
             ctx.status(200);
         } catch (EmployeeNotFound e){
             ctx.result(e.getMessage());

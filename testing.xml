@@ -1,0 +1,24 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Tests">
+    <test name="DAO">
+        <classes>
+            <class name="com.shield.tests.dao.ClaimDAOTests"/>
+            <class name="com.shield.tests.dao.DebriefDAOTests"/>
+            <class name="com.shield.tests.dao.EmployeeDAOTests"/>
+            <class name="com.shield.tests.dao.UserDAOTests"/>
+        </classes>
+    </test>
+    <test name="Service">
+        <classes>
+            <class name="com.shield.tests.service.ClaimServiceMockitoTest"/>
+            <class name="com.shield.tests.service.ClaimServiceTests"/>
+            <class name="com.shield.tests.service.DebriefServiceMockitoTest"/>
+            <class name="com.shield.tests.service.DebriefServiceTests"/>
+            <class name="com.shield.tests.service.EmployeeServiceMockitoTests"/>
+            <class name="com.shield.tests.service.EmployeeServiceTests"/>
+            <class name="com.shield.tests.service.UserServiceMockitoTest"/>
+            <class name="com.shield.tests.service.UserServiceTests"/>
+        </classes>
+    </test>
+</suite>

@@ -17,9 +17,9 @@ public class UserLogoutSteps {
         // Write code here that turns the phrase above into concrete actions
         File f = new File("website Project_2/Shield Website/index.html");
         TestRunner.driver.get(f.getAbsolutePath());
-        TestRunner.employeeLogin.link1.sendKeys("david");
-        TestRunner.employeeLogin.link2.sendKeys("david");
-        TestRunner.employeeLogin.link3.click();
+        TestRunner.userLogin.link1.sendKeys("david");
+        TestRunner.userLogin.link2.sendKeys("david");
+        TestRunner.userLogin.link3.click();
         TestRunner.explicitWait.until(ExpectedConditions.titleIs("User Page"));
     }
 

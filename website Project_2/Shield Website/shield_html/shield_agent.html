@@ -5,14 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shield Agent</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../shield_css/shield.css">
     <link rel="stylesheet" href="../shield_css/styling.css">
-    <!-- <style>
-        footer{
+    <style>
+        /* footer{
             background-color: black;
             color:turquoise;
-        }
-    </style> -->
+            resize: both;
+            overflow: auto;
+        } */
+    </style>
 
 </head>
 <body>
@@ -21,15 +24,23 @@
         <h2>Shield Agent Home Page</h2>
         <!-- If you want to include more features, such as search bar, etc... -->
         <div id="rightSideHeader">
-            <span id="thumbNails"></span>
-            <p id="headerUsername"></p>
+            <div>
+                <input id = "portrait_input" type="file" title = " " onchange="previewFile()"><br/>
+                <div id="base64" style="max-width: 200px; float: left; overflow-wrap: break-word;"></div>
+            </div>
+            <div>
+                <span id="thumbNail"></span>
+            </div>
+            <div>
+                <p id="headerUsername"></p>
+            </div>
         </div>
     </header>
 
     
     <section id="articleContainer">
         <article id="leftSection">
-            <button type="button" onclick ="toggleDebriefData()" class="rect3"> View Debriefs</button>
+            <button id="viewDebriefs" type="button" class="rect3" onclick ="toggleDebriefData()"> View Debriefs</button>
             <table class="table table-hover" id="debriefTable" style="display: none;">
                 <thead id="debriefHead"></thead>
                 <tr>
@@ -48,7 +59,7 @@
 
     <article id="middleSection">
         <div class="container mt-5">
-            <button type="button" class="rect4" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Submit New Debrief Form</button>
+            <button id="subButton" type="button" class="rect4" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Submit New Debrief Form</button>
             <div class="modal" id="myModal" style="display:none">
                 <div class="modal-dialog">
                     <div class="modal-content">
@@ -60,7 +71,7 @@
                                 <div class="mb-3">
                                     <br>
                                     <label for="debriefingTextInput"><b>Debrief Text: </b></label>
-                                    <textarea placeholder="Give a explanation" id="debriefingText" required></textarea>
+                                    <textarea id="debriefText" placeholder="Give a explanation" id="debriefingText" required></textarea>
                                 </div>
                                 <div class="mb-3">
                                     <br>
@@ -70,14 +81,14 @@
                                 <div class="mb-3">
                                     <br>
                                     <label for="locationOfOccurenceInput"><b>Location:</b></label>
-                                    <input type="text" placeholder="Enter a location" id="locationOfOccurrence">
+                                    <input id="locationText" type="text" placeholder="Enter a location" id="locationOfOccurrence">
                                     <br>
                                 </div>
                             </form>
                         </div>
                         <div class="modal-footer">
                             <button type="submit" class="btn btn-primary" id="submitButton" onclick="employeeCreateDebriefsLogData()"> Submit Debrief </button>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" id="cancelButton">Cancel</button>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" id="cancelButton"></button>
                         </div>
                     </div> 
                 </div>
@@ -87,9 +98,12 @@
 
 
     <article id="rightSection">
-        <button type="button" class="rect5">Glorious Leaderboard of Damage</button>
+        <button id="viewLeaderBoard" type="button" class="rect3" onclick="toggleLeaderBoardData()">Glorious Leaderboard of Damage</button>
             <!-- <p id="formTitle"> Glorious Leaderboard of Damage </p> -->
-            <table class="table table-hover" id="debriefTable" style="display: none;">
+            <table class="table table-hover" id="leaderBoardTable" style="display: none;">
+                <tbody id="leaderBoardBody">
+                    
+                </tbody>
             </table>
         </article>
     </section>
@@ -118,6 +132,93 @@
     <br>
     <br>
     <br>
+<<<<<<< HEAD
+    <!-- <footer>
+=======
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <br>
     <br>
     <br>
@@ -125,8 +226,9 @@
     <br>
     <br>
     <footer>
+>>>>>>> origin/Victor-Branch
         <i>Copyright&copy; 1965-2022 S.H.I.E.L.D<a href="mailto:shield@marvel.net"> shield@marvel.net</i></a>
-    </footer>
+    </footer> -->
 </main>
 <script src="../js/bootstrap.bundle.js"></script>
 <script src="../shield_js/shield_agent.js"></script>
