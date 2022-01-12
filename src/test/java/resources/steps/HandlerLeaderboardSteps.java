@@ -16,6 +16,12 @@ public class HandlerLeaderboardSteps {
         TestRunner.handlerLeaderboard.link1.click();
     }
 
+    @When("the handler chooses an employee")
+    public void the_handler_picks_an_employee() {
+        // Write code here that turns the phrase above into concrete actions
+        TestRunner.handlerLeaderboard.employeeFromDropdown.click();
+    }
+
     @Then("the information will be displayed on the handler page")
     public void the_information_will_be_displayed_on_the_handler_page() {
         // Write code here that turns the phrase above into concrete actions

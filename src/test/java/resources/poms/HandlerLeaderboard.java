@@ -16,5 +16,7 @@ public class HandlerLeaderboard {
 
     @FindBy(id = "viewLeaderBoard")
     public WebElement link1;
+    @FindBy(id = "employee2")
+    public WebElement employeeFromDropdown;
 
 }
