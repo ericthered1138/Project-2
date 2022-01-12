@@ -80,6 +80,9 @@ async function CreateUserAccount(){
                 console.log(response.json());
                 alert("Successfully created account")
             }
+            else if(response.status === 404){
+                alert("Username is taken.");
+            }
             else{
                 alert("There was an issue");
             }
@@ -88,26 +91,6 @@ async function CreateUserAccount(){
         alert("Password does not match")
     }
 }
-
-
-// // Testing for Create Account window in Login Screen
-// function setFormMessage(formElement, type, message) {
-//     const messageElement = formElement.querySelector(".form__message");
-
-//     messageElement.textContent = message;
-//     messageElement.classList.remove("form__message--success", "form__message--error");
-//     messageElement.classList.add(`form__message--${type}`);
-// }
-
-// function setInputError(inputElement, message) {
-//     inputElement.classList.add("form__input--error");
-//     inputElement.parentElement.querySelector(".form__input-error-message").textContent = message;
-// }
-
-// function clearInputError(inputElement) {
-//     inputElement.classList.remove("form__input--error");
-//     inputElement.parentElement.querySelector(".form__input-error-message").textContent = "";
-// }
 
 document.addEventListener("DOMContentLoaded", () => {
     const loginForm = document.querySelector("#loginForm");
@@ -126,23 +109,10 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-//     loginForm.addEventListener("submit", e => {
-//         e.preventDefault();
+function clearCreateAccountData(){
+    document.getElementById("createAccountForm").reset();
+}
 
-//         // Perform your AJAX/Fetch login
-
-//         setFormMessage(loginForm, "error", "Invalid username/password combination");
-//     });
-
-//     document.querySelectorAll(".form__input").forEach(inputElement => {
-//         inputElement.addEventListener("blur", e => {
-//             if (e.target.id === "signupUsername" && e.target.value.length > 0 && e.target.value.length < 10) {
-//                 setInputError(inputElement, "Username must be at least 10 characters in length");
-//             }
-//         });
-
-//         inputElement.addEventListener("input", e => {
-//             clearInputError(inputElement);
-//         });
-//     });
-// });
+function clearLoginFormData(){
+    document.getElementById("loginForm").reset();
+}

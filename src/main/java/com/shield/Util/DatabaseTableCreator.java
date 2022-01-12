@@ -21,7 +21,10 @@ public class DatabaseTableCreator {
                     "date_of_occurrence DATE, location_of_occurrence varchar(100), datetime_of_creation TIMESTAMP, " +
                     "primary key (debriefing_id), foreign key (employee_id) references employee_table(employee_id));" +
                     "create table employee_picture_table(picture_id serial primary KEY , employee_id int, " +
-                    "picture bytea, foreign key (employee_id) references employee_table(employee_id));";
+                    "picture bytea, foreign key (employee_id) references employee_table(employee_id));" +
+                    "create table user_picture_table(picture_id serial primary KEY , user_id int, " +
+                    "picture bytea, foreign key (user_id) references user_table(user_id));";
+
             Statement statement = connection.createStatement();
             statement.executeQuery(sql);
         }catch (SQLException e){

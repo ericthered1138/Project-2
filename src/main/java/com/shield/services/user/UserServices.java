@@ -19,4 +19,5 @@ public interface UserServices
     Boolean insertUserImageService(int userId, String image);
 
     String getUserImageService(int userId);
+
 }
