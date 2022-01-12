@@ -1,5 +1,5 @@
 async function getEmployeeImage(){
-    let url = "http://localhost:8080/employee/image/0";
+    let url = "http://localhost:8080/employee/image/1";
     console.log(url);
     let response = await fetch(url);
     console.log(response);
@@ -29,7 +29,7 @@ async function previewFile() {
     var base64gif = reader.result; // your gif in base64 here
     if (base64gif.length < 1_000_000){
       fetch(
-        "http://localhost:8080/employee/image/0", {
+        "http://localhost:8080/employee/image/1", {
             method: "POST",
             headers: {"Content-Type": "application/json"},
             body: String(base64gif).slice(length)
