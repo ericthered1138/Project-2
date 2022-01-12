@@ -47,7 +47,6 @@ public class App {
         app.get("/employee/claims/{id}", employeeController.getAgentClaims);
         app.get("/leaderboard", employeeController.getLeaderboard);
         app.get("/employee/image/{id}", employeeController.getImage);
-        app.post("/employee/image/{id}", employeeController.putImage);
 
         app.get("/debrief/{id}", debriefController.getDebrief);
         app.post("/debrief", debriefController.createDebrief);
@@ -66,6 +65,8 @@ public class App {
         app.post("/login", userController.checkUserLogin);
         app.post("/newUser", userController.createUser);
         app.get("/user/claims/{userId}", userController.getUserClaims);
+        app.get("/user/image/{userId}", userController.getImage);
+        app.post("/user/image/{userId}", userController.putImage);
 
         app.get("/claim/{claimId}", claimController.getClaim);
         app.post("/claim", claimController.createClaim);

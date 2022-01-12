@@ -26,9 +26,25 @@
     
         <!-- If you want to include more features, such as search bar, etc... -->
         <div id="rightSideHeader">
+            <div>
+            <input id = "portrait_input" type="file" title = " " onchange="previewFile()"><br/>
+            <div id="base64" style="max-width: 200px; float: left; overflow-wrap: break-word;"></div>
+            </div>
+            <!-- <img id = "portrait" src="" height="200" alt="Gif preview..."> -->
+            <div>
             <span id="thumbNail"></span>
-            <p id="headerUsername"></p>
-            
+            </div>
+            <div>
+                <p id="headerUsername"></p>
+            </div>
+            <!-- <div style="float: right"> -->
+                <div>
+                <form name="form1" method="post" action="../index.html">
+                    <label class="logoutLblPos">
+                        <button id="logoutButton" onclick="logout()">Logout</button>
+                    </label>
+                  </form>
+                </div>
         </div>
     </header>
         
@@ -121,17 +137,6 @@
     </div>
     </article>
     </section>
-
-
-
-    <div style="float: right">
-    <form name="form1" method="post" action="../index.html">
-        <label class="logoutLblPos">
-            <button id="logoutButton" onclick="logout()">Logout</button>
-        <!-- <input name="submit2" type="submit" id="submit2" onclick="logout()" value="log out"> -->
-        </label>
-      </form>
-    </div>
     
     <br>
     <br>
@@ -159,7 +164,6 @@
     </footer>
 </main>
 </body>
-
 <script src="../shield_js/user.js"></script>
 <script src="../js/bootstrap.bundle.js"></script>
 </html>
