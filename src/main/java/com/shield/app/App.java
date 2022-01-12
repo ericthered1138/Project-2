@@ -65,6 +65,8 @@ public class App {
         app.post("/login", userController.checkUserLogin);
         app.post("/newUser", userController.createUser);
         app.get("/user/claims/{userId}", userController.getUserClaims);
+        app.get("/user/image/{userId}", userController.getImage);
+        app.post("/user/image/{userId}", userController.putImage);
 
         app.get("/claim/{claimId}", claimController.getClaim);
         app.post("/claim", claimController.createClaim);
