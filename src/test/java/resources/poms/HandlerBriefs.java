@@ -16,7 +16,7 @@ public class HandlerBriefs {
 
     @FindBy(id = "claimEmployeeArrow")
     public WebElement link1;
-    @FindBy(id = "Natasha Romanoff")
+    @FindBy(id = "employee2")
     public WebElement link2;
     @FindBy(id = "viewDebriefsButton")
     public WebElement link3;
