@@ -9,11 +9,6 @@ import resources.runner.TestRunner;
 
 public class HandlerLeaderboardSteps {
 
-    @Given("the handler is already logged into the handler page")
-    public void the_handler_is_already_logged_into_the_handler_page() {
-        // Write code here that turns the phrase above into concrete actions
-        TestRunner.driver.get("C:\\Users\\itsvi\\Documents\\GitHub\\Project-2\\website Project_2\\Shield Website\\shield_html\\shield_handler.html");
-    }
 
     @When("the handler clicks on the leaderboard button they will see the information")
     public void the_handler_clicks_on_the_leaderboard_button_they_will_see_the_information() {

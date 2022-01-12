@@ -19,7 +19,7 @@ import java.util.concurrent.TimeUnit;
 //import java.util.concurrent.TimeUnit;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src/test/java/resources/features", glue ="resources/steps")
+@CucumberOptions(features = "src/test/java/resources/features", glue ="resources/steps", plugin = {"pretty", "html:src/test/resources/reports/html-reports.html"})
 // Absolute Path and Content Root worked
 public class TestRunner {
     public static WebDriver driver;
