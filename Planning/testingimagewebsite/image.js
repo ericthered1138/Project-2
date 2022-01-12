@@ -19,25 +19,26 @@ async function getEmployeeImage(){
 getEmployeeImage()
 
 
-function previewFile() {
-    var preview = document.querySelector('img');
-    var file    = document.querySelector('input[type=file]').files[0];
-    var reader  = new FileReader();
-  
-    reader.addEventListener("load", function () {
-      var base64gif = reader.result; // your gif in base64 here
-      preview.src = base64gif;
-      document.getElementById('base64').innerHTML = base64gif;
-    }, false);
-  
-    if (file) {
-      reader.readAsDataURL(file);
-      reader.readAsDataURL(file);//made to read the contents of a blob
-      let response = await fetch(
-        "http://localhost:8080//employee/image/1", {
-            method: "POST",
-            headers: {"Content-Type": "text/plain"},
-            body: reader.readAsDataURL(file)})
-        }
-    }
+async function previewFile() {
+  var file    = document.getElementById('portrait_input').files[0];
+  var reader  = new FileReader();
+  let format = "data:image/gif;base64,";
+  let length = format.length
+
+  reader.addEventListener("load", function () {
+    var base64gif = reader.result; // your gif in base64 here
+    console.log(String(base64gif).slice(length))
+    document.getElementById('base64').innerHTML = base64gif;
+
+    fetch(
+      "http://localhost:8080/employee/image/1", {
+          method: "POST",
+          headers: {"Content-Type": "application/json"},
+          body: String(base64gif).slice(length)
+      })
+  }, false);
+
+  if (file) {
+    reader.readAsDataURL(file);
   }
+}
