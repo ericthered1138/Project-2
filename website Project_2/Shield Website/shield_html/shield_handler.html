@@ -157,7 +157,7 @@
 <div>
     <form name="form1" method="post" action="../index.html">
         <label class="logoutLblPos"></label>
-            <button id="logout-button" onclick="Logout()">Logout</button>
+            <button id="logoutButton" onclick="Logout()">Logout</button>
         </label>
     </form>
 </div>
@@ -255,6 +255,15 @@
 </div>
 
 
+    <button id="viewLeaderBoard" type="button" onclick="toggleLeaderBoardData()">Leaderboard</button>
+        <table class="table table-hover" id="leaderBoardTable" style="display: none;">
+            <tbody id="leaderBoardBody">
+                
+            </tbody>
+        </table>
+
+
+
 <div align="center"
 <div class="rect4">
     <h2>Previous Pending Claims By User_Id</h2>
@@ -263,7 +272,7 @@
 
 
 
-<button type="button" onclick="toggleClaimDataToPrevious()">Previous Claims</button>
+<button id = "previousclaimbutton" type="button" onclick="toggleClaimDataToPrevious()">Previous Claims</button>
 <table class="table table-hover" id = "claimTableToPrevious" style="display: none;">
     <thead  id="claimHead2">
         <tr>
@@ -310,7 +319,7 @@
 </div>
 
 
-<button  type="button" onclick ="toggleDebriefData()"> View Debriefs</button>
+<button id= "viewDebriefsButton" type="button" onclick ="toggleDebriefData()"> View Debriefs</button>
 <table class="table table-hover" id="debriefTable" style="display: none;">
     <thead id="debriefHead"></thead>
     <tr>
@@ -328,7 +337,7 @@
 
 <div class="mb-3">
     <label for="employeeOnClaim"class="form-label required">Employee</label>
-    <select id="claimEmployee" name="employeeOnClaim" id="employeeOnClaim">
+    <select id="claimEmployeeArrow" name="employeeOnClaim" id="employeeOnClaim">
 
     </select>
 </div>

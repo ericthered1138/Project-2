@@ -1,5 +1,6 @@
 package resources.runner;
 
+import io.cucumber.java.hu.Ha;
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.AfterClass;
@@ -32,6 +33,12 @@ public class TestRunner {
     public static UserCreateAccount userCreateAccount;
     public static UserViewClaims userViewClaims;
     public static WebDriverWait explicitWait;
+    public static HandlerLogin  handlerLogin;
+    public static HandlerLogout handlerLogout;
+    public static HandlerApprove handlerApprove;
+    public static HandlerDeny handlerDeny;
+    public static HandlerBriefs handlerBriefs;
+    public static HandlerLeaderboard handlerLeaderboard;
 
 
 
@@ -51,6 +58,12 @@ public class TestRunner {
         agentViewDebriefs = new AgentViewDebriefs(driver);
         userCreateAccount = new UserCreateAccount(driver);
         userViewClaims = new UserViewClaims(driver);
+        handlerLogin = new HandlerLogin(driver);
+        handlerLogout = new HandlerLogout(driver);
+        handlerApprove = new HandlerApprove(driver);
+        handlerDeny = new HandlerDeny(driver);
+        handlerBriefs = new HandlerBriefs(driver);
+        handlerLeaderboard = new HandlerLeaderboard(driver);
         System.out.println("setup complete!");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         explicitWait = new WebDriverWait(driver, 5);
