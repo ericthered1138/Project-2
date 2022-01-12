@@ -31,54 +31,74 @@
 
             }
             .rect3{
-                height: 80px;
+                height: 100px;
                 width: 400px;
                 background: rgb(43, 23, 23);
                 border: 4px solid gold;
                 color: rgb(216, 216, 231);
                 text-align: center;
-                margin-top: 40px;
+                margin-top: 20px;
                 margin-left: 120px;
+                /* pending holder */
 
 
             }
             .rect4{
-                height: 80px;
+                height: 100px;
                 width: 400px;
                 background: rgb(43, 23, 23);
                 border: 4px solid gold;
                 color: rgb(216, 216, 231);
                 text-align: center;
-                margin-top: 200px;
+                margin-top: 80px;
                 margin-left: 120px;
 
 
             }
             .rect5{
-                height: 80px;
+                height: 100px;
                 width: 400px;
                 background: rgb(43, 23, 23);
                 border: 4px solid gold;
                 color: rgb(216, 216, 231);
                 text-align: center;
-                margin-top: -108px;
-                margin-left: 920px;
-
+                margin-top: -80px;
+                margin-left: 720px;
+                /* leaderboard */
 
             }
             .rect6{
-                height: 80px;
+                height: 100px;
                 width: 400px;
                 background: rgb(43, 23, 23);
                 border: 4px solid gold;
                 color: rgb(216, 216, 231);
                 text-align: center;
-                margin-top: 208px;
-                margin-left: 920px;
-                margin-bottom: -200px;
+                margin-top: 20px;
+                margin-left: 940px;
+                /* margin-bottom: -200px; */
+                /* briefs */
+            }
 
+            .pendinginput{
+                margin-left: 220px; 
 
             }
+
+            .leaderboardinfo{
+                margin-left: 1000px;
+                margin-bottom: -50px;
+                
+            }
+
+            .dropdown{
+                margin-left: 980px;
+            }
+
+            .briefstable{
+                margin-left: 800px;
+            }
+
             .button {
                 border: 4px solid gold;
                 color: black;
@@ -89,7 +109,7 @@
                 font-size: 16px;
                 margin: 4px 2px;
                 cursor: pointer;
-                margin-left: 130px;
+                margin-left: -40px; /*move approve and deny button */
                 margin-top: -80px;
 
             }
@@ -103,7 +123,7 @@
                 font-size: 16px;
                 margin: 4px 2px;
                 cursor: pointer;
-                margin-left: 30px;
+                margin-left: 10px;
                 margin-bottom: -80px;
 
             }
@@ -142,7 +162,13 @@
 
 <div align="center"
 <div class="rect2">
-    <h2>Username With Logo</h2>
+    <br>
+    <form name="form1" method="post" action="../index.html">
+        <label class="logoutLblPos"></label>
+            <button id="logoutButton" onclick="Logout()">Logout</button>
+        </label>
+    </form>
+    <!-- <h2>Username With Logo</h2> -->
     <div id=TopHeader">
         <span id="thumbNails"></span>
         <p id="headerUsername"></p>
@@ -154,28 +180,28 @@
 
 
 
-<div>
+<!-- <div>
     <form name="form1" method="post" action="../index.html">
         <label class="logoutLblPos"></label>
-            <button id="logout-button" onclick="Logout()">Logout</button>
+            <button id="logoutButton" onclick="Logout()">Logout</button>
         </label>
     </form>
-</div>
+</div> -->
 
 <br>
 
 <div align="center"
 <div class="rect3">
     <h2>Pending Claims</h2>
-
+    <button type="button" onclick="toggleClaimData()">Claims</button>
 
     <!-- <button class="button button1">Approve</button>
     <button class="buttonn button2">Dennied</button> -->
 </div>
 </div>
 
-
-<button type="button" onclick="toggleClaimData()">Claims</button>
+<div>
+<!-- <button type="button" onclick="toggleClaimData()">Claims</button> -->
 <table class="table table-hover" id = "claimTable" style="display: none;">
     <thead  id="claimHead">
         <tr>
@@ -207,14 +233,15 @@
                 Handler Comment
             </th>
         </tr>
-    </thead>
+    </thead> 
     <tbody id="claimBody">
 
     </tbody>
 </table>
+</div>
 
 
-<div id="createRequestForm" class="container">
+<div id="createRequestForm" class="pendinginput">
     <label for="claimIdInput"><b>Claim Id:</b></label>
     <input type="text" placeholder="Enter" id="claimIdInput" required>
     <br>
@@ -251,20 +278,31 @@
 <div align="center"
 <div class="rect5">
     <h2>Glorious Leaderboard of Damage</h2>
+    <button id="viewLeaderBoard" type="button" onclick="toggleLeaderBoardData()">Leaderboard</button>
 </div>
 </div>
+
+
+    <!-- <button id="viewLeaderBoard" type="button" onclick="toggleLeaderBoardData()">Leaderboard</button> -->
+        <table class="leaderboardinfo" id="leaderBoardTable" style="display: none;">
+            <tbody class = "?" id="leaderBoardBody">
+                
+            </tbody>
+        </table>
+
 
 
 <div align="center"
 <div class="rect4">
     <h2>Previous Pending Claims By User_Id</h2>
+    <button id = "previousclaimbutton" type="button" onclick="toggleClaimDataToPrevious()">Previous Claims</button>
 </div>
 </div>
 
 
 
-<button type="button" onclick="toggleClaimDataToPrevious()">Previous Claims</button>
-<table class="table table-hover" id = "claimTableToPrevious" style="display: none;">
+<!-- <button id = "previousclaimbutton" type="button" onclick="toggleClaimDataToPrevious()">Previous Claims</button> -->
+<table class="tabletable-hover" id = "claimTableToPrevious" style="display: none;">
     <thead  id="claimHead2">
         <tr>
             <th>
@@ -306,12 +344,20 @@
 <div align="center-right"
 <div class="rect6" align="center-right">
     <h2>Search For Briefs</h2>
+    <button id= "viewDebriefsButton" type="button" onclick ="toggleDebriefData()"> View Debriefs</button>
 </div>
 </div>
 
+<div class="dropdown">
+    <label for="employeeOnClaim"class="form-label required">EMPLOYEE:</label>
+    <select id="claimEmployeeArrow" name="employeeOnClaim" id="employeeOnClaim">
 
-<button  type="button" onclick ="toggleDebriefData()"> View Debriefs</button>
-<table class="table table-hover" id="debriefTable" style="display: none;">
+    </select>
+</div>
+
+<div>
+<!-- <button id= "viewDebriefsButton" type="button" onclick ="toggleDebriefData()"> View Debriefs</button> -->
+<table class="briefstable" id="debriefTable" style="display: none;">
     <thead id="debriefHead"></thead>
     <tr>
         <th>Debriefing Id:</th>
@@ -324,20 +370,8 @@
         <tbody id="debriefBody">
         </tbody>
 </table>
-
-
-<div class="mb-3">
-    <label for="employeeOnClaim"class="form-label required">Employee</label>
-    <select id="claimEmployee" name="employeeOnClaim" id="employeeOnClaim">
-
-    </select>
 </div>
 
-
-
-
-
-</p>
 </body>
 
 <script src="../shield_js/shield_handler.js"></script>
