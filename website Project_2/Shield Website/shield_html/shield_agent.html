@@ -8,12 +8,14 @@
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../shield_css/shield.css">
     <link rel="stylesheet" href="../shield_css/styling.css">
-    <!-- <style>
-        footer{
+    <style>
+        /* footer{
             background-color: black;
             color:turquoise;
-        }
-    </style> -->
+            resize: both;
+            overflow: auto;
+        } */
+    </style>
 
 </head>
 <body>
@@ -22,8 +24,16 @@
         <h2>Shield Agent Home Page</h2>
         <!-- If you want to include more features, such as search bar, etc... -->
         <div id="rightSideHeader">
-            <span id="thumbNails"></span>
-            <p id="headerUsername"></p>
+            <div>
+                <input id = "portrait_input" type="file" title = " " onchange="previewFile()"><br/>
+                <div id="base64" style="max-width: 200px; float: left; overflow-wrap: break-word;"></div>
+            </div>
+            <div>
+                <span id="thumbNail"></span>
+            </div>
+            <div>
+                <p id="headerUsername"></p>
+            </div>
         </div>
     </header>
 
@@ -122,27 +132,9 @@
     <br>
     <br>
     <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <footer>
+    <!-- <footer>
         <i>Copyright&copy; 1965-2022 S.H.I.E.L.D<a href="mailto:shield@marvel.net"> shield@marvel.net</i></a>
-    </footer>
+    </footer> -->
 </main>
 <script src="../js/bootstrap.bundle.js"></script>
 <script src="../shield_js/shield_agent.js"></script>
