@@ -4,6 +4,7 @@ import com.google.gson.Gson;
 import com.shield.customexceptions.InvalidPassword;
 import com.shield.customexceptions.InvalidUsername;
 import com.shield.customexceptions.UserNotFound;
+import com.shield.customexceptions.UsernameAlreadyExists;
 import com.shield.entities.Claim;
 import com.shield.entities.User;
 import io.javalin.http.Handler;
@@ -60,12 +61,18 @@ public class UserController {
     };
 
     public Handler createUser = ctx -> {
-        Gson gson = new Gson();
-        User newUser = gson.fromJson(ctx.body(), User.class);
-        User createdUser = this.userServices.createUser(newUser);
-        String createdUserJson = gson.toJson(createdUser);
-        ctx.result(createdUserJson);
-        ctx.status(201);
+        try {
+            Gson gson = new Gson();
+            User newUser = gson.fromJson(ctx.body(), User.class);
+            User createdUser = this.userServices.createUser(newUser);
+            String createdUserJson = gson.toJson(createdUser);
+            ctx.result(createdUserJson);
+            ctx.status(201);
+        }
+        catch (UsernameAlreadyExists e){
+            ctx.result(e.getMessage());
+            ctx.status(404);
+        }
     };
 
     public Handler getUserClaims = ctx ->{
@@ -78,6 +85,32 @@ public class UserController {
             ctx.result(claimsJSONs);
             ctx.status(200);
         } catch (UserNotFound e){
+            ctx.result(e.getMessage());
+            ctx.status(404);
+        }
+    };
+
+    public Handler getImage = ctx ->{
+        try{
+            int userId = Integer.parseInt(ctx.pathParam("userId"));
+            String image_returned = this.userServices.getUserImageService(userId);
+            ctx.result(image_returned);
+            ctx.status(200);
+        }
+        catch (UserNotFound e){
+            ctx.result(e.getMessage());
+            ctx.status(404);
+        }
+    };
+
+    public Handler putImage = ctx ->{
+        try{
+            int userId = Integer.parseInt(ctx.pathParam("userId"));
+            String image = ctx.body();
+            this.userServices.insertUserImageService(userId, image);
+            ctx.status(200);
+        }
+        catch (UserNotFound e){
             ctx.result(e.getMessage());
             ctx.status(404);
         }

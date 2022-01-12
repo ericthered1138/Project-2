@@ -11,7 +11,9 @@
     </test>
     <test name="Service">
         <classes>
+            <class name="com.shield.tests.service.ClaimServiceMockitoTest"/>
             <class name="com.shield.tests.service.ClaimServiceTests"/>
+            <class name="com.shield.tests.service.DebriefServiceMockitoTest"/>
             <class name="com.shield.tests.service.DebriefServiceTests"/>
             <class name="com.shield.tests.service.EmployeeServiceMockitoTests"/>
             <class name="com.shield.tests.service.EmployeeServiceTests"/>

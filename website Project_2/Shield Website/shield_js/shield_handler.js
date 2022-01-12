@@ -7,8 +7,10 @@ const claimTableBodyToPrevious = document.getElementById("claimBodyToPrevious");
 const claimTableToPrevious = document.getElementById("claimTableToPrevious");
 const debriefTable = document.getElementById("debriefTable");
 const debriefTableBody = document.getElementById("debriefBody");
-const claimEmployeeDropDown = document.getElementById("claimEmployee");
+const claimEmployeeDropDown = document.getElementById("claimEmployeeArrow");
 const headerUsername = document.getElementById("headerUsername");
+const leaderTable = document.getElementById("leaderBoardTable");
+const leaderTableBody = document.getElementById("leaderBoardBody");
 //####################    GRABS CLAIM DATA     ###############################################################################################################
 
 
@@ -307,6 +309,7 @@ function populateEmployeeDropDown(employeeList){
             let dropdownOptions = document.createElement("option");
             dropdownOptions.innerText = `${employee.firstName} ${employee.lastName}`;
             dropdownOptions.value = `${employee.employeeId}`;
+            dropdownOptions.id = `employee${employee.employeeId}`;
             claimEmployeeDropDown.append(dropdownOptions);
         }
     }
@@ -338,6 +341,48 @@ function populateUsername(employee){
 }
 
 getAllEmployeeData();
+
+
+//##############################  ################################################
+async function getAllLeaderBoardInfo(){
+    let url = "http://localhost:8080/leaderboard"
+    let response = await fetch(url);
+    if(response.status === 200){
+        let body = await response.json();
+        console.log(body);
+        populateLeaderBoardData(body);
+    }
+    else{
+        alert("There was a problem trying to receive the claim information: apologies!");
+    }
+}
+
+function populateLeaderBoardData(responseBody){
+    leaderTableBody.innerHTML = '';
+    for(let i = 0; i < responseBody.length; i += 2){
+        console.log(i);
+        let leader = responseBody[i];
+        console.log(leader);
+        let total = responseBody[i + 1];
+        let tableRow = document.createElement("tr");
+        tableRow.innerHTML = `<td>${leader}</td>
+                              <td>${total}</td>`;
+        console.log(tableRow);
+        leaderTableBody.append(tableRow);
+        
+    }   
+}
+
+function toggleLeaderBoardData(){
+    if(leaderTable.style.display === "none"){
+        leaderTable.style.display = "block";
+        getAllLeaderBoardInfo();
+    }
+    else{
+        leaderTable.style.display = "none";
+    }
+}
+
 
 
 
