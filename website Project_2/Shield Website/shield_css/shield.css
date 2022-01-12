@@ -6,8 +6,8 @@
 
 .logoutLblPos{
     position: absolute;
-    right:13.8vw;
-    top:7vh;
+    right:5.2vw;
+    top:10vh;
     
  }
 
@@ -26,8 +26,6 @@
  }
 
  #thumbNail {
-     background-image: url(../images/ironman.gif);
-     background-color: black;
      width: 7vw;
      height: 10vh;
      background-position: center;
@@ -102,6 +100,10 @@
    text-align: center;
 
  }
+
+ #headerUsername{
+     padding-left: 30px;
+ }
  
  h3{
      text-align: left;
@@ -117,7 +119,7 @@
      justify-content: space-around;
  }
  #headerUsername{
-     padding-left: 10px;
+     padding-left: 30px;
  }
 
  /* #rightSection, #middleSection, #leftSection{
@@ -131,7 +133,7 @@
  }
  #rightSection{
      padding: 1rem;
-     width: 16vw;
+     width: 14vw;
      height: 40vh;
  }
 
@@ -169,3 +171,25 @@
      width: 150px;
      height: 80px;
  }
+ #articleContainer{
+    display: flex;
+    justify-content: space-around;
+}
+
+#leftSection{
+    width: 14vw; 
+    height: 40vh;
+}
+#rightSection{
+    width: 14vw;
+    height: 40vh;
+}
+
+#reviewClaimButton{
+    margin-top: 56px;
+}
+
+#portrait_input{
+    color: transparent;
+    width: 105px;
+}

@@ -30,8 +30,8 @@ public class DebriefServiceMockitoTest {
 
     @BeforeClass
     public void setup(){
-        debriefDAO = Mockito.mock(DebriefDAO.class);
         employeeDAO = Mockito.mock(EmployeeDAO.class);
+        debriefDAO = Mockito.mock(DebriefDAO.class);
         debriefService = new DebriefServiceImp(debriefDAO, employeeDAO);
     }
     //Happy Tests
@@ -47,7 +47,6 @@ public class DebriefServiceMockitoTest {
     void createDebriefServiceMock(){
         Employee created_employee = new Employee(1, 1, false, "username", "password", "Test", "Test");
         Mockito.when(employeeDAO.getEmployeeById(1)).thenReturn(created_employee);
-        System.out.println(created_employee);
         Debrief created_debrief = new Debrief(20,1,"My apologies, it was my fault","12302021","NYC","");
         Mockito.when(debriefDAO.createDebrief(created_debrief)).thenReturn(created_debrief);
         Debrief mocked_created_debrief = debriefService.createDebriefService(created_debrief);

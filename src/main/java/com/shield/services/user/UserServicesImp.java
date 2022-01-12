@@ -77,4 +77,22 @@ public class UserServicesImp implements UserServices {
             throw new UserNotFound("User not found");
         }
     }
+
+    @Override
+    public Boolean insertUserImageService(int userId, String image) {
+        userDAO.getUserById(userId);
+
+        return userDAO.insertUserImage(userId, image);
+    }
+
+    @Override
+    public String getUserImageService(int userId) {
+        userDAO.getUserById(userId);
+
+        if(userDAO.checkUserImage(userId)){
+            return userDAO.getUserImage(userId);
+        } else{
+            return userDAO.getUserImage(0);
+        }
+    }
 }

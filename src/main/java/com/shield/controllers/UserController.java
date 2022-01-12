@@ -82,4 +82,30 @@ public class UserController {
             ctx.status(404);
         }
     };
+
+    public Handler getImage = ctx ->{
+        try{
+            int userId = Integer.parseInt(ctx.pathParam("userId"));
+            String image_returned = this.userServices.getUserImageService(userId);
+            ctx.result(image_returned);
+            ctx.status(200);
+        }
+        catch (UserNotFound e){
+            ctx.result(e.getMessage());
+            ctx.status(404);
+        }
+    };
+
+    public Handler putImage = ctx ->{
+        try{
+            int userId = Integer.parseInt(ctx.pathParam("userId"));
+            String image = ctx.body();
+            this.userServices.insertUserImageService(userId, image);
+            ctx.status(200);
+        }
+        catch (UserNotFound e){
+            ctx.result(e.getMessage());
+            ctx.status(404);
+        }
+    };
 }
