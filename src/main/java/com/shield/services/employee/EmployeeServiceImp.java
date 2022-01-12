@@ -91,11 +91,14 @@ public class EmployeeServiceImp implements EmployeeService{
 
     @Override
     public Boolean insertEmployeeImageService(int employee_id, String image) {
+        //check if the employee exists
         return employeeDAO.insertEmployeeImage(employee_id, image);
     }
 
     @Override
     public String getEmployeeImageService(int employee_id) {
+        //Check if there exists an image with the employee_id
         return employeeDAO.getEmployeeImage(employee_id);
+        //Else return a default picture
     }
 }

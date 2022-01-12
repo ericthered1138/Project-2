@@ -27,7 +27,7 @@ async function previewFile() {
 
   reader.addEventListener("load", function () {
     var base64gif = reader.result; // your gif in base64 here
-    if (base64gif.length < 500_000){
+    if (base64gif.length < 1_000_000){
       fetch(
         "http://localhost:8080/employee/image/1", {
             method: "POST",
