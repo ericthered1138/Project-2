@@ -6,8 +6,8 @@
 
 .logoutLblPos{
     position: absolute;
-    right:5.2vw;
-    top:10vh;
+    right:12vw;
+    top:6vh;
     
  }
 
@@ -34,7 +34,7 @@
      border-radius: 10px;
  }
  #thumbNails{
-     background-image: url(../images/Scarlett.jpg);
+     background-image: url(../images/blackwindow.gif);
      background-color: black;
      width: 6vw;
      height: 10vh;
@@ -82,9 +82,7 @@
  }
  
  body{
-     background-image: url(../images/Shield.gif);
-    background-color: gray;
-    background-repeat: repeat;
+    background-image: url(../images/Shield.gif);
     text-align: center;
     position: relative;
     padding: auto;
@@ -94,6 +92,8 @@
  main {
     background-color:  rgba(0, 206, 209, 0.911);
     margin: 10px;
+    resize: both;
+    overflow: auto;
  }
 
  footer{
@@ -138,7 +138,7 @@
  }
 
  #middleSection{
-     width: 20vw;
+     width: 29vw;
      height: 40vh;
      padding: 1rem;
      border-radius: 10px;
@@ -177,11 +177,11 @@
 }
 
 #leftSection{
-    width: 14vw; 
+    width: 30vw; 
     height: 40vh;
 }
 #rightSection{
-    width: 14vw;
+    width: 21vw;
     height: 40vh;
 }
 
