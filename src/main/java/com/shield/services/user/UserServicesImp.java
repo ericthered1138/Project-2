@@ -17,6 +17,7 @@ public class UserServicesImp implements UserServices {
         this.userDAO = userDAO;
     }
 
+    // Grabs the user from the database using the userId, and throws an exception if the userId is not found
     @Override
     public User getUserByIdService(int userId) {
         try{
@@ -27,16 +28,20 @@ public class UserServicesImp implements UserServices {
         }
     }
 
+    // Sends the user information to the database to create users
     @Override
     public User createUser(User user) {
         return this.userDAO.createUser(user);
     }
 
+    // Creates a list of all users in the database
     @Override
     public List<User> getAllUserService() {
         return this.userDAO.getAllUsers();
     }
 
+    // Uses the GetAllUsers method, loops through the list of users and checks to see if the username and password match any of them
+    // if it does not the method throws respective errors for invalid username or invalid password
     @Override
     public User checkUserLoginService(String username, String passcode) {
         List<User> userList;
@@ -60,6 +65,7 @@ public class UserServicesImp implements UserServices {
         }
     }
 
+    // Grabs all the claims of a user by their userId
     @Override
     public List<Claim> getUserClaimsByUserService(int user_id){
         //Check if the user exists by id.

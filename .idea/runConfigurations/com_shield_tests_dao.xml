@@ -17,6 +17,7 @@
     <option name="TEST_OBJECT" value="PACKAGE" />
     <option name="PARAMETERS" value="" />
     <option name="OUTPUT_DIRECTORY" value="" />
+    <option name="USE_DEFAULT_REPORTERS" value="true" />
     <option name="PROPERTIES_FILE" value="" />
     <envs>
       <env name="HOST" value="database-1.c3bzypvk3zkj.us-east-2.rds.amazonaws.com" />

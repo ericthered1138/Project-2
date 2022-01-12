@@ -24,7 +24,7 @@ public interface EmployeeService {
 
     List<String> getLeaderboardService();
 
-    Boolean insertEmployeeImageService(int employee_id, File file);
+    Boolean insertEmployeeImageService(int employee_id, String image);
 
     String getEmployeeImageService(int employee_id);
 }
