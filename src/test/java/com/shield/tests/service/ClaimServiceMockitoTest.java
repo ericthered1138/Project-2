@@ -37,8 +37,9 @@ public class ClaimServiceMockitoTest {
 
     @BeforeClass
     public void setup(){
-
+        employeeDAO = Mockito.mock(EmployeeDAO.class);
         claimDAO = Mockito.mock(ClaimDAO.class);
+        userDAO = Mockito.mock(UserDAO.class);
         claimService = new ClaimServiceImp(claimDAO, employeeDAO, userDAO);
     }
     @Test
@@ -52,13 +53,21 @@ public class ClaimServiceMockitoTest {
     @Test
     //This test is having an error trying to find the Employee ID but returning a null...
     void createClaimServiceMock(){
-        Employee created_employee = new Employee(1, 1, false, "username", "password", "Joe", "Jenkins");
-        Mockito.when(employeeDAO.getEmployeeById(1)).thenReturn(created_employee);
-        Employee mocked_created_employee = employeeService.getEmployeeByIdService(1);
-        System.out.println(mocked_created_employee);
+        User returned_user = new User(1, "david", "zazulak", "david", "david");
+        Mockito.when(userDAO.getUserById(1)).thenReturn(returned_user);
+        Employee returned_employee = new Employee(1, 1, false, "username", "password", "Joe", "Jenkins");
+        Mockito.when(employeeDAO.getEmployeeById(1)).thenReturn(returned_employee);
         Claim created_claim = new Claim(1, 1, 1, 100, "My gamecube was destroyed", "12152021", "WA", "", "Approve", "Apologies for that, we will send reimbursement, right away.");
         Mockito.when(claimDAO.createClaim(created_claim)).thenReturn(created_claim);
         Claim mocked_created_claim = claimService.createClaimService(created_claim);
         Assert.assertEquals(mocked_created_claim.getClaimId(), 1);
+    }
+
+    @Test
+    void approveClaimServiceMock(){
+    }
+
+    @Test
+    void denyClaimServiceMock(){
     }
 }
