@@ -1,3 +1,5 @@
 
 target/classes/features/employeeLoginSteps.feature
 target/test-classes/resources/features/userCreateAccountPasswordMismatch.feature
+target/test-classes/resources/features/userCreateAccountPasswordMismatch.feature
+target/test-classes/resources/features/userCreateAccountPasswordMismatch.feature

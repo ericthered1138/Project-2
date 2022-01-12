@@ -8,6 +8,11 @@ import resources.runner.TestRunner;
 
 public class HandlerBriefsSteps {
 
+    @Given("The handler is currently in the handler page")
+    public void the_handler_is_currently_in_the_handler_page() {
+        // Write code here that turns the phrase above into concrete actions
+        TestRunner.driver.get("C:\\Users\\itsvi\\Documents\\GitHub\\Project-2\\website Project_2\\Shield Website\\shield_html\\shield_handler.html");
+    }
 
     @When("the user selects the employee dropdown menu on handler page")
     public void the_user_selects_the_employee_dropdown_menu_on_handler_page() {

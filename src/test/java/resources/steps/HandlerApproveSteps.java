@@ -11,6 +11,11 @@ import java.io.File;
 
 public class HandlerApproveSteps {
 
+    @Given("The handler is in the handler page")
+    public void the_handler_is_in_the_handler_page() {
+        // Write code here that turns the phrase above into concrete actions
+        TestRunner.driver.get("C:\\Users\\itsvi\\Documents\\GitHub\\Project-2\\website Project_2\\Shield Website\\shield_html\\shield_handler.html");
+    }
 
     @When("the handler enter the claim id in the claim id input box")
     public void the_handler_enter_the_claim_id_in_the_claim_id_input_box() {

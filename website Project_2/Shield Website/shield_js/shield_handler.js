@@ -309,6 +309,7 @@ function populateEmployeeDropDown(employeeList){
             let dropdownOptions = document.createElement("option");
             dropdownOptions.innerText = `${employee.firstName} ${employee.lastName}`;
             dropdownOptions.value = `${employee.employeeId}`;
+            dropdownOptions.id = `employee${employee.employeeId}`;
             claimEmployeeDropDown.append(dropdownOptions);
         }
     }

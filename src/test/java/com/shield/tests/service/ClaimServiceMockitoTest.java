@@ -17,6 +17,7 @@ import com.shield.services.employee.EmployeeService;
 import com.shield.services.employee.EmployeeServiceImp;
 import com.shield.services.claim.ClaimService;
 import com.shield.services.claim.ClaimServiceImp;
+import io.cucumber.core.backend.Pending;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.testng.Assert;
@@ -65,9 +66,17 @@ public class ClaimServiceMockitoTest {
 
     @Test
     void approveClaimServiceMock(){
+        Claim approve_claim = new Claim(3,3,3,3,"???","2022-1-14","Miami","2021-12-10 00:00:00.000","approved","???");
+        Mockito.when(claimDAO.approveClaim(3, "???")).thenReturn(approve_claim);
+        Claim mock_claim = claimService.approveClaimService(3,"???");
+        Assert.assertEquals(mock_claim.getApproval(), "approved");
     }
 
     @Test
     void denyClaimServiceMock(){
+        Claim approve_claim = new Claim(3,3,3,3,"???","2022-1-14","Miami","2021-12-10 00:00:00.000","denied","???");
+        Mockito.when(claimDAO.approveClaim(3, "???")).thenReturn(approve_claim);
+        Claim mock_claim = claimService.approveClaimService(3,"???");
+        Assert.assertEquals(mock_claim.getApproval(), "denied");
     }
 }
