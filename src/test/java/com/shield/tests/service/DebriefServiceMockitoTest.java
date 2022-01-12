@@ -31,6 +31,7 @@ public class DebriefServiceMockitoTest {
     @BeforeClass
     public void setup(){
         debriefDAO = Mockito.mock(DebriefDAO.class);
+        employeeDAO = Mockito.mock(EmployeeDAO.class);
         debriefService = new DebriefServiceImp(debriefDAO, employeeDAO);
     }
     //Happy Tests
