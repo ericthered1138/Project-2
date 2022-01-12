@@ -84,8 +84,9 @@
  }
  
  body{
+     background-image: url(../images/Shield.gif);
     background-color: gray;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     text-align: center;
     position: relative;
     padding: auto;
