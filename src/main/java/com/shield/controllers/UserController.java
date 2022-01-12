@@ -4,6 +4,7 @@ import com.google.gson.Gson;
 import com.shield.customexceptions.InvalidPassword;
 import com.shield.customexceptions.InvalidUsername;
 import com.shield.customexceptions.UserNotFound;
+import com.shield.customexceptions.UsernameAlreadyExists;
 import com.shield.entities.Claim;
 import com.shield.entities.User;
 import io.javalin.http.Handler;
@@ -60,12 +61,18 @@ public class UserController {
     };
 
     public Handler createUser = ctx -> {
-        Gson gson = new Gson();
-        User newUser = gson.fromJson(ctx.body(), User.class);
-        User createdUser = this.userServices.createUser(newUser);
-        String createdUserJson = gson.toJson(createdUser);
-        ctx.result(createdUserJson);
-        ctx.status(201);
+        try {
+            Gson gson = new Gson();
+            User newUser = gson.fromJson(ctx.body(), User.class);
+            User createdUser = this.userServices.createUser(newUser);
+            String createdUserJson = gson.toJson(createdUser);
+            ctx.result(createdUserJson);
+            ctx.status(201);
+        }
+        catch (UsernameAlreadyExists e){
+            ctx.result(e.getMessage());
+            ctx.status(404);
+        }
     };
 
     public Handler getUserClaims = ctx ->{
