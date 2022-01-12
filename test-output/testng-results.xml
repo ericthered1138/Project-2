@@ -1,0 +1,1346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="59" passed="59" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-01-11T23:55:51 CST" name="Tests" finished-at="2022-01-11T23:56:34 CST" duration-ms="42161">
+    <groups>
+    </groups>
+    <test started-at="2022-01-11T23:55:51 CST" name="DAO" finished-at="2022-01-11T23:56:21 CST" duration-ms="29350">
+      <class name="com.shield.tests.dao.UserDAOTests">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.shield.tests.dao.UserDAOTests@97e93f1]" started-at="2022-01-11T23:56:15 CST" name="setup" finished-at="2022-01-11T23:56:16 CST" duration-ms="968" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="checkUsernameAndPassword()[pri:0, instance:com.shield.tests.dao.UserDAOTests@97e93f1]" started-at="2022-01-11T23:56:16 CST" name="checkUsernameAndPassword" finished-at="2022-01-11T23:56:17 CST" duration-ms="958" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkUsernameAndPassword -->
+        <test-method signature="createUser()[pri:0, instance:com.shield.tests.dao.UserDAOTests@97e93f1]" started-at="2022-01-11T23:56:17 CST" name="createUser" finished-at="2022-01-11T23:56:18 CST" duration-ms="1008" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUser -->
+        <test-method signature="getAllUsers()[pri:0, instance:com.shield.tests.dao.UserDAOTests@97e93f1]" started-at="2022-01-11T23:56:18 CST" name="getAllUsers" finished-at="2022-01-11T23:56:19 CST" duration-ms="472" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllUsers -->
+        <test-method signature="getUserClaimsByUser()[pri:0, instance:com.shield.tests.dao.UserDAOTests@97e93f1]" started-at="2022-01-11T23:56:19 CST" name="getUserClaimsByUser" finished-at="2022-01-11T23:56:19 CST" duration-ms="480" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserClaimsByUser -->
+        <test-method signature="selectUserById()[pri:0, instance:com.shield.tests.dao.UserDAOTests@97e93f1]" started-at="2022-01-11T23:56:19 CST" name="selectUserById" finished-at="2022-01-11T23:56:20 CST" duration-ms="473" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectUserById -->
+        <test-method signature="selectUserByIdFail()[pri:0, instance:com.shield.tests.dao.UserDAOTests@97e93f1]" started-at="2022-01-11T23:56:20 CST" name="selectUserByIdFail" finished-at="2022-01-11T23:56:20 CST" duration-ms="474" status="PASS">
+          <exception class="com.shield.customexceptions.UserNotFound">
+            <message>
+              <![CDATA[User not found]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.shield.customexceptions.UserNotFound: User not found
+at com.shield.daos.user.UserDAOImp.getUserById(UserDAOImp.java:50)
+at com.shield.tests.dao.UserDAOTests.selectUserByIdFail(UserDAOTests.java:42)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.shield.customexceptions.UserNotFound -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectUserByIdFail -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.shield.tests.dao.UserDAOTests@97e93f1]" started-at="2022-01-11T23:56:20 CST" name="tearDown" finished-at="2022-01-11T23:56:21 CST" duration-ms="489" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.shield.tests.dao.UserDAOTests -->
+      <class name="com.shield.tests.dao.DebriefDAOTests">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.shield.tests.dao.DebriefDAOTests@7e990ed7]" started-at="2022-01-11T23:55:58 CST" name="setup" finished-at="2022-01-11T23:55:59 CST" duration-ms="960" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="createDebrief()[pri:0, instance:com.shield.tests.dao.DebriefDAOTests@7e990ed7]" started-at="2022-01-11T23:55:59 CST" name="createDebrief" finished-at="2022-01-11T23:56:00 CST" duration-ms="1301" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createDebrief -->
+        <test-method signature="getDebrief()[pri:0, instance:com.shield.tests.dao.DebriefDAOTests@7e990ed7]" started-at="2022-01-11T23:56:00 CST" name="getDebrief" finished-at="2022-01-11T23:56:01 CST" duration-ms="951" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDebrief -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.shield.tests.dao.DebriefDAOTests@7e990ed7]" started-at="2022-01-11T23:56:01 CST" name="teardown" finished-at="2022-01-11T23:56:01 CST" duration-ms="498" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.shield.tests.dao.DebriefDAOTests -->
+      <class name="com.shield.tests.dao.ClaimDAOTests">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.shield.tests.dao.ClaimDAOTests@15888343]" started-at="2022-01-11T23:55:51 CST" name="setup" finished-at="2022-01-11T23:55:52 CST" duration-ms="975" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="selectClaimById()[pri:0, instance:com.shield.tests.dao.ClaimDAOTests@15888343]" started-at="2022-01-11T23:55:52 CST" name="selectClaimById" finished-at="2022-01-11T23:55:53 CST" duration-ms="957" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectClaimById -->
+        <test-method signature="createClaimById()[pri:1, instance:com.shield.tests.dao.ClaimDAOTests@15888343]" started-at="2022-01-11T23:55:53 CST" name="createClaimById" finished-at="2022-01-11T23:55:54 CST" duration-ms="947" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createClaimById -->
+        <test-method signature="ApproveClaimById()[pri:2, instance:com.shield.tests.dao.ClaimDAOTests@15888343]" started-at="2022-01-11T23:55:54 CST" name="ApproveClaimById" finished-at="2022-01-11T23:55:56 CST" duration-ms="1443" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApproveClaimById -->
+        <test-method signature="DenyClaimById()[pri:3, instance:com.shield.tests.dao.ClaimDAOTests@15888343]" started-at="2022-01-11T23:55:56 CST" name="DenyClaimById" finished-at="2022-01-11T23:55:57 CST" duration-ms="1430" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DenyClaimById -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.shield.tests.dao.ClaimDAOTests@15888343]" started-at="2022-01-11T23:55:57 CST" name="tearDown" finished-at="2022-01-11T23:55:58 CST" duration-ms="527" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.shield.tests.dao.ClaimDAOTests -->
+      <class name="com.shield.tests.dao.EmployeeDAOTests">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.shield.tests.dao.EmployeeDAOTests@5884a914]" started-at="2022-01-11T23:56:01 CST" name="setup" finished-at="2022-01-11T23:56:02 CST" duration-ms="984" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="checkEmployeeImage()[pri:0, instance:com.shield.tests.dao.EmployeeDAOTests@5884a914]" started-at="2022-01-11T23:56:02 CST" name="checkEmployeeImage" finished-at="2022-01-11T23:56:05 CST" duration-ms="2377" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkEmployeeImage -->
+        <test-method signature="getAgentDebriefings()[pri:0, instance:com.shield.tests.dao.EmployeeDAOTests@5884a914]" started-at="2022-01-11T23:56:05 CST" name="getAgentDebriefings" finished-at="2022-01-11T23:56:06 CST" duration-ms="958" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAgentDebriefings -->
+        <test-method signature="getAllAgentDebriefings()[pri:0, instance:com.shield.tests.dao.EmployeeDAOTests@5884a914]" started-at="2022-01-11T23:56:06 CST" name="getAllAgentDebriefings" finished-at="2022-01-11T23:56:07 CST" duration-ms="1467" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllAgentDebriefings -->
+        <test-method signature="getAllClaims()[pri:0, instance:com.shield.tests.dao.EmployeeDAOTests@5884a914]" started-at="2022-01-11T23:56:07 CST" name="getAllClaims" finished-at="2022-01-11T23:56:09 CST" duration-ms="1452" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllClaims -->
+        <test-method signature="getEmployeeById()[pri:0, instance:com.shield.tests.dao.EmployeeDAOTests@5884a914]" started-at="2022-01-11T23:56:09 CST" name="getEmployeeById" finished-at="2022-01-11T23:56:09 CST" duration-ms="477" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getEmployeeById -->
+        <test-method signature="getEmployeeImage()[pri:0, instance:com.shield.tests.dao.EmployeeDAOTests@5884a914]" started-at="2022-01-11T23:56:09 CST" name="getEmployeeImage" finished-at="2022-01-11T23:56:12 CST" duration-ms="2436" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getEmployeeImage -->
+        <test-method signature="getLeaderboard()[pri:0, instance:com.shield.tests.dao.EmployeeDAOTests@5884a914]" started-at="2022-01-11T23:56:12 CST" name="getLeaderboard" finished-at="2022-01-11T23:56:12 CST" duration-ms="485" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getLeaderboard -->
+        <test-method signature="getUserClaimsByAgent()[pri:0, instance:com.shield.tests.dao.EmployeeDAOTests@5884a914]" started-at="2022-01-11T23:56:12 CST" name="getUserClaimsByAgent" finished-at="2022-01-11T23:56:13 CST" duration-ms="951" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserClaimsByAgent -->
+        <test-method signature="insertEmployeeImage()[pri:0, instance:com.shield.tests.dao.EmployeeDAOTests@5884a914]" started-at="2022-01-11T23:56:13 CST" name="insertEmployeeImage" finished-at="2022-01-11T23:56:14 CST" duration-ms="956" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- insertEmployeeImage -->
+        <test-method signature="loginEmployee()[pri:0, instance:com.shield.tests.dao.EmployeeDAOTests@5884a914]" started-at="2022-01-11T23:56:14 CST" name="loginEmployee" finished-at="2022-01-11T23:56:15 CST" duration-ms="975" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginEmployee -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.shield.tests.dao.EmployeeDAOTests@5884a914]" started-at="2022-01-11T23:56:15 CST" name="teardown" finished-at="2022-01-11T23:56:15 CST" duration-ms="479" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.shield.tests.dao.EmployeeDAOTests -->
+    </test> <!-- DAO -->
+    <test started-at="2022-01-11T23:56:21 CST" name="Service" finished-at="2022-01-11T23:56:34 CST" duration-ms="12768">
+      <class name="com.shield.tests.service.UserServiceTests">
+        <test-method signature="badIdForGetUserClaimsByUserService()[pri:0, instance:com.shield.tests.service.UserServiceTests@45385f75]" started-at="2022-01-11T23:56:32 CST" name="badIdForGetUserClaimsByUserService" finished-at="2022-01-11T23:56:32 CST" duration-ms="483" status="PASS">
+          <exception class="com.shield.customexceptions.UserNotFound">
+            <message>
+              <![CDATA[User not found]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.shield.customexceptions.UserNotFound: User not found
+at com.shield.daos.user.UserDAOImp.getUserById(UserDAOImp.java:50)
+at com.shield.services.user.UserServicesImp.getUserClaimsByUserService(UserServicesImp.java:72)
+at com.shield.tests.service.UserServiceTests.badIdForGetUserClaimsByUserService(UserServiceTests.java:41)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.shield.customexceptions.UserNotFound -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- badIdForGetUserClaimsByUserService -->
+        <test-method signature="badPasswordForCheckingLogin()[pri:0, instance:com.shield.tests.service.UserServiceTests@45385f75]" started-at="2022-01-11T23:56:32 CST" name="badPasswordForCheckingLogin" finished-at="2022-01-11T23:56:33 CST" duration-ms="481" status="PASS">
+          <exception class="com.shield.customexceptions.InvalidPassword">
+            <message>
+              <![CDATA[Invalid password]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.shield.customexceptions.InvalidPassword: Invalid password
+at com.shield.services.user.UserServicesImp.checkUserLoginService(UserServicesImp.java:62)
+at com.shield.tests.service.UserServiceTests.badPasswordForCheckingLogin(UserServiceTests.java:36)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.shield.customexceptions.InvalidPassword -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- badPasswordForCheckingLogin -->
+        <test-method signature="badUserIdForGettingUser()[pri:0, instance:com.shield.tests.service.UserServiceTests@45385f75]" started-at="2022-01-11T23:56:33 CST" name="badUserIdForGettingUser" finished-at="2022-01-11T23:56:33 CST" duration-ms="473" status="PASS">
+          <exception class="com.shield.customexceptions.UserNotFound">
+            <message>
+              <![CDATA[User not found]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.shield.customexceptions.UserNotFound: User not found
+at com.shield.services.user.UserServicesImp.getUserByIdService(UserServicesImp.java:27)
+at com.shield.tests.service.UserServiceTests.badUserIdForGettingUser(UserServiceTests.java:24)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.shield.customexceptions.UserNotFound -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- badUserIdForGettingUser -->
+        <test-method signature="badUsernameForCheckingLogin()[pri:0, instance:com.shield.tests.service.UserServiceTests@45385f75]" started-at="2022-01-11T23:56:33 CST" name="badUsernameForCheckingLogin" finished-at="2022-01-11T23:56:34 CST" duration-ms="475" status="PASS">
+          <exception class="com.shield.customexceptions.InvalidUsername">
+            <message>
+              <![CDATA[Invalid username]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.shield.customexceptions.InvalidUsername: Invalid username
+at com.shield.services.user.UserServicesImp.checkUserLoginService(UserServicesImp.java:64)
+at com.shield.tests.service.UserServiceTests.badUsernameForCheckingLogin(UserServiceTests.java:30)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.shield.customexceptions.InvalidUsername -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- badUsernameForCheckingLogin -->
+      </class> <!-- com.shield.tests.service.UserServiceTests -->
+      <class name="com.shield.tests.service.DebriefServiceTests">
+        <test-method signature="badIdForcreateDebriefService()[pri:0, instance:com.shield.tests.service.DebriefServiceTests@1df8da7a]" started-at="2022-01-11T23:56:26 CST" name="badIdForcreateDebriefService" finished-at="2022-01-11T23:56:26 CST" duration-ms="741" status="PASS">
+          <exception class="com.shield.customexceptions.EmployeeNotFound">
+            <message>
+              <![CDATA[The employee was not found.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.shield.customexceptions.EmployeeNotFound: The employee was not found.
+at com.shield.daos.employee.EmployeeDAOImp.getEmployeeById(EmployeeDAOImp.java:69)
+at com.shield.services.debrief.DebriefServiceImp.createDebriefService(DebriefServiceImp.java:27)
+at com.shield.tests.service.DebriefServiceTests.badIdForcreateDebriefService(DebriefServiceTests.java:22)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.shield.customexceptions.EmployeeNotFound -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- badIdForcreateDebriefService -->
+      </class> <!-- com.shield.tests.service.DebriefServiceTests -->
+      <class name="com.shield.tests.service.EmployeeServiceMockitoTests">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.shield.tests.service.EmployeeServiceMockitoTests@23941fb4]" started-at="2022-01-11T23:56:26 CST" name="setup" finished-at="2022-01-11T23:56:27 CST" duration-ms="507" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="MockGetAgentDebriefingsService()[pri:0, instance:com.shield.tests.service.EmployeeServiceMockitoTests@23941fb4]" started-at="2022-01-11T23:56:27 CST" name="MockGetAgentDebriefingsService" finished-at="2022-01-11T23:56:27 CST" duration-ms="14" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MockGetAgentDebriefingsService -->
+        <test-method signature="mockGetAllAgentDebriefingsService()[pri:0, instance:com.shield.tests.service.EmployeeServiceMockitoTests@23941fb4]" started-at="2022-01-11T23:56:27 CST" name="mockGetAllAgentDebriefingsService" finished-at="2022-01-11T23:56:27 CST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mockGetAllAgentDebriefingsService -->
+        <test-method signature="mockGetEmployeeImageService()[pri:0, instance:com.shield.tests.service.EmployeeServiceMockitoTests@23941fb4]" started-at="2022-01-11T23:56:27 CST" name="mockGetEmployeeImageService" finished-at="2022-01-11T23:56:27 CST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mockGetEmployeeImageService -->
+        <test-method signature="mockGetEmployeeServiceById()[pri:0, instance:com.shield.tests.service.EmployeeServiceMockitoTests@23941fb4]" started-at="2022-01-11T23:56:27 CST" name="mockGetEmployeeServiceById" finished-at="2022-01-11T23:56:27 CST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mockGetEmployeeServiceById -->
+        <test-method signature="mockGetUserClaimsByAgentService()[pri:0, instance:com.shield.tests.service.EmployeeServiceMockitoTests@23941fb4]" started-at="2022-01-11T23:56:27 CST" name="mockGetUserClaimsByAgentService" finished-at="2022-01-11T23:56:27 CST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mockGetUserClaimsByAgentService -->
+        <test-method signature="mockInsertEmployeeImageService()[pri:0, instance:com.shield.tests.service.EmployeeServiceMockitoTests@23941fb4]" started-at="2022-01-11T23:56:27 CST" name="mockInsertEmployeeImageService" finished-at="2022-01-11T23:56:27 CST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mockInsertEmployeeImageService -->
+      </class> <!-- com.shield.tests.service.EmployeeServiceMockitoTests -->
+      <class name="com.shield.tests.service.ClaimServiceTests">
+        <test-method signature="badClaimIdForApproveClaimService()[pri:0, instance:com.shield.tests.service.ClaimServiceTests@37313c65]" started-at="2022-01-11T23:56:21 CST" name="badClaimIdForApproveClaimService" finished-at="2022-01-11T23:56:22 CST" duration-ms="956" status="PASS">
+          <exception class="com.shield.customexceptions.ClaimNotFound">
+            <message>
+              <![CDATA[Claim not found]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.shield.customexceptions.ClaimNotFound: Claim not found
+at com.shield.services.claim.ClaimServiceImp.approveClaimService(ClaimServiceImp.java:67)
+at com.shield.tests.service.ClaimServiceTests.badClaimIdForApproveClaimService(ClaimServiceTests.java:55)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.shield.customexceptions.ClaimNotFound -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- badClaimIdForApproveClaimService -->
+        <test-method signature="badClaimIdForDenyClaimService()[pri:0, instance:com.shield.tests.service.ClaimServiceTests@37313c65]" started-at="2022-01-11T23:56:22 CST" name="badClaimIdForDenyClaimService" finished-at="2022-01-11T23:56:23 CST" duration-ms="938" status="PASS">
+          <exception class="com.shield.customexceptions.ClaimNotFound">
+            <message>
+              <![CDATA[Claim not found]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.shield.customexceptions.ClaimNotFound: Claim not found
+at com.shield.services.claim.ClaimServiceImp.denyClaimService(ClaimServiceImp.java:82)
+at com.shield.tests.service.ClaimServiceTests.badClaimIdForDenyClaimService(ClaimServiceTests.java:76)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.shield.customexceptions.ClaimNotFound -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- badClaimIdForDenyClaimService -->
+        <test-method signature="badClaimIdForGetClaimService()[pri:0, instance:com.shield.tests.service.ClaimServiceTests@37313c65]" started-at="2022-01-11T23:56:23 CST" name="badClaimIdForGetClaimService" finished-at="2022-01-11T23:56:23 CST" duration-ms="500" status="PASS">
+          <exception class="com.shield.customexceptions.ClaimNotFound">
+            <message>
+              <![CDATA[Claim not found]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.shield.customexceptions.ClaimNotFound: Claim not found
+at com.shield.daos.claim.ClaimDAOImp.getClaimById(ClaimDAOImp.java:54)
+at com.shield.services.claim.ClaimServiceImp.getClaimByIdService(ClaimServiceImp.java:25)
+at com.shield.tests.service.ClaimServiceTests.badClaimIdForGetClaimService(ClaimServiceTests.java:28)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.shield.customexceptions.ClaimNotFound -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- badClaimIdForGetClaimService -->
+        <test-method signature="badEmployeeIdForCreateClaimService()[pri:0, instance:com.shield.tests.service.ClaimServiceTests@37313c65]" started-at="2022-01-11T23:56:23 CST" name="badEmployeeIdForCreateClaimService" finished-at="2022-01-11T23:56:24 CST" duration-ms="491" status="PASS">
+          <exception class="com.shield.customexceptions.EmployeeNotFound">
+            <message>
+              <![CDATA[The employee was not found.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.shield.customexceptions.EmployeeNotFound: The employee was not found.
+at com.shield.daos.employee.EmployeeDAOImp.getEmployeeById(EmployeeDAOImp.java:69)
+at com.shield.services.claim.ClaimServiceImp.createClaimService(ClaimServiceImp.java:31)
+at com.shield.tests.service.ClaimServiceTests.badEmployeeIdForCreateClaimService(ClaimServiceTests.java:42)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.shield.customexceptions.EmployeeNotFound -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- badEmployeeIdForCreateClaimService -->
+        <test-method signature="badUserIdForCreateClaimService()[pri:0, instance:com.shield.tests.service.ClaimServiceTests@37313c65]" started-at="2022-01-11T23:56:24 CST" name="badUserIdForCreateClaimService" finished-at="2022-01-11T23:56:25 CST" duration-ms="955" status="PASS">
+          <exception class="com.shield.customexceptions.UserNotFound">
+            <message>
+              <![CDATA[User not found]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.shield.customexceptions.UserNotFound: User not found
+at com.shield.daos.user.UserDAOImp.getUserById(UserDAOImp.java:50)
+at com.shield.services.claim.ClaimServiceImp.createClaimService(ClaimServiceImp.java:32)
+at com.shield.tests.service.ClaimServiceTests.badUserIdForCreateClaimService(ClaimServiceTests.java:35)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.shield.customexceptions.UserNotFound -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- badUserIdForCreateClaimService -->
+        <test-method signature="commentTooLongForApproveClaimService()[pri:0, instance:com.shield.tests.service.ClaimServiceTests@37313c65]" started-at="2022-01-11T23:56:25 CST" name="commentTooLongForApproveClaimService" finished-at="2022-01-11T23:56:25 CST" duration-ms="0" status="PASS">
+          <exception class="com.shield.customexceptions.CommentIsTooManyCharacters">
+            <message>
+              <![CDATA[Comment is too long]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.shield.customexceptions.CommentIsTooManyCharacters: Comment is too long
+at com.shield.services.claim.ClaimServiceImp.approveClaimService(ClaimServiceImp.java:63)
+at com.shield.tests.service.ClaimServiceTests.commentTooLongForApproveClaimService(ClaimServiceTests.java:62)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.shield.customexceptions.CommentIsTooManyCharacters -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- commentTooLongForApproveClaimService -->
+        <test-method signature="commentTooLongForDenyClaimService()[pri:0, instance:com.shield.tests.service.ClaimServiceTests@37313c65]" started-at="2022-01-11T23:56:25 CST" name="commentTooLongForDenyClaimService" finished-at="2022-01-11T23:56:25 CST" duration-ms="0" status="PASS">
+          <exception class="com.shield.customexceptions.CommentIsTooManyCharacters">
+            <message>
+              <![CDATA[Comment is too long]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.shield.customexceptions.CommentIsTooManyCharacters: Comment is too long
+at com.shield.services.claim.ClaimServiceImp.approveClaimService(ClaimServiceImp.java:63)
+at com.shield.tests.service.ClaimServiceTests.commentTooLongForDenyClaimService(ClaimServiceTests.java:69)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.shield.customexceptions.CommentIsTooManyCharacters -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- commentTooLongForDenyClaimService -->
+        <test-method signature="negativeAmountForCreateClaimService()[pri:0, instance:com.shield.tests.service.ClaimServiceTests@37313c65]" started-at="2022-01-11T23:56:25 CST" name="negativeAmountForCreateClaimService" finished-at="2022-01-11T23:56:26 CST" duration-ms="942" status="PASS">
+          <exception class="com.shield.customexceptions.NegativeClaimAmount">
+            <message>
+              <![CDATA[Claim must be a positive number]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.shield.customexceptions.NegativeClaimAmount: Claim must be a positive number
+at com.shield.services.claim.ClaimServiceImp.createClaimService(ClaimServiceImp.java:39)
+at com.shield.tests.service.ClaimServiceTests.negativeAmountForCreateClaimService(ClaimServiceTests.java:48)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.shield.customexceptions.NegativeClaimAmount -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- negativeAmountForCreateClaimService -->
+      </class> <!-- com.shield.tests.service.ClaimServiceTests -->
+      <class name="com.shield.tests.service.EmployeeServiceTests">
+        <test-method signature="badAgentGetAgentDebriefingsService()[pri:0, instance:com.shield.tests.service.EmployeeServiceTests@5d908d47]" started-at="2022-01-11T23:56:27 CST" name="badAgentGetAgentDebriefingsService" finished-at="2022-01-11T23:56:27 CST" duration-ms="502" status="PASS">
+          <exception class="com.shield.customexceptions.EmployeeIsNotAgent">
+            <message>
+              <![CDATA[That employee is not an agent.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.shield.customexceptions.EmployeeIsNotAgent: That employee is not an agent.
+at com.shield.services.employee.EmployeeServiceImp.getAgentDebriefingsService(EmployeeServiceImp.java:83)
+at com.shield.tests.service.EmployeeServiceTests.badAgentGetAgentDebriefingsService(EmployeeServiceTests.java:71)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.shield.customexceptions.EmployeeIsNotAgent -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- badAgentGetAgentDebriefingsService -->
+        <test-method signature="badAgentGetUserClaimsByAgentService()[pri:0, instance:com.shield.tests.service.EmployeeServiceTests@5d908d47]" started-at="2022-01-11T23:56:27 CST" name="badAgentGetUserClaimsByAgentService" finished-at="2022-01-11T23:56:28 CST" duration-ms="474" status="PASS">
+          <exception class="com.shield.customexceptions.EmployeeIsNotAgent">
+            <message>
+              <![CDATA[That employee is not an agent.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.shield.customexceptions.EmployeeIsNotAgent: That employee is not an agent.
+at com.shield.services.employee.EmployeeServiceImp.getUserClaimsByAgentService(EmployeeServiceImp.java:57)
+at com.shield.tests.service.EmployeeServiceTests.badAgentGetUserClaimsByAgentService(EmployeeServiceTests.java:66)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.shield.customexceptions.EmployeeIsNotAgent -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- badAgentGetUserClaimsByAgentService -->
+        <test-method signature="badHandlerForGetAllClaims()[pri:0, instance:com.shield.tests.service.EmployeeServiceTests@5d908d47]" started-at="2022-01-11T23:56:28 CST" name="badHandlerForGetAllClaims" finished-at="2022-01-11T23:56:28 CST" duration-ms="465" status="PASS">
+          <exception class="com.shield.customexceptions.EmployeeIsNotHandler">
+            <message>
+              <![CDATA[That employee is not a handler.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.shield.customexceptions.EmployeeIsNotHandler: That employee is not a handler.
+at com.shield.services.employee.EmployeeServiceImp.getAllClaimsService(EmployeeServiceImp.java:42)
+at com.shield.tests.service.EmployeeServiceTests.badHandlerForGetAllClaims(EmployeeServiceTests.java:54)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.shield.customexceptions.EmployeeIsNotHandler -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- badHandlerForGetAllClaims -->
+        <test-method signature="badHandlerGetAllAgentDebriefingsService()[pri:0, instance:com.shield.tests.service.EmployeeServiceTests@5d908d47]" started-at="2022-01-11T23:56:28 CST" name="badHandlerGetAllAgentDebriefingsService" finished-at="2022-01-11T23:56:29 CST" duration-ms="480" status="PASS">
+          <exception class="com.shield.customexceptions.EmployeeIsNotHandler">
+            <message>
+              <![CDATA[That employee is not a handler.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.shield.customexceptions.EmployeeIsNotHandler: That employee is not a handler.
+at com.shield.services.employee.EmployeeServiceImp.getAllAgentDebriefingsService(EmployeeServiceImp.java:70)
+at com.shield.tests.service.EmployeeServiceTests.badHandlerGetAllAgentDebriefingsService(EmployeeServiceTests.java:59)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.shield.customexceptions.EmployeeIsNotHandler -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- badHandlerGetAllAgentDebriefingsService -->
+        <test-method signature="badIdForGetAgentDebriefingsService()[pri:0, instance:com.shield.tests.service.EmployeeServiceTests@5d908d47]" started-at="2022-01-11T23:56:29 CST" name="badIdForGetAgentDebriefingsService" finished-at="2022-01-11T23:56:29 CST" duration-ms="469" status="PASS">
+          <exception class="com.shield.customexceptions.EmployeeNotFound">
+            <message>
+              <![CDATA[The employee was not found.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.shield.customexceptions.EmployeeNotFound: The employee was not found.
+at com.shield.daos.employee.EmployeeDAOImp.getEmployeeById(EmployeeDAOImp.java:69)
+at com.shield.services.employee.EmployeeServiceImp.getAgentDebriefingsService(EmployeeServiceImp.java:77)
+at com.shield.tests.service.EmployeeServiceTests.badIdForGetAgentDebriefingsService(EmployeeServiceTests.java:38)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.shield.customexceptions.EmployeeNotFound -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- badIdForGetAgentDebriefingsService -->
+        <test-method signature="badIdForGetAllAgentDebriefingsService()[pri:0, instance:com.shield.tests.service.EmployeeServiceTests@5d908d47]" started-at="2022-01-11T23:56:29 CST" name="badIdForGetAllAgentDebriefingsService" finished-at="2022-01-11T23:56:30 CST" duration-ms="469" status="PASS">
+          <exception class="com.shield.customexceptions.EmployeeNotFound">
+            <message>
+              <![CDATA[The employee was not found.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.shield.customexceptions.EmployeeNotFound: The employee was not found.
+at com.shield.daos.employee.EmployeeDAOImp.getEmployeeById(EmployeeDAOImp.java:69)
+at com.shield.services.employee.EmployeeServiceImp.getAllAgentDebriefingsService(EmployeeServiceImp.java:64)
+at com.shield.tests.service.EmployeeServiceTests.badIdForGetAllAgentDebriefingsService(EmployeeServiceTests.java:33)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.shield.customexceptions.EmployeeNotFound -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- badIdForGetAllAgentDebriefingsService -->
+        <test-method signature="badIdForGetAllClaims()[pri:0, instance:com.shield.tests.service.EmployeeServiceTests@5d908d47]" started-at="2022-01-11T23:56:30 CST" name="badIdForGetAllClaims" finished-at="2022-01-11T23:56:30 CST" duration-ms="499" status="PASS">
+          <exception class="com.shield.customexceptions.EmployeeNotFound">
+            <message>
+              <![CDATA[The employee was not found.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.shield.customexceptions.EmployeeNotFound: The employee was not found.
+at com.shield.daos.employee.EmployeeDAOImp.getEmployeeById(EmployeeDAOImp.java:69)
+at com.shield.services.employee.EmployeeServiceImp.getAllClaimsService(EmployeeServiceImp.java:36)
+at com.shield.tests.service.EmployeeServiceTests.badIdForGetAllClaims(EmployeeServiceTests.java:23)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.shield.customexceptions.EmployeeNotFound -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- badIdForGetAllClaims -->
+        <test-method signature="badIdForGetUserClaimsByAgentService()[pri:0, instance:com.shield.tests.service.EmployeeServiceTests@5d908d47]" started-at="2022-01-11T23:56:30 CST" name="badIdForGetUserClaimsByAgentService" finished-at="2022-01-11T23:56:31 CST" duration-ms="467" status="PASS">
+          <exception class="com.shield.customexceptions.EmployeeNotFound">
+            <message>
+              <![CDATA[The employee was not found.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.shield.customexceptions.EmployeeNotFound: The employee was not found.
+at com.shield.daos.employee.EmployeeDAOImp.getEmployeeById(EmployeeDAOImp.java:69)
+at com.shield.services.employee.EmployeeServiceImp.getUserClaimsByAgentService(EmployeeServiceImp.java:51)
+at com.shield.tests.service.EmployeeServiceTests.badIdForGetUserClaimsByAgentService(EmployeeServiceTests.java:28)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.shield.customexceptions.EmployeeNotFound -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- badIdForGetUserClaimsByAgentService -->
+        <test-method signature="badIdGetEmployeeImageService()[pri:0, instance:com.shield.tests.service.EmployeeServiceTests@5d908d47]" started-at="2022-01-11T23:56:31 CST" name="badIdGetEmployeeImageService" finished-at="2022-01-11T23:56:31 CST" duration-ms="485" status="PASS">
+          <exception class="com.shield.customexceptions.EmployeeNotFound">
+            <message>
+              <![CDATA[The employee was not found.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.shield.customexceptions.EmployeeNotFound: The employee was not found.
+at com.shield.daos.employee.EmployeeDAOImp.getEmployeeById(EmployeeDAOImp.java:69)
+at com.shield.services.employee.EmployeeServiceImp.getAgentDebriefingsService(EmployeeServiceImp.java:77)
+at com.shield.tests.service.EmployeeServiceTests.badIdGetEmployeeImageService(EmployeeServiceTests.java:48)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.shield.customexceptions.EmployeeNotFound -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- badIdGetEmployeeImageService -->
+        <test-method signature="badIdInsertEmployeeImageService()[pri:0, instance:com.shield.tests.service.EmployeeServiceTests@5d908d47]" started-at="2022-01-11T23:56:31 CST" name="badIdInsertEmployeeImageService" finished-at="2022-01-11T23:56:32 CST" duration-ms="468" status="PASS">
+          <exception class="com.shield.customexceptions.EmployeeNotFound">
+            <message>
+              <![CDATA[The employee was not found.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.shield.customexceptions.EmployeeNotFound: The employee was not found.
+at com.shield.daos.employee.EmployeeDAOImp.getEmployeeById(EmployeeDAOImp.java:69)
+at com.shield.services.employee.EmployeeServiceImp.getAgentDebriefingsService(EmployeeServiceImp.java:77)
+at com.shield.tests.service.EmployeeServiceTests.badIdInsertEmployeeImageService(EmployeeServiceTests.java:43)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.shield.customexceptions.EmployeeNotFound -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- badIdInsertEmployeeImageService -->
+      </class> <!-- com.shield.tests.service.EmployeeServiceTests -->
+      <class name="com.shield.tests.service.UserServiceMockitoTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.shield.tests.service.UserServiceMockitoTest@5efa40fe]" started-at="2022-01-11T23:56:32 CST" name="setup" finished-at="2022-01-11T23:56:32 CST" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="checkUsernameAndPasswordServiceMock()[pri:0, instance:com.shield.tests.service.UserServiceMockitoTest@5efa40fe]" started-at="2022-01-11T23:56:32 CST" name="checkUsernameAndPasswordServiceMock" finished-at="2022-01-11T23:56:32 CST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkUsernameAndPasswordServiceMock -->
+        <test-method signature="checkUsernameAndPasswordServiceSadPasswordMock()[pri:0, instance:com.shield.tests.service.UserServiceMockitoTest@5efa40fe]" started-at="2022-01-11T23:56:32 CST" name="checkUsernameAndPasswordServiceSadPasswordMock" finished-at="2022-01-11T23:56:32 CST" duration-ms="1" status="PASS">
+          <exception class="com.shield.customexceptions.InvalidPassword">
+            <message>
+              <![CDATA[Invalid password]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.shield.customexceptions.InvalidPassword: Invalid password
+at com.shield.services.user.UserServicesImp.checkUserLoginService(UserServicesImp.java:62)
+at com.shield.tests.service.UserServiceMockitoTest.checkUsernameAndPasswordServiceSadPasswordMock(UserServiceMockitoTest.java:113)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.shield.customexceptions.InvalidPassword -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkUsernameAndPasswordServiceSadPasswordMock -->
+        <test-method signature="checkUsernameAndPasswordServiceSadUsernameMock()[pri:0, instance:com.shield.tests.service.UserServiceMockitoTest@5efa40fe]" started-at="2022-01-11T23:56:32 CST" name="checkUsernameAndPasswordServiceSadUsernameMock" finished-at="2022-01-11T23:56:32 CST" duration-ms="0" status="PASS">
+          <exception class="com.shield.customexceptions.InvalidUsername">
+            <message>
+              <![CDATA[Invalid username]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.shield.customexceptions.InvalidUsername: Invalid username
+at com.shield.services.user.UserServicesImp.checkUserLoginService(UserServicesImp.java:64)
+at com.shield.tests.service.UserServiceMockitoTest.checkUsernameAndPasswordServiceSadUsernameMock(UserServiceMockitoTest.java:105)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.shield.customexceptions.InvalidUsername -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkUsernameAndPasswordServiceSadUsernameMock -->
+        <test-method signature="createUserServiceMock()[pri:0, instance:com.shield.tests.service.UserServiceMockitoTest@5efa40fe]" started-at="2022-01-11T23:56:32 CST" name="createUserServiceMock" finished-at="2022-01-11T23:56:32 CST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUserServiceMock -->
+        <test-method signature="getAllUsersServiceMock()[pri:0, instance:com.shield.tests.service.UserServiceMockitoTest@5efa40fe]" started-at="2022-01-11T23:56:32 CST" name="getAllUsersServiceMock" finished-at="2022-01-11T23:56:32 CST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllUsersServiceMock -->
+        <test-method signature="getAllClaimsByUserIdServiceMock()[pri:0, instance:com.shield.tests.service.UserServiceMockitoTest@5efa40fe]" started-at="2022-01-11T23:56:32 CST" name="getAllClaimsByUserIdServiceMock" finished-at="2022-01-11T23:56:32 CST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllClaimsByUserIdServiceMock -->
+        <test-method signature="getUserServiceByIdSadMock()[pri:0, instance:com.shield.tests.service.UserServiceMockitoTest@5efa40fe]" started-at="2022-01-11T23:56:32 CST" name="getUserServiceByIdSadMock" finished-at="2022-01-11T23:56:32 CST" duration-ms="3" status="PASS">
+          <exception class="com.shield.customexceptions.UserNotFound">
+            <message>
+              <![CDATA[User not found]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.shield.customexceptions.UserNotFound: User not found
+at com.shield.services.user.UserServicesImp.getUserByIdService(UserServicesImp.java:27)
+at com.shield.tests.service.UserServiceMockitoTest.getUserServiceByIdSadMock(UserServiceMockitoTest.java:98)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.shield.customexceptions.UserNotFound -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserServiceByIdSadMock -->
+        <test-method signature="getUserServiceByIdMock()[pri:0, instance:com.shield.tests.service.UserServiceMockitoTest@5efa40fe]" started-at="2022-01-11T23:56:32 CST" name="getUserServiceByIdMock" finished-at="2022-01-11T23:56:32 CST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserServiceByIdMock -->
+      </class> <!-- com.shield.tests.service.UserServiceMockitoTest -->
+    </test> <!-- Service -->
+  </suite> <!-- Tests -->
+</testng-results>

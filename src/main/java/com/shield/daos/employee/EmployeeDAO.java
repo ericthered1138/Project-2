@@ -30,4 +30,6 @@ public interface EmployeeDAO {
     boolean insertEmployeeImage(int employee_id, String image);
 
     String getEmployeeImage(int employee_id);
+
+    boolean checkEmployeeImage(int employee_id);
 }

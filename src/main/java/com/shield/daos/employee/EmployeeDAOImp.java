@@ -351,4 +351,22 @@ public class EmployeeDAOImp implements EmployeeDAO {
             return "false";
         }
     }
+
+    @Override
+    public boolean checkEmployeeImage(int employee_id) {
+        try (Connection connection = DatabaseConnection.createConnection()) {
+            String sql = "SELECT picture FROM employee_picture_table WHERE employee_id = ?";
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setInt(1, employee_id);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            if (resultSet.next()){
+                return true;
+            }else{
+                return false;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return false;
+    }
 }
