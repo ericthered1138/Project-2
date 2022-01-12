@@ -163,6 +163,10 @@ async function getUserImage(){
     }
 }
 
+function delay(time) {
+    return new Promise(resolve => setTimeout(resolve, time));
+  }
+  
 async function previewFile() {
   var file    = document.getElementById('portrait_input').files[0];
   var reader  = new FileReader();
@@ -171,7 +175,9 @@ async function previewFile() {
 
   reader.addEventListener("load", function () {
     var base64gif = reader.result; // your gif in base64 here
-    if (base64gif.length < 1_000_000){
+    console.log(base64gif.slice(11, 14));
+
+    if (base64gif.length < 1_000_000 && base64gif.slice(11, 14) === "gif"){
       fetch(
         "http://localhost:8080/user/image/" + userId, {
             method: "POST",
@@ -187,6 +193,7 @@ async function previewFile() {
 
   if (file) {
     reader.readAsDataURL(file);
+    await delay(1000);
     getUserImage();
   }
 }
