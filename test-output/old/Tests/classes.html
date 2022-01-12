@@ -15,15 +15,31 @@
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>getAllUsers</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td>&nbsp;</td>
 <td>selectUserById</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
+<td>getAllUsers</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>checkUserByUsername</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>checkUserImage</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>insertUserImage</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
 <td>checkUsernameAndPassword</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>getUserImage</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
@@ -73,7 +89,23 @@
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
+<td>badIdGetUserImageService</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>badIdInsertUserImageService</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
 <td>badUserIdForGettingUser</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>duplicateEmployeeUsernameForCreateUserService</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>duplicateUserUsernameForCreateUserService</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td align='center' colspan='3'>@BeforeClass</td>
@@ -156,6 +188,44 @@
 <td align='center' colspan='3'>@AfterClass</td>
 </tr>
 <tr>
+<td>com.shield.tests.service.ClaimServiceMockitoTest</td>
+<td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@Test</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>getClaimServiceByIdMock</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>createClaimServiceMock</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>denyClaimServiceMock</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>approveClaimServiceMock</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@BeforeClass</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>setup</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@BeforeMethod</td>
+</tr>
+<tr>
+<td align='center' colspan='3'>@AfterMethod</td>
+</tr>
+<tr>
+<td align='center' colspan='3'>@AfterClass</td>
+</tr>
+<tr>
 <td>com.shield.tests.service.ClaimServiceTests</td>
 <td>&nbsp;</td><td>&nbsp;</td></tr>
 <tr>
@@ -183,11 +253,11 @@
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>badClaimIdForGetClaimService</td>
+<td>badUserIdForCreateClaimService</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>badUserIdForCreateClaimService</td>
+<td>badClaimIdForGetClaimService</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
@@ -196,6 +266,36 @@
 <tr>
 <td align='center' colspan='3'>@BeforeClass</td>
 </tr>
+<tr>
+<td align='center' colspan='3'>@BeforeMethod</td>
+</tr>
+<tr>
+<td align='center' colspan='3'>@AfterMethod</td>
+</tr>
+<tr>
+<td align='center' colspan='3'>@AfterClass</td>
+</tr>
+<tr>
+<td>com.shield.tests.service.DebriefServiceMockitoTest</td>
+<td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@Test</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>mockGetDebriefServiceById</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>createDebriefServiceMock</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@BeforeClass</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>setup</td>
+<td>&nbsp;</td></tr>
 <tr>
 <td align='center' colspan='3'>@BeforeMethod</td>
 </tr>
@@ -247,11 +347,11 @@
 </tr>
 <tr>
 <td>&nbsp;</td>
-<td>badIdGetEmployeeImageService</td>
+<td>badIdInsertEmployeeImageService</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>badIdInsertEmployeeImageService</td>
+<td>badIdGetEmployeeImageService</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
@@ -347,11 +447,11 @@
 </tr>
 <tr>
 <td>&nbsp;</td>
-<td>getAllClaimsByUserIdServiceMock</td>
+<td>checkUsernameAndPasswordServiceMock</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>checkUsernameAndPasswordServiceMock</td>
+<td>getAllClaimsByUserIdServiceMock</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
@@ -371,11 +471,11 @@
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>getUserServiceByIdSadMock</td>
+<td>checkUsernameAndPasswordServiceSadUsernameMock</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>checkUsernameAndPasswordServiceSadUsernameMock</td>
+<td>getUserServiceByIdSadMock</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td align='center' colspan='3'>@BeforeClass</td>
