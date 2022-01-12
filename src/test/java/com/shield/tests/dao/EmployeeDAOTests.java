@@ -46,7 +46,6 @@ public class EmployeeDAOTests {
 
     @Test
     void loginEmployee() {
-        //String username, String password
         Employee employee = employeeDAO.getEmployeeById(1_000_001);
         String username = employee.getUsername();
         String password = employee.getPasscode();
@@ -112,5 +111,14 @@ public class EmployeeDAOTests {
         employeeDAO.insertEmployeeImage(employee_id, "thisisatest");
         String returned_boolean = employeeDAO.getEmployeeImage(employee_id);
         Assert.assertNotEquals(returned_boolean, "false");
+    }
+
+    @Test
+    void checkEmployeeImage(){
+        this.insertEmployeeImage();//insert the picture for the test
+        int employee_id = 1_000_001;
+        employeeDAO.insertEmployeeImage(employee_id, "thisisatest");
+        Boolean returned_boolean = employeeDAO.checkEmployeeImage(employee_id);
+        Assert.assertTrue(returned_boolean);
     }
 }
