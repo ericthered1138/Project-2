@@ -27,15 +27,17 @@ async function previewFile() {
 
   reader.addEventListener("load", function () {
     var base64gif = reader.result; // your gif in base64 here
-    console.log(String(base64gif).slice(length))
-    document.getElementById('base64').innerHTML = base64gif;
-
-    fetch(
-      "http://localhost:8080/employee/image/1", {
-          method: "POST",
-          headers: {"Content-Type": "application/json"},
-          body: String(base64gif).slice(length)
-      })
+    if (base64gif.length < 500_000){
+      fetch(
+        "http://localhost:8080/employee/image/1", {
+            method: "POST",
+            headers: {"Content-Type": "application/json"},
+            body: String(base64gif).slice(length)
+        })
+    }
+    else{
+      alert("File too large")
+    }
   }, false);
 
   if (file) {
