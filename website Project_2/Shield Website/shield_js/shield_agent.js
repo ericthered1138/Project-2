@@ -33,7 +33,7 @@ function populateUsername(employee){
 
 // Function to create an Debrief log for the Agent to give more inclusive information for the user...
 async function employeeCreateDebriefsLogData(){
-    let debriefingText = document.getElementById("debriefText");
+    let debriefingText = document.getElementById("debriefingText");
     let dateOfOccurrence = document.getElementById("dateOfOccurrence");
     let locationOfOccurrence = document.getElementById("locationOfOccurrence");
 
