@@ -55,6 +55,7 @@ public class UserServiceMockitoTest {
     //Checks to make sure the createUser method is creating and returning the user that is created
     @Test
     void createUserServiceMock(){
+        Mockito.when(userDAO.checkUserByUsername("mock")).thenReturn(true);
         User created_user = new User(50000, "mock", "test", "mock", "mock");
         Mockito.when(userDAO.createUser(created_user)).thenReturn(created_user);
         User mocked_created_user = userServices.createUser(created_user);
