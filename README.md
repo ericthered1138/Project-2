@@ -20,8 +20,8 @@ The Agency System is made up of two subsystems. The Debrief System allows agents
 ## Features
 
 - Users are able to create an account, login, and submit claims
-- Shield Agents are able to submit debriefs explaining their side of the claim to send to the Shield Handler
-- Shield Handlers are able to approve/deny claims and leave comments on the claims
+- Shield Agents are able to submit debriefs about their actions in the field
+- Shield Handlers are able to approve/deny claims and leave comments on the claims if necessary
 
 <!-- 
 ### To-do list:
