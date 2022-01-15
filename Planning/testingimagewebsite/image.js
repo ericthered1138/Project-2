@@ -30,17 +30,19 @@ async function previewFile() {
   let length = format.length
   let base64gif;
 
-  reader.addEventListener("load", function () {
+  reader.addEventListener("load", async function () {
     base64gif = reader.result; // your gif in base64 here
     console.log(base64gif.slice(11, 14));
 
     if (base64gif.length < 1_000_000 && base64gif.slice(11, 14) === "gif"){
-      fetch(
+      await fetch(
         "http://localhost:8080/employee/image/" + "1", {
             method: "POST",
             headers: {"Content-Type": "application/json"},
             body: String(base64gif).slice(length)
         })
+
+        getEmployeeImage();
     
     }
     else{
@@ -50,7 +52,5 @@ async function previewFile() {
 
   if (file) {
     reader.readAsDataURL(file);
-    await delay(2000);
-    getEmployeeImage();
   }
 }
