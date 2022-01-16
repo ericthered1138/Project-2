@@ -31,7 +31,7 @@ async function previewFile() {
   let base64gif;
 
   reader.addEventListener("load", async function () {
-    base64gif = reader.result; // your gif in base64 here
+    base64gif = reader.result;
     console.log(base64gif.slice(11, 14));
 
     if (base64gif.length < 1_000_000 && base64gif.slice(11, 14) === "gif"){
