@@ -5,8 +5,10 @@ async function getEmployeeImage(){
     console.log(response);
 
     if(response.status === 200){
-        const image_blob = await response.blob();
-        const image_text = await image_blob.text();
+        // const image_blob = await response.blob();
+        // const image_text = await image_blob.text();
+        const response_body = response.body;
+        const image_text = await response.text();
         const image_Element = document.createElement('img');
         image_Element.src = "data:image/gif;base64,"+ image_text;
         document.body.appendChild(image_Element);
@@ -19,9 +21,9 @@ async function getEmployeeImage(){
 getEmployeeImage()
 
 
-function delay(time) {
-    return new Promise(resolve => setTimeout(resolve, time));
-  }
+// function delay(time) {
+//     return new Promise(resolve => setTimeout(resolve, time));
+//   }
   
 async function previewFile() {
   let file    = document.getElementById('portrait_input').files[0];
