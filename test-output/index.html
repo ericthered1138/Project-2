@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Tests" class="navigator-link">
-              <span class="suite-name border-failed">Tests</span>
+              <span class="suite-name border-passed">Tests</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,21 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">73 methods, 1 failed,   72 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Tests" class="hide-methods failed suite-Tests"> (hide)</a> <!-- hide-methods failed suite-Tests -->
-                      <a href="#" panel-name="suite-Tests" class="show-methods failed suite-Tests"> (show)</a> <!-- show-methods failed suite-Tests -->
-                    </span>
-                    <div class="method-list-content failed suite-Tests">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Tests" title="com.shield.tests.service.UserServiceMockitoTest" class="method navigator-link" hash-for-method="createUserServiceMock">createUserServiceMock</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Tests -->
+                    <span class="method-stats">73 methods,   73 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -318,6 +304,11 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Tests" title="com.shield.tests.service.UserServiceMockitoTest" class="method navigator-link" hash-for-method="createUserServiceMock">createUserServiceMock</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Tests" title="com.shield.tests.service.ClaimServiceMockitoTest" class="method navigator-link" hash-for-method="denyClaimServiceMock">denyClaimServiceMock</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -488,29 +479,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Tests" class="panel Tests">
-          <div class="suite-Tests-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.shield.tests.service.UserServiceMockitoTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="createUserServiceMock">
-                  </a> <!-- createUserServiceMock -->
-                  <span class="method-name">createUserServiceMock</span>
-                  <div class="stack-trace">com.shield.customexceptions.UsernameAlreadyExists: Username is already taken
-	at com.shield.services.user.UserServicesImp.createUser(UserServicesImp.java:47)
-	at com.shield.tests.service.UserServiceMockitoTest.createUserServiceMock(UserServiceMockitoTest.java:60)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-... Removed 24 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Tests-class-failed -->
           <div class="suite-Tests-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -933,6 +901,13 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="createUserServiceMock">
+                  </a> <!-- createUserServiceMock -->
+                  <span class="method-name">createUserServiceMock</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="getAllClaimsByUserIdServiceMock">
                   </a> <!-- getAllClaimsByUserIdServiceMock -->
                   <span class="method-name">getAllClaimsByUserIdServiceMock</span>
@@ -1183,284 +1158,284 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(73);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'checkEmployeeImage')
-data.setCell(0, 2, 'com.shield.tests.dao.EmployeeDAOTests')
-data.setCell(0, 3, 2473);
+data.setCell(0, 1, 'getUserImage')
+data.setCell(0, 2, 'com.shield.tests.dao.UserDAOTests')
+data.setCell(0, 3, 2693);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'checkUserImage')
-data.setCell(1, 2, 'com.shield.tests.dao.UserDAOTests')
-data.setCell(1, 3, 2449);
+data.setCell(1, 1, 'getEmployeeImage')
+data.setCell(1, 2, 'com.shield.tests.dao.EmployeeDAOTests')
+data.setCell(1, 3, 2521);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'getEmployeeImage')
+data.setCell(2, 1, 'checkEmployeeImage')
 data.setCell(2, 2, 'com.shield.tests.dao.EmployeeDAOTests')
-data.setCell(2, 3, 2431);
+data.setCell(2, 3, 2481);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'getUserImage')
+data.setCell(3, 1, 'checkUserImage')
 data.setCell(3, 2, 'com.shield.tests.dao.UserDAOTests')
-data.setCell(3, 3, 2395);
+data.setCell(3, 3, 2413);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'getAllAgentDebriefings')
-data.setCell(4, 2, 'com.shield.tests.dao.EmployeeDAOTests')
-data.setCell(4, 3, 1600);
+data.setCell(4, 1, 'ApproveClaimById')
+data.setCell(4, 2, 'com.shield.tests.dao.ClaimDAOTests')
+data.setCell(4, 3, 1544);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'ApproveClaimById')
-data.setCell(5, 2, 'com.shield.tests.dao.ClaimDAOTests')
-data.setCell(5, 3, 1483);
+data.setCell(5, 1, 'getAllClaims')
+data.setCell(5, 2, 'com.shield.tests.dao.EmployeeDAOTests')
+data.setCell(5, 3, 1527);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'getAllClaims')
+data.setCell(6, 1, 'getAllAgentDebriefings')
 data.setCell(6, 2, 'com.shield.tests.dao.EmployeeDAOTests')
-data.setCell(6, 3, 1476);
+data.setCell(6, 3, 1507);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'DenyClaimById')
 data.setCell(7, 2, 'com.shield.tests.dao.ClaimDAOTests')
-data.setCell(7, 3, 1466);
+data.setCell(7, 3, 1475);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'createUser')
-data.setCell(8, 2, 'com.shield.tests.dao.UserDAOTests')
-data.setCell(8, 3, 1054);
+data.setCell(8, 1, 'badClaimIdForDenyClaimService')
+data.setCell(8, 2, 'com.shield.tests.service.ClaimServiceTests')
+data.setCell(8, 3, 1321);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'checkUsernameAndPassword')
-data.setCell(9, 2, 'com.shield.tests.dao.UserDAOTests')
-data.setCell(9, 3, 1020);
+data.setCell(9, 1, 'selectClaimById')
+data.setCell(9, 2, 'com.shield.tests.dao.ClaimDAOTests')
+data.setCell(9, 3, 1050);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'selectClaimById')
-data.setCell(10, 2, 'com.shield.tests.dao.ClaimDAOTests')
-data.setCell(10, 3, 1013);
+data.setCell(10, 1, 'getUserClaimsByAgent')
+data.setCell(10, 2, 'com.shield.tests.dao.EmployeeDAOTests')
+data.setCell(10, 3, 1043);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'insertUserImage')
+data.setCell(11, 1, 'checkUsernameAndPassword')
 data.setCell(11, 2, 'com.shield.tests.dao.UserDAOTests')
-data.setCell(11, 3, 991);
+data.setCell(11, 3, 1030);
 data.setCell(12, 0, 12)
 data.setCell(12, 1, 'createDebrief')
 data.setCell(12, 2, 'com.shield.tests.dao.DebriefDAOTests')
-data.setCell(12, 3, 989);
+data.setCell(12, 3, 1015);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'duplicateEmployeeUsernameForCreateUserService')
-data.setCell(13, 2, 'com.shield.tests.service.UserServiceTests')
-data.setCell(13, 3, 985);
+data.setCell(13, 1, 'negativeAmountForCreateClaimService')
+data.setCell(13, 2, 'com.shield.tests.service.ClaimServiceTests')
+data.setCell(13, 3, 1008);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'getDebrief')
-data.setCell(14, 2, 'com.shield.tests.dao.DebriefDAOTests')
-data.setCell(14, 3, 983);
+data.setCell(14, 1, 'insertUserImage')
+data.setCell(14, 2, 'com.shield.tests.dao.UserDAOTests')
+data.setCell(14, 3, 995);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'loginEmployee')
-data.setCell(15, 2, 'com.shield.tests.dao.EmployeeDAOTests')
-data.setCell(15, 3, 981);
+data.setCell(15, 1, 'duplicateEmployeeUsernameForCreateUserService')
+data.setCell(15, 2, 'com.shield.tests.service.UserServiceTests')
+data.setCell(15, 3, 995);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'checkUserByUsername')
-data.setCell(16, 2, 'com.shield.tests.dao.UserDAOTests')
-data.setCell(16, 3, 980);
+data.setCell(16, 1, 'badClaimIdForApproveClaimService')
+data.setCell(16, 2, 'com.shield.tests.service.ClaimServiceTests')
+data.setCell(16, 3, 995);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'getAgentDebriefings')
+data.setCell(17, 1, 'loginEmployee')
 data.setCell(17, 2, 'com.shield.tests.dao.EmployeeDAOTests')
-data.setCell(17, 3, 980);
+data.setCell(17, 3, 990);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'createClaimById')
-data.setCell(18, 2, 'com.shield.tests.dao.ClaimDAOTests')
-data.setCell(18, 3, 980);
+data.setCell(18, 1, 'insertEmployeeImage')
+data.setCell(18, 2, 'com.shield.tests.dao.EmployeeDAOTests')
+data.setCell(18, 3, 990);
 data.setCell(19, 0, 19)
-data.setCell(19, 1, 'insertEmployeeImage')
-data.setCell(19, 2, 'com.shield.tests.dao.EmployeeDAOTests')
-data.setCell(19, 3, 978);
+data.setCell(19, 1, 'checkUserByUsername')
+data.setCell(19, 2, 'com.shield.tests.dao.UserDAOTests')
+data.setCell(19, 3, 982);
 data.setCell(20, 0, 20)
-data.setCell(20, 1, 'getUserClaimsByAgent')
+data.setCell(20, 1, 'getAgentDebriefings')
 data.setCell(20, 2, 'com.shield.tests.dao.EmployeeDAOTests')
 data.setCell(20, 3, 978);
 data.setCell(21, 0, 21)
-data.setCell(21, 1, 'badClaimIdForDenyClaimService')
-data.setCell(21, 2, 'com.shield.tests.service.ClaimServiceTests')
+data.setCell(21, 1, 'createUser')
+data.setCell(21, 2, 'com.shield.tests.dao.UserDAOTests')
 data.setCell(21, 3, 978);
 data.setCell(22, 0, 22)
-data.setCell(22, 1, 'badUserIdForCreateClaimService')
-data.setCell(22, 2, 'com.shield.tests.service.ClaimServiceTests')
-data.setCell(22, 3, 967);
+data.setCell(22, 1, 'createClaimById')
+data.setCell(22, 2, 'com.shield.tests.dao.ClaimDAOTests')
+data.setCell(22, 3, 976);
 data.setCell(23, 0, 23)
-data.setCell(23, 1, 'negativeAmountForCreateClaimService')
-data.setCell(23, 2, 'com.shield.tests.service.ClaimServiceTests')
-data.setCell(23, 3, 962);
+data.setCell(23, 1, 'getDebrief')
+data.setCell(23, 2, 'com.shield.tests.dao.DebriefDAOTests')
+data.setCell(23, 3, 976);
 data.setCell(24, 0, 24)
-data.setCell(24, 1, 'badClaimIdForApproveClaimService')
+data.setCell(24, 1, 'badUserIdForCreateClaimService')
 data.setCell(24, 2, 'com.shield.tests.service.ClaimServiceTests')
-data.setCell(24, 3, 960);
+data.setCell(24, 3, 959);
 data.setCell(25, 0, 25)
-data.setCell(25, 1, 'selectUserById')
-data.setCell(25, 2, 'com.shield.tests.dao.UserDAOTests')
-data.setCell(25, 3, 865);
+data.setCell(25, 1, 'badIdGetUserImageService')
+data.setCell(25, 2, 'com.shield.tests.service.UserServiceTests')
+data.setCell(25, 3, 517);
 data.setCell(26, 0, 26)
-data.setCell(26, 1, 'getUserClaimsByUser')
-data.setCell(26, 2, 'com.shield.tests.dao.UserDAOTests')
-data.setCell(26, 3, 513);
+data.setCell(26, 1, 'badIdForcreateDebriefService')
+data.setCell(26, 2, 'com.shield.tests.service.DebriefServiceTests')
+data.setCell(26, 3, 509);
 data.setCell(27, 0, 27)
-data.setCell(27, 1, 'getAllUsers')
-data.setCell(27, 2, 'com.shield.tests.dao.UserDAOTests')
-data.setCell(27, 3, 508);
+data.setCell(27, 1, 'badPasswordForCheckingLogin')
+data.setCell(27, 2, 'com.shield.tests.service.UserServiceTests')
+data.setCell(27, 3, 501);
 data.setCell(28, 0, 28)
-data.setCell(28, 1, 'badHandlerForGetAllClaims')
-data.setCell(28, 2, 'com.shield.tests.service.EmployeeServiceTests')
-data.setCell(28, 3, 507);
+data.setCell(28, 1, 'getUserClaimsByUser')
+data.setCell(28, 2, 'com.shield.tests.dao.UserDAOTests')
+data.setCell(28, 3, 500);
 data.setCell(29, 0, 29)
-data.setCell(29, 1, 'getEmployeeById')
-data.setCell(29, 2, 'com.shield.tests.dao.EmployeeDAOTests')
-data.setCell(29, 3, 506);
+data.setCell(29, 1, 'selectUserByIdFail')
+data.setCell(29, 2, 'com.shield.tests.dao.UserDAOTests')
+data.setCell(29, 3, 499);
 data.setCell(30, 0, 30)
-data.setCell(30, 1, 'badIdForGetUserClaimsByAgentService')
-data.setCell(30, 2, 'com.shield.tests.service.EmployeeServiceTests')
-data.setCell(30, 3, 503);
+data.setCell(30, 1, 'getLeaderboard')
+data.setCell(30, 2, 'com.shield.tests.dao.EmployeeDAOTests')
+data.setCell(30, 3, 499);
 data.setCell(31, 0, 31)
-data.setCell(31, 1, 'badClaimIdForGetClaimService')
-data.setCell(31, 2, 'com.shield.tests.service.ClaimServiceTests')
-data.setCell(31, 3, 501);
+data.setCell(31, 1, 'badAgentGetUserClaimsByAgentService')
+data.setCell(31, 2, 'com.shield.tests.service.EmployeeServiceTests')
+data.setCell(31, 3, 497);
 data.setCell(32, 0, 32)
-data.setCell(32, 1, 'getLeaderboard')
-data.setCell(32, 2, 'com.shield.tests.dao.EmployeeDAOTests')
-data.setCell(32, 3, 500);
+data.setCell(32, 1, 'getAllUsers')
+data.setCell(32, 2, 'com.shield.tests.dao.UserDAOTests')
+data.setCell(32, 3, 495);
 data.setCell(33, 0, 33)
-data.setCell(33, 1, 'badIdInsertUserImageService')
+data.setCell(33, 1, 'badUserIdForGettingUser')
 data.setCell(33, 2, 'com.shield.tests.service.UserServiceTests')
-data.setCell(33, 3, 500);
+data.setCell(33, 3, 495);
 data.setCell(34, 0, 34)
-data.setCell(34, 1, 'badAgentGetUserClaimsByAgentService')
-data.setCell(34, 2, 'com.shield.tests.service.EmployeeServiceTests')
-data.setCell(34, 3, 498);
+data.setCell(34, 1, 'badIdForGetUserClaimsByUserService')
+data.setCell(34, 2, 'com.shield.tests.service.UserServiceTests')
+data.setCell(34, 3, 492);
 data.setCell(35, 0, 35)
-data.setCell(35, 1, 'badIdForGetAllClaims')
+data.setCell(35, 1, 'badHandlerForGetAllClaims')
 data.setCell(35, 2, 'com.shield.tests.service.EmployeeServiceTests')
-data.setCell(35, 3, 496);
+data.setCell(35, 3, 492);
 data.setCell(36, 0, 36)
-data.setCell(36, 1, 'badAgentGetAgentDebriefingsService')
+data.setCell(36, 1, 'badIdForGetAllClaims')
 data.setCell(36, 2, 'com.shield.tests.service.EmployeeServiceTests')
-data.setCell(36, 3, 495);
+data.setCell(36, 3, 489);
 data.setCell(37, 0, 37)
-data.setCell(37, 1, 'badEmployeeIdForCreateClaimService')
-data.setCell(37, 2, 'com.shield.tests.service.ClaimServiceTests')
-data.setCell(37, 3, 490);
+data.setCell(37, 1, 'duplicateUserUsernameForCreateUserService')
+data.setCell(37, 2, 'com.shield.tests.service.UserServiceTests')
+data.setCell(37, 3, 488);
 data.setCell(38, 0, 38)
-data.setCell(38, 1, 'badIdGetEmployeeImageService')
-data.setCell(38, 2, 'com.shield.tests.service.EmployeeServiceTests')
-data.setCell(38, 3, 489);
+data.setCell(38, 1, 'badClaimIdForGetClaimService')
+data.setCell(38, 2, 'com.shield.tests.service.ClaimServiceTests')
+data.setCell(38, 3, 487);
 data.setCell(39, 0, 39)
-data.setCell(39, 1, 'duplicateUserUsernameForCreateUserService')
-data.setCell(39, 2, 'com.shield.tests.service.UserServiceTests')
-data.setCell(39, 3, 488);
+data.setCell(39, 1, 'selectUserById')
+data.setCell(39, 2, 'com.shield.tests.dao.UserDAOTests')
+data.setCell(39, 3, 486);
 data.setCell(40, 0, 40)
-data.setCell(40, 1, 'badIdGetUserImageService')
-data.setCell(40, 2, 'com.shield.tests.service.UserServiceTests')
-data.setCell(40, 3, 487);
+data.setCell(40, 1, 'badIdInsertEmployeeImageService')
+data.setCell(40, 2, 'com.shield.tests.service.EmployeeServiceTests')
+data.setCell(40, 3, 486);
 data.setCell(41, 0, 41)
-data.setCell(41, 1, 'badHandlerGetAllAgentDebriefingsService')
-data.setCell(41, 2, 'com.shield.tests.service.EmployeeServiceTests')
-data.setCell(41, 3, 486);
+data.setCell(41, 1, 'getEmployeeById')
+data.setCell(41, 2, 'com.shield.tests.dao.EmployeeDAOTests')
+data.setCell(41, 3, 485);
 data.setCell(42, 0, 42)
-data.setCell(42, 1, 'badIdInsertEmployeeImageService')
-data.setCell(42, 2, 'com.shield.tests.service.EmployeeServiceTests')
-data.setCell(42, 3, 486);
+data.setCell(42, 1, 'badUsernameForCheckingLogin')
+data.setCell(42, 2, 'com.shield.tests.service.UserServiceTests')
+data.setCell(42, 3, 484);
 data.setCell(43, 0, 43)
-data.setCell(43, 1, 'badUserIdForGettingUser')
-data.setCell(43, 2, 'com.shield.tests.service.UserServiceTests')
-data.setCell(43, 3, 486);
+data.setCell(43, 1, 'badIdForGetAllAgentDebriefingsService')
+data.setCell(43, 2, 'com.shield.tests.service.EmployeeServiceTests')
+data.setCell(43, 3, 482);
 data.setCell(44, 0, 44)
-data.setCell(44, 1, 'badIdForGetAllAgentDebriefingsService')
+data.setCell(44, 1, 'badIdForGetUserClaimsByAgentService')
 data.setCell(44, 2, 'com.shield.tests.service.EmployeeServiceTests')
-data.setCell(44, 3, 485);
+data.setCell(44, 3, 482);
 data.setCell(45, 0, 45)
-data.setCell(45, 1, 'badIdForGetUserClaimsByUserService')
-data.setCell(45, 2, 'com.shield.tests.service.UserServiceTests')
+data.setCell(45, 1, 'badIdGetEmployeeImageService')
+data.setCell(45, 2, 'com.shield.tests.service.EmployeeServiceTests')
 data.setCell(45, 3, 482);
 data.setCell(46, 0, 46)
-data.setCell(46, 1, 'selectUserByIdFail')
-data.setCell(46, 2, 'com.shield.tests.dao.UserDAOTests')
+data.setCell(46, 1, 'badEmployeeIdForCreateClaimService')
+data.setCell(46, 2, 'com.shield.tests.service.ClaimServiceTests')
 data.setCell(46, 3, 481);
 data.setCell(47, 0, 47)
-data.setCell(47, 1, 'badIdForcreateDebriefService')
-data.setCell(47, 2, 'com.shield.tests.service.DebriefServiceTests')
-data.setCell(47, 3, 479);
+data.setCell(47, 1, 'badIdForGetAgentDebriefingsService')
+data.setCell(47, 2, 'com.shield.tests.service.EmployeeServiceTests')
+data.setCell(47, 3, 481);
 data.setCell(48, 0, 48)
-data.setCell(48, 1, 'badPasswordForCheckingLogin')
-data.setCell(48, 2, 'com.shield.tests.service.UserServiceTests')
-data.setCell(48, 3, 475);
+data.setCell(48, 1, 'badAgentGetAgentDebriefingsService')
+data.setCell(48, 2, 'com.shield.tests.service.EmployeeServiceTests')
+data.setCell(48, 3, 479);
 data.setCell(49, 0, 49)
-data.setCell(49, 1, 'badUsernameForCheckingLogin')
-data.setCell(49, 2, 'com.shield.tests.service.UserServiceTests')
-data.setCell(49, 3, 472);
+data.setCell(49, 1, 'badHandlerGetAllAgentDebriefingsService')
+data.setCell(49, 2, 'com.shield.tests.service.EmployeeServiceTests')
+data.setCell(49, 3, 479);
 data.setCell(50, 0, 50)
-data.setCell(50, 1, 'badIdForGetAgentDebriefingsService')
-data.setCell(50, 2, 'com.shield.tests.service.EmployeeServiceTests')
-data.setCell(50, 3, 472);
+data.setCell(50, 1, 'badIdInsertUserImageService')
+data.setCell(50, 2, 'com.shield.tests.service.UserServiceTests')
+data.setCell(50, 3, 478);
 data.setCell(51, 0, 51)
 data.setCell(51, 1, 'approveClaimServiceMock')
 data.setCell(51, 2, 'com.shield.tests.service.ClaimServiceMockitoTest')
-data.setCell(51, 3, 16);
+data.setCell(51, 3, 20);
 data.setCell(52, 0, 52)
-data.setCell(52, 1, 'mockInsertEmployeeImageService')
+data.setCell(52, 1, 'mockGetEmployeeImageService')
 data.setCell(52, 2, 'com.shield.tests.service.EmployeeServiceMockitoTests')
-data.setCell(52, 3, 2);
+data.setCell(52, 3, 1);
 data.setCell(53, 0, 53)
-data.setCell(53, 1, 'getUserServiceByIdSadMock')
+data.setCell(53, 1, 'getUserServiceByIdMock')
 data.setCell(53, 2, 'com.shield.tests.service.UserServiceMockitoTest')
-data.setCell(53, 3, 2);
+data.setCell(53, 3, 1);
 data.setCell(54, 0, 54)
-data.setCell(54, 1, 'getAllUsersServiceMock')
-data.setCell(54, 2, 'com.shield.tests.service.UserServiceMockitoTest')
+data.setCell(54, 1, 'getClaimServiceByIdMock')
+data.setCell(54, 2, 'com.shield.tests.service.ClaimServiceMockitoTest')
 data.setCell(54, 3, 1);
 data.setCell(55, 0, 55)
-data.setCell(55, 1, 'mockGetEmployeeImageService')
-data.setCell(55, 2, 'com.shield.tests.service.EmployeeServiceMockitoTests')
+data.setCell(55, 1, 'createUserServiceMock')
+data.setCell(55, 2, 'com.shield.tests.service.UserServiceMockitoTest')
 data.setCell(55, 3, 1);
 data.setCell(56, 0, 56)
 data.setCell(56, 1, 'createDebriefServiceMock')
 data.setCell(56, 2, 'com.shield.tests.service.DebriefServiceMockitoTest')
 data.setCell(56, 3, 1);
 data.setCell(57, 0, 57)
-data.setCell(57, 1, 'commentTooLongForDenyClaimService')
-data.setCell(57, 2, 'com.shield.tests.service.ClaimServiceTests')
+data.setCell(57, 1, 'mockGetDebriefServiceById')
+data.setCell(57, 2, 'com.shield.tests.service.DebriefServiceMockitoTest')
 data.setCell(57, 3, 1);
 data.setCell(58, 0, 58)
-data.setCell(58, 1, 'mockGetUserClaimsByAgentService')
+data.setCell(58, 1, 'mockInsertEmployeeImageService')
 data.setCell(58, 2, 'com.shield.tests.service.EmployeeServiceMockitoTests')
 data.setCell(58, 3, 1);
 data.setCell(59, 0, 59)
-data.setCell(59, 1, 'getUserServiceByIdMock')
+data.setCell(59, 1, 'getUserServiceByIdSadMock')
 data.setCell(59, 2, 'com.shield.tests.service.UserServiceMockitoTest')
 data.setCell(59, 3, 1);
 data.setCell(60, 0, 60)
-data.setCell(60, 1, 'checkUsernameAndPasswordServiceSadPasswordMock')
-data.setCell(60, 2, 'com.shield.tests.service.UserServiceMockitoTest')
+data.setCell(60, 1, 'mockGetUserClaimsByAgentService')
+data.setCell(60, 2, 'com.shield.tests.service.EmployeeServiceMockitoTests')
 data.setCell(60, 3, 1);
 data.setCell(61, 0, 61)
-data.setCell(61, 1, 'createClaimServiceMock')
-data.setCell(61, 2, 'com.shield.tests.service.ClaimServiceMockitoTest')
+data.setCell(61, 1, 'getAllUsersServiceMock')
+data.setCell(61, 2, 'com.shield.tests.service.UserServiceMockitoTest')
 data.setCell(61, 3, 1);
 data.setCell(62, 0, 62)
-data.setCell(62, 1, 'mockGetAllAgentDebriefingsService')
-data.setCell(62, 2, 'com.shield.tests.service.EmployeeServiceMockitoTests')
+data.setCell(62, 1, 'checkUsernameAndPasswordServiceSadPasswordMock')
+data.setCell(62, 2, 'com.shield.tests.service.UserServiceMockitoTest')
 data.setCell(62, 3, 1);
 data.setCell(63, 0, 63)
-data.setCell(63, 1, 'checkUsernameAndPasswordServiceMock')
-data.setCell(63, 2, 'com.shield.tests.service.UserServiceMockitoTest')
+data.setCell(63, 1, 'createClaimServiceMock')
+data.setCell(63, 2, 'com.shield.tests.service.ClaimServiceMockitoTest')
 data.setCell(63, 3, 1);
 data.setCell(64, 0, 64)
-data.setCell(64, 1, 'getAllClaimsByUserIdServiceMock')
-data.setCell(64, 2, 'com.shield.tests.service.UserServiceMockitoTest')
+data.setCell(64, 1, 'mockGetAllAgentDebriefingsService')
+data.setCell(64, 2, 'com.shield.tests.service.EmployeeServiceMockitoTests')
 data.setCell(64, 3, 1);
 data.setCell(65, 0, 65)
-data.setCell(65, 1, 'MockGetAgentDebriefingsService')
-data.setCell(65, 2, 'com.shield.tests.service.EmployeeServiceMockitoTests')
+data.setCell(65, 1, 'checkUsernameAndPasswordServiceMock')
+data.setCell(65, 2, 'com.shield.tests.service.UserServiceMockitoTest')
 data.setCell(65, 3, 1);
 data.setCell(66, 0, 66)
-data.setCell(66, 1, 'createUserServiceMock')
-data.setCell(66, 2, 'com.shield.tests.service.UserServiceMockitoTest')
+data.setCell(66, 1, 'MockGetAgentDebriefingsService')
+data.setCell(66, 2, 'com.shield.tests.service.EmployeeServiceMockitoTests')
 data.setCell(66, 3, 1);
 data.setCell(67, 0, 67)
-data.setCell(67, 1, 'getClaimServiceByIdMock')
-data.setCell(67, 2, 'com.shield.tests.service.ClaimServiceMockitoTest')
+data.setCell(67, 1, 'commentTooLongForApproveClaimService')
+data.setCell(67, 2, 'com.shield.tests.service.ClaimServiceTests')
 data.setCell(67, 3, 0);
 data.setCell(68, 0, 68)
-data.setCell(68, 1, 'commentTooLongForApproveClaimService')
+data.setCell(68, 1, 'commentTooLongForDenyClaimService')
 data.setCell(68, 2, 'com.shield.tests.service.ClaimServiceTests')
 data.setCell(68, 3, 0);
 data.setCell(69, 0, 69)
-data.setCell(69, 1, 'mockGetDebriefServiceById')
-data.setCell(69, 2, 'com.shield.tests.service.DebriefServiceMockitoTest')
+data.setCell(69, 1, 'getAllClaimsByUserIdServiceMock')
+data.setCell(69, 2, 'com.shield.tests.service.UserServiceMockitoTest')
 data.setCell(69, 3, 0);
 data.setCell(70, 0, 70)
 data.setCell(70, 1, 'checkUsernameAndPasswordServiceSadUsernameMock')
@@ -1478,7 +1453,7 @@ window.suiteTableData['Tests']= { tableData: data, tableDiv: 'times-div-Tests'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 45 seconds</span>
+              <span class="suite-total-time">Total running time: 46 seconds</span>
               <div id="times-div-Tests">
               </div> <!-- times-div-Tests -->
             </div> <!-- times-div -->
@@ -1511,374 +1486,372 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">selectClaimById</span>
-                <span class="method-start">1029 ms</span>
+                <span class="method-start">1021 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">createClaimById</span>
-                <span class="method-start">2045 ms</span>
+                <span class="method-start">2073 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ApproveClaimById</span>
-                <span class="method-start">3026 ms</span>
+                <span class="method-start">3050 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">DenyClaimById</span>
-                <span class="method-start">4510 ms</span>
+                <span class="method-start">4595 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">5977 ms</span>
+                <span class="method-start">6070 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.shield.tests.dao.DebriefDAOTests</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">6478 ms</span>
+                <span class="method-start">6567 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">createDebrief</span>
-                <span class="method-start">7466 ms</span>
+                <span class="method-start">7552 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getDebrief</span>
-                <span class="method-start">8456 ms</span>
+                <span class="method-start">8567 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">9439 ms</span>
+                <span class="method-start">9543 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.shield.tests.dao.EmployeeDAOTests</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">9940 ms</span>
+                <span class="method-start">10053 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">checkEmployeeImage</span>
-                <span class="method-start">10943 ms</span>
+                <span class="method-start">11052 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getAgentDebriefings</span>
-                <span class="method-start">13417 ms</span>
+                <span class="method-start">13533 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getAllAgentDebriefings</span>
-                <span class="method-start">14397 ms</span>
+                <span class="method-start">14512 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getAllClaims</span>
-                <span class="method-start">15997 ms</span>
+                <span class="method-start">16019 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getEmployeeById</span>
-                <span class="method-start">17474 ms</span>
+                <span class="method-start">17546 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getEmployeeImage</span>
-                <span class="method-start">17981 ms</span>
+                <span class="method-start">18032 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getLeaderboard</span>
-                <span class="method-start">20413 ms</span>
+                <span class="method-start">20554 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getUserClaimsByAgent</span>
-                <span class="method-start">20913 ms</span>
+                <span class="method-start">21054 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">insertEmployeeImage</span>
-                <span class="method-start">21892 ms</span>
+                <span class="method-start">22097 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">loginEmployee</span>
-                <span class="method-start">22870 ms</span>
+                <span class="method-start">23088 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">23851 ms</span>
+                <span class="method-start">24078 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.shield.tests.dao.UserDAOTests</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">24340 ms</span>
+                <span class="method-start">24587 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">checkUserByUsername</span>
-                <span class="method-start">25360 ms</span>
+                <span class="method-start">25647 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">checkUsernameAndPassword</span>
-                <span class="method-start">26341 ms</span>
+                <span class="method-start">26630 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">createUser</span>
-                <span class="method-start">27362 ms</span>
+                <span class="method-start">27661 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getAllUsers</span>
-                <span class="method-start">28416 ms</span>
+                <span class="method-start">28639 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getUserClaimsByUser</span>
-                <span class="method-start">28924 ms</span>
+                <span class="method-start">29135 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">selectUserById</span>
-                <span class="method-start">29438 ms</span>
+                <span class="method-start">29636 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">selectUserByIdFail</span>
-                <span class="method-start">30304 ms</span>
+                <span class="method-start">30123 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">insertUserImage</span>
-                <span class="method-start">30786 ms</span>
+                <span class="method-start">30623 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getUserImage</span>
-                <span class="method-start">31777 ms</span>
+                <span class="method-start">31618 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">checkUserImage</span>
-                <span class="method-start">34172 ms</span>
+                <span class="method-start">34311 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">36621 ms</span>
+                <span class="method-start">36725 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.shield.tests.service.ClaimServiceMockitoTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">37140 ms</span>
+                <span class="method-start">37240 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">approveClaimServiceMock</span>
-                <span class="method-start">37696 ms</span>
+                <span class="method-start">37936 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">createClaimServiceMock</span>
-                <span class="method-start">37712 ms</span>
+                <span class="method-start">37956 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">denyClaimServiceMock</span>
-                <span class="method-start">37714 ms</span>
+                <span class="method-start">37958 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getClaimServiceByIdMock</span>
-                <span class="method-start">37715 ms</span>
+                <span class="method-start">37958 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.shield.tests.service.ClaimServiceTests</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">badClaimIdForApproveClaimService</span>
-                <span class="method-start">37716 ms</span>
+                <span class="method-start">37959 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">badClaimIdForDenyClaimService</span>
-                <span class="method-start">38676 ms</span>
+                <span class="method-start">38955 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">badClaimIdForGetClaimService</span>
-                <span class="method-start">39654 ms</span>
+                <span class="method-start">40276 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">badEmployeeIdForCreateClaimService</span>
-                <span class="method-start">40155 ms</span>
+                <span class="method-start">40763 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">badUserIdForCreateClaimService</span>
-                <span class="method-start">40646 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">commentTooLongForApproveClaimService</span>
-                <span class="method-start">41613 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">commentTooLongForDenyClaimService</span>
-                <span class="method-start">41613 ms</span>
+                <span class="method-start">41245 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">negativeAmountForCreateClaimService</span>
-                <span class="method-start">41614 ms</span>
+                <span class="method-start">42205 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">commentTooLongForApproveClaimService</span>
+                <span class="method-start">42205 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">commentTooLongForDenyClaimService</span>
+                <span class="method-start">42205 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.shield.tests.service.DebriefServiceMockitoTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">42576 ms</span>
+                <span class="method-start">43213 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">createDebriefServiceMock</span>
-                <span class="method-start">42584 ms</span>
+                <span class="method-start">43221 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">mockGetDebriefServiceById</span>
-                <span class="method-start">42585 ms</span>
+                <span class="method-start">43222 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.shield.tests.service.DebriefServiceTests</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">badIdForcreateDebriefService</span>
-                <span class="method-start">42586 ms</span>
+                <span class="method-start">43223 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.shield.tests.service.EmployeeServiceMockitoTests</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">MockGetAgentDebriefingsService</span>
-                <span class="method-start">43066 ms</span>
+                <span class="method-start">43733 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">43066 ms</span>
+                <span class="method-start">43733 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">mockGetAllAgentDebriefingsService</span>
-                <span class="method-start">43067 ms</span>
+                <span class="method-start">43734 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">mockGetEmployeeImageService</span>
-                <span class="method-start">43068 ms</span>
+                <span class="method-start">43735 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">mockGetUserClaimsByAgentService</span>
-                <span class="method-start">43069 ms</span>
+                <span class="method-start">43736 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">mockGetEmployeeServiceById</span>
-                <span class="method-start">43069 ms</span>
+                <span class="method-start">43736 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">mockInsertEmployeeImageService</span>
-                <span class="method-start">43070 ms</span>
+                <span class="method-start">43737 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.shield.tests.service.EmployeeServiceTests</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">badAgentGetAgentDebriefingsService</span>
-                <span class="method-start">43072 ms</span>
+                <span class="method-start">43739 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">badAgentGetUserClaimsByAgentService</span>
-                <span class="method-start">43567 ms</span>
+                <span class="method-start">44219 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">badHandlerForGetAllClaims</span>
-                <span class="method-start">44066 ms</span>
+                <span class="method-start">44716 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">badHandlerGetAllAgentDebriefingsService</span>
-                <span class="method-start">44574 ms</span>
+                <span class="method-start">45208 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">badIdForGetAgentDebriefingsService</span>
-                <span class="method-start">45061 ms</span>
+                <span class="method-start">45688 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">badIdForGetAllAgentDebriefingsService</span>
-                <span class="method-start">45534 ms</span>
+                <span class="method-start">46169 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">badIdForGetAllClaims</span>
-                <span class="method-start">46019 ms</span>
+                <span class="method-start">46652 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">badIdForGetUserClaimsByAgentService</span>
-                <span class="method-start">46515 ms</span>
+                <span class="method-start">47141 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">badIdGetEmployeeImageService</span>
-                <span class="method-start">47018 ms</span>
+                <span class="method-start">47623 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">badIdInsertEmployeeImageService</span>
-                <span class="method-start">47507 ms</span>
+                <span class="method-start">48106 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.shield.tests.service.UserServiceMockitoTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">47994 ms</span>
+                <span class="method-start">48593 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">checkUsernameAndPasswordServiceMock</span>
-                <span class="method-start">47995 ms</span>
+                <span class="method-start">48593 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">checkUsernameAndPasswordServiceSadPasswordMock</span>
-                <span class="method-start">47996 ms</span>
+                <span class="method-start">48594 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">checkUsernameAndPasswordServiceSadUsernameMock</span>
-                <span class="method-start">47997 ms</span>
+                <span class="method-start">48595 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">createUserServiceMock</span>
-                <span class="method-start">47997 ms</span>
+                <span class="method-start">48595 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getAllClaimsByUserIdServiceMock</span>
-                <span class="method-start">48002 ms</span>
+                <span class="method-start">48597 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getAllUsersServiceMock</span>
-                <span class="method-start">48003 ms</span>
+                <span class="method-start">48598 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getUserServiceByIdMock</span>
-                <span class="method-start">48004 ms</span>
+                <span class="method-start">48599 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getUserServiceByIdSadMock</span>
-                <span class="method-start">48005 ms</span>
+                <span class="method-start">48601 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.shield.tests.service.UserServiceTests</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">badIdForGetUserClaimsByUserService</span>
-                <span class="method-start">48008 ms</span>
+                <span class="method-start">48603 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">badIdGetUserImageService</span>
-                <span class="method-start">48490 ms</span>
+                <span class="method-start">49095 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">badIdInsertUserImageService</span>
-                <span class="method-start">48977 ms</span>
+                <span class="method-start">49613 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">badPasswordForCheckingLogin</span>
-                <span class="method-start">49477 ms</span>
+                <span class="method-start">50091 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">badUserIdForGettingUser</span>
-                <span class="method-start">49952 ms</span>
+                <span class="method-start">50592 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">badUsernameForCheckingLogin</span>
-                <span class="method-start">50439 ms</span>
+                <span class="method-start">51087 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">duplicateEmployeeUsernameForCreateUserService</span>
-                <span class="method-start">50911 ms</span>
+                <span class="method-start">51571 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">duplicateUserUsernameForCreateUserService</span>
-                <span class="method-start">51896 ms</span>
+                <span class="method-start">52566 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

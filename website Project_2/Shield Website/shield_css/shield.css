@@ -6,13 +6,8 @@
 
 .logoutLblPos{
     position: absolute;
-<<<<<<< HEAD
     right:12vw;
     top:6vh;
-=======
-    right:5.2vw;
-    top:10vh;
->>>>>>> origin/Victor-Branch
     
  }
 
@@ -87,13 +82,7 @@
  }
  
  body{
-<<<<<<< HEAD
     background-image: url(../images/Shield.gif);
-=======
-     background-image: url(../images/Shield.gif);
-    background-color: gray;
-    background-repeat: repeat;
->>>>>>> origin/Victor-Branch
     text-align: center;
     position: relative;
     padding: auto;
@@ -188,19 +177,11 @@
 }
 
 #leftSection{
-<<<<<<< HEAD
     width: 30vw; 
     height: 40vh;
 }
 #rightSection{
     width: 21vw;
-=======
-    width: 14vw; 
-    height: 40vh;
-}
-#rightSection{
-    width: 14vw;
->>>>>>> origin/Victor-Branch
     height: 40vh;
 }
 
