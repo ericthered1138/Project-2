@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Tests]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Service(failed)">
+  <test thread-count="5" name="DAO(failed)">
     <classes>
-      <class name="com.shield.tests.service.UserServiceMockitoTest">
+      <class name="com.shield.tests.dao.UserDAOTests">
         <methods>
-          <include name="createUserServiceMock"/>
           <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="createUser"/>
         </methods>
-      </class> <!-- com.shield.tests.service.UserServiceMockitoTest -->
+      </class> <!-- com.shield.tests.dao.UserDAOTests -->
     </classes>
-  </test> <!-- Service(failed) -->
+  </test> <!-- DAO(failed) -->
 </suite> <!-- Failed suite [Tests] -->
