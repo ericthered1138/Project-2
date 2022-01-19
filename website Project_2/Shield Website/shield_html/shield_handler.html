@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,13 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shield Handler</title>
+
     <style>
             .rect1{
                 height: 100px;
                 width: 800px;
-                background: rgb(206, 110, 110);
+                background: #65000B;
                 border: 4px solid gold;
-                color: rgb(17, 17, 77);
+                color: white;
                 text-align: center;
                 margin-left: 120px;
 
@@ -19,7 +21,7 @@
             .rect2{
                 height: 100px;
                 width: 400px;
-                background: rgb(90, 56, 56);
+                background: #7C3030;
                 border: 4px solid gold;
                 color: rgb(217, 217, 248);
                 text-align: center;
@@ -29,56 +31,90 @@
 
             }
             .rect3{
-                height: 80px;
+                height: 100px;
                 width: 400px;
-                background: rgb(43, 23, 23);
+                background: #bfc1c2;
                 border: 4px solid gold;
-                color: rgb(216, 216, 231);
+                color: #000039;
                 text-align: center;
-                margin-top: 40px;
+                margin-top: 20px;
                 margin-left: 120px;
+                /* pending holder */
 
 
             }
             .rect4{
-                height: 80px;
+                height: 100px;
                 width: 400px;
-                background: rgb(43, 23, 23);
+                background: #bfc1c2;
                 border: 4px solid gold;
-                color: rgb(216, 216, 231);
+                color: #000039;
                 text-align: center;
-                margin-top: 200px;
+                margin-top: 80px;
                 margin-left: 120px;
 
 
             }
             .rect5{
-                height: 80px;
+                height: 100px;
                 width: 400px;
-                background: rgb(43, 23, 23);
+                background: #bfc1c2;
                 border: 4px solid gold;
-                color: rgb(216, 216, 231);
+                color: #000039;
                 text-align: center;
-                margin-top: -108px;
-                margin-left: 920px;
-
+                margin-top: -80px;
+                margin-left: 720px;
+                /* leaderboard */
 
             }
             .rect6{
-                height: 80px;
+                height: 100px;
                 width: 400px;
-                background: rgb(43, 23, 23);
+                background: #bfc1c2;
                 border: 4px solid gold;
-                color: rgb(216, 216, 231);
+                color: #000039;
                 text-align: center;
-                margin-top: -108px;
-                margin-left: 920px;
+                margin-top: 20px;
+                margin-left: 940px;
+                /* margin-bottom: -200px; */
+                /* briefs */
+            }
 
+            .pendinginput{
+                margin-left: 220px; 
+                color: white;
 
+            }
+
+            .leaderboardinfo{
+                margin-left: 1000px;
+                margin-bottom: -50px;
+                color: white;
+                
+            }
+
+            .dropdown{
+                margin-left: 980px;
+            }
+
+            .briefstable{
+                margin-left: 800px;
+                color: white;
+            }
+
+            .something{
+                color: white;
+            }
+
+            .somethingaswell{
+                color: white;
+            }
+            .somethingaswellso{
+                color: white;
             }
             .button {
                 border: 4px solid gold;
-                color: black;
+                color: white;
                 padding: 15px 40px;
                 text-align: center;
                 text-decoration: none;
@@ -86,7 +122,7 @@
                 font-size: 16px;
                 margin: 4px 2px;
                 cursor: pointer;
-                margin-left: 430px;
+                margin-left: -40px; /*move approve and deny button */
                 margin-top: -80px;
 
             }
@@ -100,7 +136,7 @@
                 font-size: 16px;
                 margin: 4px 2px;
                 cursor: pointer;
-                margin-left: 430px;
+                margin-left: 10px;
                 margin-bottom: -80px;
 
             }
@@ -120,64 +156,236 @@
                 color: rgb(140, 151, 36);
                 }
 
-.button1 {background-color: rgb(221, 101, 101);} /* Green */
-.button2 {background-color: #008CBA;} /* Blue */
+.button1 {background-color: #1b1b1b;} /* Green */
+.button2 {background-color: #1b1b1b;} /* Blue */
 
         </style>
 </head>
 
-<body style="background-color:#3c5b6e;">
+<body style="background-color: #002244;" min-height= 500px;>
+
 
 <div align="center"
 <div class="rect1">
-    <h1>Compensation Agent Home Page</h1>
+    <h1>Shield Handler Home Page</h1>
 </div>
 </div>
+
+
 
 <div align="center"
 <div class="rect2">
-    <h2>Username With Logo</h2>
+    <br>
+    <form name="form1" method="post" action="../index.html">
+        <label class="logoutLblPos"></label>
+            <button id="logoutButton" onclick="Logout()">Logout</button>
+        </label>
+    </form>
+    <!-- <h2>Username With Logo</h2> -->
+    <div id=TopHeader">
+        <span id="thumbNails"></span>
+        <p id="headerUsername"></p>
+    </div>
 </div>
 </div>
 
-<div>
+
+
+
+
+<!-- <div>
     <form name="form1" method="post" action="../index.html">
         <label class="logoutLblPos"></label>
-            <button id="logout-button" onclick="Logout()">Logout</button>
+            <button id="logoutButton" onclick="Logout()">Logout</button>
         </label>
     </form>
-</div>
+</div> -->
 
 <br>
 
 <div align="center"
 <div class="rect3">
     <h2>Pending Claims</h2>
-    <button class="button button1">Approve</button>
-    <button class="buttonn button2">Dennied</button>
+    <button type="button" onclick="toggleClaimData()">Claims</button>
+
+    <!-- <button class="button button1">Approve</button>
+    <button class="buttonn button2">Dennied</button> -->
 </div>
 </div>
+
+<div>
+<!-- <button type="button" onclick="toggleClaimData()">Claims</button> -->
+<table class="something" id = "claimTable" style="display: none;">
+    <thead  id="claimHead">
+        <tr>
+            <th>
+                Claim ID
+            </th>
+            <th>
+                Employee ID
+            </th>
+            <th>
+                Amount
+            </th>
+            <th>
+                Description
+            </th>
+            <th>
+                Date
+            </th>
+            <th>
+                Location
+            </th>
+            <th>
+                Date Created
+            </th>
+            <th>
+                Approval
+            </th>
+            <th>
+                Handler Comment
+            </th>
+        </tr>
+    </thead> 
+    <tbody id="claimBody">
+
+    </tbody>
+</table>
+</div>
+
+
+<div id="createRequestForm" class="pendinginput">
+    <label for="claimIdInput"><b>Claim Id:</b></label>
+    <input type="text" placeholder="Enter" id="claimIdInput" required>
+    <br>
+    <!-- <label for="employeeIdInput"><b>Employee Id:</b></label>
+    <input type="text" placeholder="Enter" id="employeeIdInput">
+    <br>
+    <label for="amountInput"><b>Amount:</b></label>
+    <input type="text" placeholder="Enter" id="amountInput">
+    <br>
+    <label for="descriptionInput"><b>Description:</b></label>
+    <input type="text" placeholder="Enter" id="descriptionInput">
+    <br>
+    <label for="dateInput"><b>Date:</b></label>
+    <input type="text" placeholder="Enter" id="dateInput">
+    <br> 
+    <label for="locationInput"><b>Location:</b></label>
+    <input type="text" placeholder="Enter" id="locationInput">
+    <br>
+    <label for="dateCreatedInput"><b>Date Created:</b></label>
+    <input type="text" placeholder="Enter" id="dateCreatedInput">
+    <br>
+    <label for="approvalInput"><b>Approval:</b></label>
+    <input type="text" placeholder="Enter" id="approvalInput">
+    <br> -->
+    <label for="commentInput"><b>Handler Comment:</b></label>
+    <input type="text" placeholder="Enter" id="handlerCommentInput">
+
+
+
+    <br>
+    <button id="Approvebutton" onclick="updateApproveClaimInfo()" class="button button1">Approve</button>
+    <button id="Denybutton" onclick="updateDenyClaimInfo()" class="buttonn button2">Denied</button>
 
 <div align="center"
 <div class="rect5">
     <h2>Glorious Leaderboard of Damage</h2>
+    <button id="viewLeaderBoard" type="button" onclick="toggleLeaderBoardData()">Leaderboard</button>
 </div>
 </div>
+
+
+    <!-- <button id="viewLeaderBoard" type="button" onclick="toggleLeaderBoardData()">Leaderboard</button> -->
+        <table class="leaderboardinfo" id="leaderBoardTable" style="display: none;">
+            <tbody class = "?" id="leaderBoardBody">
+                
+            </tbody>
+        </table>
+
+
 
 <div align="center"
 <div class="rect4">
     <h2>Previous Pending Claims By User_Id</h2>
+    <button id = "previousclaimbutton" type="button" onclick="toggleClaimDataToPrevious()">Previous Claims</button>
 </div>
 </div>
 
-<div align="center"
-<div class="rect6">
+
+
+<!-- <button id = "previousclaimbutton" type="button" onclick="toggleClaimDataToPrevious()">Previous Claims</button> -->
+<table class="somethingaswell" id = "claimTableToPrevious" style="display: none;">
+    <thead  id="claimHead2">
+        <tr>
+            <th>
+                Claim ID
+            </th>
+            <th>
+                Employee ID
+            </th>
+            <th>
+                Amount
+            </th>
+            <th>
+                Description
+            </th>
+            <th>
+                Date
+            </th>
+            <th>
+                Location
+            </th>
+            <th>
+                Date Created
+            </th>
+            <th>
+                Approval
+            </th>
+            <th>
+                Handler Comment
+            </th>
+        </tr>
+    </thead>
+    <tbody id="claimBodyToPrevious">
+
+    </tbody>
+</table>
+
+
+
+<div align="center-right"
+<div class="rect6" align="center-right">
     <h2>Search For Briefs</h2>
+    <button id= "viewDebriefsButton" type="button" onclick ="toggleDebriefData()"> View Debriefs</button>
 </div>
 </div>
 
+<div class="dropdown">
+    <label for="employeeOnClaim"class="somethingaswellso">EMPLOYEE:</label>
+    <select id="claimEmployeeArrow" name="employeeOnClaim" id="employeeOnClaim">
 
+    </select>
+</div>
 
+<div>
+<!-- <button id= "viewDebriefsButton" type="button" onclick ="toggleDebriefData()"> View Debriefs</button> -->
+<table class="briefstable" id="debriefTable" style="display: none;">
+    <thead id="debriefHead"></thead>
+    <tr>
+        <th>Debriefing Id:</th>
+        <th>Employee Id:</th>
+        <th>Debriefing Text:</th>
+        <th>Date Of Occurrence:</th>
+        <th>location Of Occurrence:</th>
+        <th>Date Time of Creation:</th>
+    </tr>
+        <tbody id="debriefBody">
+        </tbody>
+</table>
+</div>
 
 </body>
+
+<script src="../shield_js/shield_handler.js"></script>
 </html>
