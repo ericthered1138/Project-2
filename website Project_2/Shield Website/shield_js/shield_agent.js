@@ -33,9 +33,9 @@ function populateUsername(employee){
 
 // Function to create an Debrief log for the Agent to give more inclusive information for the user...
 async function employeeCreateDebriefsLogData(){
-    let debriefingText = document.getElementById("debriefingText");
+    let debriefingText = document.getElementById("debriefText");
     let dateOfOccurrence = document.getElementById("dateOfOccurrence");
-    let locationOfOccurrence = document.getElementById("locationOfOccurrence");
+    let locationOfOccurrence = document.getElementById("locationText");
 
     let response = await fetch(
         "http://localhost:8080/debrief", {
