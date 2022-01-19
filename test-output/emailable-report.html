@@ -9,21 +9,12 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Tests</th></tr>
-<<<<<<< HEAD
-<tr><td><a href="#t0">DAO</a></td><td class="num">22</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">29,350</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">Service</a></td><td class="num">37</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">12,768</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">59</th><th class="num">0</th><th class="num">0</th><th class="num">0</th><th class="num">42,118</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">DAO</a></td><td class="num">26</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">36,436</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Service</a></td><td class="num">47</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">15,228</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">73</th><th class="num">0</th><th class="num">0</th><th class="num">0</th><th class="num">51,664</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Tests</th></tr></tbody><tbody id="t0"><tr><th colspan="4">DAO &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">com.shield.tests.dao.ClaimDAOTests</td><td><a href="#m0">ApproveClaimById</a></td><td rowspan="1">1641966954796</td><td rowspan="1">1443</td></tr><tr class="passedeven"><td><a href="#m1">DenyClaimById</a></td><td rowspan="1">1641966956239</td><td rowspan="1">1430</td></tr><tr class="passedeven"><td><a href="#m2">createClaimById</a></td><td rowspan="1">1641966953848</td><td rowspan="1">947</td></tr><tr class="passedeven"><td><a href="#m3">selectClaimById</a></td><td rowspan="1">1641966952887</td><td rowspan="1">957</td></tr><tr class="passedodd"><td rowspan="2">com.shield.tests.dao.DebriefDAOTests</td><td><a href="#m4">createDebrief</a></td><td rowspan="1">1641966959158</td><td rowspan="1">1301</td></tr><tr class="passedodd"><td><a href="#m5">getDebrief</a></td><td rowspan="1">1641966960460</td><td rowspan="1">951</td></tr><tr class="passedeven"><td rowspan="10">com.shield.tests.dao.EmployeeDAOTests</td><td><a href="#m6">checkEmployeeImage</a></td><td rowspan="1">1641966962893</td><td rowspan="1">2377</td></tr><tr class="passedeven"><td><a href="#m7">getAgentDebriefings</a></td><td rowspan="1">1641966965271</td><td rowspan="1">958</td></tr><tr class="passedeven"><td><a href="#m8">getAllAgentDebriefings</a></td><td rowspan="1">1641966966229</td><td rowspan="1">1467</td></tr><tr class="passedeven"><td><a href="#m9">getAllClaims</a></td><td rowspan="1">1641966967697</td><td rowspan="1">1452</td></tr><tr class="passedeven"><td><a href="#m10">getEmployeeById</a></td><td rowspan="1">1641966969149</td><td rowspan="1">477</td></tr><tr class="passedeven"><td><a href="#m11">getEmployeeImage</a></td><td rowspan="1">1641966969627</td><td rowspan="1">2436</td></tr><tr class="passedeven"><td><a href="#m12">getLeaderboard</a></td><td rowspan="1">1641966972063</td><td rowspan="1">485</td></tr><tr class="passedeven"><td><a href="#m13">getUserClaimsByAgent</a></td><td rowspan="1">1641966972548</td><td rowspan="1">951</td></tr><tr class="passedeven"><td><a href="#m14">insertEmployeeImage</a></td><td rowspan="1">1641966973500</td><td rowspan="1">956</td></tr><tr class="passedeven"><td><a href="#m15">loginEmployee</a></td><td rowspan="1">1641966974456</td><td rowspan="1">975</td></tr><tr class="passedodd"><td rowspan="6">com.shield.tests.dao.UserDAOTests</td><td><a href="#m16">checkUsernameAndPassword</a></td><td rowspan="1">1641966976878</td><td rowspan="1">958</td></tr><tr class="passedodd"><td><a href="#m17">createUser</a></td><td rowspan="1">1641966977837</td><td rowspan="1">1008</td></tr><tr class="passedodd"><td><a href="#m18">getAllUsers</a></td><td rowspan="1">1641966978845</td><td rowspan="1">472</td></tr><tr class="passedodd"><td><a href="#m19">getUserClaimsByUser</a></td><td rowspan="1">1641966979317</td><td rowspan="1">480</td></tr><tr class="passedodd"><td><a href="#m20">selectUserById</a></td><td rowspan="1">1641966979798</td><td rowspan="1">473</td></tr><tr class="passedodd"><td><a href="#m21">selectUserByIdFail</a></td><td rowspan="1">1641966980271</td><td rowspan="1">474</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">Service &#8212; passed</th></tr><tr class="passedeven"><td rowspan="8">com.shield.tests.service.ClaimServiceTests</td><td><a href="#m22">badClaimIdForApproveClaimService</a></td><td rowspan="1">1641966981280</td><td rowspan="1">956</td></tr><tr class="passedeven"><td><a href="#m23">badClaimIdForDenyClaimService</a></td><td rowspan="1">1641966982236</td><td rowspan="1">938</td></tr><tr class="passedeven"><td><a href="#m24">badClaimIdForGetClaimService</a></td><td rowspan="1">1641966983175</td><td rowspan="1">500</td></tr><tr class="passedeven"><td><a href="#m25">badEmployeeIdForCreateClaimService</a></td><td rowspan="1">1641966983675</td><td rowspan="1">491</td></tr><tr class="passedeven"><td><a href="#m26">badUserIdForCreateClaimService</a></td><td rowspan="1">1641966984166</td><td rowspan="1">955</td></tr><tr class="passedeven"><td><a href="#m27">commentTooLongForApproveClaimService</a></td><td rowspan="1">1641966985122</td><td rowspan="1">0</td></tr><tr class="passedeven"><td><a href="#m28">commentTooLongForDenyClaimService</a></td><td rowspan="1">1641966985122</td><td rowspan="1">0</td></tr><tr class="passedeven"><td><a href="#m29">negativeAmountForCreateClaimService</a></td><td rowspan="1">1641966985122</td><td rowspan="1">942</td></tr><tr class="passedodd"><td rowspan="1">com.shield.tests.service.DebriefServiceTests</td><td><a href="#m30">badIdForcreateDebriefService</a></td><td rowspan="1">1641966986064</td><td rowspan="1">741</td></tr><tr class="passedeven"><td rowspan="6">com.shield.tests.service.EmployeeServiceMockitoTests</td><td><a href="#m31">MockGetAgentDebriefingsService</a></td><td rowspan="1">1641966987312</td><td rowspan="1">14</td></tr><tr class="passedeven"><td><a href="#m32">mockGetAllAgentDebriefingsService</a></td><td rowspan="1">1641966987326</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m33">mockGetEmployeeImageService</a></td><td rowspan="1">1641966987327</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m34">mockGetEmployeeServiceById</a></td><td rowspan="1">1641966987328</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m35">mockGetUserClaimsByAgentService</a></td><td rowspan="1">1641966987329</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m36">mockInsertEmployeeImageService</a></td><td rowspan="1">1641966987330</td><td rowspan="1">1</td></tr><tr class="passedodd"><td rowspan="10">com.shield.tests.service.EmployeeServiceTests</td><td><a href="#m37">badAgentGetAgentDebriefingsService</a></td><td rowspan="1">1641966987332</td><td rowspan="1">502</td></tr><tr class="passedodd"><td><a href="#m38">badAgentGetUserClaimsByAgentService</a></td><td rowspan="1">1641966987835</td><td rowspan="1">474</td></tr><tr class="passedodd"><td><a href="#m39">badHandlerForGetAllClaims</a></td><td rowspan="1">1641966988310</td><td rowspan="1">465</td></tr><tr class="passedodd"><td><a href="#m40">badHandlerGetAllAgentDebriefingsService</a></td><td rowspan="1">1641966988776</td><td rowspan="1">480</td></tr><tr class="passedodd"><td><a href="#m41">badIdForGetAgentDebriefingsService</a></td><td rowspan="1">1641966989256</td><td rowspan="1">469</td></tr><tr class="passedodd"><td><a href="#m42">badIdForGetAllAgentDebriefingsService</a></td><td rowspan="1">1641966989725</td><td rowspan="1">469</td></tr><tr class="passedodd"><td><a href="#m43">badIdForGetAllClaims</a></td><td rowspan="1">1641966990194</td><td rowspan="1">499</td></tr><tr class="passedodd"><td><a href="#m44">badIdForGetUserClaimsByAgentService</a></td><td rowspan="1">1641966990694</td><td rowspan="1">467</td></tr><tr class="passedodd"><td><a href="#m45">badIdGetEmployeeImageService</a></td><td rowspan="1">1641966991161</td><td rowspan="1">485</td></tr><tr class="passedodd"><td><a href="#m46">badIdInsertEmployeeImageService</a></td><td rowspan="1">1641966991646</td><td rowspan="1">468</td></tr><tr class="passedeven"><td rowspan="8">com.shield.tests.service.UserServiceMockitoTest</td><td><a href="#m47">checkUsernameAndPasswordServiceMock</a></td><td rowspan="1">1641966992127</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m48">checkUsernameAndPasswordServiceSadPasswordMock</a></td><td rowspan="1">1641966992128</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m49">checkUsernameAndPasswordServiceSadUsernameMock</a></td><td rowspan="1">1641966992129</td><td rowspan="1">0</td></tr><tr class="passedeven"><td><a href="#m50">createUserServiceMock</a></td><td rowspan="1">1641966992129</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m51">getAllClaimsByUserIdServiceMock</a></td><td rowspan="1">1641966992130</td><td rowspan="1">0</td></tr><tr class="passedeven"><td><a href="#m52">getAllUsersServiceMock</a></td><td rowspan="1">1641966992130</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m53">getUserServiceByIdMock</a></td><td rowspan="1">1641966992131</td><td rowspan="1">0</td></tr><tr class="passedeven"><td><a href="#m54">getUserServiceByIdSadMock</a></td><td rowspan="1">1641966992131</td><td rowspan="1">3</td></tr><tr class="passedodd"><td rowspan="4">com.shield.tests.service.UserServiceTests</td><td><a href="#m55">badIdForGetUserClaimsByUserService</a></td><td rowspan="1">1641966992134</td><td rowspan="1">483</td></tr><tr class="passedodd"><td><a href="#m56">badPasswordForCheckingLogin</a></td><td rowspan="1">1641966992617</td><td rowspan="1">481</td></tr><tr class="passedodd"><td><a href="#m57">badUserIdForGettingUser</a></td><td rowspan="1">1641966993098</td><td rowspan="1">473</td></tr><tr class="passedodd"><td><a href="#m58">badUsernameForCheckingLogin</a></td><td rowspan="1">1641966993571</td><td rowspan="1">475</td></tr></tbody>
-=======
-<tr><td><a href="#t0">DAO</a></td><td class="num">26</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">37,238</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">Service</a></td><td class="num">47</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">15,816</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">73</th><th class="num">0</th><th class="num">0</th><th class="num">0</th><th class="num">53,054</th><th colspan="2"></th></tr>
-</table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Tests</th></tr></tbody><tbody id="t0"><tr><th colspan="4">DAO &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">com.shield.tests.dao.ClaimDAOTests</td><td><a href="#m0">ApproveClaimById</a></td><td rowspan="1">1642088728866</td><td rowspan="1">1544</td></tr><tr class="passedeven"><td><a href="#m1">DenyClaimById</a></td><td rowspan="1">1642088730411</td><td rowspan="1">1475</td></tr><tr class="passedeven"><td><a href="#m2">createClaimById</a></td><td rowspan="1">1642088727889</td><td rowspan="1">976</td></tr><tr class="passedeven"><td><a href="#m3">selectClaimById</a></td><td rowspan="1">1642088726837</td><td rowspan="1">1050</td></tr><tr class="passedodd"><td rowspan="2">com.shield.tests.dao.DebriefDAOTests</td><td><a href="#m4">createDebrief</a></td><td rowspan="1">1642088733368</td><td rowspan="1">1015</td></tr><tr class="passedodd"><td><a href="#m5">getDebrief</a></td><td rowspan="1">1642088734383</td><td rowspan="1">976</td></tr><tr class="passedeven"><td rowspan="10">com.shield.tests.dao.EmployeeDAOTests</td><td><a href="#m6">checkEmployeeImage</a></td><td rowspan="1">1642088736868</td><td rowspan="1">2481</td></tr><tr class="passedeven"><td><a href="#m7">getAgentDebriefings</a></td><td rowspan="1">1642088739349</td><td rowspan="1">978</td></tr><tr class="passedeven"><td><a href="#m8">getAllAgentDebriefings</a></td><td rowspan="1">1642088740328</td><td rowspan="1">1507</td></tr><tr class="passedeven"><td><a href="#m9">getAllClaims</a></td><td rowspan="1">1642088741835</td><td rowspan="1">1527</td></tr><tr class="passedeven"><td><a href="#m10">getEmployeeById</a></td><td rowspan="1">1642088743362</td><td rowspan="1">485</td></tr><tr class="passedeven"><td><a href="#m11">getEmployeeImage</a></td><td rowspan="1">1642088743848</td><td rowspan="1">2521</td></tr><tr class="passedeven"><td><a href="#m12">getLeaderboard</a></td><td rowspan="1">1642088746370</td><td rowspan="1">499</td></tr><tr class="passedeven"><td><a href="#m13">getUserClaimsByAgent</a></td><td rowspan="1">1642088746870</td><td rowspan="1">1043</td></tr><tr class="passedeven"><td><a href="#m14">insertEmployeeImage</a></td><td rowspan="1">1642088747913</td><td rowspan="1">990</td></tr><tr class="passedeven"><td><a href="#m15">loginEmployee</a></td><td rowspan="1">1642088748904</td><td rowspan="1">990</td></tr><tr class="passedodd"><td rowspan="10">com.shield.tests.dao.UserDAOTests</td><td><a href="#m16">checkUserByUsername</a></td><td rowspan="1">1642088751463</td><td rowspan="1">982</td></tr><tr class="passedodd"><td><a href="#m17">checkUserImage</a></td><td rowspan="1">1642088760127</td><td rowspan="1">2413</td></tr><tr class="passedodd"><td><a href="#m18">checkUsernameAndPassword</a></td><td rowspan="1">1642088752446</td><td rowspan="1">1030</td></tr><tr class="passedodd"><td><a href="#m19">createUser</a></td><td rowspan="1">1642088753477</td><td rowspan="1">978</td></tr><tr class="passedodd"><td><a href="#m20">getAllUsers</a></td><td rowspan="1">1642088754455</td><td rowspan="1">495</td></tr><tr class="passedodd"><td><a href="#m21">getUserClaimsByUser</a></td><td rowspan="1">1642088754951</td><td rowspan="1">500</td></tr><tr class="passedodd"><td><a href="#m22">getUserImage</a></td><td rowspan="1">1642088757434</td><td rowspan="1">2693</td></tr><tr class="passedodd"><td><a href="#m23">insertUserImage</a></td><td rowspan="1">1642088756439</td><td rowspan="1">995</td></tr><tr class="passedodd"><td><a href="#m24">selectUserById</a></td><td rowspan="1">1642088755452</td><td rowspan="1">486</td></tr><tr class="passedodd"><td><a href="#m25">selectUserByIdFail</a></td><td rowspan="1">1642088755939</td><td rowspan="1">499</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">Service &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">com.shield.tests.service.ClaimServiceMockitoTest</td><td><a href="#m26">approveClaimServiceMock</a></td><td rowspan="1">1642088763752</td><td rowspan="1">20</td></tr><tr class="passedeven"><td><a href="#m27">createClaimServiceMock</a></td><td rowspan="1">1642088763772</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m28">denyClaimServiceMock</a></td><td rowspan="1">1642088763774</td><td rowspan="1">0</td></tr><tr class="passedeven"><td><a href="#m29">getClaimServiceByIdMock</a></td><td rowspan="1">1642088763774</td><td rowspan="1">1</td></tr><tr class="passedodd"><td rowspan="8">com.shield.tests.service.ClaimServiceTests</td><td><a href="#m30">badClaimIdForApproveClaimService</a></td><td rowspan="1">1642088763775</td><td rowspan="1">995</td></tr><tr class="passedodd"><td><a href="#m31">badClaimIdForDenyClaimService</a></td><td rowspan="1">1642088764771</td><td rowspan="1">1321</td></tr><tr class="passedodd"><td><a href="#m32">badClaimIdForGetClaimService</a></td><td rowspan="1">1642088766092</td><td rowspan="1">487</td></tr><tr class="passedodd"><td><a href="#m33">badEmployeeIdForCreateClaimService</a></td><td rowspan="1">1642088766579</td><td rowspan="1">481</td></tr><tr class="passedodd"><td><a href="#m34">badUserIdForCreateClaimService</a></td><td rowspan="1">1642088767061</td><td rowspan="1">959</td></tr><tr class="passedodd"><td><a href="#m35">commentTooLongForApproveClaimService</a></td><td rowspan="1">1642088768021</td><td rowspan="1">0</td></tr><tr class="passedodd"><td><a href="#m36">commentTooLongForDenyClaimService</a></td><td rowspan="1">1642088768021</td><td rowspan="1">0</td></tr><tr class="passedodd"><td><a href="#m37">negativeAmountForCreateClaimService</a></td><td rowspan="1">1642088768021</td><td rowspan="1">1008</td></tr><tr class="passedeven"><td rowspan="2">com.shield.tests.service.DebriefServiceMockitoTest</td><td><a href="#m38">createDebriefServiceMock</a></td><td rowspan="1">1642088769037</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m39">mockGetDebriefServiceById</a></td><td rowspan="1">1642088769038</td><td rowspan="1">1</td></tr><tr class="passedodd"><td rowspan="1">com.shield.tests.service.DebriefServiceTests</td><td><a href="#m40">badIdForcreateDebriefService</a></td><td rowspan="1">1642088769039</td><td rowspan="1">509</td></tr><tr class="passedeven"><td rowspan="6">com.shield.tests.service.EmployeeServiceMockitoTests</td><td><a href="#m41">MockGetAgentDebriefingsService</a></td><td rowspan="1">1642088769549</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m42">mockGetAllAgentDebriefingsService</a></td><td rowspan="1">1642088769550</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m43">mockGetEmployeeImageService</a></td><td rowspan="1">1642088769551</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m44">mockGetEmployeeServiceById</a></td><td rowspan="1">1642088769552</td><td rowspan="1">0</td></tr><tr class="passedeven"><td><a href="#m45">mockGetUserClaimsByAgentService</a></td><td rowspan="1">1642088769552</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m46">mockInsertEmployeeImageService</a></td><td rowspan="1">1642088769553</td><td rowspan="1">1</td></tr><tr class="passedodd"><td rowspan="10">com.shield.tests.service.EmployeeServiceTests</td><td><a href="#m47">badAgentGetAgentDebriefingsService</a></td><td rowspan="1">1642088769555</td><td rowspan="1">479</td></tr><tr class="passedodd"><td><a href="#m48">badAgentGetUserClaimsByAgentService</a></td><td rowspan="1">1642088770035</td><td rowspan="1">497</td></tr><tr class="passedodd"><td><a href="#m49">badHandlerForGetAllClaims</a></td><td rowspan="1">1642088770532</td><td rowspan="1">492</td></tr><tr class="passedodd"><td><a href="#m50">badHandlerGetAllAgentDebriefingsService</a></td><td rowspan="1">1642088771024</td><td rowspan="1">479</td></tr><tr class="passedodd"><td><a href="#m51">badIdForGetAgentDebriefingsService</a></td><td rowspan="1">1642088771504</td><td rowspan="1">481</td></tr><tr class="passedodd"><td><a href="#m52">badIdForGetAllAgentDebriefingsService</a></td><td rowspan="1">1642088771985</td><td rowspan="1">482</td></tr><tr class="passedodd"><td><a href="#m53">badIdForGetAllClaims</a></td><td rowspan="1">1642088772468</td><td rowspan="1">489</td></tr><tr class="passedodd"><td><a href="#m54">badIdForGetUserClaimsByAgentService</a></td><td rowspan="1">1642088772957</td><td rowspan="1">482</td></tr><tr class="passedodd"><td><a href="#m55">badIdGetEmployeeImageService</a></td><td rowspan="1">1642088773439</td><td rowspan="1">482</td></tr><tr class="passedodd"><td><a href="#m56">badIdInsertEmployeeImageService</a></td><td rowspan="1">1642088773922</td><td rowspan="1">486</td></tr><tr class="passedeven"><td rowspan="8">com.shield.tests.service.UserServiceMockitoTest</td><td><a href="#m57">checkUsernameAndPasswordServiceMock</a></td><td rowspan="1">1642088774409</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m58">checkUsernameAndPasswordServiceSadPasswordMock</a></td><td rowspan="1">1642088774410</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m59">checkUsernameAndPasswordServiceSadUsernameMock</a></td><td rowspan="1">1642088774411</td><td rowspan="1">0</td></tr><tr class="passedeven"><td><a href="#m60">createUserServiceMock</a></td><td rowspan="1">1642088774411</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m61">getAllClaimsByUserIdServiceMock</a></td><td rowspan="1">1642088774413</td><td rowspan="1">0</td></tr><tr class="passedeven"><td><a href="#m62">getAllUsersServiceMock</a></td><td rowspan="1">1642088774414</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m63">getUserServiceByIdMock</a></td><td rowspan="1">1642088774415</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m64">getUserServiceByIdSadMock</a></td><td rowspan="1">1642088774417</td><td rowspan="1">1</td></tr><tr class="passedodd"><td rowspan="8">com.shield.tests.service.UserServiceTests</td><td><a href="#m65">badIdForGetUserClaimsByUserService</a></td><td rowspan="1">1642088774419</td><td rowspan="1">492</td></tr><tr class="passedodd"><td><a href="#m66">badIdGetUserImageService</a></td><td rowspan="1">1642088774911</td><td rowspan="1">517</td></tr><tr class="passedodd"><td><a href="#m67">badIdInsertUserImageService</a></td><td rowspan="1">1642088775429</td><td rowspan="1">478</td></tr><tr class="passedodd"><td><a href="#m68">badPasswordForCheckingLogin</a></td><td rowspan="1">1642088775907</td><td rowspan="1">501</td></tr><tr class="passedodd"><td><a href="#m69">badUserIdForGettingUser</a></td><td rowspan="1">1642088776408</td><td rowspan="1">495</td></tr><tr class="passedodd"><td><a href="#m70">badUsernameForCheckingLogin</a></td><td rowspan="1">1642088776903</td><td rowspan="1">484</td></tr><tr class="passedodd"><td><a href="#m71">duplicateEmployeeUsernameForCreateUserService</a></td><td rowspan="1">1642088777387</td><td rowspan="1">995</td></tr><tr class="passedodd"><td><a href="#m72">duplicateUserUsernameForCreateUserService</a></td><td rowspan="1">1642088778382</td><td rowspan="1">488</td></tr></tbody>
->>>>>>> main
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Tests</th></tr></tbody><tbody id="t0"><tr><th colspan="4">DAO &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">com.shield.tests.dao.ClaimDAOTests</td><td><a href="#m0">ApproveClaimById</a></td><td rowspan="1">1642619888852</td><td rowspan="1">1439</td></tr><tr class="passedeven"><td><a href="#m1">DenyClaimById</a></td><td rowspan="1">1642619890292</td><td rowspan="1">1468</td></tr><tr class="passedeven"><td><a href="#m2">createClaimById</a></td><td rowspan="1">1642619887879</td><td rowspan="1">972</td></tr><tr class="passedeven"><td><a href="#m3">selectClaimById</a></td><td rowspan="1">1642619886892</td><td rowspan="1">985</td></tr><tr class="passedodd"><td rowspan="2">com.shield.tests.dao.DebriefDAOTests</td><td><a href="#m4">createDebrief</a></td><td rowspan="1">1642619893249</td><td rowspan="1">1001</td></tr><tr class="passedodd"><td><a href="#m5">getDebrief</a></td><td rowspan="1">1642619894251</td><td rowspan="1">963</td></tr><tr class="passedeven"><td rowspan="10">com.shield.tests.dao.EmployeeDAOTests</td><td><a href="#m6">checkEmployeeImage</a></td><td rowspan="1">1642619896666</td><td rowspan="1">2428</td></tr><tr class="passedeven"><td><a href="#m7">getAgentDebriefings</a></td><td rowspan="1">1642619899094</td><td rowspan="1">944</td></tr><tr class="passedeven"><td><a href="#m8">getAllAgentDebriefings</a></td><td rowspan="1">1642619900038</td><td rowspan="1">1487</td></tr><tr class="passedeven"><td><a href="#m9">getAllClaims</a></td><td rowspan="1">1642619901525</td><td rowspan="1">1465</td></tr><tr class="passedeven"><td><a href="#m10">getEmployeeById</a></td><td rowspan="1">1642619902991</td><td rowspan="1">477</td></tr><tr class="passedeven"><td><a href="#m11">getEmployeeImage</a></td><td rowspan="1">1642619903468</td><td rowspan="1">2448</td></tr><tr class="passedeven"><td><a href="#m12">getLeaderboard</a></td><td rowspan="1">1642619905916</td><td rowspan="1">503</td></tr><tr class="passedeven"><td><a href="#m13">getUserClaimsByAgent</a></td><td rowspan="1">1642619906419</td><td rowspan="1">994</td></tr><tr class="passedeven"><td><a href="#m14">insertEmployeeImage</a></td><td rowspan="1">1642619907414</td><td rowspan="1">957</td></tr><tr class="passedeven"><td><a href="#m15">loginEmployee</a></td><td rowspan="1">1642619908372</td><td rowspan="1">945</td></tr><tr class="passedodd"><td rowspan="10">com.shield.tests.dao.UserDAOTests</td><td><a href="#m16">checkUserByUsername</a></td><td rowspan="1">1642619910792</td><td rowspan="1">1157</td></tr><tr class="passedodd"><td><a href="#m17">checkUserImage</a></td><td rowspan="1">1642619919349</td><td rowspan="1">2440</td></tr><tr class="passedodd"><td><a href="#m18">checkUsernameAndPassword</a></td><td rowspan="1">1642619911949</td><td rowspan="1">1016</td></tr><tr class="passedodd"><td><a href="#m19">createUser</a></td><td rowspan="1">1642619912965</td><td rowspan="1">957</td></tr><tr class="passedodd"><td><a href="#m20">getAllUsers</a></td><td rowspan="1">1642619913922</td><td rowspan="1">483</td></tr><tr class="passedodd"><td><a href="#m21">getUserClaimsByUser</a></td><td rowspan="1">1642619914406</td><td rowspan="1">495</td></tr><tr class="passedodd"><td><a href="#m22">getUserImage</a></td><td rowspan="1">1642619916841</td><td rowspan="1">2508</td></tr><tr class="passedodd"><td><a href="#m23">insertUserImage</a></td><td rowspan="1">1642619915861</td><td rowspan="1">980</td></tr><tr class="passedodd"><td><a href="#m24">selectUserById</a></td><td rowspan="1">1642619914901</td><td rowspan="1">486</td></tr><tr class="passedodd"><td><a href="#m25">selectUserByIdFail</a></td><td rowspan="1">1642619915387</td><td rowspan="1">473</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Service &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">com.shield.tests.service.ClaimServiceMockitoTest</td><td><a href="#m26">approveClaimServiceMock</a></td><td rowspan="1">1642619922827</td><td rowspan="1">18</td></tr><tr class="passedeven"><td><a href="#m27">createClaimServiceMock</a></td><td rowspan="1">1642619922845</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m28">denyClaimServiceMock</a></td><td rowspan="1">1642619922846</td><td rowspan="1">0</td></tr><tr class="passedeven"><td><a href="#m29">getClaimServiceByIdMock</a></td><td rowspan="1">1642619922847</td><td rowspan="1">0</td></tr><tr class="passedodd"><td rowspan="8">com.shield.tests.service.ClaimServiceTests</td><td><a href="#m30">badClaimIdForApproveClaimService</a></td><td rowspan="1">1642619922847</td><td rowspan="1">974</td></tr><tr class="passedodd"><td><a href="#m31">badClaimIdForDenyClaimService</a></td><td rowspan="1">1642619923821</td><td rowspan="1">965</td></tr><tr class="passedodd"><td><a href="#m32">badClaimIdForGetClaimService</a></td><td rowspan="1">1642619924787</td><td rowspan="1">495</td></tr><tr class="passedodd"><td><a href="#m33">badEmployeeIdForCreateClaimService</a></td><td rowspan="1">1642619925283</td><td rowspan="1">494</td></tr><tr class="passedodd"><td><a href="#m34">badUserIdForCreateClaimService</a></td><td rowspan="1">1642619925778</td><td rowspan="1">1000</td></tr><tr class="passedodd"><td><a href="#m35">commentTooLongForApproveClaimService</a></td><td rowspan="1">1642619926779</td><td rowspan="1">1</td></tr><tr class="passedodd"><td><a href="#m36">commentTooLongForDenyClaimService</a></td><td rowspan="1">1642619926780</td><td rowspan="1">0</td></tr><tr class="passedodd"><td><a href="#m37">negativeAmountForCreateClaimService</a></td><td rowspan="1">1642619926780</td><td rowspan="1">1001</td></tr><tr class="passedeven"><td rowspan="2">com.shield.tests.service.DebriefServiceMockitoTest</td><td><a href="#m38">createDebriefServiceMock</a></td><td rowspan="1">1642619927789</td><td rowspan="1">0</td></tr><tr class="passedeven"><td><a href="#m39">mockGetDebriefServiceById</a></td><td rowspan="1">1642619927790</td><td rowspan="1">0</td></tr><tr class="passedodd"><td rowspan="1">com.shield.tests.service.DebriefServiceTests</td><td><a href="#m40">badIdForcreateDebriefService</a></td><td rowspan="1">1642619927791</td><td rowspan="1">475</td></tr><tr class="passedeven"><td rowspan="6">com.shield.tests.service.EmployeeServiceMockitoTests</td><td><a href="#m41">MockGetAgentDebriefingsService</a></td><td rowspan="1">1642619928267</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m42">mockGetAllAgentDebriefingsService</a></td><td rowspan="1">1642619928268</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m43">mockGetEmployeeImageService</a></td><td rowspan="1">1642619928269</td><td rowspan="1">0</td></tr><tr class="passedeven"><td><a href="#m44">mockGetEmployeeServiceById</a></td><td rowspan="1">1642619928270</td><td rowspan="1">0</td></tr><tr class="passedeven"><td><a href="#m45">mockGetUserClaimsByAgentService</a></td><td rowspan="1">1642619928270</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m46">mockInsertEmployeeImageService</a></td><td rowspan="1">1642619928271</td><td rowspan="1">1</td></tr><tr class="passedodd"><td rowspan="10">com.shield.tests.service.EmployeeServiceTests</td><td><a href="#m47">badAgentGetAgentDebriefingsService</a></td><td rowspan="1">1642619928272</td><td rowspan="1">477</td></tr><tr class="passedodd"><td><a href="#m48">badAgentGetUserClaimsByAgentService</a></td><td rowspan="1">1642619928749</td><td rowspan="1">479</td></tr><tr class="passedodd"><td><a href="#m49">badHandlerForGetAllClaims</a></td><td rowspan="1">1642619929229</td><td rowspan="1">484</td></tr><tr class="passedodd"><td><a href="#m50">badHandlerGetAllAgentDebriefingsService</a></td><td rowspan="1">1642619929713</td><td rowspan="1">488</td></tr><tr class="passedodd"><td><a href="#m51">badIdForGetAgentDebriefingsService</a></td><td rowspan="1">1642619930201</td><td rowspan="1">485</td></tr><tr class="passedodd"><td><a href="#m52">badIdForGetAllAgentDebriefingsService</a></td><td rowspan="1">1642619930687</td><td rowspan="1">496</td></tr><tr class="passedodd"><td><a href="#m53">badIdForGetAllClaims</a></td><td rowspan="1">1642619931184</td><td rowspan="1">485</td></tr><tr class="passedodd"><td><a href="#m54">badIdForGetUserClaimsByAgentService</a></td><td rowspan="1">1642619931669</td><td rowspan="1">492</td></tr><tr class="passedodd"><td><a href="#m55">badIdGetEmployeeImageService</a></td><td rowspan="1">1642619932162</td><td rowspan="1">490</td></tr><tr class="passedodd"><td><a href="#m56">badIdInsertEmployeeImageService</a></td><td rowspan="1">1642619932653</td><td rowspan="1">473</td></tr><tr class="passedeven"><td rowspan="8">com.shield.tests.service.UserServiceMockitoTest</td><td><a href="#m57">checkUsernameAndPasswordServiceMock</a></td><td rowspan="1">1642619933127</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m58">checkUsernameAndPasswordServiceSadPasswordMock</a></td><td rowspan="1">1642619933128</td><td rowspan="1">0</td></tr><tr class="passedeven"><td><a href="#m59">checkUsernameAndPasswordServiceSadUsernameMock</a></td><td rowspan="1">1642619933128</td><td rowspan="1">0</td></tr><tr class="passedeven"><td><a href="#m60">createUserServiceMock</a></td><td rowspan="1">1642619933128</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m61">getAllClaimsByUserIdServiceMock</a></td><td rowspan="1">1642619933129</td><td rowspan="1">0</td></tr><tr class="passedeven"><td><a href="#m62">getAllUsersServiceMock</a></td><td rowspan="1">1642619933129</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m63">getUserServiceByIdMock</a></td><td rowspan="1">1642619933130</td><td rowspan="1">0</td></tr><tr class="passedeven"><td><a href="#m64">getUserServiceByIdSadMock</a></td><td rowspan="1">1642619933130</td><td rowspan="1">2</td></tr><tr class="passedodd"><td rowspan="8">com.shield.tests.service.UserServiceTests</td><td><a href="#m65">badIdForGetUserClaimsByUserService</a></td><td rowspan="1">1642619933133</td><td rowspan="1">475</td></tr><tr class="passedodd"><td><a href="#m66">badIdGetUserImageService</a></td><td rowspan="1">1642619933609</td><td rowspan="1">490</td></tr><tr class="passedodd"><td><a href="#m67">badIdInsertUserImageService</a></td><td rowspan="1">1642619934099</td><td rowspan="1">525</td></tr><tr class="passedodd"><td><a href="#m68">badPasswordForCheckingLogin</a></td><td rowspan="1">1642619934624</td><td rowspan="1">473</td></tr><tr class="passedodd"><td><a href="#m69">badUserIdForGettingUser</a></td><td rowspan="1">1642619935098</td><td rowspan="1">505</td></tr><tr class="passedodd"><td><a href="#m70">badUsernameForCheckingLogin</a></td><td rowspan="1">1642619935603</td><td rowspan="1">475</td></tr><tr class="passedodd"><td><a href="#m71">duplicateEmployeeUsernameForCreateUserService</a></td><td rowspan="1">1642619936078</td><td rowspan="1">962</td></tr><tr class="passedodd"><td><a href="#m72">duplicateUserUsernameForCreateUserService</a></td><td rowspan="1">1642619937041</td><td rowspan="1">473</td></tr></tbody>
 </table>
 <h2>DAO</h2><h3 id="m0">com.shield.tests.dao.ClaimDAOTests#ApproveClaimById</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m1">com.shield.tests.dao.ClaimDAOTests#DenyClaimById</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
@@ -41,16 +32,6 @@
 <h3 id="m13">com.shield.tests.dao.EmployeeDAOTests#getUserClaimsByAgent</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m14">com.shield.tests.dao.EmployeeDAOTests#insertEmployeeImage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m15">com.shield.tests.dao.EmployeeDAOTests#loginEmployee</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<<<<<<< HEAD
-<h3 id="m16">com.shield.tests.dao.UserDAOTests#checkUsernameAndPassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m17">com.shield.tests.dao.UserDAOTests#createUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m18">com.shield.tests.dao.UserDAOTests#getAllUsers</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m19">com.shield.tests.dao.UserDAOTests#getUserClaimsByUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m20">com.shield.tests.dao.UserDAOTests#selectUserById</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m21">com.shield.tests.dao.UserDAOTests#selectUserByIdFail</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">com.shield.customexceptions.UserNotFound: User not found
-	at com.shield.daos.user.UserDAOImp.getUserById(UserDAOImp.java:50)
-	at com.shield.tests.dao.UserDAOTests.selectUserByIdFail(UserDAOTests.java:42)
-=======
 <h3 id="m16">com.shield.tests.dao.UserDAOTests#checkUserByUsername</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m17">com.shield.tests.dao.UserDAOTests#checkUserImage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m18">com.shield.tests.dao.UserDAOTests#checkUsernameAndPassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
@@ -63,42 +44,29 @@
 <h3 id="m25">com.shield.tests.dao.UserDAOTests#selectUserByIdFail</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">com.shield.customexceptions.UserNotFound: User not found
 	at com.shield.daos.user.UserDAOImp.getUserById(UserDAOImp.java:51)
 	at com.shield.tests.dao.UserDAOTests.selectUserByIdFail(UserDAOTests.java:43)
->>>>>>> main
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
 ... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<<<<<<< HEAD
-<h2>Service</h2><h3 id="m22">com.shield.tests.service.ClaimServiceTests#badClaimIdForApproveClaimService</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">com.shield.customexceptions.ClaimNotFound: Claim not found
-=======
 <h2>Service</h2><h3 id="m26">com.shield.tests.service.ClaimServiceMockitoTest#approveClaimServiceMock</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m27">com.shield.tests.service.ClaimServiceMockitoTest#createClaimServiceMock</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m28">com.shield.tests.service.ClaimServiceMockitoTest#denyClaimServiceMock</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m29">com.shield.tests.service.ClaimServiceMockitoTest#getClaimServiceByIdMock</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m30">com.shield.tests.service.ClaimServiceTests#badClaimIdForApproveClaimService</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">com.shield.customexceptions.ClaimNotFound: Claim not found
->>>>>>> main
 	at com.shield.services.claim.ClaimServiceImp.approveClaimService(ClaimServiceImp.java:67)
 	at com.shield.tests.service.ClaimServiceTests.badClaimIdForApproveClaimService(ClaimServiceTests.java:55)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
 ... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<<<<<<< HEAD
-<h3 id="m23">com.shield.tests.service.ClaimServiceTests#badClaimIdForDenyClaimService</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">com.shield.customexceptions.ClaimNotFound: Claim not found
-=======
 <h3 id="m31">com.shield.tests.service.ClaimServiceTests#badClaimIdForDenyClaimService</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">com.shield.customexceptions.ClaimNotFound: Claim not found
->>>>>>> main
 	at com.shield.services.claim.ClaimServiceImp.denyClaimService(ClaimServiceImp.java:82)
 	at com.shield.tests.service.ClaimServiceTests.badClaimIdForDenyClaimService(ClaimServiceTests.java:76)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
 ... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<<<<<<< HEAD
-<h3 id="m24">com.shield.tests.service.ClaimServiceTests#badClaimIdForGetClaimService</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">com.shield.customexceptions.ClaimNotFound: Claim not found
-=======
 <h3 id="m32">com.shield.tests.service.ClaimServiceTests#badClaimIdForGetClaimService</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">com.shield.customexceptions.ClaimNotFound: Claim not found
->>>>>>> main
 	at com.shield.daos.claim.ClaimDAOImp.getClaimById(ClaimDAOImp.java:54)
 	at com.shield.services.claim.ClaimServiceImp.getClaimByIdService(ClaimServiceImp.java:25)
 	at com.shield.tests.service.ClaimServiceTests.badClaimIdForGetClaimService(ClaimServiceTests.java:28)
@@ -106,11 +74,7 @@
 	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
 ... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<<<<<<< HEAD
-<h3 id="m25">com.shield.tests.service.ClaimServiceTests#badEmployeeIdForCreateClaimService</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">com.shield.customexceptions.EmployeeNotFound: The employee was not found.
-=======
 <h3 id="m33">com.shield.tests.service.ClaimServiceTests#badEmployeeIdForCreateClaimService</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">com.shield.customexceptions.EmployeeNotFound: The employee was not found.
->>>>>>> main
 	at com.shield.daos.employee.EmployeeDAOImp.getEmployeeById(EmployeeDAOImp.java:69)
 	at com.shield.services.claim.ClaimServiceImp.createClaimService(ClaimServiceImp.java:31)
 	at com.shield.tests.service.ClaimServiceTests.badEmployeeIdForCreateClaimService(ClaimServiceTests.java:42)
@@ -118,59 +82,38 @@
 	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
 ... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<<<<<<< HEAD
-<h3 id="m26">com.shield.tests.service.ClaimServiceTests#badUserIdForCreateClaimService</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">com.shield.customexceptions.UserNotFound: User not found
-	at com.shield.daos.user.UserDAOImp.getUserById(UserDAOImp.java:50)
-=======
 <h3 id="m34">com.shield.tests.service.ClaimServiceTests#badUserIdForCreateClaimService</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">com.shield.customexceptions.UserNotFound: User not found
 	at com.shield.daos.user.UserDAOImp.getUserById(UserDAOImp.java:51)
->>>>>>> main
 	at com.shield.services.claim.ClaimServiceImp.createClaimService(ClaimServiceImp.java:32)
 	at com.shield.tests.service.ClaimServiceTests.badUserIdForCreateClaimService(ClaimServiceTests.java:35)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
 ... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<<<<<<< HEAD
-<h3 id="m27">com.shield.tests.service.ClaimServiceTests#commentTooLongForApproveClaimService</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">com.shield.customexceptions.CommentIsTooManyCharacters: Comment is too long
-=======
 <h3 id="m35">com.shield.tests.service.ClaimServiceTests#commentTooLongForApproveClaimService</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">com.shield.customexceptions.CommentIsTooManyCharacters: Comment is too long
->>>>>>> main
 	at com.shield.services.claim.ClaimServiceImp.approveClaimService(ClaimServiceImp.java:63)
 	at com.shield.tests.service.ClaimServiceTests.commentTooLongForApproveClaimService(ClaimServiceTests.java:62)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
 ... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<<<<<<< HEAD
-<h3 id="m28">com.shield.tests.service.ClaimServiceTests#commentTooLongForDenyClaimService</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">com.shield.customexceptions.CommentIsTooManyCharacters: Comment is too long
-=======
 <h3 id="m36">com.shield.tests.service.ClaimServiceTests#commentTooLongForDenyClaimService</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">com.shield.customexceptions.CommentIsTooManyCharacters: Comment is too long
->>>>>>> main
 	at com.shield.services.claim.ClaimServiceImp.approveClaimService(ClaimServiceImp.java:63)
 	at com.shield.tests.service.ClaimServiceTests.commentTooLongForDenyClaimService(ClaimServiceTests.java:69)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
 ... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<<<<<<< HEAD
-<h3 id="m29">com.shield.tests.service.ClaimServiceTests#negativeAmountForCreateClaimService</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">com.shield.customexceptions.NegativeClaimAmount: Claim must be a positive number
-=======
 <h3 id="m37">com.shield.tests.service.ClaimServiceTests#negativeAmountForCreateClaimService</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">com.shield.customexceptions.NegativeClaimAmount: Claim must be a positive number
->>>>>>> main
 	at com.shield.services.claim.ClaimServiceImp.createClaimService(ClaimServiceImp.java:39)
 	at com.shield.tests.service.ClaimServiceTests.negativeAmountForCreateClaimService(ClaimServiceTests.java:48)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
 ... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<<<<<<< HEAD
-<h3 id="m30">com.shield.tests.service.DebriefServiceTests#badIdForcreateDebriefService</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">com.shield.customexceptions.EmployeeNotFound: The employee was not found.
-=======
 <h3 id="m38">com.shield.tests.service.DebriefServiceMockitoTest#createDebriefServiceMock</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m39">com.shield.tests.service.DebriefServiceMockitoTest#mockGetDebriefServiceById</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m40">com.shield.tests.service.DebriefServiceTests#badIdForcreateDebriefService</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">com.shield.customexceptions.EmployeeNotFound: The employee was not found.
->>>>>>> main
 	at com.shield.daos.employee.EmployeeDAOImp.getEmployeeById(EmployeeDAOImp.java:69)
 	at com.shield.services.debrief.DebriefServiceImp.createDebriefService(DebriefServiceImp.java:27)
 	at com.shield.tests.service.DebriefServiceTests.badIdForcreateDebriefService(DebriefServiceTests.java:22)
@@ -178,15 +121,6 @@
 	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
 ... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<<<<<<< HEAD
-<h3 id="m31">com.shield.tests.service.EmployeeServiceMockitoTests#MockGetAgentDebriefingsService</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m32">com.shield.tests.service.EmployeeServiceMockitoTests#mockGetAllAgentDebriefingsService</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m33">com.shield.tests.service.EmployeeServiceMockitoTests#mockGetEmployeeImageService</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m34">com.shield.tests.service.EmployeeServiceMockitoTests#mockGetEmployeeServiceById</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m35">com.shield.tests.service.EmployeeServiceMockitoTests#mockGetUserClaimsByAgentService</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m36">com.shield.tests.service.EmployeeServiceMockitoTests#mockInsertEmployeeImageService</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m37">com.shield.tests.service.EmployeeServiceTests#badAgentGetAgentDebriefingsService</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">com.shield.customexceptions.EmployeeIsNotAgent: That employee is not an agent.
-=======
 <h3 id="m41">com.shield.tests.service.EmployeeServiceMockitoTests#MockGetAgentDebriefingsService</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m42">com.shield.tests.service.EmployeeServiceMockitoTests#mockGetAllAgentDebriefingsService</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m43">com.shield.tests.service.EmployeeServiceMockitoTests#mockGetEmployeeImageService</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
@@ -194,51 +128,34 @@
 <h3 id="m45">com.shield.tests.service.EmployeeServiceMockitoTests#mockGetUserClaimsByAgentService</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m46">com.shield.tests.service.EmployeeServiceMockitoTests#mockInsertEmployeeImageService</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m47">com.shield.tests.service.EmployeeServiceTests#badAgentGetAgentDebriefingsService</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">com.shield.customexceptions.EmployeeIsNotAgent: That employee is not an agent.
->>>>>>> main
 	at com.shield.services.employee.EmployeeServiceImp.getAgentDebriefingsService(EmployeeServiceImp.java:83)
 	at com.shield.tests.service.EmployeeServiceTests.badAgentGetAgentDebriefingsService(EmployeeServiceTests.java:71)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
 ... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<<<<<<< HEAD
-<h3 id="m38">com.shield.tests.service.EmployeeServiceTests#badAgentGetUserClaimsByAgentService</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">com.shield.customexceptions.EmployeeIsNotAgent: That employee is not an agent.
-=======
 <h3 id="m48">com.shield.tests.service.EmployeeServiceTests#badAgentGetUserClaimsByAgentService</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">com.shield.customexceptions.EmployeeIsNotAgent: That employee is not an agent.
->>>>>>> main
 	at com.shield.services.employee.EmployeeServiceImp.getUserClaimsByAgentService(EmployeeServiceImp.java:57)
 	at com.shield.tests.service.EmployeeServiceTests.badAgentGetUserClaimsByAgentService(EmployeeServiceTests.java:66)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
 ... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<<<<<<< HEAD
-<h3 id="m39">com.shield.tests.service.EmployeeServiceTests#badHandlerForGetAllClaims</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">com.shield.customexceptions.EmployeeIsNotHandler: That employee is not a handler.
-=======
 <h3 id="m49">com.shield.tests.service.EmployeeServiceTests#badHandlerForGetAllClaims</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">com.shield.customexceptions.EmployeeIsNotHandler: That employee is not a handler.
->>>>>>> main
 	at com.shield.services.employee.EmployeeServiceImp.getAllClaimsService(EmployeeServiceImp.java:42)
 	at com.shield.tests.service.EmployeeServiceTests.badHandlerForGetAllClaims(EmployeeServiceTests.java:54)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
 ... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<<<<<<< HEAD
-<h3 id="m40">com.shield.tests.service.EmployeeServiceTests#badHandlerGetAllAgentDebriefingsService</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">com.shield.customexceptions.EmployeeIsNotHandler: That employee is not a handler.
-=======
 <h3 id="m50">com.shield.tests.service.EmployeeServiceTests#badHandlerGetAllAgentDebriefingsService</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">com.shield.customexceptions.EmployeeIsNotHandler: That employee is not a handler.
->>>>>>> main
 	at com.shield.services.employee.EmployeeServiceImp.getAllAgentDebriefingsService(EmployeeServiceImp.java:70)
 	at com.shield.tests.service.EmployeeServiceTests.badHandlerGetAllAgentDebriefingsService(EmployeeServiceTests.java:59)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
 ... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<<<<<<< HEAD
-<h3 id="m41">com.shield.tests.service.EmployeeServiceTests#badIdForGetAgentDebriefingsService</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">com.shield.customexceptions.EmployeeNotFound: The employee was not found.
-=======
 <h3 id="m51">com.shield.tests.service.EmployeeServiceTests#badIdForGetAgentDebriefingsService</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">com.shield.customexceptions.EmployeeNotFound: The employee was not found.
->>>>>>> main
 	at com.shield.daos.employee.EmployeeDAOImp.getEmployeeById(EmployeeDAOImp.java:69)
 	at com.shield.services.employee.EmployeeServiceImp.getAgentDebriefingsService(EmployeeServiceImp.java:77)
 	at com.shield.tests.service.EmployeeServiceTests.badIdForGetAgentDebriefingsService(EmployeeServiceTests.java:38)
@@ -246,11 +163,7 @@
 	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
 ... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<<<<<<< HEAD
-<h3 id="m42">com.shield.tests.service.EmployeeServiceTests#badIdForGetAllAgentDebriefingsService</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">com.shield.customexceptions.EmployeeNotFound: The employee was not found.
-=======
 <h3 id="m52">com.shield.tests.service.EmployeeServiceTests#badIdForGetAllAgentDebriefingsService</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">com.shield.customexceptions.EmployeeNotFound: The employee was not found.
->>>>>>> main
 	at com.shield.daos.employee.EmployeeDAOImp.getEmployeeById(EmployeeDAOImp.java:69)
 	at com.shield.services.employee.EmployeeServiceImp.getAllAgentDebriefingsService(EmployeeServiceImp.java:64)
 	at com.shield.tests.service.EmployeeServiceTests.badIdForGetAllAgentDebriefingsService(EmployeeServiceTests.java:33)
@@ -258,11 +171,7 @@
 	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
 ... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<<<<<<< HEAD
-<h3 id="m43">com.shield.tests.service.EmployeeServiceTests#badIdForGetAllClaims</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">com.shield.customexceptions.EmployeeNotFound: The employee was not found.
-=======
 <h3 id="m53">com.shield.tests.service.EmployeeServiceTests#badIdForGetAllClaims</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">com.shield.customexceptions.EmployeeNotFound: The employee was not found.
->>>>>>> main
 	at com.shield.daos.employee.EmployeeDAOImp.getEmployeeById(EmployeeDAOImp.java:69)
 	at com.shield.services.employee.EmployeeServiceImp.getAllClaimsService(EmployeeServiceImp.java:36)
 	at com.shield.tests.service.EmployeeServiceTests.badIdForGetAllClaims(EmployeeServiceTests.java:23)
@@ -270,11 +179,7 @@
 	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
 ... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<<<<<<< HEAD
-<h3 id="m44">com.shield.tests.service.EmployeeServiceTests#badIdForGetUserClaimsByAgentService</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">com.shield.customexceptions.EmployeeNotFound: The employee was not found.
-=======
 <h3 id="m54">com.shield.tests.service.EmployeeServiceTests#badIdForGetUserClaimsByAgentService</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">com.shield.customexceptions.EmployeeNotFound: The employee was not found.
->>>>>>> main
 	at com.shield.daos.employee.EmployeeDAOImp.getEmployeeById(EmployeeDAOImp.java:69)
 	at com.shield.services.employee.EmployeeServiceImp.getUserClaimsByAgentService(EmployeeServiceImp.java:51)
 	at com.shield.tests.service.EmployeeServiceTests.badIdForGetUserClaimsByAgentService(EmployeeServiceTests.java:28)
@@ -282,11 +187,7 @@
 	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
 ... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<<<<<<< HEAD
-<h3 id="m45">com.shield.tests.service.EmployeeServiceTests#badIdGetEmployeeImageService</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">com.shield.customexceptions.EmployeeNotFound: The employee was not found.
-=======
 <h3 id="m55">com.shield.tests.service.EmployeeServiceTests#badIdGetEmployeeImageService</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">com.shield.customexceptions.EmployeeNotFound: The employee was not found.
->>>>>>> main
 	at com.shield.daos.employee.EmployeeDAOImp.getEmployeeById(EmployeeDAOImp.java:69)
 	at com.shield.services.employee.EmployeeServiceImp.getAgentDebriefingsService(EmployeeServiceImp.java:77)
 	at com.shield.tests.service.EmployeeServiceTests.badIdGetEmployeeImageService(EmployeeServiceTests.java:48)
@@ -294,11 +195,7 @@
 	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
 ... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<<<<<<< HEAD
-<h3 id="m46">com.shield.tests.service.EmployeeServiceTests#badIdInsertEmployeeImageService</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">com.shield.customexceptions.EmployeeNotFound: The employee was not found.
-=======
 <h3 id="m56">com.shield.tests.service.EmployeeServiceTests#badIdInsertEmployeeImageService</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">com.shield.customexceptions.EmployeeNotFound: The employee was not found.
->>>>>>> main
 	at com.shield.daos.employee.EmployeeDAOImp.getEmployeeById(EmployeeDAOImp.java:69)
 	at com.shield.services.employee.EmployeeServiceImp.getAgentDebriefingsService(EmployeeServiceImp.java:77)
 	at com.shield.tests.service.EmployeeServiceTests.badIdInsertEmployeeImageService(EmployeeServiceTests.java:43)
@@ -306,43 +203,21 @@
 	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
 ... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<<<<<<< HEAD
-<h3 id="m47">com.shield.tests.service.UserServiceMockitoTest#checkUsernameAndPasswordServiceMock</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m48">com.shield.tests.service.UserServiceMockitoTest#checkUsernameAndPasswordServiceSadPasswordMock</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">com.shield.customexceptions.InvalidPassword: Invalid password
-	at com.shield.services.user.UserServicesImp.checkUserLoginService(UserServicesImp.java:62)
-	at com.shield.tests.service.UserServiceMockitoTest.checkUsernameAndPasswordServiceSadPasswordMock(UserServiceMockitoTest.java:113)
-=======
 <h3 id="m57">com.shield.tests.service.UserServiceMockitoTest#checkUsernameAndPasswordServiceMock</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m58">com.shield.tests.service.UserServiceMockitoTest#checkUsernameAndPasswordServiceSadPasswordMock</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">com.shield.customexceptions.InvalidPassword: Invalid password
 	at com.shield.services.user.UserServicesImp.checkUserLoginService(UserServicesImp.java:76)
 	at com.shield.tests.service.UserServiceMockitoTest.checkUsernameAndPasswordServiceSadPasswordMock(UserServiceMockitoTest.java:114)
->>>>>>> main
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
 ... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<<<<<<< HEAD
-<h3 id="m49">com.shield.tests.service.UserServiceMockitoTest#checkUsernameAndPasswordServiceSadUsernameMock</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">com.shield.customexceptions.InvalidUsername: Invalid username
-	at com.shield.services.user.UserServicesImp.checkUserLoginService(UserServicesImp.java:64)
-	at com.shield.tests.service.UserServiceMockitoTest.checkUsernameAndPasswordServiceSadUsernameMock(UserServiceMockitoTest.java:105)
-=======
 <h3 id="m59">com.shield.tests.service.UserServiceMockitoTest#checkUsernameAndPasswordServiceSadUsernameMock</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">com.shield.customexceptions.InvalidUsername: Invalid username
 	at com.shield.services.user.UserServicesImp.checkUserLoginService(UserServicesImp.java:78)
 	at com.shield.tests.service.UserServiceMockitoTest.checkUsernameAndPasswordServiceSadUsernameMock(UserServiceMockitoTest.java:106)
->>>>>>> main
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
 ... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<<<<<<< HEAD
-<h3 id="m50">com.shield.tests.service.UserServiceMockitoTest#createUserServiceMock</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m51">com.shield.tests.service.UserServiceMockitoTest#getAllClaimsByUserIdServiceMock</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m52">com.shield.tests.service.UserServiceMockitoTest#getAllUsersServiceMock</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m53">com.shield.tests.service.UserServiceMockitoTest#getUserServiceByIdMock</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m54">com.shield.tests.service.UserServiceMockitoTest#getUserServiceByIdSadMock</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">com.shield.customexceptions.UserNotFound: User not found
-	at com.shield.services.user.UserServicesImp.getUserByIdService(UserServicesImp.java:27)
-	at com.shield.tests.service.UserServiceMockitoTest.getUserServiceByIdSadMock(UserServiceMockitoTest.java:98)
-=======
 <h3 id="m60">com.shield.tests.service.UserServiceMockitoTest#createUserServiceMock</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m61">com.shield.tests.service.UserServiceMockitoTest#getAllClaimsByUserIdServiceMock</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m62">com.shield.tests.service.UserServiceMockitoTest#getAllUsersServiceMock</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
@@ -350,59 +225,34 @@
 <h3 id="m64">com.shield.tests.service.UserServiceMockitoTest#getUserServiceByIdSadMock</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">com.shield.customexceptions.UserNotFound: User not found
 	at com.shield.services.user.UserServicesImp.getUserByIdService(UserServicesImp.java:36)
 	at com.shield.tests.service.UserServiceMockitoTest.getUserServiceByIdSadMock(UserServiceMockitoTest.java:99)
->>>>>>> main
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
 ... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<<<<<<< HEAD
-<h3 id="m55">com.shield.tests.service.UserServiceTests#badIdForGetUserClaimsByUserService</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">com.shield.customexceptions.UserNotFound: User not found
-	at com.shield.daos.user.UserDAOImp.getUserById(UserDAOImp.java:50)
-	at com.shield.services.user.UserServicesImp.getUserClaimsByUserService(UserServicesImp.java:72)
-	at com.shield.tests.service.UserServiceTests.badIdForGetUserClaimsByUserService(UserServiceTests.java:41)
-=======
 <h3 id="m65">com.shield.tests.service.UserServiceTests#badIdForGetUserClaimsByUserService</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">com.shield.customexceptions.UserNotFound: User not found
 	at com.shield.daos.user.UserDAOImp.getUserById(UserDAOImp.java:51)
 	at com.shield.services.user.UserServicesImp.getUserClaimsByUserService(UserServicesImp.java:86)
 	at com.shield.tests.service.UserServiceTests.badIdForGetUserClaimsByUserService(UserServiceTests.java:49)
->>>>>>> main
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
 ... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<<<<<<< HEAD
-<h3 id="m56">com.shield.tests.service.UserServiceTests#badPasswordForCheckingLogin</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">com.shield.customexceptions.InvalidPassword: Invalid password
-	at com.shield.services.user.UserServicesImp.checkUserLoginService(UserServicesImp.java:62)
-	at com.shield.tests.service.UserServiceTests.badPasswordForCheckingLogin(UserServiceTests.java:36)
-=======
 <h3 id="m66">com.shield.tests.service.UserServiceTests#badIdGetUserImageService</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">com.shield.customexceptions.UserNotFound: User not found
 	at com.shield.daos.user.UserDAOImp.getUserById(UserDAOImp.java:51)
 	at com.shield.services.user.UserServicesImp.getUserImageService(UserServicesImp.java:104)
 	at com.shield.tests.service.UserServiceTests.badIdGetUserImageService(UserServiceTests.java:60)
->>>>>>> main
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
 ... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<<<<<<< HEAD
-<h3 id="m57">com.shield.tests.service.UserServiceTests#badUserIdForGettingUser</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">com.shield.customexceptions.UserNotFound: User not found
-	at com.shield.services.user.UserServicesImp.getUserByIdService(UserServicesImp.java:27)
-	at com.shield.tests.service.UserServiceTests.badUserIdForGettingUser(UserServiceTests.java:24)
-=======
 <h3 id="m67">com.shield.tests.service.UserServiceTests#badIdInsertUserImageService</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">com.shield.customexceptions.UserNotFound: User not found
 	at com.shield.daos.user.UserDAOImp.getUserById(UserDAOImp.java:51)
 	at com.shield.services.user.UserServicesImp.insertUserImageService(UserServicesImp.java:97)
 	at com.shield.tests.service.UserServiceTests.badIdInsertUserImageService(UserServiceTests.java:55)
->>>>>>> main
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
 ... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<<<<<<< HEAD
-<h3 id="m58">com.shield.tests.service.UserServiceTests#badUsernameForCheckingLogin</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">com.shield.customexceptions.InvalidUsername: Invalid username
-	at com.shield.services.user.UserServicesImp.checkUserLoginService(UserServicesImp.java:64)
-	at com.shield.tests.service.UserServiceTests.badUsernameForCheckingLogin(UserServiceTests.java:30)
-=======
 <h3 id="m68">com.shield.tests.service.UserServiceTests#badPasswordForCheckingLogin</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">com.shield.customexceptions.InvalidPassword: Invalid password
 	at com.shield.services.user.UserServicesImp.checkUserLoginService(UserServicesImp.java:76)
 	at com.shield.tests.service.UserServiceTests.badPasswordForCheckingLogin(UserServiceTests.java:44)
@@ -434,7 +284,6 @@
 <h3 id="m72">com.shield.tests.service.UserServiceTests#duplicateUserUsernameForCreateUserService</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">com.shield.customexceptions.UsernameAlreadyExists: Username is already taken
 	at com.shield.services.user.UserServicesImp.createUser(UserServicesImp.java:47)
 	at com.shield.tests.service.UserServiceTests.duplicateUserUsernameForCreateUserService(UserServiceTests.java:65)
->>>>>>> main
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)

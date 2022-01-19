@@ -7,7 +7,6 @@ async function getEmployeeImage(){
     if(response.status === 200){
         // const image_blob = await response.blob();
         // const image_text = await image_blob.text();
-        const response_body = response.body;
         const image_text = await response.text();
         const image_Element = document.createElement('img');
         image_Element.src = "data:image/gif;base64,"+ image_text;
