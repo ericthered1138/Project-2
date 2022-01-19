@@ -24,4 +24,6 @@ public interface UserDAO {
 
     boolean checkUserImage(int userId);
 
+    boolean checkUserByUsername(String username);
+
 }

@@ -5,6 +5,7 @@ import com.shield.entities.Claim;
 import com.shield.entities.User;
 import com.shield.daos.user.UserDAOImp;
 import com.shield.daos.user.UserDAO;
+import org.apache.logging.log4j.core.net.Priority;
 import org.testng.Assert;
 import com.shield.Util.DatabaseTableCreator;
 import org.testng.annotations.AfterClass;
@@ -73,6 +74,39 @@ public class UserDAOTests {
         List<Claim> claimsList = userDAO.getUserClaimsByUser(1);
         System.out.println(claimsList);
         Assert.assertTrue(claimsList.size() > 1);
+    }
+
+    @Test(priority = 1)
+    void insertUserImage(){
+        String image = "test";
+        int userId = 1000003;
+        boolean returned_boolean = userDAO.insertUserImage(userId, image);
+        Assert.assertTrue(returned_boolean);
+    }
+
+    @Test(priority = 2)
+    void getUserImage(){
+        this.insertUserImage();//insert the picture for the test
+        int userId = 1000003;
+        userDAO.insertUserImage(userId, "test");
+        String returned_boolean = userDAO.getUserImage(userId);
+        Assert.assertNotEquals(returned_boolean, "false");
+    }
+
+    @Test(priority = 3)
+    void checkUserImage(){
+        this.insertUserImage();//insert the picture for the test
+        int userId = 1000003;
+        userDAO.insertUserImage(userId, "test");
+        boolean returned_boolean = userDAO.checkUserImage(userId);
+        Assert.assertTrue(returned_boolean);
+    }
+
+    @Test
+    void checkUserByUsername(){
+        String username = "Paul";
+        boolean returned_boolean = userDAO.checkUserByUsername(username);
+        Assert.assertTrue(returned_boolean);
     }
 
 }

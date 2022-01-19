@@ -218,4 +218,30 @@ public class UserDAOImp implements UserDAO {
         return false;
     }
 
+    @Override
+    public boolean checkUserByUsername(String username) {
+        try(Connection connection = DatabaseConnection.createConnection()){
+            String sql = "Select * from user_table where username = ?";
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setString(1, username);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            if(resultSet.next()){
+                return false;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        try(Connection connection = DatabaseConnection.createConnection()){
+            String sql = "Select * from employee_table where username = ?";
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setString(1, username);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            if(resultSet.next()){
+                return false;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return true;
+    }
 }

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>DAO</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>22/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>26/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Jan 11 23:55:51 CST 2022</td>
+<td>Started on:</td><td>Thu Jan 13 09:45:25 CST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>29 seconds (29350 ms)</td>
+<tr><td>Total time:</td><td>37 seconds (37238 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,152 +75,172 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.shield.tests.dao.UserDAOTests.checkUsernameAndPassword()'><b>checkUsernameAndPassword</b><br>Test class: com.shield.tests.dao.UserDAOTests</td>
+<td title='com.shield.tests.dao.UserDAOTests.checkUserByUsername()'><b>checkUserByUsername</b><br>Test class: com.shield.tests.dao.UserDAOTests</td>
 <td></td>
 <td>0</td>
-<td>com.shield.tests.dao.UserDAOTests@97e93f1</td></tr>
-<tr>
-<td title='com.shield.tests.dao.UserDAOTests.createUser()'><b>createUser</b><br>Test class: com.shield.tests.dao.UserDAOTests</td>
-<td></td>
-<td>1</td>
-<td>com.shield.tests.dao.UserDAOTests@97e93f1</td></tr>
-<tr>
-<td title='com.shield.tests.dao.DebriefDAOTests.createDebrief()'><b>createDebrief</b><br>Test class: com.shield.tests.dao.DebriefDAOTests</td>
-<td></td>
-<td>1</td>
-<td>com.shield.tests.dao.DebriefDAOTests@7e990ed7</td></tr>
-<tr>
-<td title='com.shield.tests.dao.UserDAOTests.getAllUsers()'><b>getAllUsers</b><br>Test class: com.shield.tests.dao.UserDAOTests</td>
-<td></td>
-<td>0</td>
-<td>com.shield.tests.dao.UserDAOTests@97e93f1</td></tr>
+<td>com.shield.tests.dao.UserDAOTests@71e5f61d</td></tr>
 <tr>
 <td title='com.shield.tests.dao.UserDAOTests.selectUserByIdFail()'><b>selectUserByIdFail</b><br>Test class: com.shield.tests.dao.UserDAOTests</td>
 <td><div><pre>com.shield.customexceptions.UserNotFound: User not found
-	at com.shield.daos.user.UserDAOImp.getUserById(UserDAOImp.java:50)
-	at com.shield.tests.dao.UserDAOTests.selectUserByIdFail(UserDAOTests.java:42)
+	at com.shield.daos.user.UserDAOImp.getUserById(UserDAOImp.java:51)
+	at com.shield.tests.dao.UserDAOTests.selectUserByIdFail(UserDAOTests.java:43)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace313082880", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace313082880'><pre>com.shield.customexceptions.UserNotFound: User not found
-	at com.shield.daos.user.UserDAOImp.getUserById(UserDAOImp.java:50)
-	at com.shield.tests.dao.UserDAOTests.selectUserByIdFail(UserDAOTests.java:42)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace677317086", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace677317086'><pre>com.shield.customexceptions.UserNotFound: User not found
+	at com.shield.daos.user.UserDAOImp.getUserById(UserDAOImp.java:51)
+	at com.shield.tests.dao.UserDAOTests.selectUserByIdFail(UserDAOTests.java:43)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
 	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
 </pre></div></td>
 <td>0</td>
-<td>com.shield.tests.dao.UserDAOTests@97e93f1</td></tr>
+<td>com.shield.tests.dao.UserDAOTests@71e5f61d</td></tr>
 <tr>
 <td title='com.shield.tests.dao.EmployeeDAOTests.getAgentDebriefings()'><b>getAgentDebriefings</b><br>Test class: com.shield.tests.dao.EmployeeDAOTests</td>
 <td></td>
 <td>0</td>
-<td>com.shield.tests.dao.EmployeeDAOTests@5884a914</td></tr>
-<tr>
-<td title='com.shield.tests.dao.EmployeeDAOTests.getAllAgentDebriefings()'><b>getAllAgentDebriefings</b><br>Test class: com.shield.tests.dao.EmployeeDAOTests</td>
-<td></td>
-<td>1</td>
-<td>com.shield.tests.dao.EmployeeDAOTests@5884a914</td></tr>
-<tr>
-<td title='com.shield.tests.dao.EmployeeDAOTests.getAllClaims()'><b>getAllClaims</b><br>Test class: com.shield.tests.dao.EmployeeDAOTests</td>
-<td></td>
-<td>1</td>
-<td>com.shield.tests.dao.EmployeeDAOTests@5884a914</td></tr>
-<tr>
-<td title='com.shield.tests.dao.ClaimDAOTests.selectClaimById()'><b>selectClaimById</b><br>Test class: com.shield.tests.dao.ClaimDAOTests</td>
-<td></td>
-<td>0</td>
-<td>com.shield.tests.dao.ClaimDAOTests@15888343</td></tr>
-<tr>
-<td title='com.shield.tests.dao.EmployeeDAOTests.getLeaderboard()'><b>getLeaderboard</b><br>Test class: com.shield.tests.dao.EmployeeDAOTests</td>
-<td></td>
-<td>0</td>
-<td>com.shield.tests.dao.EmployeeDAOTests@5884a914</td></tr>
-<tr>
-<td title='com.shield.tests.dao.ClaimDAOTests.createClaimById()'><b>createClaimById</b><br>Test class: com.shield.tests.dao.ClaimDAOTests</td>
-<td></td>
-<td>0</td>
-<td>com.shield.tests.dao.ClaimDAOTests@15888343</td></tr>
-<tr>
-<td title='com.shield.tests.dao.EmployeeDAOTests.getEmployeeImage()'><b>getEmployeeImage</b><br>Test class: com.shield.tests.dao.EmployeeDAOTests</td>
-<td></td>
-<td>2</td>
-<td>com.shield.tests.dao.EmployeeDAOTests@5884a914</td></tr>
-<tr>
-<td title='com.shield.tests.dao.EmployeeDAOTests.getEmployeeById()'><b>getEmployeeById</b><br>Test class: com.shield.tests.dao.EmployeeDAOTests</td>
-<td></td>
-<td>0</td>
-<td>com.shield.tests.dao.EmployeeDAOTests@5884a914</td></tr>
+<td>com.shield.tests.dao.EmployeeDAOTests@191ae03f</td></tr>
 <tr>
 <td title='com.shield.tests.dao.EmployeeDAOTests.loginEmployee()'><b>loginEmployee</b><br>Test class: com.shield.tests.dao.EmployeeDAOTests</td>
 <td></td>
 <td>0</td>
-<td>com.shield.tests.dao.EmployeeDAOTests@5884a914</td></tr>
+<td>com.shield.tests.dao.EmployeeDAOTests@191ae03f</td></tr>
 <tr>
-<td title='com.shield.tests.dao.UserDAOTests.getUserClaimsByUser()'><b>getUserClaimsByUser</b><br>Test class: com.shield.tests.dao.UserDAOTests</td>
-<td></td>
-<td>0</td>
-<td>com.shield.tests.dao.UserDAOTests@97e93f1</td></tr>
-<tr>
-<td title='com.shield.tests.dao.UserDAOTests.selectUserById()'><b>selectUserById</b><br>Test class: com.shield.tests.dao.UserDAOTests</td>
-<td></td>
-<td>0</td>
-<td>com.shield.tests.dao.UserDAOTests@97e93f1</td></tr>
-<tr>
-<td title='com.shield.tests.dao.ClaimDAOTests.ApproveClaimById()'><b>ApproveClaimById</b><br>Test class: com.shield.tests.dao.ClaimDAOTests</td>
+<td title='com.shield.tests.dao.EmployeeDAOTests.getAllClaims()'><b>getAllClaims</b><br>Test class: com.shield.tests.dao.EmployeeDAOTests</td>
 <td></td>
 <td>1</td>
-<td>com.shield.tests.dao.ClaimDAOTests@15888343</td></tr>
-<tr>
-<td title='com.shield.tests.dao.ClaimDAOTests.DenyClaimById()'><b>DenyClaimById</b><br>Test class: com.shield.tests.dao.ClaimDAOTests</td>
-<td></td>
-<td>1</td>
-<td>com.shield.tests.dao.ClaimDAOTests@15888343</td></tr>
-<tr>
-<td title='com.shield.tests.dao.EmployeeDAOTests.getUserClaimsByAgent()'><b>getUserClaimsByAgent</b><br>Test class: com.shield.tests.dao.EmployeeDAOTests</td>
-<td></td>
-<td>0</td>
-<td>com.shield.tests.dao.EmployeeDAOTests@5884a914</td></tr>
+<td>com.shield.tests.dao.EmployeeDAOTests@191ae03f</td></tr>
 <tr>
 <td title='com.shield.tests.dao.EmployeeDAOTests.checkEmployeeImage()'><b>checkEmployeeImage</b><br>Test class: com.shield.tests.dao.EmployeeDAOTests</td>
 <td></td>
 <td>2</td>
-<td>com.shield.tests.dao.EmployeeDAOTests@5884a914</td></tr>
+<td>com.shield.tests.dao.EmployeeDAOTests@191ae03f</td></tr>
 <tr>
-<td title='com.shield.tests.dao.EmployeeDAOTests.insertEmployeeImage()'><b>insertEmployeeImage</b><br>Test class: com.shield.tests.dao.EmployeeDAOTests</td>
+<td title='com.shield.tests.dao.EmployeeDAOTests.getAllAgentDebriefings()'><b>getAllAgentDebriefings</b><br>Test class: com.shield.tests.dao.EmployeeDAOTests</td>
+<td></td>
+<td>1</td>
+<td>com.shield.tests.dao.EmployeeDAOTests@191ae03f</td></tr>
+<tr>
+<td title='com.shield.tests.dao.UserDAOTests.getUserClaimsByUser()'><b>getUserClaimsByUser</b><br>Test class: com.shield.tests.dao.UserDAOTests</td>
 <td></td>
 <td>0</td>
-<td>com.shield.tests.dao.EmployeeDAOTests@5884a914</td></tr>
+<td>com.shield.tests.dao.UserDAOTests@71e5f61d</td></tr>
+<tr>
+<td title='com.shield.tests.dao.EmployeeDAOTests.getEmployeeById()'><b>getEmployeeById</b><br>Test class: com.shield.tests.dao.EmployeeDAOTests</td>
+<td></td>
+<td>0</td>
+<td>com.shield.tests.dao.EmployeeDAOTests@191ae03f</td></tr>
+<tr>
+<td title='com.shield.tests.dao.UserDAOTests.getAllUsers()'><b>getAllUsers</b><br>Test class: com.shield.tests.dao.UserDAOTests</td>
+<td></td>
+<td>0</td>
+<td>com.shield.tests.dao.UserDAOTests@71e5f61d</td></tr>
+<tr>
+<td title='com.shield.tests.dao.UserDAOTests.checkUsernameAndPassword()'><b>checkUsernameAndPassword</b><br>Test class: com.shield.tests.dao.UserDAOTests</td>
+<td></td>
+<td>1</td>
+<td>com.shield.tests.dao.UserDAOTests@71e5f61d</td></tr>
+<tr>
+<td title='com.shield.tests.dao.ClaimDAOTests.ApproveClaimById()'><b>ApproveClaimById</b><br>Test class: com.shield.tests.dao.ClaimDAOTests</td>
+<td></td>
+<td>1</td>
+<td>com.shield.tests.dao.ClaimDAOTests@4215838f</td></tr>
+<tr>
+<td title='com.shield.tests.dao.EmployeeDAOTests.getLeaderboard()'><b>getLeaderboard</b><br>Test class: com.shield.tests.dao.EmployeeDAOTests</td>
+<td></td>
+<td>0</td>
+<td>com.shield.tests.dao.EmployeeDAOTests@191ae03f</td></tr>
+<tr>
+<td title='com.shield.tests.dao.UserDAOTests.insertUserImage()'><b>insertUserImage</b><br>Test class: com.shield.tests.dao.UserDAOTests</td>
+<td></td>
+<td>0</td>
+<td>com.shield.tests.dao.UserDAOTests@71e5f61d</td></tr>
+<tr>
+<td title='com.shield.tests.dao.UserDAOTests.checkUserImage()'><b>checkUserImage</b><br>Test class: com.shield.tests.dao.UserDAOTests</td>
+<td></td>
+<td>2</td>
+<td>com.shield.tests.dao.UserDAOTests@71e5f61d</td></tr>
+<tr>
+<td title='com.shield.tests.dao.ClaimDAOTests.DenyClaimById()'><b>DenyClaimById</b><br>Test class: com.shield.tests.dao.ClaimDAOTests</td>
+<td></td>
+<td>1</td>
+<td>com.shield.tests.dao.ClaimDAOTests@4215838f</td></tr>
+<tr>
+<td title='com.shield.tests.dao.UserDAOTests.selectUserById()'><b>selectUserById</b><br>Test class: com.shield.tests.dao.UserDAOTests</td>
+<td></td>
+<td>0</td>
+<td>com.shield.tests.dao.UserDAOTests@71e5f61d</td></tr>
+<tr>
+<td title='com.shield.tests.dao.ClaimDAOTests.createClaimById()'><b>createClaimById</b><br>Test class: com.shield.tests.dao.ClaimDAOTests</td>
+<td></td>
+<td>0</td>
+<td>com.shield.tests.dao.ClaimDAOTests@4215838f</td></tr>
+<tr>
+<td title='com.shield.tests.dao.DebriefDAOTests.createDebrief()'><b>createDebrief</b><br>Test class: com.shield.tests.dao.DebriefDAOTests</td>
+<td></td>
+<td>1</td>
+<td>com.shield.tests.dao.DebriefDAOTests@5ac86ba5</td></tr>
 <tr>
 <td title='com.shield.tests.dao.DebriefDAOTests.getDebrief()'><b>getDebrief</b><br>Test class: com.shield.tests.dao.DebriefDAOTests</td>
 <td></td>
 <td>0</td>
-<td>com.shield.tests.dao.DebriefDAOTests@7e990ed7</td></tr>
+<td>com.shield.tests.dao.DebriefDAOTests@5ac86ba5</td></tr>
+<tr>
+<td title='com.shield.tests.dao.UserDAOTests.getUserImage()'><b>getUserImage</b><br>Test class: com.shield.tests.dao.UserDAOTests</td>
+<td></td>
+<td>2</td>
+<td>com.shield.tests.dao.UserDAOTests@71e5f61d</td></tr>
+<tr>
+<td title='com.shield.tests.dao.EmployeeDAOTests.getEmployeeImage()'><b>getEmployeeImage</b><br>Test class: com.shield.tests.dao.EmployeeDAOTests</td>
+<td></td>
+<td>2</td>
+<td>com.shield.tests.dao.EmployeeDAOTests@191ae03f</td></tr>
+<tr>
+<td title='com.shield.tests.dao.UserDAOTests.createUser()'><b>createUser</b><br>Test class: com.shield.tests.dao.UserDAOTests</td>
+<td></td>
+<td>0</td>
+<td>com.shield.tests.dao.UserDAOTests@71e5f61d</td></tr>
+<tr>
+<td title='com.shield.tests.dao.ClaimDAOTests.selectClaimById()'><b>selectClaimById</b><br>Test class: com.shield.tests.dao.ClaimDAOTests</td>
+<td></td>
+<td>1</td>
+<td>com.shield.tests.dao.ClaimDAOTests@4215838f</td></tr>
+<tr>
+<td title='com.shield.tests.dao.EmployeeDAOTests.insertEmployeeImage()'><b>insertEmployeeImage</b><br>Test class: com.shield.tests.dao.EmployeeDAOTests</td>
+<td></td>
+<td>0</td>
+<td>com.shield.tests.dao.EmployeeDAOTests@191ae03f</td></tr>
+<tr>
+<td title='com.shield.tests.dao.EmployeeDAOTests.getUserClaimsByAgent()'><b>getUserClaimsByAgent</b><br>Test class: com.shield.tests.dao.EmployeeDAOTests</td>
+<td></td>
+<td>1</td>
+<td>com.shield.tests.dao.EmployeeDAOTests@191ae03f</td></tr>
 </table><p>
 </body>
 </html>
