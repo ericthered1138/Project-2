@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>47/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Jan 19 13:18:42 CST 2022</td>
+<td>Started on:</td><td>Wed Jan 19 15:16:42 CST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>15 seconds (15228 ms)</td>
+<tr><td>Total time:</td><td>15 seconds (15661 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,692 +75,6 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.shield.tests.service.UserServiceTests.badIdForGetUserClaimsByUserService()'><b>badIdForGetUserClaimsByUserService</b><br>Test class: com.shield.tests.service.UserServiceTests</td>
-<td><div><pre>com.shield.customexceptions.UserNotFound: User not found
-	at com.shield.daos.user.UserDAOImp.getUserById(UserDAOImp.java:51)
-	at com.shield.services.user.UserServicesImp.getUserClaimsByUserService(UserServicesImp.java:86)
-	at com.shield.tests.service.UserServiceTests.badIdForGetUserClaimsByUserService(UserServiceTests.java:49)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace916897446", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace916897446'><pre>com.shield.customexceptions.UserNotFound: User not found
-	at com.shield.daos.user.UserDAOImp.getUserById(UserDAOImp.java:51)
-	at com.shield.services.user.UserServicesImp.getUserClaimsByUserService(UserServicesImp.java:86)
-	at com.shield.tests.service.UserServiceTests.badIdForGetUserClaimsByUserService(UserServiceTests.java:49)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:808)
-	at org.testng.TestRunner.run(TestRunner.java:603)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.runSuites(TestNG.java:1092)
-	at org.testng.TestNG.run(TestNG.java:1060)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-</pre></div></td>
-<td>0</td>
-<td>com.shield.tests.service.UserServiceTests@7859e786</td></tr>
-<tr>
-<td title='com.shield.tests.service.UserServiceMockitoTest.getAllClaimsByUserIdServiceMock()'><b>getAllClaimsByUserIdServiceMock</b><br>Test class: com.shield.tests.service.UserServiceMockitoTest</td>
-<td></td>
-<td>0</td>
-<td>com.shield.tests.service.UserServiceMockitoTest@3a1d593e</td></tr>
-<tr>
-<td title='com.shield.tests.service.ClaimServiceTests.commentTooLongForDenyClaimService()'><b>commentTooLongForDenyClaimService</b><br>Test class: com.shield.tests.service.ClaimServiceTests</td>
-<td><div><pre>com.shield.customexceptions.CommentIsTooManyCharacters: Comment is too long
-	at com.shield.services.claim.ClaimServiceImp.approveClaimService(ClaimServiceImp.java:63)
-	at com.shield.tests.service.ClaimServiceTests.commentTooLongForDenyClaimService(ClaimServiceTests.java:69)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2055472834", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2055472834'><pre>com.shield.customexceptions.CommentIsTooManyCharacters: Comment is too long
-	at com.shield.services.claim.ClaimServiceImp.approveClaimService(ClaimServiceImp.java:63)
-	at com.shield.tests.service.ClaimServiceTests.commentTooLongForDenyClaimService(ClaimServiceTests.java:69)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:808)
-	at org.testng.TestRunner.run(TestRunner.java:603)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.runSuites(TestNG.java:1092)
-	at org.testng.TestNG.run(TestNG.java:1060)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-</pre></div></td>
-<td>0</td>
-<td>com.shield.tests.service.ClaimServiceTests@7c041b41</td></tr>
-<tr>
-<td title='com.shield.tests.service.UserServiceMockitoTest.checkUsernameAndPasswordServiceMock()'><b>checkUsernameAndPasswordServiceMock</b><br>Test class: com.shield.tests.service.UserServiceMockitoTest</td>
-<td></td>
-<td>0</td>
-<td>com.shield.tests.service.UserServiceMockitoTest@3a1d593e</td></tr>
-<tr>
-<td title='com.shield.tests.service.DebriefServiceMockitoTest.mockGetDebriefServiceById()'><b>mockGetDebriefServiceById</b><br>Test class: com.shield.tests.service.DebriefServiceMockitoTest</td>
-<td></td>
-<td>0</td>
-<td>com.shield.tests.service.DebriefServiceMockitoTest@7f69d591</td></tr>
-<tr>
-<td title='com.shield.tests.service.EmployeeServiceMockitoTests.mockGetUserClaimsByAgentService()'><b>mockGetUserClaimsByAgentService</b><br>Test class: com.shield.tests.service.EmployeeServiceMockitoTests</td>
-<td></td>
-<td>0</td>
-<td>com.shield.tests.service.EmployeeServiceMockitoTests@71c5b236</td></tr>
-<tr>
-<td title='com.shield.tests.service.EmployeeServiceTests.badAgentGetUserClaimsByAgentService()'><b>badAgentGetUserClaimsByAgentService</b><br>Test class: com.shield.tests.service.EmployeeServiceTests</td>
-<td><div><pre>com.shield.customexceptions.EmployeeIsNotAgent: That employee is not an agent.
-	at com.shield.services.employee.EmployeeServiceImp.getUserClaimsByAgentService(EmployeeServiceImp.java:57)
-	at com.shield.tests.service.EmployeeServiceTests.badAgentGetUserClaimsByAgentService(EmployeeServiceTests.java:66)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1248310508", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1248310508'><pre>com.shield.customexceptions.EmployeeIsNotAgent: That employee is not an agent.
-	at com.shield.services.employee.EmployeeServiceImp.getUserClaimsByAgentService(EmployeeServiceImp.java:57)
-	at com.shield.tests.service.EmployeeServiceTests.badAgentGetUserClaimsByAgentService(EmployeeServiceTests.java:66)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:808)
-	at org.testng.TestRunner.run(TestRunner.java:603)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.runSuites(TestNG.java:1092)
-	at org.testng.TestNG.run(TestNG.java:1060)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-</pre></div></td>
-<td>0</td>
-<td>com.shield.tests.service.EmployeeServiceTests@669513d8</td></tr>
-<tr>
-<td title='com.shield.tests.service.UserServiceMockitoTest.checkUsernameAndPasswordServiceSadPasswordMock()'><b>checkUsernameAndPasswordServiceSadPasswordMock</b><br>Test class: com.shield.tests.service.UserServiceMockitoTest</td>
-<td><div><pre>com.shield.customexceptions.InvalidPassword: Invalid password
-	at com.shield.services.user.UserServicesImp.checkUserLoginService(UserServicesImp.java:76)
-	at com.shield.tests.service.UserServiceMockitoTest.checkUsernameAndPasswordServiceSadPasswordMock(UserServiceMockitoTest.java:114)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace478123697", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace478123697'><pre>com.shield.customexceptions.InvalidPassword: Invalid password
-	at com.shield.services.user.UserServicesImp.checkUserLoginService(UserServicesImp.java:76)
-	at com.shield.tests.service.UserServiceMockitoTest.checkUsernameAndPasswordServiceSadPasswordMock(UserServiceMockitoTest.java:114)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:808)
-	at org.testng.TestRunner.run(TestRunner.java:603)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.runSuites(TestNG.java:1092)
-	at org.testng.TestNG.run(TestNG.java:1060)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-</pre></div></td>
-<td>0</td>
-<td>com.shield.tests.service.UserServiceMockitoTest@3a1d593e</td></tr>
-<tr>
-<td title='com.shield.tests.service.UserServiceMockitoTest.checkUsernameAndPasswordServiceSadUsernameMock()'><b>checkUsernameAndPasswordServiceSadUsernameMock</b><br>Test class: com.shield.tests.service.UserServiceMockitoTest</td>
-<td><div><pre>com.shield.customexceptions.InvalidUsername: Invalid username
-	at com.shield.services.user.UserServicesImp.checkUserLoginService(UserServicesImp.java:78)
-	at com.shield.tests.service.UserServiceMockitoTest.checkUsernameAndPasswordServiceSadUsernameMock(UserServiceMockitoTest.java:106)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2038020279", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2038020279'><pre>com.shield.customexceptions.InvalidUsername: Invalid username
-	at com.shield.services.user.UserServicesImp.checkUserLoginService(UserServicesImp.java:78)
-	at com.shield.tests.service.UserServiceMockitoTest.checkUsernameAndPasswordServiceSadUsernameMock(UserServiceMockitoTest.java:106)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:808)
-	at org.testng.TestRunner.run(TestRunner.java:603)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.runSuites(TestNG.java:1092)
-	at org.testng.TestNG.run(TestNG.java:1060)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-</pre></div></td>
-<td>0</td>
-<td>com.shield.tests.service.UserServiceMockitoTest@3a1d593e</td></tr>
-<tr>
-<td title='com.shield.tests.service.EmployeeServiceTests.badHandlerGetAllAgentDebriefingsService()'><b>badHandlerGetAllAgentDebriefingsService</b><br>Test class: com.shield.tests.service.EmployeeServiceTests</td>
-<td><div><pre>com.shield.customexceptions.EmployeeIsNotHandler: That employee is not a handler.
-	at com.shield.services.employee.EmployeeServiceImp.getAllAgentDebriefingsService(EmployeeServiceImp.java:70)
-	at com.shield.tests.service.EmployeeServiceTests.badHandlerGetAllAgentDebriefingsService(EmployeeServiceTests.java:59)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace261216862", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace261216862'><pre>com.shield.customexceptions.EmployeeIsNotHandler: That employee is not a handler.
-	at com.shield.services.employee.EmployeeServiceImp.getAllAgentDebriefingsService(EmployeeServiceImp.java:70)
-	at com.shield.tests.service.EmployeeServiceTests.badHandlerGetAllAgentDebriefingsService(EmployeeServiceTests.java:59)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:808)
-	at org.testng.TestRunner.run(TestRunner.java:603)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.runSuites(TestNG.java:1092)
-	at org.testng.TestNG.run(TestNG.java:1060)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-</pre></div></td>
-<td>0</td>
-<td>com.shield.tests.service.EmployeeServiceTests@669513d8</td></tr>
-<tr>
-<td title='com.shield.tests.service.UserServiceMockitoTest.getUserServiceByIdSadMock()'><b>getUserServiceByIdSadMock</b><br>Test class: com.shield.tests.service.UserServiceMockitoTest</td>
-<td><div><pre>com.shield.customexceptions.UserNotFound: User not found
-	at com.shield.services.user.UserServicesImp.getUserByIdService(UserServicesImp.java:36)
-	at com.shield.tests.service.UserServiceMockitoTest.getUserServiceByIdSadMock(UserServiceMockitoTest.java:99)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace306889029", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace306889029'><pre>com.shield.customexceptions.UserNotFound: User not found
-	at com.shield.services.user.UserServicesImp.getUserByIdService(UserServicesImp.java:36)
-	at com.shield.tests.service.UserServiceMockitoTest.getUserServiceByIdSadMock(UserServiceMockitoTest.java:99)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:808)
-	at org.testng.TestRunner.run(TestRunner.java:603)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.runSuites(TestNG.java:1092)
-	at org.testng.TestNG.run(TestNG.java:1060)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-</pre></div></td>
-<td>0</td>
-<td>com.shield.tests.service.UserServiceMockitoTest@3a1d593e</td></tr>
-<tr>
-<td title='com.shield.tests.service.EmployeeServiceTests.badIdForGetAllClaims()'><b>badIdForGetAllClaims</b><br>Test class: com.shield.tests.service.EmployeeServiceTests</td>
-<td><div><pre>com.shield.customexceptions.EmployeeNotFound: The employee was not found.
-	at com.shield.daos.employee.EmployeeDAOImp.getEmployeeById(EmployeeDAOImp.java:69)
-	at com.shield.services.employee.EmployeeServiceImp.getAllClaimsService(EmployeeServiceImp.java:36)
-	at com.shield.tests.service.EmployeeServiceTests.badIdForGetAllClaims(EmployeeServiceTests.java:23)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1216611732", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1216611732'><pre>com.shield.customexceptions.EmployeeNotFound: The employee was not found.
-	at com.shield.daos.employee.EmployeeDAOImp.getEmployeeById(EmployeeDAOImp.java:69)
-	at com.shield.services.employee.EmployeeServiceImp.getAllClaimsService(EmployeeServiceImp.java:36)
-	at com.shield.tests.service.EmployeeServiceTests.badIdForGetAllClaims(EmployeeServiceTests.java:23)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:808)
-	at org.testng.TestRunner.run(TestRunner.java:603)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.runSuites(TestNG.java:1092)
-	at org.testng.TestNG.run(TestNG.java:1060)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-</pre></div></td>
-<td>0</td>
-<td>com.shield.tests.service.EmployeeServiceTests@669513d8</td></tr>
-<tr>
-<td title='com.shield.tests.service.EmployeeServiceMockitoTests.mockGetEmployeeImageService()'><b>mockGetEmployeeImageService</b><br>Test class: com.shield.tests.service.EmployeeServiceMockitoTests</td>
-<td></td>
-<td>0</td>
-<td>com.shield.tests.service.EmployeeServiceMockitoTests@71c5b236</td></tr>
-<tr>
-<td title='com.shield.tests.service.UserServiceTests.duplicateUserUsernameForCreateUserService()'><b>duplicateUserUsernameForCreateUserService</b><br>Test class: com.shield.tests.service.UserServiceTests</td>
-<td><div><pre>com.shield.customexceptions.UsernameAlreadyExists: Username is already taken
-	at com.shield.services.user.UserServicesImp.createUser(UserServicesImp.java:47)
-	at com.shield.tests.service.UserServiceTests.duplicateUserUsernameForCreateUserService(UserServiceTests.java:65)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1707293586", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1707293586'><pre>com.shield.customexceptions.UsernameAlreadyExists: Username is already taken
-	at com.shield.services.user.UserServicesImp.createUser(UserServicesImp.java:47)
-	at com.shield.tests.service.UserServiceTests.duplicateUserUsernameForCreateUserService(UserServiceTests.java:65)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:808)
-	at org.testng.TestRunner.run(TestRunner.java:603)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.runSuites(TestNG.java:1092)
-	at org.testng.TestNG.run(TestNG.java:1060)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-</pre></div></td>
-<td>0</td>
-<td>com.shield.tests.service.UserServiceTests@7859e786</td></tr>
-<tr>
-<td title='com.shield.tests.service.ClaimServiceMockitoTest.getClaimServiceByIdMock()'><b>getClaimServiceByIdMock</b><br>Test class: com.shield.tests.service.ClaimServiceMockitoTest</td>
-<td></td>
-<td>0</td>
-<td>com.shield.tests.service.ClaimServiceMockitoTest@5d25e6bb</td></tr>
-<tr>
-<td title='com.shield.tests.service.EmployeeServiceMockitoTests.MockGetAgentDebriefingsService()'><b>MockGetAgentDebriefingsService</b><br>Test class: com.shield.tests.service.EmployeeServiceMockitoTests</td>
-<td></td>
-<td>0</td>
-<td>com.shield.tests.service.EmployeeServiceMockitoTests@71c5b236</td></tr>
-<tr>
-<td title='com.shield.tests.service.EmployeeServiceMockitoTests.mockGetEmployeeServiceById()'><b>mockGetEmployeeServiceById</b><br>Test class: com.shield.tests.service.EmployeeServiceMockitoTests</td>
-<td></td>
-<td>0</td>
-<td>com.shield.tests.service.EmployeeServiceMockitoTests@71c5b236</td></tr>
-<tr>
-<td title='com.shield.tests.service.ClaimServiceTests.badClaimIdForDenyClaimService()'><b>badClaimIdForDenyClaimService</b><br>Test class: com.shield.tests.service.ClaimServiceTests</td>
-<td><div><pre>com.shield.customexceptions.ClaimNotFound: Claim not found
-	at com.shield.services.claim.ClaimServiceImp.denyClaimService(ClaimServiceImp.java:82)
-	at com.shield.tests.service.ClaimServiceTests.badClaimIdForDenyClaimService(ClaimServiceTests.java:76)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1840217399", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1840217399'><pre>com.shield.customexceptions.ClaimNotFound: Claim not found
-	at com.shield.services.claim.ClaimServiceImp.denyClaimService(ClaimServiceImp.java:82)
-	at com.shield.tests.service.ClaimServiceTests.badClaimIdForDenyClaimService(ClaimServiceTests.java:76)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:808)
-	at org.testng.TestRunner.run(TestRunner.java:603)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.runSuites(TestNG.java:1092)
-	at org.testng.TestNG.run(TestNG.java:1060)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-</pre></div></td>
-<td>0</td>
-<td>com.shield.tests.service.ClaimServiceTests@7c041b41</td></tr>
-<tr>
-<td title='com.shield.tests.service.DebriefServiceTests.badIdForcreateDebriefService()'><b>badIdForcreateDebriefService</b><br>Test class: com.shield.tests.service.DebriefServiceTests</td>
-<td><div><pre>com.shield.customexceptions.EmployeeNotFound: The employee was not found.
-	at com.shield.daos.employee.EmployeeDAOImp.getEmployeeById(EmployeeDAOImp.java:69)
-	at com.shield.services.debrief.DebriefServiceImp.createDebriefService(DebriefServiceImp.java:27)
-	at com.shield.tests.service.DebriefServiceTests.badIdForcreateDebriefService(DebriefServiceTests.java:22)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace574746715", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace574746715'><pre>com.shield.customexceptions.EmployeeNotFound: The employee was not found.
-	at com.shield.daos.employee.EmployeeDAOImp.getEmployeeById(EmployeeDAOImp.java:69)
-	at com.shield.services.debrief.DebriefServiceImp.createDebriefService(DebriefServiceImp.java:27)
-	at com.shield.tests.service.DebriefServiceTests.badIdForcreateDebriefService(DebriefServiceTests.java:22)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:808)
-	at org.testng.TestRunner.run(TestRunner.java:603)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.runSuites(TestNG.java:1092)
-	at org.testng.TestNG.run(TestNG.java:1060)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-</pre></div></td>
-<td>0</td>
-<td>com.shield.tests.service.DebriefServiceTests@403132fc</td></tr>
-<tr>
-<td title='com.shield.tests.service.ClaimServiceTests.badClaimIdForApproveClaimService()'><b>badClaimIdForApproveClaimService</b><br>Test class: com.shield.tests.service.ClaimServiceTests</td>
-<td><div><pre>com.shield.customexceptions.ClaimNotFound: Claim not found
-	at com.shield.services.claim.ClaimServiceImp.approveClaimService(ClaimServiceImp.java:67)
-	at com.shield.tests.service.ClaimServiceTests.badClaimIdForApproveClaimService(ClaimServiceTests.java:55)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1708490318", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1708490318'><pre>com.shield.customexceptions.ClaimNotFound: Claim not found
-	at com.shield.services.claim.ClaimServiceImp.approveClaimService(ClaimServiceImp.java:67)
-	at com.shield.tests.service.ClaimServiceTests.badClaimIdForApproveClaimService(ClaimServiceTests.java:55)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:808)
-	at org.testng.TestRunner.run(TestRunner.java:603)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.runSuites(TestNG.java:1092)
-	at org.testng.TestNG.run(TestNG.java:1060)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-</pre></div></td>
-<td>0</td>
-<td>com.shield.tests.service.ClaimServiceTests@7c041b41</td></tr>
-<tr>
-<td title='com.shield.tests.service.ClaimServiceTests.commentTooLongForApproveClaimService()'><b>commentTooLongForApproveClaimService</b><br>Test class: com.shield.tests.service.ClaimServiceTests</td>
-<td><div><pre>com.shield.customexceptions.CommentIsTooManyCharacters: Comment is too long
-	at com.shield.services.claim.ClaimServiceImp.approveClaimService(ClaimServiceImp.java:63)
-	at com.shield.tests.service.ClaimServiceTests.commentTooLongForApproveClaimService(ClaimServiceTests.java:62)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace277497558", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace277497558'><pre>com.shield.customexceptions.CommentIsTooManyCharacters: Comment is too long
-	at com.shield.services.claim.ClaimServiceImp.approveClaimService(ClaimServiceImp.java:63)
-	at com.shield.tests.service.ClaimServiceTests.commentTooLongForApproveClaimService(ClaimServiceTests.java:62)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:808)
-	at org.testng.TestRunner.run(TestRunner.java:603)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.runSuites(TestNG.java:1092)
-	at org.testng.TestNG.run(TestNG.java:1060)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-</pre></div></td>
-<td>0</td>
-<td>com.shield.tests.service.ClaimServiceTests@7c041b41</td></tr>
-<tr>
-<td title='com.shield.tests.service.EmployeeServiceTests.badAgentGetAgentDebriefingsService()'><b>badAgentGetAgentDebriefingsService</b><br>Test class: com.shield.tests.service.EmployeeServiceTests</td>
-<td><div><pre>com.shield.customexceptions.EmployeeIsNotAgent: That employee is not an agent.
-	at com.shield.services.employee.EmployeeServiceImp.getAgentDebriefingsService(EmployeeServiceImp.java:83)
-	at com.shield.tests.service.EmployeeServiceTests.badAgentGetAgentDebriefingsService(EmployeeServiceTests.java:71)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace507765539", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace507765539'><pre>com.shield.customexceptions.EmployeeIsNotAgent: That employee is not an agent.
-	at com.shield.services.employee.EmployeeServiceImp.getAgentDebriefingsService(EmployeeServiceImp.java:83)
-	at com.shield.tests.service.EmployeeServiceTests.badAgentGetAgentDebriefingsService(EmployeeServiceTests.java:71)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:808)
-	at org.testng.TestRunner.run(TestRunner.java:603)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.runSuites(TestNG.java:1092)
-	at org.testng.TestNG.run(TestNG.java:1060)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-</pre></div></td>
-<td>0</td>
-<td>com.shield.tests.service.EmployeeServiceTests@669513d8</td></tr>
-<tr>
-<td title='com.shield.tests.service.ClaimServiceMockitoTest.denyClaimServiceMock()'><b>denyClaimServiceMock</b><br>Test class: com.shield.tests.service.ClaimServiceMockitoTest</td>
-<td></td>
-<td>0</td>
-<td>com.shield.tests.service.ClaimServiceMockitoTest@5d25e6bb</td></tr>
-<tr>
-<td title='com.shield.tests.service.UserServiceTests.badPasswordForCheckingLogin()'><b>badPasswordForCheckingLogin</b><br>Test class: com.shield.tests.service.UserServiceTests</td>
-<td><div><pre>com.shield.customexceptions.InvalidPassword: Invalid password
-	at com.shield.services.user.UserServicesImp.checkUserLoginService(UserServicesImp.java:76)
-	at com.shield.tests.service.UserServiceTests.badPasswordForCheckingLogin(UserServiceTests.java:44)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace162667475", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace162667475'><pre>com.shield.customexceptions.InvalidPassword: Invalid password
-	at com.shield.services.user.UserServicesImp.checkUserLoginService(UserServicesImp.java:76)
-	at com.shield.tests.service.UserServiceTests.badPasswordForCheckingLogin(UserServiceTests.java:44)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:808)
-	at org.testng.TestRunner.run(TestRunner.java:603)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.runSuites(TestNG.java:1092)
-	at org.testng.TestNG.run(TestNG.java:1060)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-</pre></div></td>
-<td>0</td>
-<td>com.shield.tests.service.UserServiceTests@7859e786</td></tr>
-<tr>
-<td title='com.shield.tests.service.UserServiceMockitoTest.createUserServiceMock()'><b>createUserServiceMock</b><br>Test class: com.shield.tests.service.UserServiceMockitoTest</td>
-<td></td>
-<td>0</td>
-<td>com.shield.tests.service.UserServiceMockitoTest@3a1d593e</td></tr>
-<tr>
 <td title='com.shield.tests.service.EmployeeServiceTests.badIdInsertEmployeeImageService()'><b>badIdInsertEmployeeImageService</b><br>Test class: com.shield.tests.service.EmployeeServiceTests</td>
 <td><div><pre>com.shield.customexceptions.EmployeeNotFound: The employee was not found.
 	at com.shield.daos.employee.EmployeeDAOImp.getEmployeeById(EmployeeDAOImp.java:69)
@@ -769,8 +83,8 @@ function toggleAllBoxes() {
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace110197684", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace110197684'><pre>com.shield.customexceptions.EmployeeNotFound: The employee was not found.
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace916897446", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace916897446'><pre>com.shield.customexceptions.EmployeeNotFound: The employee was not found.
 	at com.shield.daos.employee.EmployeeDAOImp.getEmployeeById(EmployeeDAOImp.java:69)
 	at com.shield.services.employee.EmployeeServiceImp.getAgentDebriefingsService(EmployeeServiceImp.java:77)
 	at com.shield.tests.service.EmployeeServiceTests.badIdInsertEmployeeImageService(EmployeeServiceTests.java:43)
@@ -803,21 +117,19 @@ function toggleAllBoxes() {
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
 </pre></div></td>
 <td>0</td>
-<td>com.shield.tests.service.EmployeeServiceTests@669513d8</td></tr>
+<td>com.shield.tests.service.EmployeeServiceTests@5217f3d0</td></tr>
 <tr>
-<td title='com.shield.tests.service.ClaimServiceTests.badEmployeeIdForCreateClaimService()'><b>badEmployeeIdForCreateClaimService</b><br>Test class: com.shield.tests.service.ClaimServiceTests</td>
-<td><div><pre>com.shield.customexceptions.EmployeeNotFound: The employee was not found.
-	at com.shield.daos.employee.EmployeeDAOImp.getEmployeeById(EmployeeDAOImp.java:69)
-	at com.shield.services.claim.ClaimServiceImp.createClaimService(ClaimServiceImp.java:31)
-	at com.shield.tests.service.ClaimServiceTests.badEmployeeIdForCreateClaimService(ClaimServiceTests.java:42)
+<td title='com.shield.tests.service.UserServiceTests.badPasswordForCheckingLogin()'><b>badPasswordForCheckingLogin</b><br>Test class: com.shield.tests.service.UserServiceTests</td>
+<td><div><pre>com.shield.customexceptions.InvalidPassword: Invalid password
+	at com.shield.services.user.UserServicesImp.checkUserLoginService(UserServicesImp.java:76)
+	at com.shield.tests.service.UserServiceTests.badPasswordForCheckingLogin(UserServiceTests.java:44)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1192603187", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1192603187'><pre>com.shield.customexceptions.EmployeeNotFound: The employee was not found.
-	at com.shield.daos.employee.EmployeeDAOImp.getEmployeeById(EmployeeDAOImp.java:69)
-	at com.shield.services.claim.ClaimServiceImp.createClaimService(ClaimServiceImp.java:31)
-	at com.shield.tests.service.ClaimServiceTests.badEmployeeIdForCreateClaimService(ClaimServiceTests.java:42)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2130520253", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2130520253'><pre>com.shield.customexceptions.InvalidPassword: Invalid password
+	at com.shield.services.user.UserServicesImp.checkUserLoginService(UserServicesImp.java:76)
+	at com.shield.tests.service.UserServiceTests.badPasswordForCheckingLogin(UserServiceTests.java:44)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -847,51 +159,12 @@ function toggleAllBoxes() {
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
 </pre></div></td>
 <td>0</td>
-<td>com.shield.tests.service.ClaimServiceTests@7c041b41</td></tr>
+<td>com.shield.tests.service.UserServiceTests@6fa590ba</td></tr>
 <tr>
-<td title='com.shield.tests.service.EmployeeServiceTests.badIdForGetAllAgentDebriefingsService()'><b>badIdForGetAllAgentDebriefingsService</b><br>Test class: com.shield.tests.service.EmployeeServiceTests</td>
-<td><div><pre>com.shield.customexceptions.EmployeeNotFound: The employee was not found.
-	at com.shield.daos.employee.EmployeeDAOImp.getEmployeeById(EmployeeDAOImp.java:69)
-	at com.shield.services.employee.EmployeeServiceImp.getAllAgentDebriefingsService(EmployeeServiceImp.java:64)
-	at com.shield.tests.service.EmployeeServiceTests.badIdForGetAllAgentDebriefingsService(EmployeeServiceTests.java:33)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2046652309", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2046652309'><pre>com.shield.customexceptions.EmployeeNotFound: The employee was not found.
-	at com.shield.daos.employee.EmployeeDAOImp.getEmployeeById(EmployeeDAOImp.java:69)
-	at com.shield.services.employee.EmployeeServiceImp.getAllAgentDebriefingsService(EmployeeServiceImp.java:64)
-	at com.shield.tests.service.EmployeeServiceTests.badIdForGetAllAgentDebriefingsService(EmployeeServiceTests.java:33)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:808)
-	at org.testng.TestRunner.run(TestRunner.java:603)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.runSuites(TestNG.java:1092)
-	at org.testng.TestNG.run(TestNG.java:1060)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-</pre></div></td>
+<td title='com.shield.tests.service.EmployeeServiceMockitoTests.mockGetUserClaimsByAgentService()'><b>mockGetUserClaimsByAgentService</b><br>Test class: com.shield.tests.service.EmployeeServiceMockitoTests</td>
+<td></td>
 <td>0</td>
-<td>com.shield.tests.service.EmployeeServiceTests@669513d8</td></tr>
+<td>com.shield.tests.service.EmployeeServiceMockitoTests@549621f3</td></tr>
 <tr>
 <td title='com.shield.tests.service.ClaimServiceTests.badClaimIdForGetClaimService()'><b>badClaimIdForGetClaimService</b><br>Test class: com.shield.tests.service.ClaimServiceTests</td>
 <td><div><pre>com.shield.customexceptions.ClaimNotFound: Claim not found
@@ -901,8 +174,8 @@ function toggleAllBoxes() {
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace598049166", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace598049166'><pre>com.shield.customexceptions.ClaimNotFound: Claim not found
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace38647502", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace38647502'><pre>com.shield.customexceptions.ClaimNotFound: Claim not found
 	at com.shield.daos.claim.ClaimDAOImp.getClaimById(ClaimDAOImp.java:54)
 	at com.shield.services.claim.ClaimServiceImp.getClaimByIdService(ClaimServiceImp.java:25)
 	at com.shield.tests.service.ClaimServiceTests.badClaimIdForGetClaimService(ClaimServiceTests.java:28)
@@ -935,108 +208,12 @@ function toggleAllBoxes() {
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
 </pre></div></td>
 <td>0</td>
-<td>com.shield.tests.service.ClaimServiceTests@7c041b41</td></tr>
+<td>com.shield.tests.service.ClaimServiceTests@71104a4</td></tr>
 <tr>
-<td title='com.shield.tests.service.ClaimServiceMockitoTest.approveClaimServiceMock()'><b>approveClaimServiceMock</b><br>Test class: com.shield.tests.service.ClaimServiceMockitoTest</td>
+<td title='com.shield.tests.service.ClaimServiceMockitoTest.createClaimServiceMock()'><b>createClaimServiceMock</b><br>Test class: com.shield.tests.service.ClaimServiceMockitoTest</td>
 <td></td>
 <td>0</td>
-<td>com.shield.tests.service.ClaimServiceMockitoTest@5d25e6bb</td></tr>
-<tr>
-<td title='com.shield.tests.service.EmployeeServiceMockitoTests.mockGetAllAgentDebriefingsService()'><b>mockGetAllAgentDebriefingsService</b><br>Test class: com.shield.tests.service.EmployeeServiceMockitoTests</td>
-<td></td>
-<td>0</td>
-<td>com.shield.tests.service.EmployeeServiceMockitoTests@71c5b236</td></tr>
-<tr>
-<td title='com.shield.tests.service.UserServiceMockitoTest.getUserServiceByIdMock()'><b>getUserServiceByIdMock</b><br>Test class: com.shield.tests.service.UserServiceMockitoTest</td>
-<td></td>
-<td>0</td>
-<td>com.shield.tests.service.UserServiceMockitoTest@3a1d593e</td></tr>
-<tr>
-<td title='com.shield.tests.service.UserServiceTests.badUserIdForGettingUser()'><b>badUserIdForGettingUser</b><br>Test class: com.shield.tests.service.UserServiceTests</td>
-<td><div><pre>com.shield.customexceptions.UserNotFound: User not found
-	at com.shield.services.user.UserServicesImp.getUserByIdService(UserServicesImp.java:36)
-	at com.shield.tests.service.UserServiceTests.badUserIdForGettingUser(UserServiceTests.java:32)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace174245837", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace174245837'><pre>com.shield.customexceptions.UserNotFound: User not found
-	at com.shield.services.user.UserServicesImp.getUserByIdService(UserServicesImp.java:36)
-	at com.shield.tests.service.UserServiceTests.badUserIdForGettingUser(UserServiceTests.java:32)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:808)
-	at org.testng.TestRunner.run(TestRunner.java:603)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.runSuites(TestNG.java:1092)
-	at org.testng.TestNG.run(TestNG.java:1060)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-</pre></div></td>
-<td>0</td>
-<td>com.shield.tests.service.UserServiceTests@7859e786</td></tr>
-<tr>
-<td title='com.shield.tests.service.ClaimServiceTests.badUserIdForCreateClaimService()'><b>badUserIdForCreateClaimService</b><br>Test class: com.shield.tests.service.ClaimServiceTests</td>
-<td><div><pre>com.shield.customexceptions.UserNotFound: User not found
-	at com.shield.daos.user.UserDAOImp.getUserById(UserDAOImp.java:51)
-	at com.shield.services.claim.ClaimServiceImp.createClaimService(ClaimServiceImp.java:32)
-	at com.shield.tests.service.ClaimServiceTests.badUserIdForCreateClaimService(ClaimServiceTests.java:35)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace531373404", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace531373404'><pre>com.shield.customexceptions.UserNotFound: User not found
-	at com.shield.daos.user.UserDAOImp.getUserById(UserDAOImp.java:51)
-	at com.shield.services.claim.ClaimServiceImp.createClaimService(ClaimServiceImp.java:32)
-	at com.shield.tests.service.ClaimServiceTests.badUserIdForCreateClaimService(ClaimServiceTests.java:35)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:808)
-	at org.testng.TestRunner.run(TestRunner.java:603)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.runSuites(TestNG.java:1092)
-	at org.testng.TestNG.run(TestNG.java:1060)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-</pre></div></td>
-<td>1</td>
-<td>com.shield.tests.service.ClaimServiceTests@7c041b41</td></tr>
+<td>com.shield.tests.service.ClaimServiceMockitoTest@5118388b</td></tr>
 <tr>
 <td title='com.shield.tests.service.UserServiceTests.duplicateEmployeeUsernameForCreateUserService()'><b>duplicateEmployeeUsernameForCreateUserService</b><br>Test class: com.shield.tests.service.UserServiceTests</td>
 <td><div><pre>com.shield.customexceptions.UsernameAlreadyExists: Username is already taken
@@ -1045,8 +222,8 @@ function toggleAllBoxes() {
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2083969860", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2083969860'><pre>com.shield.customexceptions.UsernameAlreadyExists: Username is already taken
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace824915171", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace824915171'><pre>com.shield.customexceptions.UsernameAlreadyExists: Username is already taken
 	at com.shield.services.user.UserServicesImp.createUser(UserServicesImp.java:47)
 	at com.shield.tests.service.UserServiceTests.duplicateEmployeeUsernameForCreateUserService(UserServiceTests.java:69)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -1078,7 +255,98 @@ function toggleAllBoxes() {
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
 </pre></div></td>
 <td>0</td>
-<td>com.shield.tests.service.UserServiceTests@7859e786</td></tr>
+<td>com.shield.tests.service.UserServiceTests@6fa590ba</td></tr>
+<tr>
+<td title='com.shield.tests.service.EmployeeServiceMockitoTests.MockGetAgentDebriefingsService()'><b>MockGetAgentDebriefingsService</b><br>Test class: com.shield.tests.service.EmployeeServiceMockitoTests</td>
+<td></td>
+<td>0</td>
+<td>com.shield.tests.service.EmployeeServiceMockitoTests@549621f3</td></tr>
+<tr>
+<td title='com.shield.tests.service.EmployeeServiceTests.badIdForGetAllAgentDebriefingsService()'><b>badIdForGetAllAgentDebriefingsService</b><br>Test class: com.shield.tests.service.EmployeeServiceTests</td>
+<td><div><pre>com.shield.customexceptions.EmployeeNotFound: The employee was not found.
+	at com.shield.daos.employee.EmployeeDAOImp.getEmployeeById(EmployeeDAOImp.java:69)
+	at com.shield.services.employee.EmployeeServiceImp.getAllAgentDebriefingsService(EmployeeServiceImp.java:64)
+	at com.shield.tests.service.EmployeeServiceTests.badIdForGetAllAgentDebriefingsService(EmployeeServiceTests.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace937437482", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace937437482'><pre>com.shield.customexceptions.EmployeeNotFound: The employee was not found.
+	at com.shield.daos.employee.EmployeeDAOImp.getEmployeeById(EmployeeDAOImp.java:69)
+	at com.shield.services.employee.EmployeeServiceImp.getAllAgentDebriefingsService(EmployeeServiceImp.java:64)
+	at com.shield.tests.service.EmployeeServiceTests.badIdForGetAllAgentDebriefingsService(EmployeeServiceTests.java:33)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+</pre></div></td>
+<td>0</td>
+<td>com.shield.tests.service.EmployeeServiceTests@5217f3d0</td></tr>
+<tr>
+<td title='com.shield.tests.service.ClaimServiceTests.negativeAmountForCreateClaimService()'><b>negativeAmountForCreateClaimService</b><br>Test class: com.shield.tests.service.ClaimServiceTests</td>
+<td><div><pre>com.shield.customexceptions.NegativeClaimAmount: Claim must be a positive number
+	at com.shield.services.claim.ClaimServiceImp.createClaimService(ClaimServiceImp.java:39)
+	at com.shield.tests.service.ClaimServiceTests.negativeAmountForCreateClaimService(ClaimServiceTests.java:48)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace585496942", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace585496942'><pre>com.shield.customexceptions.NegativeClaimAmount: Claim must be a positive number
+	at com.shield.services.claim.ClaimServiceImp.createClaimService(ClaimServiceImp.java:39)
+	at com.shield.tests.service.ClaimServiceTests.negativeAmountForCreateClaimService(ClaimServiceTests.java:48)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+</pre></div></td>
+<td>0</td>
+<td>com.shield.tests.service.ClaimServiceTests@71104a4</td></tr>
 <tr>
 <td title='com.shield.tests.service.EmployeeServiceTests.badIdGetEmployeeImageService()'><b>badIdGetEmployeeImageService</b><br>Test class: com.shield.tests.service.EmployeeServiceTests</td>
 <td><div><pre>com.shield.customexceptions.EmployeeNotFound: The employee was not found.
@@ -1088,8 +356,8 @@ function toggleAllBoxes() {
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace344080246", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace344080246'><pre>com.shield.customexceptions.EmployeeNotFound: The employee was not found.
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace3768050", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace3768050'><pre>com.shield.customexceptions.EmployeeNotFound: The employee was not found.
 	at com.shield.daos.employee.EmployeeDAOImp.getEmployeeById(EmployeeDAOImp.java:69)
 	at com.shield.services.employee.EmployeeServiceImp.getAgentDebriefingsService(EmployeeServiceImp.java:77)
 	at com.shield.tests.service.EmployeeServiceTests.badIdGetEmployeeImageService(EmployeeServiceTests.java:48)
@@ -1122,26 +390,36 @@ function toggleAllBoxes() {
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
 </pre></div></td>
 <td>0</td>
-<td>com.shield.tests.service.EmployeeServiceTests@669513d8</td></tr>
+<td>com.shield.tests.service.EmployeeServiceTests@5217f3d0</td></tr>
 <tr>
-<td title='com.shield.tests.service.ClaimServiceMockitoTest.createClaimServiceMock()'><b>createClaimServiceMock</b><br>Test class: com.shield.tests.service.ClaimServiceMockitoTest</td>
+<td title='com.shield.tests.service.UserServiceMockitoTest.getAllUsersServiceMock()'><b>getAllUsersServiceMock</b><br>Test class: com.shield.tests.service.UserServiceMockitoTest</td>
 <td></td>
 <td>0</td>
-<td>com.shield.tests.service.ClaimServiceMockitoTest@5d25e6bb</td></tr>
+<td>com.shield.tests.service.UserServiceMockitoTest@37ebc9d8</td></tr>
 <tr>
-<td title='com.shield.tests.service.EmployeeServiceTests.badIdForGetUserClaimsByAgentService()'><b>badIdForGetUserClaimsByAgentService</b><br>Test class: com.shield.tests.service.EmployeeServiceTests</td>
-<td><div><pre>com.shield.customexceptions.EmployeeNotFound: The employee was not found.
-	at com.shield.daos.employee.EmployeeDAOImp.getEmployeeById(EmployeeDAOImp.java:69)
-	at com.shield.services.employee.EmployeeServiceImp.getUserClaimsByAgentService(EmployeeServiceImp.java:51)
-	at com.shield.tests.service.EmployeeServiceTests.badIdForGetUserClaimsByAgentService(EmployeeServiceTests.java:28)
+<td title='com.shield.tests.service.EmployeeServiceMockitoTests.mockGetAllAgentDebriefingsService()'><b>mockGetAllAgentDebriefingsService</b><br>Test class: com.shield.tests.service.EmployeeServiceMockitoTests</td>
+<td></td>
+<td>0</td>
+<td>com.shield.tests.service.EmployeeServiceMockitoTests@549621f3</td></tr>
+<tr>
+<td title='com.shield.tests.service.EmployeeServiceMockitoTests.mockGetEmployeeImageService()'><b>mockGetEmployeeImageService</b><br>Test class: com.shield.tests.service.EmployeeServiceMockitoTests</td>
+<td></td>
+<td>0</td>
+<td>com.shield.tests.service.EmployeeServiceMockitoTests@549621f3</td></tr>
+<tr>
+<td title='com.shield.tests.service.UserServiceTests.badIdForGetUserClaimsByUserService()'><b>badIdForGetUserClaimsByUserService</b><br>Test class: com.shield.tests.service.UserServiceTests</td>
+<td><div><pre>com.shield.customexceptions.UserNotFound: User not found
+	at com.shield.daos.user.UserDAOImp.getUserById(UserDAOImp.java:51)
+	at com.shield.services.user.UserServicesImp.getUserClaimsByUserService(UserServicesImp.java:86)
+	at com.shield.tests.service.UserServiceTests.badIdForGetUserClaimsByUserService(UserServiceTests.java:49)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1237743088", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1237743088'><pre>com.shield.customexceptions.EmployeeNotFound: The employee was not found.
-	at com.shield.daos.employee.EmployeeDAOImp.getEmployeeById(EmployeeDAOImp.java:69)
-	at com.shield.services.employee.EmployeeServiceImp.getUserClaimsByAgentService(EmployeeServiceImp.java:51)
-	at com.shield.tests.service.EmployeeServiceTests.badIdForGetUserClaimsByAgentService(EmployeeServiceTests.java:28)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1897732690", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1897732690'><pre>com.shield.customexceptions.UserNotFound: User not found
+	at com.shield.daos.user.UserDAOImp.getUserById(UserDAOImp.java:51)
+	at com.shield.services.user.UserServicesImp.getUserClaimsByUserService(UserServicesImp.java:86)
+	at com.shield.tests.service.UserServiceTests.badIdForGetUserClaimsByUserService(UserServiceTests.java:49)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1171,7 +449,150 @@ function toggleAllBoxes() {
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
 </pre></div></td>
 <td>0</td>
-<td>com.shield.tests.service.EmployeeServiceTests@669513d8</td></tr>
+<td>com.shield.tests.service.UserServiceTests@6fa590ba</td></tr>
+<tr>
+<td title='com.shield.tests.service.DebriefServiceMockitoTest.mockGetDebriefServiceById()'><b>mockGetDebriefServiceById</b><br>Test class: com.shield.tests.service.DebriefServiceMockitoTest</td>
+<td></td>
+<td>0</td>
+<td>com.shield.tests.service.DebriefServiceMockitoTest@4985cbcb</td></tr>
+<tr>
+<td title='com.shield.tests.service.UserServiceMockitoTest.getAllClaimsByUserIdServiceMock()'><b>getAllClaimsByUserIdServiceMock</b><br>Test class: com.shield.tests.service.UserServiceMockitoTest</td>
+<td></td>
+<td>0</td>
+<td>com.shield.tests.service.UserServiceMockitoTest@37ebc9d8</td></tr>
+<tr>
+<td title='com.shield.tests.service.UserServiceTests.badUserIdForGettingUser()'><b>badUserIdForGettingUser</b><br>Test class: com.shield.tests.service.UserServiceTests</td>
+<td><div><pre>com.shield.customexceptions.UserNotFound: User not found
+	at com.shield.services.user.UserServicesImp.getUserByIdService(UserServicesImp.java:36)
+	at com.shield.tests.service.UserServiceTests.badUserIdForGettingUser(UserServiceTests.java:32)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1730900666", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1730900666'><pre>com.shield.customexceptions.UserNotFound: User not found
+	at com.shield.services.user.UserServicesImp.getUserByIdService(UserServicesImp.java:36)
+	at com.shield.tests.service.UserServiceTests.badUserIdForGettingUser(UserServiceTests.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+</pre></div></td>
+<td>0</td>
+<td>com.shield.tests.service.UserServiceTests@6fa590ba</td></tr>
+<tr>
+<td title='com.shield.tests.service.EmployeeServiceTests.badHandlerForGetAllClaims()'><b>badHandlerForGetAllClaims</b><br>Test class: com.shield.tests.service.EmployeeServiceTests</td>
+<td><div><pre>com.shield.customexceptions.EmployeeIsNotHandler: That employee is not a handler.
+	at com.shield.services.employee.EmployeeServiceImp.getAllClaimsService(EmployeeServiceImp.java:42)
+	at com.shield.tests.service.EmployeeServiceTests.badHandlerForGetAllClaims(EmployeeServiceTests.java:54)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace411876574", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace411876574'><pre>com.shield.customexceptions.EmployeeIsNotHandler: That employee is not a handler.
+	at com.shield.services.employee.EmployeeServiceImp.getAllClaimsService(EmployeeServiceImp.java:42)
+	at com.shield.tests.service.EmployeeServiceTests.badHandlerForGetAllClaims(EmployeeServiceTests.java:54)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+</pre></div></td>
+<td>0</td>
+<td>com.shield.tests.service.EmployeeServiceTests@5217f3d0</td></tr>
+<tr>
+<td title='com.shield.tests.service.ClaimServiceMockitoTest.approveClaimServiceMock()'><b>approveClaimServiceMock</b><br>Test class: com.shield.tests.service.ClaimServiceMockitoTest</td>
+<td></td>
+<td>0</td>
+<td>com.shield.tests.service.ClaimServiceMockitoTest@5118388b</td></tr>
+<tr>
+<td title='com.shield.tests.service.ClaimServiceTests.badUserIdForCreateClaimService()'><b>badUserIdForCreateClaimService</b><br>Test class: com.shield.tests.service.ClaimServiceTests</td>
+<td><div><pre>com.shield.customexceptions.UserNotFound: User not found
+	at com.shield.daos.user.UserDAOImp.getUserById(UserDAOImp.java:51)
+	at com.shield.services.claim.ClaimServiceImp.createClaimService(ClaimServiceImp.java:32)
+	at com.shield.tests.service.ClaimServiceTests.badUserIdForCreateClaimService(ClaimServiceTests.java:35)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1152487396", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1152487396'><pre>com.shield.customexceptions.UserNotFound: User not found
+	at com.shield.daos.user.UserDAOImp.getUserById(UserDAOImp.java:51)
+	at com.shield.services.claim.ClaimServiceImp.createClaimService(ClaimServiceImp.java:32)
+	at com.shield.tests.service.ClaimServiceTests.badUserIdForCreateClaimService(ClaimServiceTests.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+</pre></div></td>
+<td>0</td>
+<td>com.shield.tests.service.ClaimServiceTests@71104a4</td></tr>
 <tr>
 <td title='com.shield.tests.service.UserServiceTests.badIdGetUserImageService()'><b>badIdGetUserImageService</b><br>Test class: com.shield.tests.service.UserServiceTests</td>
 <td><div><pre>com.shield.customexceptions.UserNotFound: User not found
@@ -1181,8 +602,8 @@ function toggleAllBoxes() {
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1156135967", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1156135967'><pre>com.shield.customexceptions.UserNotFound: User not found
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1630413241", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1630413241'><pre>com.shield.customexceptions.UserNotFound: User not found
 	at com.shield.daos.user.UserDAOImp.getUserById(UserDAOImp.java:51)
 	at com.shield.services.user.UserServicesImp.getUserImageService(UserServicesImp.java:104)
 	at com.shield.tests.service.UserServiceTests.badIdGetUserImageService(UserServiceTests.java:60)
@@ -1215,64 +636,7 @@ function toggleAllBoxes() {
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
 </pre></div></td>
 <td>0</td>
-<td>com.shield.tests.service.UserServiceTests@7859e786</td></tr>
-<tr>
-<td title='com.shield.tests.service.EmployeeServiceTests.badHandlerForGetAllClaims()'><b>badHandlerForGetAllClaims</b><br>Test class: com.shield.tests.service.EmployeeServiceTests</td>
-<td><div><pre>com.shield.customexceptions.EmployeeIsNotHandler: That employee is not a handler.
-	at com.shield.services.employee.EmployeeServiceImp.getAllClaimsService(EmployeeServiceImp.java:42)
-	at com.shield.tests.service.EmployeeServiceTests.badHandlerForGetAllClaims(EmployeeServiceTests.java:54)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace275002771", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace275002771'><pre>com.shield.customexceptions.EmployeeIsNotHandler: That employee is not a handler.
-	at com.shield.services.employee.EmployeeServiceImp.getAllClaimsService(EmployeeServiceImp.java:42)
-	at com.shield.tests.service.EmployeeServiceTests.badHandlerForGetAllClaims(EmployeeServiceTests.java:54)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:808)
-	at org.testng.TestRunner.run(TestRunner.java:603)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.runSuites(TestNG.java:1092)
-	at org.testng.TestNG.run(TestNG.java:1060)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-</pre></div></td>
-<td>0</td>
-<td>com.shield.tests.service.EmployeeServiceTests@669513d8</td></tr>
-<tr>
-<td title='com.shield.tests.service.DebriefServiceMockitoTest.createDebriefServiceMock()'><b>createDebriefServiceMock</b><br>Test class: com.shield.tests.service.DebriefServiceMockitoTest</td>
-<td></td>
-<td>0</td>
-<td>com.shield.tests.service.DebriefServiceMockitoTest@7f69d591</td></tr>
-<tr>
-<td title='com.shield.tests.service.EmployeeServiceMockitoTests.mockInsertEmployeeImageService()'><b>mockInsertEmployeeImageService</b><br>Test class: com.shield.tests.service.EmployeeServiceMockitoTests</td>
-<td></td>
-<td>0</td>
-<td>com.shield.tests.service.EmployeeServiceMockitoTests@71c5b236</td></tr>
-<tr>
-<td title='com.shield.tests.service.UserServiceMockitoTest.getAllUsersServiceMock()'><b>getAllUsersServiceMock</b><br>Test class: com.shield.tests.service.UserServiceMockitoTest</td>
-<td></td>
-<td>0</td>
-<td>com.shield.tests.service.UserServiceMockitoTest@3a1d593e</td></tr>
+<td>com.shield.tests.service.UserServiceTests@6fa590ba</td></tr>
 <tr>
 <td title='com.shield.tests.service.UserServiceTests.badUsernameForCheckingLogin()'><b>badUsernameForCheckingLogin</b><br>Test class: com.shield.tests.service.UserServiceTests</td>
 <td><div><pre>com.shield.customexceptions.InvalidUsername: Invalid username
@@ -1281,8 +645,8 @@ function toggleAllBoxes() {
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace124132186", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace124132186'><pre>com.shield.customexceptions.InvalidUsername: Invalid username
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1998103567", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1998103567'><pre>com.shield.customexceptions.InvalidUsername: Invalid username
 	at com.shield.services.user.UserServicesImp.checkUserLoginService(UserServicesImp.java:78)
 	at com.shield.tests.service.UserServiceTests.badUsernameForCheckingLogin(UserServiceTests.java:38)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -1314,19 +678,172 @@ function toggleAllBoxes() {
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
 </pre></div></td>
 <td>0</td>
-<td>com.shield.tests.service.UserServiceTests@7859e786</td></tr>
+<td>com.shield.tests.service.UserServiceTests@6fa590ba</td></tr>
 <tr>
-<td title='com.shield.tests.service.ClaimServiceTests.negativeAmountForCreateClaimService()'><b>negativeAmountForCreateClaimService</b><br>Test class: com.shield.tests.service.ClaimServiceTests</td>
-<td><div><pre>com.shield.customexceptions.NegativeClaimAmount: Claim must be a positive number
-	at com.shield.services.claim.ClaimServiceImp.createClaimService(ClaimServiceImp.java:39)
-	at com.shield.tests.service.ClaimServiceTests.negativeAmountForCreateClaimService(ClaimServiceTests.java:48)
+<td title='com.shield.tests.service.UserServiceTests.badIdInsertUserImageService()'><b>badIdInsertUserImageService</b><br>Test class: com.shield.tests.service.UserServiceTests</td>
+<td><div><pre>com.shield.customexceptions.UserNotFound: User not found
+	at com.shield.daos.user.UserDAOImp.getUserById(UserDAOImp.java:51)
+	at com.shield.services.user.UserServicesImp.insertUserImageService(UserServicesImp.java:97)
+	at com.shield.tests.service.UserServiceTests.badIdInsertUserImageService(UserServiceTests.java:55)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace392760852", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace392760852'><pre>com.shield.customexceptions.NegativeClaimAmount: Claim must be a positive number
-	at com.shield.services.claim.ClaimServiceImp.createClaimService(ClaimServiceImp.java:39)
-	at com.shield.tests.service.ClaimServiceTests.negativeAmountForCreateClaimService(ClaimServiceTests.java:48)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace808377204", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace808377204'><pre>com.shield.customexceptions.UserNotFound: User not found
+	at com.shield.daos.user.UserDAOImp.getUserById(UserDAOImp.java:51)
+	at com.shield.services.user.UserServicesImp.insertUserImageService(UserServicesImp.java:97)
+	at com.shield.tests.service.UserServiceTests.badIdInsertUserImageService(UserServiceTests.java:55)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+</pre></div></td>
+<td>0</td>
+<td>com.shield.tests.service.UserServiceTests@6fa590ba</td></tr>
+<tr>
+<td title='com.shield.tests.service.ClaimServiceTests.commentTooLongForApproveClaimService()'><b>commentTooLongForApproveClaimService</b><br>Test class: com.shield.tests.service.ClaimServiceTests</td>
+<td><div><pre>com.shield.customexceptions.CommentIsTooManyCharacters: Comment is too long
+	at com.shield.services.claim.ClaimServiceImp.approveClaimService(ClaimServiceImp.java:63)
+	at com.shield.tests.service.ClaimServiceTests.commentTooLongForApproveClaimService(ClaimServiceTests.java:62)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace732277370", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace732277370'><pre>com.shield.customexceptions.CommentIsTooManyCharacters: Comment is too long
+	at com.shield.services.claim.ClaimServiceImp.approveClaimService(ClaimServiceImp.java:63)
+	at com.shield.tests.service.ClaimServiceTests.commentTooLongForApproveClaimService(ClaimServiceTests.java:62)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+</pre></div></td>
+<td>0</td>
+<td>com.shield.tests.service.ClaimServiceTests@71104a4</td></tr>
+<tr>
+<td title='com.shield.tests.service.UserServiceMockitoTest.checkUsernameAndPasswordServiceMock()'><b>checkUsernameAndPasswordServiceMock</b><br>Test class: com.shield.tests.service.UserServiceMockitoTest</td>
+<td></td>
+<td>0</td>
+<td>com.shield.tests.service.UserServiceMockitoTest@37ebc9d8</td></tr>
+<tr>
+<td title='com.shield.tests.service.EmployeeServiceMockitoTests.mockGetEmployeeServiceById()'><b>mockGetEmployeeServiceById</b><br>Test class: com.shield.tests.service.EmployeeServiceMockitoTests</td>
+<td></td>
+<td>0</td>
+<td>com.shield.tests.service.EmployeeServiceMockitoTests@549621f3</td></tr>
+<tr>
+<td title='com.shield.tests.service.ClaimServiceMockitoTest.getClaimServiceByIdMock()'><b>getClaimServiceByIdMock</b><br>Test class: com.shield.tests.service.ClaimServiceMockitoTest</td>
+<td></td>
+<td>0</td>
+<td>com.shield.tests.service.ClaimServiceMockitoTest@5118388b</td></tr>
+<tr>
+<td title='com.shield.tests.service.DebriefServiceMockitoTest.createDebriefServiceMock()'><b>createDebriefServiceMock</b><br>Test class: com.shield.tests.service.DebriefServiceMockitoTest</td>
+<td></td>
+<td>0</td>
+<td>com.shield.tests.service.DebriefServiceMockitoTest@4985cbcb</td></tr>
+<tr>
+<td title='com.shield.tests.service.ClaimServiceMockitoTest.denyClaimServiceMock()'><b>denyClaimServiceMock</b><br>Test class: com.shield.tests.service.ClaimServiceMockitoTest</td>
+<td></td>
+<td>0</td>
+<td>com.shield.tests.service.ClaimServiceMockitoTest@5118388b</td></tr>
+<tr>
+<td title='com.shield.tests.service.UserServiceMockitoTest.getUserServiceByIdSadMock()'><b>getUserServiceByIdSadMock</b><br>Test class: com.shield.tests.service.UserServiceMockitoTest</td>
+<td><div><pre>com.shield.customexceptions.UserNotFound: User not found
+	at com.shield.services.user.UserServicesImp.getUserByIdService(UserServicesImp.java:36)
+	at com.shield.tests.service.UserServiceMockitoTest.getUserServiceByIdSadMock(UserServiceMockitoTest.java:99)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace70165127", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace70165127'><pre>com.shield.customexceptions.UserNotFound: User not found
+	at com.shield.services.user.UserServicesImp.getUserByIdService(UserServicesImp.java:36)
+	at com.shield.tests.service.UserServiceMockitoTest.getUserServiceByIdSadMock(UserServiceMockitoTest.java:99)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+</pre></div></td>
+<td>0</td>
+<td>com.shield.tests.service.UserServiceMockitoTest@37ebc9d8</td></tr>
+<tr>
+<td title='com.shield.tests.service.ClaimServiceTests.badClaimIdForApproveClaimService()'><b>badClaimIdForApproveClaimService</b><br>Test class: com.shield.tests.service.ClaimServiceTests</td>
+<td><div><pre>com.shield.customexceptions.ClaimNotFound: Claim not found
+	at com.shield.services.claim.ClaimServiceImp.approveClaimService(ClaimServiceImp.java:67)
+	at com.shield.tests.service.ClaimServiceTests.badClaimIdForApproveClaimService(ClaimServiceTests.java:55)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1004390006", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1004390006'><pre>com.shield.customexceptions.ClaimNotFound: Claim not found
+	at com.shield.services.claim.ClaimServiceImp.approveClaimService(ClaimServiceImp.java:67)
+	at com.shield.tests.service.ClaimServiceTests.badClaimIdForApproveClaimService(ClaimServiceTests.java:55)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1356,7 +873,7 @@ function toggleAllBoxes() {
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
 </pre></div></td>
 <td>1</td>
-<td>com.shield.tests.service.ClaimServiceTests@7c041b41</td></tr>
+<td>com.shield.tests.service.ClaimServiceTests@71104a4</td></tr>
 <tr>
 <td title='com.shield.tests.service.EmployeeServiceTests.badIdForGetAgentDebriefingsService()'><b>badIdForGetAgentDebriefingsService</b><br>Test class: com.shield.tests.service.EmployeeServiceTests</td>
 <td><div><pre>com.shield.customexceptions.EmployeeNotFound: The employee was not found.
@@ -1366,8 +883,8 @@ function toggleAllBoxes() {
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace248146548", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace248146548'><pre>com.shield.customexceptions.EmployeeNotFound: The employee was not found.
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace721671471", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace721671471'><pre>com.shield.customexceptions.EmployeeNotFound: The employee was not found.
 	at com.shield.daos.employee.EmployeeDAOImp.getEmployeeById(EmployeeDAOImp.java:69)
 	at com.shield.services.employee.EmployeeServiceImp.getAgentDebriefingsService(EmployeeServiceImp.java:77)
 	at com.shield.tests.service.EmployeeServiceTests.badIdForGetAgentDebriefingsService(EmployeeServiceTests.java:38)
@@ -1400,21 +917,19 @@ function toggleAllBoxes() {
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
 </pre></div></td>
 <td>0</td>
-<td>com.shield.tests.service.EmployeeServiceTests@669513d8</td></tr>
+<td>com.shield.tests.service.EmployeeServiceTests@5217f3d0</td></tr>
 <tr>
-<td title='com.shield.tests.service.UserServiceTests.badIdInsertUserImageService()'><b>badIdInsertUserImageService</b><br>Test class: com.shield.tests.service.UserServiceTests</td>
-<td><div><pre>com.shield.customexceptions.UserNotFound: User not found
-	at com.shield.daos.user.UserDAOImp.getUserById(UserDAOImp.java:51)
-	at com.shield.services.user.UserServicesImp.insertUserImageService(UserServicesImp.java:97)
-	at com.shield.tests.service.UserServiceTests.badIdInsertUserImageService(UserServiceTests.java:55)
+<td title='com.shield.tests.service.UserServiceMockitoTest.checkUsernameAndPasswordServiceSadPasswordMock()'><b>checkUsernameAndPasswordServiceSadPasswordMock</b><br>Test class: com.shield.tests.service.UserServiceMockitoTest</td>
+<td><div><pre>com.shield.customexceptions.InvalidPassword: Invalid password
+	at com.shield.services.user.UserServicesImp.checkUserLoginService(UserServicesImp.java:76)
+	at com.shield.tests.service.UserServiceMockitoTest.checkUsernameAndPasswordServiceSadPasswordMock(UserServiceMockitoTest.java:114)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1110913929", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1110913929'><pre>com.shield.customexceptions.UserNotFound: User not found
-	at com.shield.daos.user.UserDAOImp.getUserById(UserDAOImp.java:51)
-	at com.shield.services.user.UserServicesImp.insertUserImageService(UserServicesImp.java:97)
-	at com.shield.tests.service.UserServiceTests.badIdInsertUserImageService(UserServiceTests.java:55)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace174245837", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace174245837'><pre>com.shield.customexceptions.InvalidPassword: Invalid password
+	at com.shield.services.user.UserServicesImp.checkUserLoginService(UserServicesImp.java:76)
+	at com.shield.tests.service.UserServiceMockitoTest.checkUsernameAndPasswordServiceSadPasswordMock(UserServiceMockitoTest.java:114)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1444,7 +959,492 @@ function toggleAllBoxes() {
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
 </pre></div></td>
 <td>0</td>
-<td>com.shield.tests.service.UserServiceTests@7859e786</td></tr>
+<td>com.shield.tests.service.UserServiceMockitoTest@37ebc9d8</td></tr>
+<tr>
+<td title='com.shield.tests.service.EmployeeServiceTests.badAgentGetAgentDebriefingsService()'><b>badAgentGetAgentDebriefingsService</b><br>Test class: com.shield.tests.service.EmployeeServiceTests</td>
+<td><div><pre>com.shield.customexceptions.EmployeeIsNotAgent: That employee is not an agent.
+	at com.shield.services.employee.EmployeeServiceImp.getAgentDebriefingsService(EmployeeServiceImp.java:83)
+	at com.shield.tests.service.EmployeeServiceTests.badAgentGetAgentDebriefingsService(EmployeeServiceTests.java:71)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace619199769", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace619199769'><pre>com.shield.customexceptions.EmployeeIsNotAgent: That employee is not an agent.
+	at com.shield.services.employee.EmployeeServiceImp.getAgentDebriefingsService(EmployeeServiceImp.java:83)
+	at com.shield.tests.service.EmployeeServiceTests.badAgentGetAgentDebriefingsService(EmployeeServiceTests.java:71)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+</pre></div></td>
+<td>0</td>
+<td>com.shield.tests.service.EmployeeServiceTests@5217f3d0</td></tr>
+<tr>
+<td title='com.shield.tests.service.UserServiceMockitoTest.getUserServiceByIdMock()'><b>getUserServiceByIdMock</b><br>Test class: com.shield.tests.service.UserServiceMockitoTest</td>
+<td></td>
+<td>0</td>
+<td>com.shield.tests.service.UserServiceMockitoTest@37ebc9d8</td></tr>
+<tr>
+<td title='com.shield.tests.service.EmployeeServiceTests.badIdForGetUserClaimsByAgentService()'><b>badIdForGetUserClaimsByAgentService</b><br>Test class: com.shield.tests.service.EmployeeServiceTests</td>
+<td><div><pre>com.shield.customexceptions.EmployeeNotFound: The employee was not found.
+	at com.shield.daos.employee.EmployeeDAOImp.getEmployeeById(EmployeeDAOImp.java:69)
+	at com.shield.services.employee.EmployeeServiceImp.getUserClaimsByAgentService(EmployeeServiceImp.java:51)
+	at com.shield.tests.service.EmployeeServiceTests.badIdForGetUserClaimsByAgentService(EmployeeServiceTests.java:28)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace891715540", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace891715540'><pre>com.shield.customexceptions.EmployeeNotFound: The employee was not found.
+	at com.shield.daos.employee.EmployeeDAOImp.getEmployeeById(EmployeeDAOImp.java:69)
+	at com.shield.services.employee.EmployeeServiceImp.getUserClaimsByAgentService(EmployeeServiceImp.java:51)
+	at com.shield.tests.service.EmployeeServiceTests.badIdForGetUserClaimsByAgentService(EmployeeServiceTests.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+</pre></div></td>
+<td>0</td>
+<td>com.shield.tests.service.EmployeeServiceTests@5217f3d0</td></tr>
+<tr>
+<td title='com.shield.tests.service.UserServiceMockitoTest.createUserServiceMock()'><b>createUserServiceMock</b><br>Test class: com.shield.tests.service.UserServiceMockitoTest</td>
+<td></td>
+<td>0</td>
+<td>com.shield.tests.service.UserServiceMockitoTest@37ebc9d8</td></tr>
+<tr>
+<td title='com.shield.tests.service.EmployeeServiceTests.badIdForGetAllClaims()'><b>badIdForGetAllClaims</b><br>Test class: com.shield.tests.service.EmployeeServiceTests</td>
+<td><div><pre>com.shield.customexceptions.EmployeeNotFound: The employee was not found.
+	at com.shield.daos.employee.EmployeeDAOImp.getEmployeeById(EmployeeDAOImp.java:69)
+	at com.shield.services.employee.EmployeeServiceImp.getAllClaimsService(EmployeeServiceImp.java:36)
+	at com.shield.tests.service.EmployeeServiceTests.badIdForGetAllClaims(EmployeeServiceTests.java:23)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1257703748", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1257703748'><pre>com.shield.customexceptions.EmployeeNotFound: The employee was not found.
+	at com.shield.daos.employee.EmployeeDAOImp.getEmployeeById(EmployeeDAOImp.java:69)
+	at com.shield.services.employee.EmployeeServiceImp.getAllClaimsService(EmployeeServiceImp.java:36)
+	at com.shield.tests.service.EmployeeServiceTests.badIdForGetAllClaims(EmployeeServiceTests.java:23)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+</pre></div></td>
+<td>0</td>
+<td>com.shield.tests.service.EmployeeServiceTests@5217f3d0</td></tr>
+<tr>
+<td title='com.shield.tests.service.DebriefServiceTests.badIdForcreateDebriefService()'><b>badIdForcreateDebriefService</b><br>Test class: com.shield.tests.service.DebriefServiceTests</td>
+<td><div><pre>com.shield.customexceptions.EmployeeNotFound: The employee was not found.
+	at com.shield.daos.employee.EmployeeDAOImp.getEmployeeById(EmployeeDAOImp.java:69)
+	at com.shield.services.debrief.DebriefServiceImp.createDebriefService(DebriefServiceImp.java:27)
+	at com.shield.tests.service.DebriefServiceTests.badIdForcreateDebriefService(DebriefServiceTests.java:22)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace344080246", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace344080246'><pre>com.shield.customexceptions.EmployeeNotFound: The employee was not found.
+	at com.shield.daos.employee.EmployeeDAOImp.getEmployeeById(EmployeeDAOImp.java:69)
+	at com.shield.services.debrief.DebriefServiceImp.createDebriefService(DebriefServiceImp.java:27)
+	at com.shield.tests.service.DebriefServiceTests.badIdForcreateDebriefService(DebriefServiceTests.java:22)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+</pre></div></td>
+<td>0</td>
+<td>com.shield.tests.service.DebriefServiceTests@332a7fce</td></tr>
+<tr>
+<td title='com.shield.tests.service.ClaimServiceTests.badEmployeeIdForCreateClaimService()'><b>badEmployeeIdForCreateClaimService</b><br>Test class: com.shield.tests.service.ClaimServiceTests</td>
+<td><div><pre>com.shield.customexceptions.EmployeeNotFound: The employee was not found.
+	at com.shield.daos.employee.EmployeeDAOImp.getEmployeeById(EmployeeDAOImp.java:69)
+	at com.shield.services.claim.ClaimServiceImp.createClaimService(ClaimServiceImp.java:31)
+	at com.shield.tests.service.ClaimServiceTests.badEmployeeIdForCreateClaimService(ClaimServiceTests.java:42)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace839552703", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace839552703'><pre>com.shield.customexceptions.EmployeeNotFound: The employee was not found.
+	at com.shield.daos.employee.EmployeeDAOImp.getEmployeeById(EmployeeDAOImp.java:69)
+	at com.shield.services.claim.ClaimServiceImp.createClaimService(ClaimServiceImp.java:31)
+	at com.shield.tests.service.ClaimServiceTests.badEmployeeIdForCreateClaimService(ClaimServiceTests.java:42)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+</pre></div></td>
+<td>0</td>
+<td>com.shield.tests.service.ClaimServiceTests@71104a4</td></tr>
+<tr>
+<td title='com.shield.tests.service.EmployeeServiceTests.badHandlerGetAllAgentDebriefingsService()'><b>badHandlerGetAllAgentDebriefingsService</b><br>Test class: com.shield.tests.service.EmployeeServiceTests</td>
+<td><div><pre>com.shield.customexceptions.EmployeeIsNotHandler: That employee is not a handler.
+	at com.shield.services.employee.EmployeeServiceImp.getAllAgentDebriefingsService(EmployeeServiceImp.java:70)
+	at com.shield.tests.service.EmployeeServiceTests.badHandlerGetAllAgentDebriefingsService(EmployeeServiceTests.java:59)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1323706655", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1323706655'><pre>com.shield.customexceptions.EmployeeIsNotHandler: That employee is not a handler.
+	at com.shield.services.employee.EmployeeServiceImp.getAllAgentDebriefingsService(EmployeeServiceImp.java:70)
+	at com.shield.tests.service.EmployeeServiceTests.badHandlerGetAllAgentDebriefingsService(EmployeeServiceTests.java:59)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+</pre></div></td>
+<td>0</td>
+<td>com.shield.tests.service.EmployeeServiceTests@5217f3d0</td></tr>
+<tr>
+<td title='com.shield.tests.service.ClaimServiceTests.commentTooLongForDenyClaimService()'><b>commentTooLongForDenyClaimService</b><br>Test class: com.shield.tests.service.ClaimServiceTests</td>
+<td><div><pre>com.shield.customexceptions.CommentIsTooManyCharacters: Comment is too long
+	at com.shield.services.claim.ClaimServiceImp.approveClaimService(ClaimServiceImp.java:63)
+	at com.shield.tests.service.ClaimServiceTests.commentTooLongForDenyClaimService(ClaimServiceTests.java:69)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1295820487", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1295820487'><pre>com.shield.customexceptions.CommentIsTooManyCharacters: Comment is too long
+	at com.shield.services.claim.ClaimServiceImp.approveClaimService(ClaimServiceImp.java:63)
+	at com.shield.tests.service.ClaimServiceTests.commentTooLongForDenyClaimService(ClaimServiceTests.java:69)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+</pre></div></td>
+<td>0</td>
+<td>com.shield.tests.service.ClaimServiceTests@71104a4</td></tr>
+<tr>
+<td title='com.shield.tests.service.EmployeeServiceTests.badAgentGetUserClaimsByAgentService()'><b>badAgentGetUserClaimsByAgentService</b><br>Test class: com.shield.tests.service.EmployeeServiceTests</td>
+<td><div><pre>com.shield.customexceptions.EmployeeIsNotAgent: That employee is not an agent.
+	at com.shield.services.employee.EmployeeServiceImp.getUserClaimsByAgentService(EmployeeServiceImp.java:57)
+	at com.shield.tests.service.EmployeeServiceTests.badAgentGetUserClaimsByAgentService(EmployeeServiceTests.java:66)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1544031987", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1544031987'><pre>com.shield.customexceptions.EmployeeIsNotAgent: That employee is not an agent.
+	at com.shield.services.employee.EmployeeServiceImp.getUserClaimsByAgentService(EmployeeServiceImp.java:57)
+	at com.shield.tests.service.EmployeeServiceTests.badAgentGetUserClaimsByAgentService(EmployeeServiceTests.java:66)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+</pre></div></td>
+<td>0</td>
+<td>com.shield.tests.service.EmployeeServiceTests@5217f3d0</td></tr>
+<tr>
+<td title='com.shield.tests.service.EmployeeServiceMockitoTests.mockInsertEmployeeImageService()'><b>mockInsertEmployeeImageService</b><br>Test class: com.shield.tests.service.EmployeeServiceMockitoTests</td>
+<td></td>
+<td>0</td>
+<td>com.shield.tests.service.EmployeeServiceMockitoTests@549621f3</td></tr>
+<tr>
+<td title='com.shield.tests.service.UserServiceMockitoTest.checkUsernameAndPasswordServiceSadUsernameMock()'><b>checkUsernameAndPasswordServiceSadUsernameMock</b><br>Test class: com.shield.tests.service.UserServiceMockitoTest</td>
+<td><div><pre>com.shield.customexceptions.InvalidUsername: Invalid username
+	at com.shield.services.user.UserServicesImp.checkUserLoginService(UserServicesImp.java:78)
+	at com.shield.tests.service.UserServiceMockitoTest.checkUsernameAndPasswordServiceSadUsernameMock(UserServiceMockitoTest.java:106)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace124132186", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace124132186'><pre>com.shield.customexceptions.InvalidUsername: Invalid username
+	at com.shield.services.user.UserServicesImp.checkUserLoginService(UserServicesImp.java:78)
+	at com.shield.tests.service.UserServiceMockitoTest.checkUsernameAndPasswordServiceSadUsernameMock(UserServiceMockitoTest.java:106)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+</pre></div></td>
+<td>0</td>
+<td>com.shield.tests.service.UserServiceMockitoTest@37ebc9d8</td></tr>
+<tr>
+<td title='com.shield.tests.service.ClaimServiceTests.badClaimIdForDenyClaimService()'><b>badClaimIdForDenyClaimService</b><br>Test class: com.shield.tests.service.ClaimServiceTests</td>
+<td><div><pre>com.shield.customexceptions.ClaimNotFound: Claim not found
+	at com.shield.services.claim.ClaimServiceImp.denyClaimService(ClaimServiceImp.java:82)
+	at com.shield.tests.service.ClaimServiceTests.badClaimIdForDenyClaimService(ClaimServiceTests.java:76)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace698437724", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace698437724'><pre>com.shield.customexceptions.ClaimNotFound: Claim not found
+	at com.shield.services.claim.ClaimServiceImp.denyClaimService(ClaimServiceImp.java:82)
+	at com.shield.tests.service.ClaimServiceTests.badClaimIdForDenyClaimService(ClaimServiceTests.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+</pre></div></td>
+<td>0</td>
+<td>com.shield.tests.service.ClaimServiceTests@71104a4</td></tr>
+<tr>
+<td title='com.shield.tests.service.UserServiceTests.duplicateUserUsernameForCreateUserService()'><b>duplicateUserUsernameForCreateUserService</b><br>Test class: com.shield.tests.service.UserServiceTests</td>
+<td><div><pre>com.shield.customexceptions.UsernameAlreadyExists: Username is already taken
+	at com.shield.services.user.UserServicesImp.createUser(UserServicesImp.java:47)
+	at com.shield.tests.service.UserServiceTests.duplicateUserUsernameForCreateUserService(UserServiceTests.java:65)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace646204091", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace646204091'><pre>com.shield.customexceptions.UsernameAlreadyExists: Username is already taken
+	at com.shield.services.user.UserServicesImp.createUser(UserServicesImp.java:47)
+	at com.shield.tests.service.UserServiceTests.duplicateUserUsernameForCreateUserService(UserServiceTests.java:65)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+</pre></div></td>
+<td>0</td>
+<td>com.shield.tests.service.UserServiceTests@6fa590ba</td></tr>
 </table><p>
 </body>
 </html>
