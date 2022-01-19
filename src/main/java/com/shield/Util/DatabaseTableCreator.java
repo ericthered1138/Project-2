@@ -63,6 +63,17 @@ public class DatabaseTableCreator {
         }
     }
 
+    public static void delete_test_user(){
+        try (Connection connection = DatabaseConnection.createConnection()){
+            String sql = "delete from user_table where username = 'Amazon';";
+            Statement statement = connection.createStatement();
+            statement.executeQuery(sql);
+        } catch (SQLException e){
+            e.printStackTrace();
+        }
+
+    }
+
     public static void main(String[] args) {
         //table_creator(); // Creates the tables
         //table_populator();//populates the tables
