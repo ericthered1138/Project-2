@@ -53,6 +53,7 @@ public class DatabaseTableCreator {
             String sql = "delete from claim_table where employee_id > 999999; " +
                     "delete from debriefing_table where employee_id > 999999; " +
                     "delete from employee_picture_table where employee_id > 999999;"+
+                    "delete from user_picture_table where user_id > 999999;"+
                     "delete from employee_table where employee_id > 999999; " +
                     "delete from user_table where user_id > 999999;";
             Statement statement = connection.createStatement();
@@ -60,6 +61,17 @@ public class DatabaseTableCreator {
         }catch (SQLException e){
             e.printStackTrace();
         }
+    }
+
+    public static void delete_test_user(){
+        try (Connection connection = DatabaseConnection.createConnection()){
+            String sql = "delete from user_table where username = 'Amazon';";
+            Statement statement = connection.createStatement();
+            statement.executeQuery(sql);
+        } catch (SQLException e){
+            e.printStackTrace();
+        }
+
     }
 
     public static void main(String[] args) {
