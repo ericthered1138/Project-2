@@ -47,7 +47,7 @@ Usage
 Here, you instruct other people on how to use your project after they’ve installed it. This would also be a good place to include screenshots of your project in action.
 -->
 ## Contributors
-- Eric Jennings - ericthered1138
-- David Zazulak - dZazulak
-- Alejandro Lara - alara505
-- Victor Flores Herrera - VictorFloresHerrera
+- Eric Jennings - [ericthered1138](https://github.com/ericthered1138)
+- David Zazulak - [dZazulak](https://github.com/dZazulak)
+- Alejandro Lara - [alara505](https://github.com/alara505)
+- Victor Flores Herrera - [VictorFloresHerrera](https://github.com/VictorFloresHerrera)
