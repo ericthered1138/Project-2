@@ -17,6 +17,14 @@ The Agency System is made up of two subsystems. The Debrief System allows agents
 - CSS
 - JavaScript
 
+### Plugins to be installed
+- Cucumber
+- Gherkin
+- Selenium
+- Javalin
+- Mockito
+- Gson
+
 ## Features
 
 - Users are able to create an account, login, and submit claims
