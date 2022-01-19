@@ -33,8 +33,8 @@ The Agency System is made up of two subsystems. The Debrief System allows agents
 
 
 ### To-do list:
-- Would've been more nice to add more styling into our webpages, along with having our logout button to stay in place for a good overview
-- Make sure the pages are working as intended, and corresponding well with the database by receiving and requesting data.
+- To make the page very neat, and styling to be user friendly towards the audience and grab their attention
+- Make sure the pages are working as intended, and corresponding well with the database by receiving and requesting data
 
 ## Getting Started
 You may install the code using the git clone command below:
