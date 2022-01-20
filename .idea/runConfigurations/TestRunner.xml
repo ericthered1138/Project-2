@@ -7,10 +7,19 @@
         <option name="ENABLED" value="true" />
       </pattern>
     </extension>
+    <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+    <option name="ALTERNATIVE_JRE_PATH" value="17" />
     <option name="PACKAGE_NAME" value="resources.runner" />
     <option name="MAIN_CLASS_NAME" value="resources.runner.TestRunner" />
     <option name="METHOD_NAME" value="" />
     <option name="TEST_OBJECT" value="class" />
+    <envs>
+      <env name="HOST" value="database-1.c3bzypvk3zkj.us-east-2.rds.amazonaws.com" />
+      <env name="DBNAME" value="postgres" />
+      <env name="USERNAME" value="teamShield" />
+      <env name="PASSWORD" value="k1H8c7Qd" />
+      <env name="PORT" value="5432" />
+    </envs>
     <method v="2">
       <option name="Make" enabled="true" />
     </method>

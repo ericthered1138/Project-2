@@ -49,6 +49,7 @@ async function employeeCreateDebriefsLogData(){
     )
     if(response.status === 201){
         let body = await response.json();
+        alert("Your Debrief has been submitted");
         // console.log(response);
     }
     else{
