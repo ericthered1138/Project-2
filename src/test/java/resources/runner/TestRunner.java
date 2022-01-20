@@ -1,5 +1,6 @@
 package resources.runner;
 
+import com.shield.Util.DatabaseTableCreator;
 import io.cucumber.java.hu.Ha;
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
@@ -71,6 +72,7 @@ public class TestRunner {
     }
     @AfterClass
     public static void teardown(){
+        DatabaseTableCreator.delete_test_user();
         driver.quit();
         System.out.println("teardown complete!");
     }
