@@ -6,7 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>    
+<body> 
+
+    Upload your gif:<br/>
+    <input id = "portrait_input" type="file" onchange="previewFile()"><br/>
+    <div id="base64" style="max-width: 200px; float: left; overflow-wrap: break-word;"></div>
+    <img id = "portrait" src="" height="200" alt="Gif preview...">
 </body>
 <script src="image.js"></script>
 </html>

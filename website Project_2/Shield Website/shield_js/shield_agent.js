@@ -49,6 +49,7 @@ async function employeeCreateDebriefsLogData(){
     )
     if(response.status === 201){
         let body = await response.json();
+        alert("Your Debrief has been submitted");
         // console.log(response);
     }
     else{
@@ -74,6 +75,7 @@ async function getAllDebriefData(){
 
 // To receive the information of the Debrief Data...
 function populateDebriefData(responseBody){
+    debriefTableBody.innerHTML = '';
     for(let debrief of responseBody){
         let tableRow = document.createElement("tr");
         tableRow.innerHTML = `<td>${debrief.debriefingId}</td>

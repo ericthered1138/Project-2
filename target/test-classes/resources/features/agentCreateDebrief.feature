@@ -7,4 +7,4 @@ Feature: Shield Agent Submitting Debrief
     When the agent enters the date into the Date box
     When the agent enters a location into the location box
     When the agent clicks on the submit button
-    Then the agent will submit a new debrief case into the table
+    Then the agent will receive an alert that the debrief was submitted

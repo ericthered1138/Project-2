@@ -1,11 +1,10 @@
 package resources.steps;
 
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -13,6 +12,8 @@ import resources.runner.TestRunner;
 
 import java.io.File;
 import java.util.concurrent.TimeUnit;
+
+import static resources.runner.TestRunner.driver;
 
 public class AgentCreateDebrief {
 
@@ -52,12 +53,16 @@ public class AgentCreateDebrief {
         TestRunner.explicitWait.until(ExpectedConditions.elementToBeClickable(TestRunner.agentCreateDebrief.submitButton));
         TestRunner.agentCreateDebrief.submitButton.click();
     }
-    @Then("the agent will submit a new debrief case into the table")
+    @Then("the agent will receive an alert that the debrief was submitted")
     public void the_agent_will_submit_a_new_debrief_case_into_the_table() {
         // Write code here that turns the phrase above into concrete actions
-        TestRunner.explicitWait.until(ExpectedConditions.titleIs("Shield Agent"));
-        String title = TestRunner.driver.getTitle();
-        Assert.assertEquals(title, "Shield Agent");
+        TestRunner.explicitWait.until(ExpectedConditions.alertIsPresent());
+        Alert alert = driver.switchTo().alert();
+        String alertMessage = driver.switchTo().alert().getText();
+        String message = "Your Debrief has been submitted";
+        if(alertMessage.equals(message)){
+            alert.accept();
+        }
     }
 
 }
