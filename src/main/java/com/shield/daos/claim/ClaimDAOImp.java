@@ -2,7 +2,7 @@ package com.shield.daos.claim;
 
 import com.shield.customexceptions.ClaimNotFound;
 import com.shield.entities.Claim;
-import com.shield.Util.DatabaseConnection;
+import com.shield.util.DatabaseConnection;
 
 //import org.openqa.selenium.devtools.v85.database.Database;
 

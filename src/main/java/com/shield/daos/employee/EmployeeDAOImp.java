@@ -1,15 +1,11 @@
 package com.shield.daos.employee;
 
-import com.shield.Util.DatabaseConnection;
+import com.shield.util.DatabaseConnection;
 import com.shield.customexceptions.EmployeeNotFound;
 import com.shield.entities.Claim;
 import com.shield.entities.Debrief;
 import com.shield.entities.Employee;
-import org.postgresql.jdbc.PgBlob;
-import org.postgresql.largeobject.BlobInputStream;
 
-import javax.sql.rowset.serial.SerialBlob;
-import java.io.*;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.Base64;

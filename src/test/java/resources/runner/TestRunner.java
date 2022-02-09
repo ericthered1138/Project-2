@@ -1,7 +1,6 @@
 package resources.runner;
 
-import com.shield.Util.DatabaseTableCreator;
-import io.cucumber.java.hu.Ha;
+import com.shield.util.DatabaseTableCreator;
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.AfterClass;
@@ -16,7 +15,6 @@ import resources.poms.*;
 
 import java.io.File;
 import java.time.Duration;
-import java.util.concurrent.TimeUnit;
 //import java.util.concurrent.TimeUnit;
 
 @RunWith(Cucumber.class)

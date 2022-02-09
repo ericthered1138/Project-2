@@ -3,7 +3,7 @@ package com.shield.daos.user;
 import com.shield.customexceptions.UserNotFound;
 import com.shield.entities.Claim;
 import com.shield.entities.User;
-import com.shield.Util.DatabaseConnection;
+import com.shield.util.DatabaseConnection;
 
 import java.sql.*;
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package com.shield.Util;
+package com.shield.util;
 
 import java.sql.Connection;
 import java.sql.SQLException;

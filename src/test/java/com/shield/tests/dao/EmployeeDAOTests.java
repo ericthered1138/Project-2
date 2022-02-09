@@ -5,22 +5,15 @@ import com.shield.daos.employee.EmployeeDAOImp;
 import com.shield.entities.Claim;
 import com.shield.entities.Debrief;
 import com.shield.entities.Employee;
-import org.postgresql.largeobject.BlobInputStream;
-import org.postgresql.largeobject.BlobOutputStream;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.InputStream;
-import java.sql.Blob;
-import java.util.HashMap;
 import java.util.List;
 
-import static com.shield.Util.DatabaseTableCreator.table_depopulator;
-import static com.shield.Util.DatabaseTableCreator.table_populator;
+import static com.shield.util.DatabaseTableCreator.table_depopulator;
+import static com.shield.util.DatabaseTableCreator.table_populator;
 
 public class EmployeeDAOTests {
 

@@ -4,7 +4,7 @@ import com.shield.entities.Claim;
 import com.shield.daos.claim.ClaimDAOImp;
 import com.shield.daos.claim.ClaimDAO;
 import org.testng.Assert;
-import com.shield.Util.DatabaseTableCreator;
+import com.shield.util.DatabaseTableCreator;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;

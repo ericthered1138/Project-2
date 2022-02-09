@@ -1,4 +1,4 @@
-package com.shield.Util;
+package com.shield.util;
 
 import java.io.File;
 import java.io.FileInputStream;

@@ -8,8 +8,8 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import static com.shield.Util.DatabaseTableCreator.table_depopulator;
-import static com.shield.Util.DatabaseTableCreator.table_populator;
+import static com.shield.util.DatabaseTableCreator.table_depopulator;
+import static com.shield.util.DatabaseTableCreator.table_populator;
 
 public class DebriefDAOTests {
 

@@ -1,6 +1,6 @@
 package com.shield.daos.debrief;
 
-import com.shield.Util.DatabaseConnection;
+import com.shield.util.DatabaseConnection;
 import com.shield.customexceptions.DebriefNotFound;
 import com.shield.entities.Debrief;
 
