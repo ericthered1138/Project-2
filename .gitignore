@@ -1,5 +1,29 @@
+# ignore all logs
+*.log
 
-target/classes/features/employeeLoginSteps.feature
-target/test-classes/resources/features/userCreateAccountPasswordMismatch.feature
-target/test-classes/resources/features/userCreateAccountPasswordMismatch.feature
-target/test-classes/resources/features/userCreateAccountPasswordMismatch.feature
+#ignore builds and tests
+/target/
+*/target/**
+/test-output/
+*/test-output/**
+
+.apt_generated
+.classpaths
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+#ignore intellij files
+.idea
+*.iws
+*.iml
+*.ipr
+
+/nbproject/private/
+/build/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
