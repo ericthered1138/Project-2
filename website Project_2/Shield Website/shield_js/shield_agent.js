@@ -75,6 +75,7 @@ async function getAllDebriefData(){
 
 // To receive the information of the Debrief Data...
 function populateDebriefData(responseBody){
+    debriefTableBody.innerHTML = '';
     for(let debrief of responseBody){
         let tableRow = document.createElement("tr");
         tableRow.innerHTML = `<td>${debrief.debriefingId}</td>
