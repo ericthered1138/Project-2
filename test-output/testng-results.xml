@@ -2,6 +2,7 @@
 <testng-results ignored="0" total="73" passed="73" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
+<<<<<<< Updated upstream
   <suite started-at="2022-01-20T09:47:48 CST" name="Tests" finished-at="2022-01-20T09:48:41 CST" duration-ms="52272">
     <groups>
     </groups>
@@ -36,6 +37,42 @@
           </reporter-output>
         </test-method> <!-- selectUserById -->
         <test-method signature="selectUserByIdFail()[pri:0, instance:com.shield.tests.dao.UserDAOTests@71e5f61d]" started-at="2022-01-20T09:48:19 CST" name="selectUserByIdFail" finished-at="2022-01-20T09:48:19 CST" duration-ms="486" status="PASS">
+=======
+  <suite started-at="2022-01-20T16:19:11 CST" name="Tests" finished-at="2022-01-20T16:20:05 CST" duration-ms="53722">
+    <groups>
+    </groups>
+    <test started-at="2022-01-20T16:19:11 CST" name="DAO" finished-at="2022-01-20T16:19:49 CST" duration-ms="37689">
+      <class name="com.shield.tests.dao.UserDAOTests">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.shield.tests.dao.UserDAOTests@71e5f61d]" started-at="2022-01-20T16:19:37 CST" name="setup" finished-at="2022-01-20T16:19:38 CST" duration-ms="994" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="checkUserByUsername()[pri:0, instance:com.shield.tests.dao.UserDAOTests@71e5f61d]" started-at="2022-01-20T16:19:38 CST" name="checkUserByUsername" finished-at="2022-01-20T16:19:39 CST" duration-ms="1003" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkUserByUsername -->
+        <test-method signature="checkUsernameAndPassword()[pri:0, instance:com.shield.tests.dao.UserDAOTests@71e5f61d]" started-at="2022-01-20T16:19:39 CST" name="checkUsernameAndPassword" finished-at="2022-01-20T16:19:40 CST" duration-ms="1004" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkUsernameAndPassword -->
+        <test-method signature="createUser()[pri:0, instance:com.shield.tests.dao.UserDAOTests@71e5f61d]" started-at="2022-01-20T16:19:40 CST" name="createUser" finished-at="2022-01-20T16:19:41 CST" duration-ms="967" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUser -->
+        <test-method signature="getAllUsers()[pri:0, instance:com.shield.tests.dao.UserDAOTests@71e5f61d]" started-at="2022-01-20T16:19:41 CST" name="getAllUsers" finished-at="2022-01-20T16:19:41 CST" duration-ms="486" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllUsers -->
+        <test-method signature="getUserClaimsByUser()[pri:0, instance:com.shield.tests.dao.UserDAOTests@71e5f61d]" started-at="2022-01-20T16:19:41 CST" name="getUserClaimsByUser" finished-at="2022-01-20T16:19:42 CST" duration-ms="481" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserClaimsByUser -->
+        <test-method signature="selectUserById()[pri:0, instance:com.shield.tests.dao.UserDAOTests@71e5f61d]" started-at="2022-01-20T16:19:42 CST" name="selectUserById" finished-at="2022-01-20T16:19:42 CST" duration-ms="509" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectUserById -->
+        <test-method signature="selectUserByIdFail()[pri:0, instance:com.shield.tests.dao.UserDAOTests@71e5f61d]" started-at="2022-01-20T16:19:42 CST" name="selectUserByIdFail" finished-at="2022-01-20T16:19:43 CST" duration-ms="481" status="PASS">
+>>>>>>> Stashed changes
           <exception class="com.shield.customexceptions.UserNotFound">
             <message>
               <![CDATA[User not found]]>
@@ -77,6 +114,7 @@ at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectUserByIdFail -->
+<<<<<<< Updated upstream
         <test-method signature="insertUserImage()[pri:1, instance:com.shield.tests.dao.UserDAOTests@71e5f61d]" started-at="2022-01-20T09:48:19 CST" name="insertUserImage" finished-at="2022-01-20T09:48:20 CST" duration-ms="995" status="PASS">
           <reporter-output>
           </reporter-output>
@@ -90,11 +128,27 @@ at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
           </reporter-output>
         </test-method> <!-- checkUserImage -->
         <test-method is-config="true" signature="tearDown()[pri:0, instance:com.shield.tests.dao.UserDAOTests@71e5f61d]" started-at="2022-01-20T09:48:25 CST" name="tearDown" finished-at="2022-01-20T09:48:25 CST" duration-ms="484" status="PASS">
+=======
+        <test-method signature="insertUserImage()[pri:1, instance:com.shield.tests.dao.UserDAOTests@71e5f61d]" started-at="2022-01-20T16:19:43 CST" name="insertUserImage" finished-at="2022-01-20T16:19:44 CST" duration-ms="969" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- insertUserImage -->
+        <test-method signature="getUserImage()[pri:2, instance:com.shield.tests.dao.UserDAOTests@71e5f61d]" started-at="2022-01-20T16:19:44 CST" name="getUserImage" finished-at="2022-01-20T16:19:46 CST" duration-ms="2497" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserImage -->
+        <test-method signature="checkUserImage()[pri:3, instance:com.shield.tests.dao.UserDAOTests@71e5f61d]" started-at="2022-01-20T16:19:46 CST" name="checkUserImage" finished-at="2022-01-20T16:19:49 CST" duration-ms="2437" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkUserImage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.shield.tests.dao.UserDAOTests@71e5f61d]" started-at="2022-01-20T16:19:49 CST" name="tearDown" finished-at="2022-01-20T16:19:49 CST" duration-ms="503" status="PASS">
+>>>>>>> Stashed changes
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.shield.tests.dao.UserDAOTests -->
       <class name="com.shield.tests.dao.DebriefDAOTests">
+<<<<<<< Updated upstream
         <test-method is-config="true" signature="setup()[pri:0, instance:com.shield.tests.dao.DebriefDAOTests@5ac86ba5]" started-at="2022-01-20T09:47:55 CST" name="setup" finished-at="2022-01-20T09:47:56 CST" duration-ms="988" status="PASS">
           <reporter-output>
           </reporter-output>
@@ -108,11 +162,27 @@ at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
           </reporter-output>
         </test-method> <!-- getDebrief -->
         <test-method is-config="true" signature="teardown()[pri:0, instance:com.shield.tests.dao.DebriefDAOTests@5ac86ba5]" started-at="2022-01-20T09:47:58 CST" name="teardown" finished-at="2022-01-20T09:47:58 CST" duration-ms="516" status="PASS">
+=======
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.shield.tests.dao.DebriefDAOTests@5ac86ba5]" started-at="2022-01-20T16:19:18 CST" name="setup" finished-at="2022-01-20T16:19:19 CST" duration-ms="1017" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="createDebrief()[pri:0, instance:com.shield.tests.dao.DebriefDAOTests@5ac86ba5]" started-at="2022-01-20T16:19:19 CST" name="createDebrief" finished-at="2022-01-20T16:19:20 CST" duration-ms="1050" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createDebrief -->
+        <test-method signature="getDebrief()[pri:0, instance:com.shield.tests.dao.DebriefDAOTests@5ac86ba5]" started-at="2022-01-20T16:19:20 CST" name="getDebrief" finished-at="2022-01-20T16:19:21 CST" duration-ms="975" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDebrief -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.shield.tests.dao.DebriefDAOTests@5ac86ba5]" started-at="2022-01-20T16:19:21 CST" name="teardown" finished-at="2022-01-20T16:19:21 CST" duration-ms="500" status="PASS">
+>>>>>>> Stashed changes
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.shield.tests.dao.DebriefDAOTests -->
       <class name="com.shield.tests.dao.ClaimDAOTests">
+<<<<<<< Updated upstream
         <test-method is-config="true" signature="setup()[pri:0, instance:com.shield.tests.dao.ClaimDAOTests@4215838f]" started-at="2022-01-20T09:47:48 CST" name="setup" finished-at="2022-01-20T09:47:49 CST" duration-ms="1030" status="PASS">
           <reporter-output>
           </reporter-output>
@@ -134,11 +204,35 @@ at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
           </reporter-output>
         </test-method> <!-- DenyClaimById -->
         <test-method is-config="true" signature="tearDown()[pri:0, instance:com.shield.tests.dao.ClaimDAOTests@4215838f]" started-at="2022-01-20T09:47:54 CST" name="tearDown" finished-at="2022-01-20T09:47:55 CST" duration-ms="482" status="PASS">
+=======
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.shield.tests.dao.ClaimDAOTests@4215838f]" started-at="2022-01-20T16:19:11 CST" name="setup" finished-at="2022-01-20T16:19:12 CST" duration-ms="979" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="selectClaimById()[pri:0, instance:com.shield.tests.dao.ClaimDAOTests@4215838f]" started-at="2022-01-20T16:19:12 CST" name="selectClaimById" finished-at="2022-01-20T16:19:13 CST" duration-ms="1005" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectClaimById -->
+        <test-method signature="createClaimById()[pri:1, instance:com.shield.tests.dao.ClaimDAOTests@4215838f]" started-at="2022-01-20T16:19:13 CST" name="createClaimById" finished-at="2022-01-20T16:19:14 CST" duration-ms="983" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createClaimById -->
+        <test-method signature="ApproveClaimById()[pri:2, instance:com.shield.tests.dao.ClaimDAOTests@4215838f]" started-at="2022-01-20T16:19:14 CST" name="ApproveClaimById" finished-at="2022-01-20T16:19:16 CST" duration-ms="1533" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApproveClaimById -->
+        <test-method signature="DenyClaimById()[pri:3, instance:com.shield.tests.dao.ClaimDAOTests@4215838f]" started-at="2022-01-20T16:19:16 CST" name="DenyClaimById" finished-at="2022-01-20T16:19:17 CST" duration-ms="1446" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DenyClaimById -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.shield.tests.dao.ClaimDAOTests@4215838f]" started-at="2022-01-20T16:19:17 CST" name="tearDown" finished-at="2022-01-20T16:19:18 CST" duration-ms="494" status="PASS">
+>>>>>>> Stashed changes
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.shield.tests.dao.ClaimDAOTests -->
       <class name="com.shield.tests.dao.EmployeeDAOTests">
+<<<<<<< Updated upstream
         <test-method is-config="true" signature="setup()[pri:0, instance:com.shield.tests.dao.EmployeeDAOTests@191ae03f]" started-at="2022-01-20T09:47:58 CST" name="setup" finished-at="2022-01-20T09:48:00 CST" duration-ms="1336" status="PASS">
           <reporter-output>
           </reporter-output>
@@ -184,14 +278,67 @@ at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
           </reporter-output>
         </test-method> <!-- loginEmployee -->
         <test-method is-config="true" signature="teardown()[pri:0, instance:com.shield.tests.dao.EmployeeDAOTests@191ae03f]" started-at="2022-01-20T09:48:13 CST" name="teardown" finished-at="2022-01-20T09:48:13 CST" duration-ms="495" status="PASS">
+=======
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.shield.tests.dao.EmployeeDAOTests@191ae03f]" started-at="2022-01-20T16:19:21 CST" name="setup" finished-at="2022-01-20T16:19:22 CST" duration-ms="1002" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="checkEmployeeImage()[pri:0, instance:com.shield.tests.dao.EmployeeDAOTests@191ae03f]" started-at="2022-01-20T16:19:22 CST" name="checkEmployeeImage" finished-at="2022-01-20T16:19:25 CST" duration-ms="2468" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkEmployeeImage -->
+        <test-method signature="getAgentDebriefings()[pri:0, instance:com.shield.tests.dao.EmployeeDAOTests@191ae03f]" started-at="2022-01-20T16:19:25 CST" name="getAgentDebriefings" finished-at="2022-01-20T16:19:26 CST" duration-ms="966" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAgentDebriefings -->
+        <test-method signature="getAllAgentDebriefings()[pri:0, instance:com.shield.tests.dao.EmployeeDAOTests@191ae03f]" started-at="2022-01-20T16:19:26 CST" name="getAllAgentDebriefings" finished-at="2022-01-20T16:19:28 CST" duration-ms="2481" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllAgentDebriefings -->
+        <test-method signature="getAllClaims()[pri:0, instance:com.shield.tests.dao.EmployeeDAOTests@191ae03f]" started-at="2022-01-20T16:19:28 CST" name="getAllClaims" finished-at="2022-01-20T16:19:30 CST" duration-ms="1518" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllClaims -->
+        <test-method signature="getEmployeeById()[pri:0, instance:com.shield.tests.dao.EmployeeDAOTests@191ae03f]" started-at="2022-01-20T16:19:30 CST" name="getEmployeeById" finished-at="2022-01-20T16:19:30 CST" duration-ms="472" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getEmployeeById -->
+        <test-method signature="getEmployeeImage()[pri:0, instance:com.shield.tests.dao.EmployeeDAOTests@191ae03f]" started-at="2022-01-20T16:19:30 CST" name="getEmployeeImage" finished-at="2022-01-20T16:19:33 CST" duration-ms="2441" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getEmployeeImage -->
+        <test-method signature="getLeaderboard()[pri:0, instance:com.shield.tests.dao.EmployeeDAOTests@191ae03f]" started-at="2022-01-20T16:19:33 CST" name="getLeaderboard" finished-at="2022-01-20T16:19:33 CST" duration-ms="486" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getLeaderboard -->
+        <test-method signature="getUserClaimsByAgent()[pri:0, instance:com.shield.tests.dao.EmployeeDAOTests@191ae03f]" started-at="2022-01-20T16:19:33 CST" name="getUserClaimsByAgent" finished-at="2022-01-20T16:19:34 CST" duration-ms="958" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserClaimsByAgent -->
+        <test-method signature="insertEmployeeImage()[pri:0, instance:com.shield.tests.dao.EmployeeDAOTests@191ae03f]" started-at="2022-01-20T16:19:34 CST" name="insertEmployeeImage" finished-at="2022-01-20T16:19:35 CST" duration-ms="1070" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- insertEmployeeImage -->
+        <test-method signature="loginEmployee()[pri:0, instance:com.shield.tests.dao.EmployeeDAOTests@191ae03f]" started-at="2022-01-20T16:19:35 CST" name="loginEmployee" finished-at="2022-01-20T16:19:36 CST" duration-ms="962" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginEmployee -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.shield.tests.dao.EmployeeDAOTests@191ae03f]" started-at="2022-01-20T16:19:36 CST" name="teardown" finished-at="2022-01-20T16:19:37 CST" duration-ms="509" status="PASS">
+>>>>>>> Stashed changes
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.shield.tests.dao.EmployeeDAOTests -->
     </test> <!-- DAO -->
+<<<<<<< Updated upstream
     <test started-at="2022-01-20T09:48:25 CST" name="Service" finished-at="2022-01-20T09:48:41 CST" duration-ms="15314">
       <class name="com.shield.tests.service.UserServiceTests">
         <test-method signature="badIdForGetUserClaimsByUserService()[pri:0, instance:com.shield.tests.service.UserServiceTests@2f94c4db]" started-at="2022-01-20T09:48:36 CST" name="badIdForGetUserClaimsByUserService" finished-at="2022-01-20T09:48:37 CST" duration-ms="532" status="PASS">
+=======
+    <test started-at="2022-01-20T16:19:49 CST" name="Service" finished-at="2022-01-20T16:20:05 CST" duration-ms="16015">
+      <class name="com.shield.tests.service.UserServiceTests">
+        <test-method signature="badIdForGetUserClaimsByUserService()[pri:0, instance:com.shield.tests.service.UserServiceTests@2f94c4db]" started-at="2022-01-20T16:20:01 CST" name="badIdForGetUserClaimsByUserService" finished-at="2022-01-20T16:20:01 CST" duration-ms="524" status="PASS">
+>>>>>>> Stashed changes
           <exception class="com.shield.customexceptions.UserNotFound">
             <message>
               <![CDATA[User not found]]>
@@ -234,7 +381,11 @@ at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- badIdForGetUserClaimsByUserService -->
+<<<<<<< Updated upstream
         <test-method signature="badIdGetUserImageService()[pri:0, instance:com.shield.tests.service.UserServiceTests@2f94c4db]" started-at="2022-01-20T09:48:37 CST" name="badIdGetUserImageService" finished-at="2022-01-20T09:48:37 CST" duration-ms="468" status="PASS">
+=======
+        <test-method signature="badIdGetUserImageService()[pri:0, instance:com.shield.tests.service.UserServiceTests@2f94c4db]" started-at="2022-01-20T16:20:01 CST" name="badIdGetUserImageService" finished-at="2022-01-20T16:20:02 CST" duration-ms="474" status="PASS">
+>>>>>>> Stashed changes
           <exception class="com.shield.customexceptions.UserNotFound">
             <message>
               <![CDATA[User not found]]>
@@ -277,7 +428,11 @@ at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- badIdGetUserImageService -->
+<<<<<<< Updated upstream
         <test-method signature="badIdInsertUserImageService()[pri:0, instance:com.shield.tests.service.UserServiceTests@2f94c4db]" started-at="2022-01-20T09:48:37 CST" name="badIdInsertUserImageService" finished-at="2022-01-20T09:48:38 CST" duration-ms="480" status="PASS">
+=======
+        <test-method signature="badIdInsertUserImageService()[pri:0, instance:com.shield.tests.service.UserServiceTests@2f94c4db]" started-at="2022-01-20T16:20:02 CST" name="badIdInsertUserImageService" finished-at="2022-01-20T16:20:02 CST" duration-ms="485" status="PASS">
+>>>>>>> Stashed changes
           <exception class="com.shield.customexceptions.UserNotFound">
             <message>
               <![CDATA[User not found]]>
@@ -320,7 +475,11 @@ at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- badIdInsertUserImageService -->
+<<<<<<< Updated upstream
         <test-method signature="badPasswordForCheckingLogin()[pri:0, instance:com.shield.tests.service.UserServiceTests@2f94c4db]" started-at="2022-01-20T09:48:38 CST" name="badPasswordForCheckingLogin" finished-at="2022-01-20T09:48:38 CST" duration-ms="466" status="PASS">
+=======
+        <test-method signature="badPasswordForCheckingLogin()[pri:0, instance:com.shield.tests.service.UserServiceTests@2f94c4db]" started-at="2022-01-20T16:20:02 CST" name="badPasswordForCheckingLogin" finished-at="2022-01-20T16:20:03 CST" duration-ms="482" status="PASS">
+>>>>>>> Stashed changes
           <exception class="com.shield.customexceptions.InvalidPassword">
             <message>
               <![CDATA[Invalid password]]>
@@ -362,7 +521,11 @@ at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- badPasswordForCheckingLogin -->
+<<<<<<< Updated upstream
         <test-method signature="badUserIdForGettingUser()[pri:0, instance:com.shield.tests.service.UserServiceTests@2f94c4db]" started-at="2022-01-20T09:48:38 CST" name="badUserIdForGettingUser" finished-at="2022-01-20T09:48:39 CST" duration-ms="485" status="PASS">
+=======
+        <test-method signature="badUserIdForGettingUser()[pri:0, instance:com.shield.tests.service.UserServiceTests@2f94c4db]" started-at="2022-01-20T16:20:03 CST" name="badUserIdForGettingUser" finished-at="2022-01-20T16:20:03 CST" duration-ms="497" status="PASS">
+>>>>>>> Stashed changes
           <exception class="com.shield.customexceptions.UserNotFound">
             <message>
               <![CDATA[User not found]]>
@@ -404,7 +567,11 @@ at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- badUserIdForGettingUser -->
+<<<<<<< Updated upstream
         <test-method signature="badUsernameForCheckingLogin()[pri:0, instance:com.shield.tests.service.UserServiceTests@2f94c4db]" started-at="2022-01-20T09:48:39 CST" name="badUsernameForCheckingLogin" finished-at="2022-01-20T09:48:39 CST" duration-ms="479" status="PASS">
+=======
+        <test-method signature="badUsernameForCheckingLogin()[pri:0, instance:com.shield.tests.service.UserServiceTests@2f94c4db]" started-at="2022-01-20T16:20:03 CST" name="badUsernameForCheckingLogin" finished-at="2022-01-20T16:20:04 CST" duration-ms="473" status="PASS">
+>>>>>>> Stashed changes
           <exception class="com.shield.customexceptions.InvalidUsername">
             <message>
               <![CDATA[Invalid username]]>
@@ -446,7 +613,11 @@ at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- badUsernameForCheckingLogin -->
+<<<<<<< Updated upstream
         <test-method signature="duplicateEmployeeUsernameForCreateUserService()[pri:0, instance:com.shield.tests.service.UserServiceTests@2f94c4db]" started-at="2022-01-20T09:48:39 CST" name="duplicateEmployeeUsernameForCreateUserService" finished-at="2022-01-20T09:48:40 CST" duration-ms="956" status="PASS">
+=======
+        <test-method signature="duplicateEmployeeUsernameForCreateUserService()[pri:0, instance:com.shield.tests.service.UserServiceTests@2f94c4db]" started-at="2022-01-20T16:20:04 CST" name="duplicateEmployeeUsernameForCreateUserService" finished-at="2022-01-20T16:20:05 CST" duration-ms="975" status="PASS">
+>>>>>>> Stashed changes
           <exception class="com.shield.customexceptions.UsernameAlreadyExists">
             <message>
               <![CDATA[Username is already taken]]>
@@ -488,7 +659,11 @@ at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- duplicateEmployeeUsernameForCreateUserService -->
+<<<<<<< Updated upstream
         <test-method signature="duplicateUserUsernameForCreateUserService()[pri:0, instance:com.shield.tests.service.UserServiceTests@2f94c4db]" started-at="2022-01-20T09:48:40 CST" name="duplicateUserUsernameForCreateUserService" finished-at="2022-01-20T09:48:41 CST" duration-ms="498" status="PASS">
+=======
+        <test-method signature="duplicateUserUsernameForCreateUserService()[pri:0, instance:com.shield.tests.service.UserServiceTests@2f94c4db]" started-at="2022-01-20T16:20:05 CST" name="duplicateUserUsernameForCreateUserService" finished-at="2022-01-20T16:20:05 CST" duration-ms="490" status="PASS">
+>>>>>>> Stashed changes
           <exception class="com.shield.customexceptions.UsernameAlreadyExists">
             <message>
               <![CDATA[Username is already taken]]>
@@ -532,7 +707,11 @@ at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
         </test-method> <!-- duplicateUserUsernameForCreateUserService -->
       </class> <!-- com.shield.tests.service.UserServiceTests -->
       <class name="com.shield.tests.service.DebriefServiceTests">
+<<<<<<< Updated upstream
         <test-method signature="badIdForcreateDebriefService()[pri:0, instance:com.shield.tests.service.DebriefServiceTests@3a4e343]" started-at="2022-01-20T09:48:31 CST" name="badIdForcreateDebriefService" finished-at="2022-01-20T09:48:31 CST" duration-ms="471" status="PASS">
+=======
+        <test-method signature="badIdForcreateDebriefService()[pri:0, instance:com.shield.tests.service.DebriefServiceTests@3a4e343]" started-at="2022-01-20T16:19:55 CST" name="badIdForcreateDebriefService" finished-at="2022-01-20T16:19:55 CST" duration-ms="473" status="PASS">
+>>>>>>> Stashed changes
           <exception class="com.shield.customexceptions.EmployeeNotFound">
             <message>
               <![CDATA[The employee was not found.]]>
@@ -577,6 +756,7 @@ at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
         </test-method> <!-- badIdForcreateDebriefService -->
       </class> <!-- com.shield.tests.service.DebriefServiceTests -->
       <class name="com.shield.tests.service.EmployeeServiceMockitoTests">
+<<<<<<< Updated upstream
         <test-method is-config="true" signature="setup()[pri:0, instance:com.shield.tests.service.EmployeeServiceMockitoTests@6a1d204a]" started-at="2022-01-20T09:48:31 CST" name="setup" finished-at="2022-01-20T09:48:31 CST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
@@ -602,11 +782,39 @@ at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
           </reporter-output>
         </test-method> <!-- mockGetUserClaimsByAgentService -->
         <test-method signature="mockInsertEmployeeImageService()[pri:0, instance:com.shield.tests.service.EmployeeServiceMockitoTests@6a1d204a]" started-at="2022-01-20T09:48:31 CST" name="mockInsertEmployeeImageService" finished-at="2022-01-20T09:48:31 CST" duration-ms="1" status="PASS">
+=======
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.shield.tests.service.EmployeeServiceMockitoTests@6a1d204a]" started-at="2022-01-20T16:19:55 CST" name="setup" finished-at="2022-01-20T16:19:55 CST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="MockGetAgentDebriefingsService()[pri:0, instance:com.shield.tests.service.EmployeeServiceMockitoTests@6a1d204a]" started-at="2022-01-20T16:19:55 CST" name="MockGetAgentDebriefingsService" finished-at="2022-01-20T16:19:55 CST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MockGetAgentDebriefingsService -->
+        <test-method signature="mockGetEmployeeImageService()[pri:0, instance:com.shield.tests.service.EmployeeServiceMockitoTests@6a1d204a]" started-at="2022-01-20T16:19:55 CST" name="mockGetEmployeeImageService" finished-at="2022-01-20T16:19:55 CST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mockGetEmployeeImageService -->
+        <test-method signature="mockGetAllAgentDebriefingsService()[pri:0, instance:com.shield.tests.service.EmployeeServiceMockitoTests@6a1d204a]" started-at="2022-01-20T16:19:55 CST" name="mockGetAllAgentDebriefingsService" finished-at="2022-01-20T16:19:55 CST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mockGetAllAgentDebriefingsService -->
+        <test-method signature="mockGetEmployeeServiceById()[pri:0, instance:com.shield.tests.service.EmployeeServiceMockitoTests@6a1d204a]" started-at="2022-01-20T16:19:55 CST" name="mockGetEmployeeServiceById" finished-at="2022-01-20T16:19:55 CST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mockGetEmployeeServiceById -->
+        <test-method signature="mockGetUserClaimsByAgentService()[pri:0, instance:com.shield.tests.service.EmployeeServiceMockitoTests@6a1d204a]" started-at="2022-01-20T16:19:55 CST" name="mockGetUserClaimsByAgentService" finished-at="2022-01-20T16:19:55 CST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mockGetUserClaimsByAgentService -->
+        <test-method signature="mockInsertEmployeeImageService()[pri:0, instance:com.shield.tests.service.EmployeeServiceMockitoTests@6a1d204a]" started-at="2022-01-20T16:19:55 CST" name="mockInsertEmployeeImageService" finished-at="2022-01-20T16:19:55 CST" duration-ms="1" status="PASS">
+>>>>>>> Stashed changes
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mockInsertEmployeeImageService -->
       </class> <!-- com.shield.tests.service.EmployeeServiceMockitoTests -->
       <class name="com.shield.tests.service.ClaimServiceMockitoTest">
+<<<<<<< Updated upstream
         <test-method is-config="true" signature="setup()[pri:0, instance:com.shield.tests.service.ClaimServiceMockitoTest@5ab14cb9]" started-at="2022-01-20T09:48:25 CST" name="setup" finished-at="2022-01-20T09:48:26 CST" duration-ms="585" status="PASS">
           <reporter-output>
           </reporter-output>
@@ -624,12 +832,35 @@ at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
           </reporter-output>
         </test-method> <!-- denyClaimServiceMock -->
         <test-method signature="getClaimServiceByIdMock()[pri:0, instance:com.shield.tests.service.ClaimServiceMockitoTest@5ab14cb9]" started-at="2022-01-20T09:48:26 CST" name="getClaimServiceByIdMock" finished-at="2022-01-20T09:48:26 CST" duration-ms="1" status="PASS">
+=======
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.shield.tests.service.ClaimServiceMockitoTest@5ab14cb9]" started-at="2022-01-20T16:19:49 CST" name="setup" finished-at="2022-01-20T16:19:50 CST" duration-ms="533" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="approveClaimServiceMock()[pri:0, instance:com.shield.tests.service.ClaimServiceMockitoTest@5ab14cb9]" started-at="2022-01-20T16:19:50 CST" name="approveClaimServiceMock" finished-at="2022-01-20T16:19:50 CST" duration-ms="17" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- approveClaimServiceMock -->
+        <test-method signature="createClaimServiceMock()[pri:0, instance:com.shield.tests.service.ClaimServiceMockitoTest@5ab14cb9]" started-at="2022-01-20T16:19:50 CST" name="createClaimServiceMock" finished-at="2022-01-20T16:19:50 CST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createClaimServiceMock -->
+        <test-method signature="getClaimServiceByIdMock()[pri:0, instance:com.shield.tests.service.ClaimServiceMockitoTest@5ab14cb9]" started-at="2022-01-20T16:19:50 CST" name="getClaimServiceByIdMock" finished-at="2022-01-20T16:19:50 CST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getClaimServiceByIdMock -->
+        <test-method signature="denyClaimServiceMock()[pri:0, instance:com.shield.tests.service.ClaimServiceMockitoTest@5ab14cb9]" started-at="2022-01-20T16:19:50 CST" name="denyClaimServiceMock" finished-at="2022-01-20T16:19:50 CST" duration-ms="0" status="PASS">
+>>>>>>> Stashed changes
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- denyClaimServiceMock -->
       </class> <!-- com.shield.tests.service.ClaimServiceMockitoTest -->
       <class name="com.shield.tests.service.ClaimServiceTests">
+<<<<<<< Updated upstream
         <test-method signature="badClaimIdForApproveClaimService()[pri:0, instance:com.shield.tests.service.ClaimServiceTests@25bcd0c7]" started-at="2022-01-20T09:48:26 CST" name="badClaimIdForApproveClaimService" finished-at="2022-01-20T09:48:27 CST" duration-ms="978" status="PASS">
+=======
+        <test-method signature="badClaimIdForApproveClaimService()[pri:0, instance:com.shield.tests.service.ClaimServiceTests@25bcd0c7]" started-at="2022-01-20T16:19:50 CST" name="badClaimIdForApproveClaimService" finished-at="2022-01-20T16:19:51 CST" duration-ms="965" status="PASS">
+>>>>>>> Stashed changes
           <exception class="com.shield.customexceptions.ClaimNotFound">
             <message>
               <![CDATA[Claim not found]]>
@@ -671,7 +902,11 @@ at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- badClaimIdForApproveClaimService -->
+<<<<<<< Updated upstream
         <test-method signature="badClaimIdForDenyClaimService()[pri:0, instance:com.shield.tests.service.ClaimServiceTests@25bcd0c7]" started-at="2022-01-20T09:48:27 CST" name="badClaimIdForDenyClaimService" finished-at="2022-01-20T09:48:28 CST" duration-ms="965" status="PASS">
+=======
+        <test-method signature="badClaimIdForDenyClaimService()[pri:0, instance:com.shield.tests.service.ClaimServiceTests@25bcd0c7]" started-at="2022-01-20T16:19:51 CST" name="badClaimIdForDenyClaimService" finished-at="2022-01-20T16:19:52 CST" duration-ms="975" status="PASS">
+>>>>>>> Stashed changes
           <exception class="com.shield.customexceptions.ClaimNotFound">
             <message>
               <![CDATA[Claim not found]]>
@@ -713,7 +948,11 @@ at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- badClaimIdForDenyClaimService -->
+<<<<<<< Updated upstream
         <test-method signature="badClaimIdForGetClaimService()[pri:0, instance:com.shield.tests.service.ClaimServiceTests@25bcd0c7]" started-at="2022-01-20T09:48:28 CST" name="badClaimIdForGetClaimService" finished-at="2022-01-20T09:48:28 CST" duration-ms="493" status="PASS">
+=======
+        <test-method signature="badClaimIdForGetClaimService()[pri:0, instance:com.shield.tests.service.ClaimServiceTests@25bcd0c7]" started-at="2022-01-20T16:19:52 CST" name="badClaimIdForGetClaimService" finished-at="2022-01-20T16:19:52 CST" duration-ms="507" status="PASS">
+>>>>>>> Stashed changes
           <exception class="com.shield.customexceptions.ClaimNotFound">
             <message>
               <![CDATA[Claim not found]]>
@@ -756,7 +995,11 @@ at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- badClaimIdForGetClaimService -->
+<<<<<<< Updated upstream
         <test-method signature="badEmployeeIdForCreateClaimService()[pri:0, instance:com.shield.tests.service.ClaimServiceTests@25bcd0c7]" started-at="2022-01-20T09:48:28 CST" name="badEmployeeIdForCreateClaimService" finished-at="2022-01-20T09:48:29 CST" duration-ms="475" status="PASS">
+=======
+        <test-method signature="badEmployeeIdForCreateClaimService()[pri:0, instance:com.shield.tests.service.ClaimServiceTests@25bcd0c7]" started-at="2022-01-20T16:19:52 CST" name="badEmployeeIdForCreateClaimService" finished-at="2022-01-20T16:19:53 CST" duration-ms="480" status="PASS">
+>>>>>>> Stashed changes
           <exception class="com.shield.customexceptions.EmployeeNotFound">
             <message>
               <![CDATA[The employee was not found.]]>
@@ -799,7 +1042,11 @@ at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- badEmployeeIdForCreateClaimService -->
+<<<<<<< Updated upstream
         <test-method signature="badUserIdForCreateClaimService()[pri:0, instance:com.shield.tests.service.ClaimServiceTests@25bcd0c7]" started-at="2022-01-20T09:48:29 CST" name="badUserIdForCreateClaimService" finished-at="2022-01-20T09:48:30 CST" duration-ms="965" status="PASS">
+=======
+        <test-method signature="badUserIdForCreateClaimService()[pri:0, instance:com.shield.tests.service.ClaimServiceTests@25bcd0c7]" started-at="2022-01-20T16:19:53 CST" name="badUserIdForCreateClaimService" finished-at="2022-01-20T16:19:54 CST" duration-ms="959" status="PASS">
+>>>>>>> Stashed changes
           <exception class="com.shield.customexceptions.UserNotFound">
             <message>
               <![CDATA[User not found]]>
@@ -842,7 +1089,11 @@ at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- badUserIdForCreateClaimService -->
+<<<<<<< Updated upstream
         <test-method signature="commentTooLongForApproveClaimService()[pri:0, instance:com.shield.tests.service.ClaimServiceTests@25bcd0c7]" started-at="2022-01-20T09:48:30 CST" name="commentTooLongForApproveClaimService" finished-at="2022-01-20T09:48:30 CST" duration-ms="1" status="PASS">
+=======
+        <test-method signature="commentTooLongForApproveClaimService()[pri:0, instance:com.shield.tests.service.ClaimServiceTests@25bcd0c7]" started-at="2022-01-20T16:19:54 CST" name="commentTooLongForApproveClaimService" finished-at="2022-01-20T16:19:54 CST" duration-ms="0" status="PASS">
+>>>>>>> Stashed changes
           <exception class="com.shield.customexceptions.CommentIsTooManyCharacters">
             <message>
               <![CDATA[Comment is too long]]>
@@ -884,7 +1135,11 @@ at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- commentTooLongForApproveClaimService -->
+<<<<<<< Updated upstream
         <test-method signature="commentTooLongForDenyClaimService()[pri:0, instance:com.shield.tests.service.ClaimServiceTests@25bcd0c7]" started-at="2022-01-20T09:48:30 CST" name="commentTooLongForDenyClaimService" finished-at="2022-01-20T09:48:30 CST" duration-ms="0" status="PASS">
+=======
+        <test-method signature="commentTooLongForDenyClaimService()[pri:0, instance:com.shield.tests.service.ClaimServiceTests@25bcd0c7]" started-at="2022-01-20T16:19:54 CST" name="commentTooLongForDenyClaimService" finished-at="2022-01-20T16:19:54 CST" duration-ms="0" status="PASS">
+>>>>>>> Stashed changes
           <exception class="com.shield.customexceptions.CommentIsTooManyCharacters">
             <message>
               <![CDATA[Comment is too long]]>
@@ -926,7 +1181,11 @@ at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- commentTooLongForDenyClaimService -->
+<<<<<<< Updated upstream
         <test-method signature="negativeAmountForCreateClaimService()[pri:0, instance:com.shield.tests.service.ClaimServiceTests@25bcd0c7]" started-at="2022-01-20T09:48:30 CST" name="negativeAmountForCreateClaimService" finished-at="2022-01-20T09:48:31 CST" duration-ms="1100" status="PASS">
+=======
+        <test-method signature="negativeAmountForCreateClaimService()[pri:0, instance:com.shield.tests.service.ClaimServiceTests@25bcd0c7]" started-at="2022-01-20T16:19:54 CST" name="negativeAmountForCreateClaimService" finished-at="2022-01-20T16:19:55 CST" duration-ms="977" status="PASS">
+>>>>>>> Stashed changes
           <exception class="com.shield.customexceptions.NegativeClaimAmount">
             <message>
               <![CDATA[Claim must be a positive number]]>
@@ -970,6 +1229,7 @@ at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
         </test-method> <!-- negativeAmountForCreateClaimService -->
       </class> <!-- com.shield.tests.service.ClaimServiceTests -->
       <class name="com.shield.tests.service.DebriefServiceMockitoTest">
+<<<<<<< Updated upstream
         <test-method is-config="true" signature="setup()[pri:0, instance:com.shield.tests.service.DebriefServiceMockitoTest@32cb636e]" started-at="2022-01-20T09:48:31 CST" name="setup" finished-at="2022-01-20T09:48:31 CST" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
@@ -979,12 +1239,27 @@ at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
           </reporter-output>
         </test-method> <!-- createDebriefServiceMock -->
         <test-method signature="mockGetDebriefServiceById()[pri:0, instance:com.shield.tests.service.DebriefServiceMockitoTest@32cb636e]" started-at="2022-01-20T09:48:31 CST" name="mockGetDebriefServiceById" finished-at="2022-01-20T09:48:31 CST" duration-ms="0" status="PASS">
+=======
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.shield.tests.service.DebriefServiceMockitoTest@32cb636e]" started-at="2022-01-20T16:19:55 CST" name="setup" finished-at="2022-01-20T16:19:55 CST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="createDebriefServiceMock()[pri:0, instance:com.shield.tests.service.DebriefServiceMockitoTest@32cb636e]" started-at="2022-01-20T16:19:55 CST" name="createDebriefServiceMock" finished-at="2022-01-20T16:19:55 CST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createDebriefServiceMock -->
+        <test-method signature="mockGetDebriefServiceById()[pri:0, instance:com.shield.tests.service.DebriefServiceMockitoTest@32cb636e]" started-at="2022-01-20T16:19:55 CST" name="mockGetDebriefServiceById" finished-at="2022-01-20T16:19:55 CST" duration-ms="1" status="PASS">
+>>>>>>> Stashed changes
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mockGetDebriefServiceById -->
       </class> <!-- com.shield.tests.service.DebriefServiceMockitoTest -->
       <class name="com.shield.tests.service.EmployeeServiceTests">
+<<<<<<< Updated upstream
         <test-method signature="badAgentGetAgentDebriefingsService()[pri:0, instance:com.shield.tests.service.EmployeeServiceTests@6fff253c]" started-at="2022-01-20T09:48:31 CST" name="badAgentGetAgentDebriefingsService" finished-at="2022-01-20T09:48:32 CST" duration-ms="498" status="PASS">
+=======
+        <test-method signature="badAgentGetAgentDebriefingsService()[pri:0, instance:com.shield.tests.service.EmployeeServiceTests@6fff253c]" started-at="2022-01-20T16:19:55 CST" name="badAgentGetAgentDebriefingsService" finished-at="2022-01-20T16:19:56 CST" duration-ms="492" status="PASS">
+>>>>>>> Stashed changes
           <exception class="com.shield.customexceptions.EmployeeIsNotAgent">
             <message>
               <![CDATA[That employee is not an agent.]]>
@@ -1026,7 +1301,11 @@ at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- badAgentGetAgentDebriefingsService -->
+<<<<<<< Updated upstream
         <test-method signature="badAgentGetUserClaimsByAgentService()[pri:0, instance:com.shield.tests.service.EmployeeServiceTests@6fff253c]" started-at="2022-01-20T09:48:32 CST" name="badAgentGetUserClaimsByAgentService" finished-at="2022-01-20T09:48:32 CST" duration-ms="506" status="PASS">
+=======
+        <test-method signature="badAgentGetUserClaimsByAgentService()[pri:0, instance:com.shield.tests.service.EmployeeServiceTests@6fff253c]" started-at="2022-01-20T16:19:56 CST" name="badAgentGetUserClaimsByAgentService" finished-at="2022-01-20T16:19:56 CST" duration-ms="491" status="PASS">
+>>>>>>> Stashed changes
           <exception class="com.shield.customexceptions.EmployeeIsNotAgent">
             <message>
               <![CDATA[That employee is not an agent.]]>
@@ -1068,7 +1347,11 @@ at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- badAgentGetUserClaimsByAgentService -->
+<<<<<<< Updated upstream
         <test-method signature="badHandlerForGetAllClaims()[pri:0, instance:com.shield.tests.service.EmployeeServiceTests@6fff253c]" started-at="2022-01-20T09:48:32 CST" name="badHandlerForGetAllClaims" finished-at="2022-01-20T09:48:33 CST" duration-ms="471" status="PASS">
+=======
+        <test-method signature="badHandlerForGetAllClaims()[pri:0, instance:com.shield.tests.service.EmployeeServiceTests@6fff253c]" started-at="2022-01-20T16:19:56 CST" name="badHandlerForGetAllClaims" finished-at="2022-01-20T16:19:57 CST" duration-ms="492" status="PASS">
+>>>>>>> Stashed changes
           <exception class="com.shield.customexceptions.EmployeeIsNotHandler">
             <message>
               <![CDATA[That employee is not a handler.]]>
@@ -1110,7 +1393,11 @@ at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- badHandlerForGetAllClaims -->
+<<<<<<< Updated upstream
         <test-method signature="badHandlerGetAllAgentDebriefingsService()[pri:0, instance:com.shield.tests.service.EmployeeServiceTests@6fff253c]" started-at="2022-01-20T09:48:33 CST" name="badHandlerGetAllAgentDebriefingsService" finished-at="2022-01-20T09:48:33 CST" duration-ms="476" status="PASS">
+=======
+        <test-method signature="badHandlerGetAllAgentDebriefingsService()[pri:0, instance:com.shield.tests.service.EmployeeServiceTests@6fff253c]" started-at="2022-01-20T16:19:57 CST" name="badHandlerGetAllAgentDebriefingsService" finished-at="2022-01-20T16:19:57 CST" duration-ms="486" status="PASS">
+>>>>>>> Stashed changes
           <exception class="com.shield.customexceptions.EmployeeIsNotHandler">
             <message>
               <![CDATA[That employee is not a handler.]]>
@@ -1152,7 +1439,11 @@ at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- badHandlerGetAllAgentDebriefingsService -->
+<<<<<<< Updated upstream
         <test-method signature="badIdForGetAgentDebriefingsService()[pri:0, instance:com.shield.tests.service.EmployeeServiceTests@6fff253c]" started-at="2022-01-20T09:48:33 CST" name="badIdForGetAgentDebriefingsService" finished-at="2022-01-20T09:48:34 CST" duration-ms="480" status="PASS">
+=======
+        <test-method signature="badIdForGetAgentDebriefingsService()[pri:0, instance:com.shield.tests.service.EmployeeServiceTests@6fff253c]" started-at="2022-01-20T16:19:57 CST" name="badIdForGetAgentDebriefingsService" finished-at="2022-01-20T16:19:57 CST" duration-ms="476" status="PASS">
+>>>>>>> Stashed changes
           <exception class="com.shield.customexceptions.EmployeeNotFound">
             <message>
               <![CDATA[The employee was not found.]]>
@@ -1195,7 +1486,11 @@ at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- badIdForGetAgentDebriefingsService -->
+<<<<<<< Updated upstream
         <test-method signature="badIdForGetAllAgentDebriefingsService()[pri:0, instance:com.shield.tests.service.EmployeeServiceTests@6fff253c]" started-at="2022-01-20T09:48:34 CST" name="badIdForGetAllAgentDebriefingsService" finished-at="2022-01-20T09:48:34 CST" duration-ms="489" status="PASS">
+=======
+        <test-method signature="badIdForGetAllAgentDebriefingsService()[pri:0, instance:com.shield.tests.service.EmployeeServiceTests@6fff253c]" started-at="2022-01-20T16:19:57 CST" name="badIdForGetAllAgentDebriefingsService" finished-at="2022-01-20T16:19:58 CST" duration-ms="473" status="PASS">
+>>>>>>> Stashed changes
           <exception class="com.shield.customexceptions.EmployeeNotFound">
             <message>
               <![CDATA[The employee was not found.]]>
@@ -1238,7 +1533,11 @@ at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- badIdForGetAllAgentDebriefingsService -->
+<<<<<<< Updated upstream
         <test-method signature="badIdForGetAllClaims()[pri:0, instance:com.shield.tests.service.EmployeeServiceTests@6fff253c]" started-at="2022-01-20T09:48:34 CST" name="badIdForGetAllClaims" finished-at="2022-01-20T09:48:35 CST" duration-ms="471" status="PASS">
+=======
+        <test-method signature="badIdForGetAllClaims()[pri:0, instance:com.shield.tests.service.EmployeeServiceTests@6fff253c]" started-at="2022-01-20T16:19:58 CST" name="badIdForGetAllClaims" finished-at="2022-01-20T16:19:58 CST" duration-ms="504" status="PASS">
+>>>>>>> Stashed changes
           <exception class="com.shield.customexceptions.EmployeeNotFound">
             <message>
               <![CDATA[The employee was not found.]]>
@@ -1281,7 +1580,11 @@ at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- badIdForGetAllClaims -->
+<<<<<<< Updated upstream
         <test-method signature="badIdForGetUserClaimsByAgentService()[pri:0, instance:com.shield.tests.service.EmployeeServiceTests@6fff253c]" started-at="2022-01-20T09:48:35 CST" name="badIdForGetUserClaimsByAgentService" finished-at="2022-01-20T09:48:35 CST" duration-ms="480" status="PASS">
+=======
+        <test-method signature="badIdForGetUserClaimsByAgentService()[pri:0, instance:com.shield.tests.service.EmployeeServiceTests@6fff253c]" started-at="2022-01-20T16:19:58 CST" name="badIdForGetUserClaimsByAgentService" finished-at="2022-01-20T16:19:59 CST" duration-ms="515" status="PASS">
+>>>>>>> Stashed changes
           <exception class="com.shield.customexceptions.EmployeeNotFound">
             <message>
               <![CDATA[The employee was not found.]]>
@@ -1324,7 +1627,11 @@ at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- badIdForGetUserClaimsByAgentService -->
+<<<<<<< Updated upstream
         <test-method signature="badIdGetEmployeeImageService()[pri:0, instance:com.shield.tests.service.EmployeeServiceTests@6fff253c]" started-at="2022-01-20T09:48:35 CST" name="badIdGetEmployeeImageService" finished-at="2022-01-20T09:48:36 CST" duration-ms="486" status="PASS">
+=======
+        <test-method signature="badIdGetEmployeeImageService()[pri:0, instance:com.shield.tests.service.EmployeeServiceTests@6fff253c]" started-at="2022-01-20T16:19:59 CST" name="badIdGetEmployeeImageService" finished-at="2022-01-20T16:19:59 CST" duration-ms="485" status="PASS">
+>>>>>>> Stashed changes
           <exception class="com.shield.customexceptions.EmployeeNotFound">
             <message>
               <![CDATA[The employee was not found.]]>
@@ -1367,7 +1674,11 @@ at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- badIdGetEmployeeImageService -->
+<<<<<<< Updated upstream
         <test-method signature="badIdInsertEmployeeImageService()[pri:0, instance:com.shield.tests.service.EmployeeServiceTests@6fff253c]" started-at="2022-01-20T09:48:36 CST" name="badIdInsertEmployeeImageService" finished-at="2022-01-20T09:48:36 CST" duration-ms="494" status="PASS">
+=======
+        <test-method signature="badIdInsertEmployeeImageService()[pri:0, instance:com.shield.tests.service.EmployeeServiceTests@6fff253c]" started-at="2022-01-20T16:19:59 CST" name="badIdInsertEmployeeImageService" finished-at="2022-01-20T16:20:01 CST" duration-ms="1277" status="PASS">
+>>>>>>> Stashed changes
           <exception class="com.shield.customexceptions.EmployeeNotFound">
             <message>
               <![CDATA[The employee was not found.]]>
@@ -1412,6 +1723,7 @@ at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
         </test-method> <!-- badIdInsertEmployeeImageService -->
       </class> <!-- com.shield.tests.service.EmployeeServiceTests -->
       <class name="com.shield.tests.service.UserServiceMockitoTest">
+<<<<<<< Updated upstream
         <test-method is-config="true" signature="setup()[pri:0, instance:com.shield.tests.service.UserServiceMockitoTest@6c6357f9]" started-at="2022-01-20T09:48:36 CST" name="setup" finished-at="2022-01-20T09:48:36 CST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
@@ -1422,6 +1734,18 @@ at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
         </test-method> <!-- checkUsernameAndPasswordServiceMock -->
         <test-method signature="checkUsernameAndPasswordServiceSadPasswordMock()[pri:0, instance:com.shield.tests.service.UserServiceMockitoTest@6c6357f9]" started-at="2022-01-20T09:48:36 CST" name="checkUsernameAndPasswordServiceSadPasswordMock" finished-at="2022-01-20T09:48:36 CST" duration-ms="0" status="PASS">
           <exception class="com.shield.customexceptions.InvalidPassword">
+=======
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.shield.tests.service.UserServiceMockitoTest@6c6357f9]" started-at="2022-01-20T16:20:01 CST" name="setup" finished-at="2022-01-20T16:20:01 CST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="checkUsernameAndPasswordServiceMock()[pri:0, instance:com.shield.tests.service.UserServiceMockitoTest@6c6357f9]" started-at="2022-01-20T16:20:01 CST" name="checkUsernameAndPasswordServiceMock" finished-at="2022-01-20T16:20:01 CST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkUsernameAndPasswordServiceMock -->
+        <test-method signature="checkUsernameAndPasswordServiceSadUsernameMock()[pri:0, instance:com.shield.tests.service.UserServiceMockitoTest@6c6357f9]" started-at="2022-01-20T16:20:01 CST" name="checkUsernameAndPasswordServiceSadUsernameMock" finished-at="2022-01-20T16:20:01 CST" duration-ms="1" status="PASS">
+          <exception class="com.shield.customexceptions.InvalidUsername">
+>>>>>>> Stashed changes
             <message>
               <![CDATA[Invalid password]]>
             </message>
@@ -1461,9 +1785,15 @@ at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
           </exception> <!-- com.shield.customexceptions.InvalidPassword -->
           <reporter-output>
           </reporter-output>
+<<<<<<< Updated upstream
         </test-method> <!-- checkUsernameAndPasswordServiceSadPasswordMock -->
         <test-method signature="checkUsernameAndPasswordServiceSadUsernameMock()[pri:0, instance:com.shield.tests.service.UserServiceMockitoTest@6c6357f9]" started-at="2022-01-20T09:48:36 CST" name="checkUsernameAndPasswordServiceSadUsernameMock" finished-at="2022-01-20T09:48:36 CST" duration-ms="0" status="PASS">
           <exception class="com.shield.customexceptions.InvalidUsername">
+=======
+        </test-method> <!-- checkUsernameAndPasswordServiceSadUsernameMock -->
+        <test-method signature="checkUsernameAndPasswordServiceSadPasswordMock()[pri:0, instance:com.shield.tests.service.UserServiceMockitoTest@6c6357f9]" started-at="2022-01-20T16:20:01 CST" name="checkUsernameAndPasswordServiceSadPasswordMock" finished-at="2022-01-20T16:20:01 CST" duration-ms="0" status="PASS">
+          <exception class="com.shield.customexceptions.InvalidPassword">
+>>>>>>> Stashed changes
             <message>
               <![CDATA[Invalid username]]>
             </message>
@@ -1503,6 +1833,7 @@ at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
           </exception> <!-- com.shield.customexceptions.InvalidUsername -->
           <reporter-output>
           </reporter-output>
+<<<<<<< Updated upstream
         </test-method> <!-- checkUsernameAndPasswordServiceSadUsernameMock -->
         <test-method signature="createUserServiceMock()[pri:0, instance:com.shield.tests.service.UserServiceMockitoTest@6c6357f9]" started-at="2022-01-20T09:48:36 CST" name="createUserServiceMock" finished-at="2022-01-20T09:48:36 CST" duration-ms="1" status="PASS">
           <reporter-output>
@@ -1521,6 +1852,26 @@ at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
           </reporter-output>
         </test-method> <!-- getUserServiceByIdMock -->
         <test-method signature="getUserServiceByIdSadMock()[pri:0, instance:com.shield.tests.service.UserServiceMockitoTest@6c6357f9]" started-at="2022-01-20T09:48:36 CST" name="getUserServiceByIdSadMock" finished-at="2022-01-20T09:48:36 CST" duration-ms="2" status="PASS">
+=======
+        </test-method> <!-- checkUsernameAndPasswordServiceSadPasswordMock -->
+        <test-method signature="createUserServiceMock()[pri:0, instance:com.shield.tests.service.UserServiceMockitoTest@6c6357f9]" started-at="2022-01-20T16:20:01 CST" name="createUserServiceMock" finished-at="2022-01-20T16:20:01 CST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUserServiceMock -->
+        <test-method signature="getAllClaimsByUserIdServiceMock()[pri:0, instance:com.shield.tests.service.UserServiceMockitoTest@6c6357f9]" started-at="2022-01-20T16:20:01 CST" name="getAllClaimsByUserIdServiceMock" finished-at="2022-01-20T16:20:01 CST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllClaimsByUserIdServiceMock -->
+        <test-method signature="getAllUsersServiceMock()[pri:0, instance:com.shield.tests.service.UserServiceMockitoTest@6c6357f9]" started-at="2022-01-20T16:20:01 CST" name="getAllUsersServiceMock" finished-at="2022-01-20T16:20:01 CST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllUsersServiceMock -->
+        <test-method signature="getUserServiceByIdMock()[pri:0, instance:com.shield.tests.service.UserServiceMockitoTest@6c6357f9]" started-at="2022-01-20T16:20:01 CST" name="getUserServiceByIdMock" finished-at="2022-01-20T16:20:01 CST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserServiceByIdMock -->
+        <test-method signature="getUserServiceByIdSadMock()[pri:0, instance:com.shield.tests.service.UserServiceMockitoTest@6c6357f9]" started-at="2022-01-20T16:20:01 CST" name="getUserServiceByIdSadMock" finished-at="2022-01-20T16:20:01 CST" duration-ms="1" status="PASS">
+>>>>>>> Stashed changes
           <exception class="com.shield.customexceptions.UserNotFound">
             <message>
               <![CDATA[User not found]]>
